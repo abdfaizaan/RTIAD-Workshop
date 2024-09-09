@@ -2,6 +2,24 @@
 
 ![](./media/lab2ms.png)
 
+# Contents  
+
+- **Document Structure**  
+- **Scenario / Problem Statement**  
+- **Introduction**  
+- **Fabric Eventstreams**  
+  - **Task 1: Create an Eventstream**  
+  - **Task 2: Setup Eventstream Source**  
+  - **Task 3: Setup Eventstream Destination**  
+- **Kusto Query Language (KQL)**  
+  - **Task 4: Authoring Kusto Database Queries**  
+  - **Task 5: Using T-SQL Queries Against a KQL Database**  
+- **KQL Queryset**  
+  - **Task 6: Create a KQL Queryset**  
+- **References**
+
+## Document Structure
+
 The lab includes steps for the user to follow along with associated screenshots that provide visual aid. In each screenshot, sections are highlighted with orange boxes to indicate the area(s) user should focus on.
 
 ## Introduction 
