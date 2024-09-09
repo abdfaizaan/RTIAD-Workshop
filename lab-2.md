@@ -555,9 +555,8 @@ Read the more in-depth Fabric experience announcement blogs:
     blog](https://aka.ms/Fabric-DS-Blog)
 -   [Synapse Data Warehousing experience in Fabric
     blog](https://aka.ms/Fabric-DW-Blog)
--   [[Real-](https://aka.ms/Fabric-RTA-Blog)[Time Intelligence
-    experience in Fabric
-    blog](https://blog.fabric.microsoft.com/en-us/blog/category/real-time-intelligence)]
+-   [Real-](https://aka.ms/Fabric-RTA-Blog)[Time Intelligence
+    experience in Fabric blog](https://blog.fabric.microsoft.com/en-us/blog/category/real-time-intelligence)]
 -   [Power BI announcement
     blog](https://aka.ms/Fabric-PBI-Blog)
 -   [Data Activator experience in Fabric
