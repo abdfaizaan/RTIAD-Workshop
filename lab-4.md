@@ -1,4 +1,6 @@
-# Lab -04
+# Microsoft Fabric - Real-Time Intelligence in a Day: Lab 4
+
+![](../media/Lab-01/image001.png)
 
 Medallion Framework within KQL Databases
 
