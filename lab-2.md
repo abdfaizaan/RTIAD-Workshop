@@ -395,36 +395,25 @@ Let's explore!
     Within the query window, you can translate your SQL queries into KQL
     to better understand how to author KQL queries in the future. Start
     with writing the following command.\
-    **(Note: Double click the object below in order to be able to copy
-    the text)**
+    
+    >**(Note: Double click the object below in order to be able to copy the text)**
 
-    ![](./media/image48.png)
+
 
     ![](./media/image49.png)
 
-2.  The comment line "--" followed by the keyword "explain" will allow
-    you to now create a SQL query and return a result with the KQL query
-    that could be used to achieve a similar query and result. Below
-    input the following query to explain what the KQL query would look
-    like:
-
-    ![](./media/image50.emf)
+2.  The comment line "--" followed by the keyword "explain" will allow you to now create a SQL query and return a result with the KQL query that could be used to achieve a similar query and result. Below input the following query to explain what the KQL query would look like:
 
     ![A screenshot of a computer Description automatically
 generated](./media/image51.png)
 
-3.  This is a simple SQL query that will retrieve results from the
-    InternetSales table to return two columns, the product key and a
-    count of the number of orders. Because there is an aggregated column
-    and a non-aggregated column, you must use a GROUP BY to return
-    results for each individual product. Run the entire query beginning
-    with the "--" to the end of the T-SQL query.
+3.  This is a simple SQL query that will retrieve results from the InternetSales table to return two columns, the product key and a count of the number of orders. Because there is an aggregated column and a non-aggregated column, you must use a GROUP BY to return results for each individual product. Run the entire query beginning with the "--" to the end of the T-SQL query.
 
     ![A screenshot of a chat Description automatically
 generated](./media/image52.png)
 
 4.  The output of the explain query should be a single record with the
-    translated KQL query as the result. Click on the **caret icon (\)**
+    translated KQL query as the result. Click on the **caret icon (>)**
     to expand the results and allow for easier translation.
 
     ![A screenshot of a computer Description automatically
