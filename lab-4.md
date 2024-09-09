@@ -95,7 +95,7 @@ By the end of this lab, you will have learned:
 
 2. Give the new pipeline the name, **Load KQL Database**.
 
-    ![A screenshot of a computer](./media/image135.png){width="2.7in" height="2.091666666666667in"}
+    ![A screenshot of a computer](./media/image135.png)
 
 3. Click on **Create**.
 
