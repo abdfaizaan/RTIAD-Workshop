@@ -15,6 +15,7 @@
   - Task 5: Add Map Visual for Impressions by Location
   - Optional Task 6: Add Company Logo
   - Optional Task 7: Apply Conditional Formatting to Visual
+  - Optional Task 8: Apply Conditional Formatting to Visual
 - Summary
 - References
 
