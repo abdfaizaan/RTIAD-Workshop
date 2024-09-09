@@ -268,7 +268,15 @@ You may be working with the Kusto Query Language for the first time.While this l
     
     >**(Note: Double click the object below in order to be able to copy the text)**
     
-    ![](./media/explain-01.png)
+    ```
+       --
+    explain
+    SELECT COUNT(OrderQuantity) AS CountOfProducts
+            , ProductKey
+    FROM InternetSales
+    GROUP BY ProductKey
+    
+    ```
     
     ![](./media/image49.png)
 
