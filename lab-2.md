@@ -4,12 +4,12 @@ The lab includes steps for the user to follow along with associated screenshots 
 
 # Introduction 
 
-> In this lab, you will experience a way to handle a continuous stream
-> of real-time data. You will use a Fabric Real-Time Intelligence object
-> called an Eventstream to ingest this data to the Eventhouse you
-> created in the last lab and write some basic KQL queries.
->
-> By the end of this lab, you will have learned:
+ In this lab, you will experience a way to handle a continuous stream
+ of real-time data. You will use a Fabric Real-Time Intelligence object
+ called an Eventstream to ingest this data to the Eventhouse you
+ created in the last lab and write some basic KQL queries.
+
+ By the end of this lab, you will have learned:
 
 -   How to create an Eventstream
 
@@ -30,15 +30,14 @@ computer](./media/image5.png)
 2.  Navigate to the "Real-Time hub" where currently we do not see any
     streams of data. That will change shortly.
 
-![A screenshot of a
+    ![A screenshot of a
 computer](./media/image6.png)
 
 3.  Select the "Get events" green button which should be in the upper
     right corner.
 
-![A screenshot of a search box Description automatically
-generated](./media/image7.png){width="2.917073490813648in"
-height="2.0523698600174978in"}
+    ![A screenshot of a search box Description automatically
+generated](./media/image7.png)
 
 4.  A window will open that will allow you to select a source for our
     stream data. As we discussed before, there are many fantastic
@@ -46,16 +45,14 @@ height="2.0523698600174978in"}
     "Azure Event Hubs".\
     \
     ![A screenshot of a computer Description automatically
-    generated](./media/image8.png){width="6.506944444444445in"
-    height="2.954861111111111in"}
+    generated](./media/image8.png)
 
 5.  You are now required to create a connection to the Azure Event Hub.
     Click on the **New connection** text since you do not currently have
     a connection.\
     \
     ![A screenshot of a
-    computer](./media/image9.png){width="3.4948501749781276in"
-    height="2.2687160979877516in"}
+    computer](./media/image9.png)
 
 6.  From your environment details page, copy and paste all the necessary
     connection settings into the appropriate fields. For these labs we
@@ -67,16 +64,15 @@ height="2.0523698600174978in"}
     \
     Event Hub: **rti-iad**\
     \
-    Shared Access Key Name: **rti-reader\
+    Shared Access Key Name: **rti-reader**\
     \
-    **Shared Access Key:
+    Shared Access Key:
     **H/5gTWuI+lQLT9HYBzuqzPdKaR6YWXCRw+AEhE6k1gE=**
 
 7.  Once all properties have been filled out click on **Connect**.\
     \
     ![A screenshot of a computer Description automatically
-    generated](./media/image10.png){width="5.563276465441819in"
-    height="4.531882108486439in"}
+    generated](./media/image10.png)
 
 8.  In the configuration of the Azure Event Hub data source, you will
     need to modify the **Consumer group** of the Event Hub to ensure
@@ -86,38 +82,33 @@ height="2.0523698600174978in"}
     box. It will appear something like "**cg-xx**".\
     \
     ![A screenshot of a
-    computer](./media/image11.png){width="5.594336176727909in"
-    height="3.9375284339457566in"}
+    computer](./media/image11.png)
 
 9.  Before we finalize this data source and Eventstream, let's go ahead
     and rename our Eventstream to something more useful. In the "Stream
     details\" section on the right select the pencil icon next to the
     "Eventstream name" and let's call our Eventstream
-    "**es_Fabrikam_InternetSales".\
-    **![A screenshot of a
-    computer](./media/image12.png){width="2.3354965004374453in"
-    height="2.1383048993875766in"}
+    "**es_Fabrikam_InternetSales**".\
+    ![A screenshot of a
+    computer](./media/image12.png)
 
 10. Now we can click on **Next**, which will take us to a final overview
     page.\
     \
     ![A screenshot of a
-    computer](./media/image13.png){width="6.204362423447069in"
-    height="3.6861986001749782in"}
+    computer](./media/image13.png)
 
 11. In this overview screen, Verify the contents look correct and click
     **Create source**.\
     \
     ![A screenshot of a computer Description automatically
-    generated](./media/image14.png){width="6.506944444444445in"
-    height="3.8097222222222222in"}
+    generated](./media/image14.png)
 
 12. Once the Eventstream and Eventstream source are created select the
     option "**Open Eventstream**"\
     \
     ![A screenshot of a
-    computer](./media/image15.png){width="3.055896762904637in"
-    height="2.7150896762904635in"}
+    computer](./media/image15.png)
 
 13. This will take you to the Eventstream user interface. Here is where
     you will see able to connect with a source stream of data, bring it
@@ -127,20 +118,18 @@ height="2.0523698600174978in"}
 14. It may take a few moments for your Source to be **Active** but after
     waiting a few moments, click on the middle icon with the name of
     your Eventstream on it and then click on **Refresh** if you do not
-    see a preview of the data.\
-    \
+    see a preview of the data.
+   
     **Note: If you receive a "Warning" status around and audit policy,
-    that is fine. The stream will still function\
-    **
+    that is fine. The stream will still function**
 
-![A screenshot of a computer Description automatically
-generated](./media/image16.png){width="6.2590715223097115in"
-height="1.971240157480315in"}
+    ![A screenshot of a computer Description automatically
+generated](./media/image16.png)
 
-15. You should now see a sample of the data within the bottom window.\
+15. You should now see a sample of the data within the bottom window.
+    
     ![A screenshot of a
-    computer](./media/image17.png){width="4.631952099737533in"
-    height="3.4554527559055117in"}
+    computer](./media/image17.png)
 
 16. This will show you a preview of the data that is being received from
     the Azure Event Hub. If you slide your bottom horizontal scroll bar
@@ -150,39 +139,33 @@ height="1.971240157480315in"}
     **EventEnqueuedUtcTime**. This should reflect the current date/time
     in UTC format.
 
-![A screenshot of a computer Description automatically
-generated](./media/image18.png){width="5.133778433945757in"
-height="0.7667333770778653in"}
+    ![A screenshot of a computer Description automatically
+generated](./media/image18.png)
 
 ## Task 2: Setup Eventstream Destination
 
-1.  Click on the tile within the canvas area labeled "Switch to edit
-    mode to Transform event of add destination\
-    \
+1.  Click on the tile within the canvas area labeled "Switch to edit mode to Transform event of add destination
+    
     ![A screenshot of a
-    computer](./media/image19.png){width="4.834008092738408in"
-    height="2.5628576115485564in"}
+    computer](./media/image19.png)
 
 2.  Within the Eventstream user interface, click on the **Transform
     events or add destination** option to open the drop-down menu.
 
-![A screenshot of a computer Description automatically
-generated](./media/image20.png){width="2.486573709536308in"
-height="1.9190988626421697in"}
+    ![A screenshot of a computer Description automatically
+generated](./media/image20.png)
 
 3.  View the list of available operations that can be made to the
     stream.
 
-![A screenshot of a phone Description automatically
-generated](./media/image21.png){width="1.3973228346456692in"
-height="2.0017814960629923in"}
+    ![A screenshot of a phone Description automatically
+generated](./media/image21.png)
 
 4.  Look below the operations and you will find the **Destinations**
     select the option that says **KQL Database**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image22.png){width="1.671599956255468in"
-height="1.6412073490813648in"}
+    ![A screenshot of a computer Description automatically
+generated](./media/image22.png)
 
 5.  A new menu will open on the right-hand side of the screen. The first
     thing you need to modify for the destination is the **data ingestion
@@ -192,9 +175,8 @@ height="1.6412073490813648in"}
     KQL database table ensure that you have selected the **Direct
     ingestion** option.
 
-![A white background with black text Description automatically
-generated](./media/image23.png){width="2.666897419072616in"
-height="1.108429571303587in"}
+    ![A white background with black text Description automatically
+generated](./media/image23.png)
 
 6.  Modify the remainder of the settings with the following details
     below.
@@ -205,56 +187,48 @@ height="1.108429571303587in"}
 
 -   KQL Database -- **eh_Fabrikam**
 
-![A screenshot of a
-computer](./media/image24.png){width="2.327101924759405in"
-height="3.5932141294838145in"}
+    ![A screenshot of a
+computer](./media/image24.png)
 
 7.  Click on Save.
 
 8.  With the Eventstream configured, click on the **Publish** button to
     save this Eventstream and begin your ingestion.
 
-![A screenshot of a
-computer](./media/image25.png){width="6.506944444444445in"
-height="2.154861111111111in"}
+    ![A screenshot of a
+computer](./media/image25.png)
 
 9.  Choose the **Configure** option within the **Destination** to
     correctly map the stream to a table in the KQL Database.
 
-![A screenshot of a chat Description automatically
-generated](./media/image26.png){width="6.506944444444445in"
-height="1.4020833333333333in"}
+    ![A screenshot of a chat Description automatically
+generated](./media/image26.png)
 
 10. Click on the **+ New table** option underneath the the
     **eh_Fabrikam** database.
 
-![A screenshot of a
-computer](./media/image27.png){width="5.957354549431321in"
-height="3.353157261592301in"}
+    ![A screenshot of a
+computer](./media/image27.png)
 
 11. Give the new table the name, **InterentSales** and then click on the
     checkmark.
 
-![A screenshot of a
-computer](./media/image28.png){width="3.3650524934383204in"
-height="1.0001399825021873in"}
+    ![A screenshot of a
+computer](./media/image28.png)
 
 12. You may need to update your **"Data connection name"** to meet
     requirements. Let us rename it to
-    **"eh_Fabrikam_es_InternetSales".** Then we can click on **Next.\
-    \
-    **![A screenshot of a
-    computer](./media/image29.png){width="4.927771216097987in"
-    height="3.604669728783902in"}**\
-    **
+    **"eh_Fabrikam_es_InternetSales".** Then we can click on **Next**.
+    
+    ![A screenshot of a
+    computer](./media/image29.png)
 
 13. After a few moments of searching for events, the user interface
     should allow you to see that sample data was found. Click on
     **Finish** at the bottom of the screen.
 
-![A screenshot of a computer Description automatically
-generated](./media/image30.png){width="5.978159448818897in"
-height="3.678768591426072in"}
+    ![A screenshot of a computer Description automatically
+generated](./media/image30.png)
 
 14. After this you will be shown a summary. Once you have all green
     checkmarks, click **close** to move forward.
@@ -263,9 +237,8 @@ height="3.678768591426072in"}
     to the Eventstream to the destination, you have correctly configured
     and started a stream of data into your KQL Database.
 
-![A screenshot of a
-chat](./media/image31.png){width="6.379064960629921in"
-height="1.0130260279965004in"}
+    ![A screenshot of a
+chat](./media/image31.png)
 
 # Kusto Query Language (KQL)
 
@@ -276,30 +249,26 @@ height="1.0130260279965004in"}
     Eventstream. The Eventstream itself as well as a Real-Time
     Intelligence Data stream.
 
-![A screenshot of a
-computer](./media/image32.png){width="5.573383639545057in"
-height="2.2159241032370955in"}
+    ![A screenshot of a
+computer](./media/image32.png)
 
 2.  Open the **eh_Fabrikam** KQL Database item.
 
-![A screenshot of a
-computer](./media/image33.png){width="4.057723097112861in"
-height="1.2373326771653543in"}
+    ![A screenshot of a
+computer](./media/image33.png)
 
 3.  Within this experience, you can get an overview of the current
     structure, size, and use of the KQL Database. Because the
     Eventstream is sending data to this KQL Database consistently you
     will notice the amount of storage will increase over time.
 
-![A screenshot of a computer Description automatically
-generated](./media/image34.png){width="6.34346019247594in"
-height="2.3749048556430448in"}
+    ![A screenshot of a computer Description automatically
+generated](./media/image34.png)
 
 4.  Click on the **refresh icon** in the top-right corner of the screen.
 
-![A screenshot of a
-phone](./media/image35.png){width="5.891737751531059in"
-height="1.939808617672791in"}
+    ![A screenshot of a
+phone](./media/image35.png)
 
 5.  The size of the database should have grown. Your numbers here will
     not be exact in their reflection with screenshots in the remainder
@@ -308,17 +277,15 @@ height="1.939808617672791in"}
     the class. This is completely fine and will not affect your ability
     to follow along whatsoever.
 
-![A black text on a white
-background](./media/image36.png){width="4.233502843394576in"
-height="1.3045089676290464in"}
+    ![A black text on a white
+background](./media/image36.png)
 
 6.  Within your System details on the left-hand side of the screen,
     click on the table within your KQL Database called
     **InternetSales**.
 
-![A screenshot of a
-computer](./media/image37.png){width="2.4261800087489065in"
-height="2.2179932195975502in"}
+    ![A screenshot of a
+computer](./media/image37.png)
 
 7.  This menu will give you metadata details about the table you have
     created and any actively streaming data with your Eventstream.
@@ -338,15 +305,13 @@ height="2.2179932195975502in"}
 -   **OneLake availability** -- This is currently active because of the
     property we enabled at the higher level in the Eventhouse.
 
-![A screenshot of a
-computer](./media/image38.png){width="5.439140419947506in"
-height="4.204448818897638in"}
+    ![A screenshot of a
+computer](./media/image38.png)
 
 8.  Click on **Explore your data** in the top-right corner.
 
-![A screenshot of a
-computer](./media/image39.png){width="6.213735783027122in"
-height="1.9901192038495188in"}
+    ![A screenshot of a
+computer](./media/image39.png)
 
 9.  This will open an interface in which you can author KQL queries
     against your database tables. There are a few pre-scripted queries
@@ -355,23 +320,20 @@ height="1.9901192038495188in"}
     when learning KQL or also looking at SQL to KQL conversions which
     will be discussed later throughout this class.
 
-![A screenshot of a computer Description automatically
-generated](./media/image40.png){width="5.557589676290464in"
-height="2.634071522309711in"}
+    ![A screenshot of a computer Description automatically
+generated](./media/image40.png)
 
 10. Click on **Line 8** and where the query says, **YOUR_TABLE_HERE**,
     replace that with the table name, **InternetSales**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image41.png){width="6.506944444444445in"
-height="0.6361111111111111in"}
+    ![A screenshot of a computer Description automatically
+generated](./media/image41.png)
 
 11. Highlight **Line 8 and 9** and click on the **Run** button in the
     top-left corner of the window.
 
-![A screenshot of a
-computer](./media/image42.png){width="3.037364391951006in"
-height="2.1695450568678916in"}
+    ![A screenshot of a
+computer](./media/image42.png)
 
 12. The query uses the **take** operator to bring back a specified
     number of rows. When the query runs it will pull data from the
@@ -380,23 +342,20 @@ height="2.1695450568678916in"}
     specific rows returned cannot be determined with this operator and
     the results of your query will vary from the result of others.
 
-![A screenshot of a computer Description automatically
-generated](./media/image43.png){width="5.39198053368329in"
-height="2.6367180664916887in"}
+    ![A screenshot of a computer Description automatically
+generated](./media/image43.png)
 
 13. Click on **Line 12** and where the query says, **YOUR_TABLE_HERE**,
     replace that with the table name, **InternetSales**.
 
-![A screen shot of a computer Description automatically
-generated](./media/image44.png){width="3.8963768591426073in"
-height="0.6875962379702537in"}
+    ![A screen shot of a computer Description automatically
+generated](./media/image44.png)
 
 14. Highlight **Line 12 and 13** and click on the **Run** button in the
-    top-left corner of the window.\
-    \
+    top-left corner of the window.
+   
     ![A screenshot of a computer Description automatically
-    generated](./media/image45.png){width="4.083903105861768in"
-    height="1.6043908573928258in"}
+    generated](./media/image45.png)
 
 15. This query uses the count operator. This query will return an
     aggregated number of records that exist at the time of the query
@@ -404,16 +363,14 @@ height="0.6875962379702537in"}
     few more times and you should notice that the number of records
     increases after every few seconds.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image46.png){width="2.173869203849519in"
-> height="1.387836832895888in"}
+    ![A screenshot of a computer Description automatically
+generated](./media/image46.png)
 
 16. Repeat the previous steps for the final query that is automatically
     created for you on **Line 16** and run the query again.
 
-![A screenshot of a
-computer](./media/image47.png){width="6.15280949256343in"
-height="2.148558617672791in"}
+    ![A screenshot of a
+computer](./media/image47.png)
 
 17. This query will give you the number of records that have been
     ingested into your table within an hour window. The overall
@@ -439,51 +396,46 @@ Let's explore!
     to better understand how to author KQL queries in the future. Start
     with writing the following command.\
     **(Note: Double click the object below in order to be able to copy
-    the text)\
-    **\
-    ![](./media/image48.emf)
+    the text)**
 
-![](./media/image49.png){width="1.4205325896762904in"
-height="0.5494510061242345in"}
+    ![](./media/image48.png)
 
-2.  The comment line "\--" followed by the keyword "explain" will allow
+    ![](./media/image49.png)
+
+2.  The comment line "--" followed by the keyword "explain" will allow
     you to now create a SQL query and return a result with the KQL query
     that could be used to achieve a similar query and result. Below
     input the following query to explain what the KQL query would look
-    like:\
-    \
+    like:
+
     ![](./media/image50.emf)
 
-![A screenshot of a computer Description automatically
-generated](./media/image51.png){width="5.583232720909886in"
-height="1.6267202537182852in"}
+    ![A screenshot of a computer Description automatically
+generated](./media/image51.png)
 
 3.  This is a simple SQL query that will retrieve results from the
     InternetSales table to return two columns, the product key and a
     count of the number of orders. Because there is an aggregated column
     and a non-aggregated column, you must use a GROUP BY to return
     results for each individual product. Run the entire query beginning
-    with the "\--" to the end of the T-SQL query.
+    with the "--" to the end of the T-SQL query.
 
-> ![A screenshot of a chat Description automatically
-> generated](./media/image52.png){width="3.900337926509186in"
-> height="1.6834787839020122in"}
+    ![A screenshot of a chat Description automatically
+generated](./media/image52.png)
 
 4.  The output of the explain query should be a single record with the
-    translated KQL query as the result. Click on the **caret icon (\>)**
+    translated KQL query as the result. Click on the **caret icon (\)**
     to expand the results and allow for easier translation.
 
-![A screenshot of a computer Description automatically
-generated](./media/image53.png){width="6.506944444444445in"
-height="0.9243055555555556in"}
+    ![A screenshot of a computer Description automatically
+generated](./media/image53.png)
 
 5.  Click on the query pane highlighted below in orange. This will allow
     you to select translated KQL query and copy it. Paste this query in
     the KQL Queryset we have been using
 
-![A screenshot of a
-computer](./media/image54.png){width="6.506944444444445in"
-height="1.44375in"}
+    ![A screenshot of a
+computer](./media/image54.png)
 
 6.  With the results in your query pane, highlight and run the query to
     retrieve the results. The **summarize** operator will produce a
@@ -492,33 +444,29 @@ height="1.44375in"}
     the **project** operator will select the columns to include, rename,
     or drop while inserting new compute columns.
 
-![A screenshot of a
-computer](./media/image55.png){width="6.506944444444445in"
-height="2.6006944444444446in"}
+    ![A screenshot of a
+computer](./media/image55.png)
 
 7.  Feel free to explore a complete list of SQL to KQL cheat sheet
     operations at the top of your queryset for additional capabilities
     and conversions.
 
-![A close-up of a message Description automatically
-generated](./media/image56.png){width="4.858754374453193in"
-height="0.7834011373578302in"}
+    ![A close-up of a message Description automatically
+generated](./media/image56.png)
 
 8.  Instead of using KQL, another alternative to querying the results of
     the KQL Database within Fabric is to write and run a T-SQL query.
     Highlight the original SQL statement that was used to translate the
     KQL query and run only that.
 
-![A screenshot of a computer
-code](./media/image57.png){width="3.8330030621172355in"
-height="1.8617432195975503in"}
+    ![A screenshot of a computer
+code](./media/image57.png)
 
 9.  This will also yield perfectly valid results without having to
     convert to KQL beforehand.
 
-![A screenshot of a computer Description automatically
-generated](./media/image58.png){width="4.427701224846894in"
-height="2.4586767279090114in"}
+    ![A screenshot of a computer Description automatically
+generated](./media/image58.png)
 
 # KQL Queryset
 
@@ -533,16 +481,14 @@ height="2.4586767279090114in"}
 
 2.  Click on the option **Save as KQL queryset**.
 
-![A screenshot of a
-computer](./media/image59.png){width="3.430376202974628in"
-height="2.7246467629046367in"}
+    ![A screenshot of a
+computer](./media/image59.png)
 
 3.  Within the window that appears input the name of the object you're
     creating as **First KQL Query**. Click on **Create**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image60.png){width="3.233613298337708in"
-height="1.4751279527559056in"}
+    ![A screenshot of a computer Description automatically
+generated](./media/image60.png)
 
 4.  A OneLake data hub menu may appear allowing you to connect to other
     KQL databases available in your organization. If this does appear,
@@ -556,16 +502,14 @@ height="1.4751279527559056in"}
     within this interface include working with Copilot, should that be
     available to your organization, and exporting results to a CSV file.
 
-![A screenshot of a
-computer](./media/image61.png){width="6.506944444444445in"
-height="1.3798611111111112in"}
+    ![A screenshot of a
+computer](./media/image61.png)
 
 6.  Return to your **RTI_username** workspace. You should have the
     following objects present
 
-![A screenshot of a computer Description automatically
-generated](./media/image62.png){width="4.406864610673666in"
-height="2.8858191163604547in"}
+    ![A screenshot of a computer Description automatically
+generated](./media/image62.png)
 
 # Summary
 
@@ -578,142 +522,110 @@ statements.
 
 # References 
 
-> Fabric Real-time Intelligence in a Day (RTIIAD) introduces you to some
-> of the key functions available in Microsoft Fabric.
->
-> In the menu of the service, the Help (?) section has links to some
-> great resources.
->
-> ![](./media/image63.png){width="2.011388888888889in"
-> height="4.476666666666667in"}![](./media/image64.jpg){width="1.8677777777777778in"
-> height="4.330555555555556in"}
->
-> Here are a few more resources that will help you with your next steps
-> with Microsoft Fabric.
+Fabric Real-time Intelligence in a Day (RTIIAD) introduces you to some
+of the key functions available in Microsoft Fabric.
 
--   See blog post to read the full [[Microsoft Fabric GA]{.underline}
-    [announcement]{.underline}](https://aka.ms/Fabric-Hero-Blog-Ignite23)
+In the menu of the service, the Help (?) section has links to some
+great resources.
 
--   Explore Fabric through the [[Guided
-    Tour]{.underline}](https://aka.ms/Fabric-GuidedTour)
 
--   Sign up for the [[Microsoft Fabric free
-    trial]{.underline}](https://aka.ms/try-fabric)
+![](./media/image64.jpg)
 
--   Visit the [[Microsoft Fabric
-    website]{.underline}](https://aka.ms/microsoft-fabric)
+Here are a few more resources that will help you with your next steps
+with Microsoft Fabric.
 
--   Learn new skills by exploring the [[Fabric Learning
-    modules]{.underline}](https://aka.ms/learn-fabric)
-
--   Explore the [[Fabric technical
-    documentation]{.underline}](https://aka.ms/fabric-docs)
-
--   Read the [[free e-book on getting started with
-    Fabric]{.underline}](https://aka.ms/fabric-get-started-ebook)
-
--   Join the [[Fabric
-    community]{.underline}](https://aka.ms/fabric-community) to post
+-   See blog post to read the full [Microsoft Fabric GA
+    announcement](https://aka.ms/Fabric-Hero-Blog-Ignite23)
+-   Explore Fabric through the [Guided
+    Tour](https://aka.ms/Fabric-GuidedTour)
+-   Sign up for the [Microsoft Fabric free
+    trial](https://aka.ms/try-fabric)
+-   Visit the [Microsoft Fabric
+    website](https://aka.ms/microsoft-fabric)
+-   Learn new skills by exploring the [Fabric Learning
+    modules](https://aka.ms/learn-fabric)
+-   Explore the [Fabric technical
+    documentation](https://aka.ms/fabric-docs)
+-   Read the [free e-book on getting started with
+    Fabric](https://aka.ms/fabric-get-started-ebook)
+-   Join the [Fabric
+    community](https://aka.ms/fabric-community) to post
     your questions, share your feedback, and learn from others
 
-> Read the more in-depth Fabric experience announcement blogs:
+Read the more in-depth Fabric experience announcement blogs:
 
--   [[Data Factory experience in Fabric
-    blog]{.underline}](https://aka.ms/Fabric-Data-Factory-Blog)
-
--   [[Synapse Data Engineering experience in Fabric
-    blog]{.underline}](https://aka.ms/Fabric-DE-Blog)
-
--   [[Synapse Data Science experience in Fabric
-    blog]{.underline}](https://aka.ms/Fabric-DS-Blog)
-
--   [[Synapse Data Warehousing experience in Fabric
-    blog]{.underline}](https://aka.ms/Fabric-DW-Blog)
-
+-   [Data Factory experience in Fabric
+    blog](https://aka.ms/Fabric-Data-Factory-Blog)
+-   [Synapse Data Engineering experience in Fabric
+    blog](https://aka.ms/Fabric-DE-Blog)
+-   [Synapse Data Science experience in Fabric
+    blog](https://aka.ms/Fabric-DS-Blog)
+-   [Synapse Data Warehousing experience in Fabric
+    blog](https://aka.ms/Fabric-DW-Blog)
 -   [[Real-](https://aka.ms/Fabric-RTA-Blog)[Time Intelligence
     experience in Fabric
-    blog](https://blog.fabric.microsoft.com/en-us/blog/category/real-time-intelligence)]{.underline}
+    blog](https://blog.fabric.microsoft.com/en-us/blog/category/real-time-intelligence)]
+-   [Power BI announcement
+    blog](https://aka.ms/Fabric-PBI-Blog)
+-   [Data Activator experience in Fabric
+    blog](https://aka.ms/Fabric-DA-Blog)
+-   [Administration and governance in Fabric
+    blog](https://aka.ms/Fabric-Admin-Gov-Blog)
+-   [OneLake in Fabric
+    blog](https://aka.ms/Fabric-OneLake-Blog)
+-   [Dataverse and Microsoft Fabric integration
+    blog](https://aka.ms/Dataverse-Fabric-Blog)
 
--   [[Power BI announcement
-    blog]{.underline}](https://aka.ms/Fabric-PBI-Blog)
 
--   [[Data Activator experience in Fabric
-    blog]{.underline}](https://aka.ms/Fabric-DA-Blog)
+ © 2024 Microsoft Corporation. All rights reserved.
 
--   [[Administration and governance in Fabric
-    blog]{.underline}](https://aka.ms/Fabric-Admin-Gov-Blog)
+ By using this demo/lab, you agree to the following terms:
 
--   [[OneLake]{.underline} [in Fabric
-    blog]{.underline}](https://aka.ms/Fabric-OneLake-Blog)
+ The technology/functionality described in this demo/lab is provided by
+ Microsoft Corporation for purposes of obtaining your feedback and to
+ provide you with a learning experience. You may only use the demo/lab
+ to evaluate such technology features and functionality and provide
+ feedback to Microsoft. You may not use it for any other purpose. You
+ may not modify, copy, distribute, transmit, display, perform,
+ reproduce, publish, license, create derivative works from, transfer,
+ or sell this demo/lab or any portion thereof.
 
--   [[Dataverse and Microsoft Fabric integration
-    blog]{.underline}](https://aka.ms/Dataverse-Fabric-Blog)
+ COPYING OR REPRODUCTION OF THE DEMO/LAB (OR ANY PORTION OF IT) TO ANY
+ OTHER SERVER OR LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS
+ EXPRESSLY PROHIBITED.
 
-> © 2024 Microsoft Corporation. All rights reserved.
->
-> By using this demo/lab, you agree to the following terms:
->
-> The technology/functionality described in this demo/lab is provided by
-> Microsoft Corporation for purposes of obtaining your feedback and to
-> provide you with a learning experience. You may only use the demo/lab
-> to evaluate such technology features and functionality and provide
-> feedback to Microsoft. You may not use it for any other purpose. You
-> may not modify, copy, distribute, transmit, display, perform,
-> reproduce, publish, license, create derivative works from, transfer,
-> or sell this demo/lab or any portion thereof.
->
-> COPYING OR REPRODUCTION OF THE DEMO/LAB (OR ANY PORTION OF IT) TO ANY
-> OTHER SERVER OR LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS
-> EXPRESSLY PROHIBITED.
->
-> THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES
-> AND
->
-> FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A
-> SIMULATED
->
-> ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE
-> DESCRIBED
->
-> ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS DEMO/LAB MAY NOT
-> REPRESENT FULL
->
-> FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY
-> WORK. WE ALSO
->
-> MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR
-> EXPERIENCE WITH USING SUCH FEATURES AND FUNCITONALITY IN A PHYSICAL
-> ENVIRONMENT MAY ALSO BE DIFFERENT.
->
-> **FEEDBACK**. If you give feedback about the technology features,
-> functionality and/or concepts described in this demo/lab to Microsoft,
-> you give to Microsoft, without charge, the right to use, share and
-> commercialize your feedback in any way and for any purpose. You also
-> give to third parties, without charge, any patent rights needed for
-> their products, technologies and services to use or interface with any
-> specific parts of a Microsoft software or service that includes the
-> feedback. You will not give feedback that is subject to a license that
-> requires Microsoft to license its software or documentation to third
-> parties because we include your feedback in them. These rights survive
-> this agreement.
->
-> MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS
-> WITH REGARD
->
-> TO THE DEMO/LAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF
-> MERCHANTABILITY,
->
-> WHETHER EXPRESS, IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR
-> PURPOSE, TITLE AND NON-
->
-> INFRINGEMENT. MICROSOFT DOES NOT MAKE ANY ASSURANCES OR
-> REPRESENTATIONS WITH REGARD TO THE ACCURACY OF THE RESULTS, OUTPUT
-> THAT DERIVES FROM USE OF DEMO/ LAB, OR SUITABILITY OF THE INFORMATION
-> CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
->
-> **DISCLAIMER**
->
-> This demo/lab contains only a portion of new features and enhancements
-> in Microsoft Power BI. Some of the features might change in future
-> releases of the product. In this demo/lab, you will learn about some,
-> but not all, new features.
+ THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES
+ AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A
+ SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE
+ DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS DEMO/LAB MAY NOT
+ REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY
+ WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR
+ EXPERIENCE WITH USING SUCH FEATURES AND FUNCITONALITY IN A PHYSICAL
+ ENVIRONMENT MAY ALSO BE DIFFERENT.
+
+ **FEEDBACK**. If you give feedback about the technology features,
+ functionality and/or concepts described in this demo/lab to Microsoft,
+ you give to Microsoft, without charge, the right to use, share and
+ commercialize your feedback in any way and for any purpose. You also
+ give to third parties, without charge, any patent rights needed for
+ their products, technologies and services to use or interface with any
+ specific parts of a Microsoft software or service that includes the
+ feedback. You will not give feedback that is subject to a license that
+ requires Microsoft to license its software or documentation to third
+ parties because we include your feedback in them. These rights survive
+ this agreement.
+
+ MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS
+ WITH REGARD TO THE DEMO/LAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF
+ MERCHANTABILITY, WHETHER EXPRESS, IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR
+ PURPOSE, TITLE AND NON-INFRINGEMENT. MICROSOFT DOES NOT MAKE ANY ASSURANCES OR
+ REPRESENTATIONS WITH REGARD TO THE ACCURACY OF THE RESULTS, OUTPUT
+ THAT DERIVES FROM USE OF DEMO/ LAB, OR SUITABILITY OF THE INFORMATION
+ CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
+
+ **DISCLAIMER**
+
+ This demo/lab contains only a portion of new features and enhancements
+ in Microsoft Power BI. Some of the features might change in future
+ releases of the product. In this demo/lab, you will learn about some,
+ but not all, new features.
