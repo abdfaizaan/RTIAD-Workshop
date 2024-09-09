@@ -487,6 +487,7 @@ TITLE AND NON-INFRINGEMENT. MICROSOFT DOES NOT MAKE ANY ASSURANCES OR REPRESENTA
 OF DEMO/ LAB, OR SUITABILITY OF THE INFORMATION CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
 
 **DISCLAIMER**
+
 This demo/lab contains only a portion of new features and enhancements in Microsoft Power BI. Some of the features might change in futurereleases of the product. In this demo/lab, you will learn about some,
 but not all, new features.
 
