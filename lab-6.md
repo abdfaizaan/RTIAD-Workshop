@@ -2,6 +2,22 @@
 
 ![](./media/lab6ms.png)
 
+# Contents
+
+- Document Structure
+- Scenario / Problem Statement
+- Introduction
+- Creating an Alert with Reflex
+  - Task 1: Use the Real-Time Dashboard to Set Alerts
+  - Task 2: Test Email Alert from Reflex Experience
+  - Task 3: Create A New Reflex Object from Data Stream
+- Clean Up Resources
+  - Task 4: Clean Up Workspace
+- Summary
+- References
+
+## Document Structure
+
 The lab includes steps for the user to follow along with associated screenshots that provide visual aid. In each screenshot, sections are highlighted with orange boxes to indicate the area(s) user should focus on.
 
 ## Introduction
