@@ -4,19 +4,18 @@
 
 # Contents  
 
-- **Document Structure**  
-- **Scenario / Problem Statement**  
-- **Introduction**  
-- **Fabric Eventstreams**  
-  - **Task 1: Create an Eventstream**  
-  - **Task 2: Setup Eventstream Source**  
-  - **Task 3: Setup Eventstream Destination**  
-- **Kusto Query Language (KQL)**  
-  - **Task 4: Authoring Kusto Database Queries**  
-  - **Task 5: Using T-SQL Queries Against a KQL Database**  
-- **KQL Queryset**  
-  - **Task 6: Create a KQL Queryset**  
-- **References**
+- Document Structure  
+- Introduction  
+- Fabric Eventstreams  
+  - Task 1: Create an Eventstream 
+  - Task 2: Setup Eventstream Source  
+  - Task 3: Setup Eventstream Destination 
+- Kusto Query Language (KQL)  
+  - Task 4: Authoring Kusto Database Queries  
+  - Task 5: Using T-SQL Queries Against a KQL Database
+- KQL Queryset  
+  - Task 6: Create a KQL Queryset 
+- References
 
 ## Document Structure
 
