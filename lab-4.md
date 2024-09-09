@@ -5,7 +5,6 @@
 # Contents
 
 - Document Structure
-- Scenario / Problem Statement
 - Introduction
 - Medallion Framework within KQL Databases
   - Task 1: Create Bronze Tables
