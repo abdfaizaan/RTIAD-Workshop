@@ -79,7 +79,7 @@ By the end of this lab, you will have learned:
    connection settings into the appropriate fields.
 
     - Event Hub namespace: **realtimeconsumersiad**
-    - Event Hub: **rta-iad-clicks**
+    - Event Hub: **rti-iad-clicks**
     - Shared Access Key Name: **rti-reader**
     - Shared Access Key: **H/5gTWuI+lQLT9HYBzuqzPdKaR6YWXCRw+AEhE6k1gE=**
 
