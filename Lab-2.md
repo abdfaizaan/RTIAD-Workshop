@@ -267,8 +267,14 @@ You may be working with the Kusto Query Language for the first time.While this l
 1.  You need to create a query that returns the number of each product that has been sold. This is something you can quickly do with T-SQL.Within the query window, you can translate your SQL queries into KQL to better understand how to author KQL queries in the future. Start with writing the following command.\
     
     >**(Note: Double click the object below in order to be able to copy the text)**
-    
-    ```
+
+    ![](./media/explain-01.png)
+        
+    ![](./media/image49.png)
+
+1. The comment line "--" followed by the keyword "explain" will allow you to now create a SQL query and return a result with the KQL query that could be used to achieve a similar query and result. Below input the following query to explain what the KQL query would look like:
+
+   ```
        --
     explain
     SELECT COUNT(OrderQuantity) AS CountOfProducts
@@ -277,12 +283,6 @@ You may be working with the Kusto Query Language for the first time.While this l
     GROUP BY ProductKey
     
     ```
-    
-    ![](./media/image49.png)
-
-2. The comment line "--" followed by the keyword "explain" will allow you to now create a SQL query and return a result with the KQL query that could be used to achieve a similar query and result. Below input the following query to explain what the KQL query would look like:
-
-  ![A screenshot of a chat Description automatically generated](./media/explain_select.png)
 
   ![A screenshot of a computer Description automatically generated](./media/image51.png)
 
