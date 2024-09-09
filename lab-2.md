@@ -42,15 +42,15 @@ generated](./media/image7.png)
 4.  A window will open that will allow you to select a source for our
     stream data. As we discussed before, there are many fantastic
     options to choose from but for this class we will select the option
-    "Azure Event Hubs".\
-    \
+    "Azure Event Hubs".
+    
     ![A screenshot of a computer Description automatically
     generated](./media/image8.png)
 
 5.  You are now required to create a connection to the Azure Event Hub.
     Click on the **New connection** text since you do not currently have
-    a connection.\
-    \
+    a connection.
+    
     ![A screenshot of a
     computer](./media/image9.png)
 
@@ -58,19 +58,19 @@ generated](./media/image7.png)
     connection settings into the appropriate fields. For these labs we
     are connecting to an Event Hub which has streaming data being sent
     from a python notebook. This notebook is creating fake sales
-    transactions at rate of around 3,100 transactions per hour.\
-    \
-    Event Hub namespace: **realtimeconsumersiad**\
-    \
-    Event Hub: **rti-iad**\
-    \
-    Shared Access Key Name: **rti-reader**\
-    \
+    transactions at rate of around 3,100 transactions per hour.
+    
+    Event Hub namespace: **realtimeconsumersiad**
+    
+    Event Hub: **rti-iad**
+    
+    Shared Access Key Name: **rti-reader**
+    
     Shared Access Key:
     **H/5gTWuI+lQLT9HYBzuqzPdKaR6YWXCRw+AEhE6k1gE=**
 
-7.  Once all properties have been filled out click on **Connect**.\
-    \
+7.  Once all properties have been filled out click on **Connect**.
+    
     ![A screenshot of a computer Description automatically
     generated](./media/image10.png)
 
@@ -79,8 +79,8 @@ generated](./media/image7.png)
     that you gain access to a unique access point to the stream of data.
     Within your **Environment details** find the property that lists
     what your consumer group name will be and place that into the field
-    box. It will appear something like "**cg-xx**".\
-    \
+    box. It will appear something like "**cg-xx**".
+    
     ![A screenshot of a
     computer](./media/image11.png)
 
@@ -88,34 +88,35 @@ generated](./media/image7.png)
     and rename our Eventstream to something more useful. In the "Stream
     details\" section on the right select the pencil icon next to the
     "Eventstream name" and let's call our Eventstream
-    "**es_Fabrikam_InternetSales**".\
+    "**es_Fabrikam_InternetSales**"
+    
     ![A screenshot of a
     computer](./media/image12.png)
 
-10. Now we can click on **Next**, which will take us to a final overview
-    page.\
-    \
+11. Now we can click on **Next**, which will take us to a final overview
+    page.
+    
     ![A screenshot of a
     computer](./media/image13.png)
 
-11. In this overview screen, Verify the contents look correct and click
-    **Create source**.\
-    \
+12. In this overview screen, Verify the contents look correct and click
+    **Create source**.
+    
     ![A screenshot of a computer Description automatically
     generated](./media/image14.png)
 
-12. Once the Eventstream and Eventstream source are created select the
-    option "**Open Eventstream**"\
-    \
+13. Once the Eventstream and Eventstream source are created select the
+    option "**Open Eventstream**"
+    
     ![A screenshot of a
     computer](./media/image15.png)
 
-13. This will take you to the Eventstream user interface. Here is where
+15. This will take you to the Eventstream user interface. Here is where
     you will see able to connect with a source stream of data, bring it
     into this Fabric item, and then stream it to a new destination like
     a Lakehouse or KQL Database.
 
-14. It may take a few moments for your Source to be **Active** but after
+16. It may take a few moments for your Source to be **Active** but after
     waiting a few moments, click on the middle icon with the name of
     your Eventstream on it and then click on **Refresh** if you do not
     see a preview of the data.
@@ -126,12 +127,12 @@ generated](./media/image7.png)
     ![A screenshot of a computer Description automatically
 generated](./media/image16.png)
 
-15. You should now see a sample of the data within the bottom window.
+17. You should now see a sample of the data within the bottom window.
     
     ![A screenshot of a
     computer](./media/image17.png)
 
-16. This will show you a preview of the data that is being received from
+18. This will show you a preview of the data that is being received from
     the Azure Event Hub. If you slide your bottom horizontal scroll bar
     all the way to the right-side of your preview, you will be able to
     see the time that the data has been received in the Event Hub in two
@@ -399,7 +400,6 @@ Let's explore!
     >**(Note: Double click the object below in order to be able to copy the text)**
 
 
-
     ![](./media/image49.png)
 
 2.  The comment line "--" followed by the keyword "explain" will allow you to now create a SQL query and return a result with the KQL query that could be used to achieve a similar query and result. Below input the following query to explain what the KQL query would look like:
@@ -409,24 +409,27 @@ generated](./media/image51.png)
 
 3.  This is a simple SQL query that will retrieve results from the InternetSales table to return two columns, the product key and a count of the number of orders. Because there is an aggregated column and a non-aggregated column, you must use a GROUP BY to return results for each individual product. Run the entire query beginning with the "--" to the end of the T-SQL query.
 
-    ![A screenshot of a chat Description automatically
+   ![A screenshot of a chat Description automatically
+generated](./media/explain_select.png)
+
+   ![A screenshot of a chat Description automatically
 generated](./media/image52.png)
 
-4.  The output of the explain query should be a single record with the
+3.  The output of the explain query should be a single record with the
     translated KQL query as the result. Click on the **caret icon (>)**
     to expand the results and allow for easier translation.
 
     ![A screenshot of a computer Description automatically
 generated](./media/image53.png)
 
-5.  Click on the query pane highlighted below in orange. This will allow
+4.  Click on the query pane highlighted below in orange. This will allow
     you to select translated KQL query and copy it. Paste this query in
     the KQL Queryset we have been using
 
     ![A screenshot of a
 computer](./media/image54.png)
 
-6.  With the results in your query pane, highlight and run the query to
+5.  With the results in your query pane, highlight and run the query to
     retrieve the results. The **summarize** operator will produce a
     table that aggregates the content of the input table while
     determining how to group each record with the **by Product Key** and
@@ -436,14 +439,14 @@ computer](./media/image54.png)
     ![A screenshot of a
 computer](./media/image55.png)
 
-7.  Feel free to explore a complete list of SQL to KQL cheat sheet
+6.  Feel free to explore a complete list of SQL to KQL cheat sheet
     operations at the top of your queryset for additional capabilities
     and conversions.
 
     ![A close-up of a message Description automatically
 generated](./media/image56.png)
 
-8.  Instead of using KQL, another alternative to querying the results of
+7.  Instead of using KQL, another alternative to querying the results of
     the KQL Database within Fabric is to write and run a T-SQL query.
     Highlight the original SQL statement that was used to translate the
     KQL query and run only that.
@@ -451,7 +454,7 @@ generated](./media/image56.png)
     ![A screenshot of a computer
 code](./media/image57.png)
 
-9.  This will also yield perfectly valid results without having to
+8.  This will also yield perfectly valid results without having to
     convert to KQL beforehand.
 
     ![A screenshot of a computer Description automatically
