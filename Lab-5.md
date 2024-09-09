@@ -338,7 +338,9 @@ By the end of this lab, you will have learned:
 
 3. Copy and paste the following markdown code within the query window.
 
-   ![](./media/fabricam_inc.png)
+   ```
+   ![Fabrikam](https://github.com/PragmaticWorksTraining/DIAD/blob/main/Logos/Fabrikam.png?raw=true "Fabrikam")
+   ```
 
    ![A screenshot of a computer](./media/image238.png)
 
