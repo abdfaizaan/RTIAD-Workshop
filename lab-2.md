@@ -1,4 +1,6 @@
-# Lab 2
+# Microsoft Fabric - Real-Time Intelligence in a Day: Lab 2
+
+![](./media/lab2ms.png)
 
 The lab includes steps for the user to follow along with associated screenshots that provide visual aid. In each screenshot, sections are highlighted with orange boxes to indicate the area(s) user should focus on.
 
