@@ -1,7 +1,7 @@
 
 # Microsoft Fabric - Real-Time Intelligence in a Day: Lab 3
 
-![](../media/Lab-01/image001.png)
+![](./media/lab3ms.png)
 
 The lab includes steps for the user to follow along with associated
 screenshots that provide visual aid. In each screenshot, sections are
