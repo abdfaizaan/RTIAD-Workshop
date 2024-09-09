@@ -3,6 +3,23 @@
 
 ![](./media/lab3ms.png)
 
+# Contents
+
+- Document Structure
+- Scenario / Problem Statement
+- Introduction
+- Fabric Eventstreams
+  - Task 1: Create an Eventstream
+  - Task 2: Transform the Eventstream
+  - Task 3: Split Eventstream and Load Two Destinations
+- Adding More Data to KQL Database
+  - Task 4: Validate Event Data Tables
+  - Task 5: Create KQL Database Shortcuts for Dimension Tables
+- Summary
+- References
+
+## Document Structure
+
 The lab includes steps for the user to follow along with associated
 screenshots that provide visual aid. In each screenshot, sections are
 highlighted with orange boxes to indicate the area(s) user should focus
