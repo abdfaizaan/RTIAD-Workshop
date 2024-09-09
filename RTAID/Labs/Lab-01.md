@@ -2,31 +2,24 @@
 
 ![](../media/Lab-01/image001.png)
 
-# Contents 
+# Contents
 
-Document Structure	
+- Document Structure
+- Scenario / Problem Statement
+- Introduction
 
-Scenario / Problem Statement
+- Fabric License
+  - Task 1: Enable a Microsoft Fabric trial license
 
-Introduction
+- Real-Time Intelligence and Real-Time Hub
+  - Task 2: Real-Time Intelligence Experience Items
+  - Task 3: Real-Time Hub
 
-* Fabric License
+- Create Workspace and Eventhouse
+  - Task 4: Create a Fabric Workspace
+  - Task 5: Create an Eventhouse
 
-   * Task 1: Enable a Microsoft Fabric trial license
-
-* Real-Time Intelligence and Real-Time Hub
-
-   * Task 2: Real-Time Intelligence Experience Items
-
-   * Task 3: Real-Time Hub
-
-* Create Workspace and Eventhouse
-
-   * Task 4: Create a Fabric Workspace
-
-   * Task 5: Create an Eventhouse
-
-References
+- References
 
 # Document Structure
 
