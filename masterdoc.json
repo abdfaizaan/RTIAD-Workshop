@@ -3,29 +3,33 @@
         "Name": "RTIAD - Real-Time Intelligence in a Day Workshop",
         "Language": "English",
         "Files": [
-            {
-                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/RTIAD-Workshop/main/RTAID/Labs/Lab-01.md",
+             {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/RTIAD-Workshop/main/getting-started-V2.md",
                 "Order": 1
             },
             {
-                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/RTIAD-Workshop/main/Lab-2.md",
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/RTIAD-Workshop/main/RTAID/Labs/Lab-01.md",
                 "Order": 2
             },
             {
-                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/RTIAD-Workshop/main/lab-3.md",
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/RTIAD-Workshop/main/Lab-2.md",
                 "Order": 3
             },
             {
-                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/RTIAD-Workshop/main/lab-4.md",
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/RTIAD-Workshop/main/lab-3.md",
                 "Order": 4
             },
             {
-                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/RTIAD-Workshop/main/Lab-5.md",
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/RTIAD-Workshop/main/lab-4.md",
                 "Order": 5
             },
             {
-                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/RTIAD-Workshop/main/lab-6.md",
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/RTIAD-Workshop/main/Lab-5.md",
                 "Order": 6
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/RTIAD-Workshop/main/lab-6.md",
+                "Order": 7
             }            
         ]
     }
