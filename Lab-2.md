@@ -268,11 +268,11 @@ You may be working with the Kusto Query Language for the first time.While this l
     
     >**(Note: Double click the object below in order to be able to copy the text)**
     
-      ![](./media/explain-01.png)
+    ![](./media/explain-01.png)
     
-      ![](./media/image49.png)
+   ![](./media/image49.png)
 
-2.  The comment line "--" followed by the keyword "explain" will allow you to now create a SQL query and return a result with the KQL query that could be used to achieve a similar query and result. Below input the following query to explain what the KQL query would look like:
+2. The comment line "--" followed by the keyword "explain" will allow you to now create a SQL query and return a result with the KQL query that could be used to achieve a similar query and result. Below input the following query to explain what the KQL query would look like:
 
    ![A screenshot of a chat Description automatically generated](./media/explain_select.png)
 
