@@ -2,17 +2,21 @@
 
 ![](./media/lab4ms.png)
 
-Medallion Framework within KQL Databases
+# Contents
 
-- Task 1: Create Bronze Tables
-- Task 2: Load Broze Tables
-- Task 3: Transform Tables in Silver Layer
-- Task 4: Create Gold Layer with Materialized Views
-
-Fabric Lakehouse and OneLake Availability
-
-- Task 5: Create Lakehouse
-- Task 6: Shortcut to KQL Database Tables
+- Document Structure
+- Scenario / Problem Statement
+- Introduction
+- Medallion Framework within KQL Databases
+  - Task 1: Create Bronze Tables
+  - Task 2: Load Bronze Tables
+  - Task 3: Transform Tables in Silver Layer
+  - Task 4: Create Gold Layer with Materialized Views
+- Fabric Lakehouse and OneLake Availability
+  - Task 5: Create Lakehouse
+  - Task 6: Shortcut to KQL Database Tables
+- Summary
+- References
 
 
 ## Document Structure
