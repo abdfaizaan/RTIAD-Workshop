@@ -1,6 +1,7 @@
 # Microsoft Fabric - Real-Time Intelligence in a Day
 
-![](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.001.png)
+![A screenshot of a
+computer](../media/Lab-01/image006.png)
 
 # Contents 
 
@@ -70,16 +71,16 @@ By the end of this lab, you will have learned:
 
 1. Open the **Microsoft Edge** **browser** on the desktop and navigate to <https://app.powerbi.com/>[.](https://app.powerbi.com/) You will be navigated to the login page. **Note:** If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private / incognito mode. 
 
-   ![a](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.002.png)
+   ![a](../media/Lab-01/image002.png)
 
 1. Enter the **Username** available in the **Environment Variables** tab (next to the Lab Guide) as the **Email** and click **Submit.** 
 
-   ![b](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.003.png)
+   ![b](../media/Lab-01/image003.png)
 
 1. You will be navigated to the **Password** screen. Enter the **Password** available in the **Environment Variables** tab (next to the Lab Guide) shared with you by the instructor.  
 1. Click **Sign in** and follow the prompts to sign into Fabric. 
 
-   ![c](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.004.png)
+   ![c](../media/Lab-01/image004.png)
 
 1. You will be navigated to the familiar **Power BI Service Home page**. 
 
@@ -91,23 +92,23 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
 
 1. Select **Start trial**. 
 
-   ![](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.005.png)
+   ![](../media/Lab-01/image005.png)
 
 1. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Start trial**. 
 
-   ![](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.006.png)
+   ![](../media/Lab-01/image006.png)
 
 1. Select the “**X**” on the top right corner of **Just one last step** dialog to close the dialog. We will not be providing these details as this is a lab environment. 
 
-![](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.007.png)
+![](../media/Lab-01/image007.png)
 
 1. Successfully upgraded to Microsoft Fabric dialog opens. Select **Fabric Home Page**.  
 
-![](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.008.png)
+![](../media/Lab-01/image008.png)
 
 1. You will be navigated to the **Microsoft** **Fabric Home page**. 
 
-![A screenshot of a computerDescription automatically generated](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.009.png)
+![A screenshot of a computerDescription automatically generated](../media/Lab-01/image009.png)
 
 # Real-Time Intelligence and Real-Time Hub
 
@@ -115,7 +116,7 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
 
 1. Click on the Real-Time Intelligence Experience.
 
-   ![A screenshot of a computer](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.010.png)
+   ![A screenshot of a computer](../media/Lab-01/image010.png)
 
 1. You will be navigated to **Real-Time Intelligence Home page**. You will see **New**, **Recommended**, and **Quick Access** categories.  With the **New** category notice the items:  
    1. **Eventhouse:** Used to create a workspace of one or multiple KQL database(s), which can be shared across projects. Also creates a KQL Database within the Eventhouse.
@@ -130,17 +131,17 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
 
    1. **Use a sample:** Sample solution.
 
-   ![](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.011.png)
+   ![](../media/Lab-01/image011.png)
 
 ## Task 3: Real-Time Hub
 
 1. Click on the **Real-Time hub** within the Fabric navigation pane on the left side of the screen.
 
-   ![](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.012.png)
+   ![](../media/Lab-01/image012.png)
 
 1. The Real-Time hub is the single place for streaming data-in-motion across your entire organization. Every Microsoft Fabric tenant is automatically provisioned with the hub. It enables you to easily discover, ingest, manage, and consume data-in-motion from a wide variety of sources.
 
-   ![A screenshot of a computerDescription automatically generated](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.013.png)
+   ![A screenshot of a computerDescription automatically generated](../media/Lab-01/image013.png)
 
 1. Within the Real-Time hub you have access to three different types of data integration.
 
@@ -150,15 +151,15 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
 
 - **Fabric events:** Events that are generated via Fabric artifacts and external sources, are made available in Fabric to support event-driven scenarios like real-time alerting and triggering downstream actions. You can monitor and react to events including Fabric workspace item events and Azure Blob Storage events.
 
-![A close-up of a wordDescription automatically generated](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.014.png)
+![A close-up of a wordDescription automatically generated](../media/Lab-01/image014.png)
 
 1. In the top-right corner of the Real-Time hub, click on the **+ Get events** button.
 
-   ![A green rectangular sign with white textDescription automatically generated](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.015.png)
+   ![A green rectangular sign with white textDescription automatically generated](../media/Lab-01/image015.png)
 
 1. A window will appear and will detail the currently available streams of data that are available to integrate into the Real-Time hub.  This includes a mixture of Azure sources as well as external cloud streaming sources like Amazon Kinesis, Confluent Cloud Kafka, and Google Cloud Pub/Sub.
 
-   ![A screenshot of a computerDescription automatically generated](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.016.png)
+   ![A screenshot of a computerDescription automatically generated](../media/Lab-01/image016.png)
 
 1. **Close** the Get events window by clicking the “X” in the upper right corner.
 
@@ -170,7 +171,7 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
 
 1. Select **New workspace**. 
 
-![](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.017.png)
+![](../media/Lab-01/image017.png)
 
 1. **Create a workspace** dialog opens on the right side of the browser. 
 
@@ -181,61 +182,61 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
 1. If you choose, you can enter a **Description** for the workspace. This is an optional field. 
 1. Click on **Advanced** to expand the section. 
 
-![A screenshot of a computerDescription automatically generated](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.018.png)
+![A screenshot of a computerDescription automatically generated](../media/Lab-01/image018.png)
 
 1. Under **License mode**, make sure **Trial** is selected. (It should be selected by default.) 
 
 1. Select **Apply** to create a new workspace. 
 
-   ![](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.019.png)
+   ![](../media/Lab-01/image019.png)
 
 ## Task 5: Create an Eventhouse
 
 1. Click the **+ New** box to find all the items you can create in this Fabric workspace.
 
-   ![](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.020.png)
+   ![](../media/Lab-01/image020.png)
 
 1. Select the **Eventhouse** option from the drop-down list. As we have talked about this can be looked at similarly to a Lakehouse in that we can store data but focused around real time data.
 
-   ![A screenshot of a computerDescription automatically generated](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.021.png)
+   ![A screenshot of a computerDescription automatically generated](../media/Lab-01/image021.png)
 
 1. In the window that appears, give your Eventhouse the name, **eh_Fabrikam** and click on **Create**.
 
-   ![A screenshot of a computerDescription automatically generated](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.022.png)
+   ![A screenshot of a computerDescription automatically generated](../media/Lab-01/image022.png)
 
 1. This is where you will ultimately stream data from various sources through the rest of the training today. When the item is created, a window will appear giving you some details about the Eventhouse.  Click on the **Get started** button.
 
-   ![A screenshot of a computer screenDescription automatically generated](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.023.png)
+   ![A screenshot of a computer screenDescription automatically generated](../media/Lab-01/image023.png)
 
 1. Take a quick tour of the Eventhouse by following the green tooltips on your screen.  This first one shows that an empty Kusto Query Language (KQL) Database was created with the Eventhouse.
 
-   ![A screenshot of a computerDescription automatically generated](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.024.png)
+   ![A screenshot of a computerDescription automatically generated](../media/Lab-01/image024.png)
 
 1. Follow the remainder of the tooltips around the screen to show you where to create additional databases, check the storage in OneLake of the Eventhouse, check the usage of Fabric resources in compute minutes, and finally see what actions have occurred in the Eventhouse.
 
 1. Within the navigational pane of the Eventhouse, find your KQL Database that was created alongside the Eventhouse.  Click on the ellipses (…) and then select the option **Open in new tab**.
 
-   ![A screenshot of a computerDescription automatically generated](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.025.png)
+   ![A screenshot of a computerDescription automatically generated](../media/Lab-01/image025.png)
 
 1. This will allow us to still have one tab in our browser to see the overview of our entire Eventhouse and a new tab to focus on the KQL Database properties. One goal that we wish to accomplish in our scenario is ensuring that the data streamed to the KQL database is accessible via OneLake. By enabling this feature, we make the data in this KQL Database easily discoverable through shortcuts to be used in any Lakehouse we may want. Click on the pencil icon next to the **OneLake availability** property.
 
-   ![A screenshot of a computerDescription automatically generated](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.026.png)
+   ![A screenshot of a computerDescription automatically generated](../media/Lab-01/image026.png)
 
 1. Enable this property by toggling the switch to **Active** and then click on **Done** at the bottom of the window.
 
    ![A screenshot of a computer
 
-Description automatically generated](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.027.png)
+Description automatically generated](../media/Lab-01/image027.png)
 
 1. Return to your **RTI_username** workspace.
 
 1. If you see the **Task Flows** option, grab the anchor point in the middle of the screen and slide the menu up to the top of your screen to hide. 
 
-   ![A screenshot of a computerDescription automatically generated](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.028.png)
+   ![A screenshot of a computerDescription automatically generated](../media/Lab-01/image028.png)
 
 1. You now have the basis for how you will begin to ingest the streaming data into your OneLake.  The next step is to create a stream of data that can receive the data in motion.
 
-   ![A screenshot of a computerDescription automatically generated](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.029.png)
+   ![A screenshot of a computerDescription automatically generated](../media/Lab-01/image029.png)
 
 In this lab, we explored the Real-Time Intelligence interface, examined the Real-Time hub, created a Fabric workspace, and an Eventhouse that came with a KQL Database.  In the next lab, you will begin to explore techniques that ingest data from various sources across your data estate to OneLake and do some basic analysis with the Kusto Query Language (KQL).
 
@@ -245,7 +246,7 @@ Fabric Real-time Intelligence in a Day (RTIIAD) introduces you to some of the ke
 
 In the menu of the service, the Help (?) section has links to some great resources. 
 
-![](Aspose.Words.2c713640-7076-47ff-9afb-e3b735b7d3f1.030.png)
+![](../media/Lab-01/image030.png)
 
 Here are a few more resources that will help you with your next steps with Microsoft Fabric. 
 
