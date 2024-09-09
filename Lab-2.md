@@ -400,5 +400,6 @@ Read the more in-depth Fabric experience announcement blogs:
  CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
 
  **DISCLAIMER**
+ 
  This demo/lab contains only a portion of new features and enhancements in Microsoft Power BI. Some of the features might change in future
  releases of the product. In this demo/lab, you will learn about some, but not all, new features.
