@@ -147,7 +147,6 @@ In this lab, we walked through using Data Activator. With this feature, you can 
 
 Fabric Real-Time Intelligence in a Day (RTIIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
 
-![A screenshot of a computer Description automatically generated](./media/image63.png) 
 ![A screenshot of a computer Description automatically generated](./media/image64.jpg)
 
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
