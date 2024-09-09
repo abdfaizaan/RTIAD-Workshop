@@ -6,7 +6,6 @@
 # Contents
 
 - Document Structure
-- Scenario / Problem Statement
 - Introduction
 - Fabric Eventstreams
   - Task 1: Create an Eventstream
