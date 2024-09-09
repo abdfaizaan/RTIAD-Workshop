@@ -441,7 +441,14 @@ Up to this point you have been working with streaming data, but are still missin
 
 8. Now that you have dimensional qualities to your database, you can answer questions and give more context to consumers of the reports and queries these tables off insights on across your business. Run the following KQL query to see one of them.
 
-   ![](./media/image121.emf)
+    ```
+    InternetSales
+    | join kind=inner 
+    (external_table("products")) on ($left.ProductKey == $right.ProductID)
+    | summarize SalesPerProduct=sum(SalesAmount) by Name
+    | project Name, SalesPerProduct
+    ```
+   
 
 9. You will now see in your query results values for each individual product that your company has sold.
 
