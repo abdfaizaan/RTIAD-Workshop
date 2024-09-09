@@ -18,11 +18,11 @@ By the end of this lab, you will have learned:
 
 1. Open the **Fabric workspace** you created in the last lab. From here we can see the Eventhouse we created.
 
-    ![A screenshot of a computer](./media/image5.png)
+    ![A screenshot of a computer](../media/image5.png)
 
 2. Navigate to the "Real-Time hub" where currently we do not see any streams of data. That will change shortly.
 
-    ![A screenshot of a computer](./media/image6.png)
+    ![A screenshot of a computer](../media/image6.png)
 
 3. Select the "Get events" green button which should be in the upper right corner.
 
