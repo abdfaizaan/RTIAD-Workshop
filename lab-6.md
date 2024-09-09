@@ -5,7 +5,6 @@
 # Contents
 
 - Document Structure
-- Scenario / Problem Statement
 - Introduction
 - Creating an Alert with Reflex
   - Task 1: Use the Real-Time Dashboard to Set Alerts
