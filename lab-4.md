@@ -159,9 +159,12 @@ By the end of this lab, you will have learned:
 
 18. Let's go and check one of our tables and verify the data. Navigate back to the KQL Queryset we have been using called **Create Tables** and run the following script:
 
-    ```kusto
-    SilverAddress
-    take 100
+    ```
+    //Query the Bronze layer Customer table
+    
+    Customer
+    | take 100
+    
     ```
 
     ![A screenshot of a computer](./media/image147.png)
