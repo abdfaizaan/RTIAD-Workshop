@@ -5,7 +5,6 @@
 # Contents
 
 - Document Structure
-- Scenario / Problem Statement
 - Introduction
 - Real-Time Dashboards
   - Task 1: Create a Real-Time Dashboard
