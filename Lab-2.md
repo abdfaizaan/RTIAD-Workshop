@@ -276,7 +276,7 @@ You may be working with the Kusto Query Language for the first time.While this l
 
     ![A screenshot of a chat Description automatically generated](./media/explain_select.png)
 
-   ![A screenshot of a computer Description automatically generated](./media/image51.png)
+    ![A screenshot of a computer Description automatically generated](./media/image51.png)
 
 
 3.  This is a simple SQL query that will retrieve results from the InternetSales table to return two columns, the product key and a count of the number of orders. Because there is an aggregated column and a non-aggregated column, you must use a GROUP BY to return results for each individual product. Run the entire query beginning with the "--" to the end of the T-SQL query.
@@ -285,12 +285,12 @@ You may be working with the Kusto Query Language for the first time.While this l
 
 4.  The output of the explain query should be a single record with the translated KQL query as the result. Click on the **caret icon (>)** to expand the results and allow for easier translation.
 
-    ![A screenshot of a computer Description automatically generated](./media/image53.png)
+   ![A screenshot of a computer Description automatically generated](./media/image53.png)
 
 5.  Click on the query pane highlighted below in orange. This will allow you to select translated KQL query and copy it. Paste this query in
     the KQL Queryset we have been using
 
-    ![A screenshot of a computer](./media/image54.png)
+   ![A screenshot of a computer](./media/image54.png)
 
 6.  With the results in your query pane, highlight and run the query to retrieve the results. The **summarize** operator will produce a  table that aggregates the content of the input table while determining how to group each record with the **by Product Key** and the **project** operator will select the columns to include, rename, or drop while inserting new compute columns.
 
