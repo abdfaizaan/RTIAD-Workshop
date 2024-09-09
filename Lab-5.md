@@ -93,7 +93,7 @@ By the end of this lab, you will have learned:
 3. By default you will connect to the KQL Database you created earlier as your source. From here you can write out your own KQL query to populate this visual with data. Delete all previous markdown KQL that is there by default. Copy and paste the following query into the query window.
 
    ```
-      //Clicks by hour
+   //Clicks by hour
    Clicks
    | where eventDate between (_startTime.._endTime)
    | summarize date_count = count() by bin(eventDate, 1h) 
