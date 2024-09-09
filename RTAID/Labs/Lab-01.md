@@ -1,7 +1,6 @@
 # Microsoft Fabric - Real-Time Intelligence in a Day
 
-![A screenshot of a
-computer](../media/Lab-01/image003.png)
+![](../media/Lab-01/image001.png)
 
 # Contents 
 
