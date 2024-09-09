@@ -362,90 +362,115 @@ By the end of this lab, you will have learned:
 
     ![A screenshot of a computer Description automatically generated](./media/image112.png)
 
-### Task 5: Create KQL Database Shortcuts for Dimension tables
+### Task 5: Create KQL Database Shortcuts for Dimension Tables
 
-Up to this point you have been working with streaming data, but are still missing some critical elements to be able to derive intelligence from the data you have brought in. In this task we will bring in data from an external Azure SQL Database which will serve as dimension tables
-within our KQL Database. This will allow us to better describe the data we are streaming currently. For example, all our tables contain a form of Product ID which is a numeric field, but it would be better if we had some sort of Product name to be able to display. The data we need to support this is currently in an external Azure SQL Database, let's see how easy it is to make connections to some of these dimension tables.
+Up to this point you have been working with streaming data, but are still missing some critical elements to be able to derive intelligence from the data you have brought in. In this task we will bring in data from an external Azure SQL Database which will serve as dimension tables within our KQL Database. This will allow us to better describe the data we are streaming currently. For example, all our tables contain a form of Product ID which is a numeric field, but it would be better if we had some sort of Product name to be able to display. The data we need to support this is currently in an external Azure SQL Database, let's see how easy it is to make connections to some of these dimension tables.
 
-1. **Create a New KQL Queryset**
-   - In the **eh_Fabrikam** database, click on the drop-down menu called **New related item**.
-   - Select the option **KQL Queryset**.
-   ![New KQL Queryset](./media/image113.png)
+1. In the **eh_Fabrikam** database, click on the drop-down menu called **New related item**. Then choose the option that says KQL Queryset.
 
-2. **Name and Create the Queryset**
-   - Name the KQL Queryset **Create Tables**.
-   - Click the **Create** button.
-   ![Name and Create Queryset](./media/image114.png)
+   ![A screenshot of a computer](./media/image113.png)
 
-3. **Connect to the KQL Database**
-   - The OneLake data hub will open. Select the **"eh_Fabrikam"** KQL database.
-   - Click **"Connect"**.
-   ![Connect to Database](./media/image115.png)
+2. Give the KQL Queryset the name **Create Tables** and then click the **Create** button.
 
-4. **Prepare the Query Window**
-   - In the new interface, click within the query window.
-   - Use the keyboard shortcut **Ctrl + A** to highlight all text and delete it.
-   ![Prepare Query Window](./media/image116.png)
+   ![A screenshot of a computer Description automatically generated](./media/image114.png)
 
-5. **Enter the KQL Script**
-   - Paste the following KQL script into the query window. This script creates shortcuts to external Azure SQL Database tables, making them available in your KQL database.
-   ![Enter KQL Script](./media/image117.emf)
-   ![Script Execution](./media/image118.png)
+3. The OneLake data hub will open up and the only option to select with be the **"eh_Fabrikam"** kql database. Select this database and click **"Connect"**.
 
-6. **Execute the Script**
-   - Click the **Run** button to execute the script.
-   ![Run Script](./media/image119.png)
+   ![A screenshot of a chat](./media/image115.png)
 
-7. **Verify Shortcuts**
-   - In the Database Explorer window, check for a new folder called **Shortcuts**.
-   - Within this folder, you should see two tables linked from the external Azure SQL Database.
-   ![Verify Shortcuts](./media/image120.png)
+4. In the new interface click once within the query window and highlight all the text by using the keyboard shortcut **Ctrl + A**. Once everything has been highlighted, delete everything.
 
-8. **Run a KQL Query**
-   - To validate, run a KQL query to view data from one of the linked tables.
-   ![Run KQL Query](./media/image121.emf)
+   ![A screenshot of a computer Description automatically generated](./media/image116.png)
 
-9. **Build a Power BI Report**
-   - Highlight your query results.
-   - Click the **Build Power BI report** button to create a report using this data.
-   - Explore briefly and then close the report builder by clicking the **X button**.
-   ![Build Power BI Report](./media/image123.png)
-   ![Close Report Builder](./media/image124.png)
+5. In the blank query window enter the following KQL script. This script will create a connection to an external Azure SQL Database and make it available within our KQL database as a **Shortcut**. A **Shortcut** is attached in a read-only mode, making it possible to view and run queries alongside the streaming data that was ingested into the KQL database.
 
-10. **Return to the KQL Database**
-    - Navigate back to the **eh_Fabrikam** KQL Database.
-    - Click on **Shortcuts** in the navigation pane to view all created shortcuts.
-    ![Return to Database](./media/image125.png)
+   ![](./media/image117.emf)
+
+   ![A screenshot of a computer Description automatically generated](./media/image118.png)
+
+6. Click the **Run** button to execute the script.
+
+   ![A screenshot of a computer Description automatically generated](./media/image119.png)
+
+7. In your Database Explorer window, you will now see a new folder called **Shortcuts** and within the folder you should see two additional tables that are linked to this KQL Database. These tables exist within an Azure SQL Database, but through the script you executed, you now have them linked to this KQL Database to be joined with your InternetSales and event tables.
+
+   ![A screenshot of a search box](./media/image120.png)
+
+8. Now that you have dimensional qualities to your database, you can answer questions and give more context to consumers of the reports and queries these tables off insights on across your business. Run the following KQL query to see one of them.
+
+   ![](./media/image121.emf)
+
+9. You will now see in your query results values for each individual product that your company has sold.
+
+   ![A screenshot of a computer](./media/image122.png)
+
+10. With your query highlighted click on the button in your toolbar, **Build Power BI report**.
+
+    ![A screenshot of a computer Description automatically generated](./media/image123.png)
+
+11. This gives you the opportunity to create a Power BI report using the data within your KQL Database. Feel free to explore this for a few moments, but you will not need to create a report from this data just yet. Click the **X button** in the top-right corner when you are ready to move forward.
+
+    ![A screenshot of a computer Description automatically generated](./media/image124.png)
+
+12. Navigate back to the **eh_Fabrikam** KQL Database.
+
+    ![A screenshot of a computer](./media/image125.png)
+
+13. Click on the **Shortcuts** option within the **eh_Fabrikam** navigation pane. This will show you all the shortcuts you have created to this KQL Database. It should be noted that these Shortcuts are considered classical Azure Data Explorer external tables using Azure SQL external table syntax and are constructed differently than OneLake, ADLS, or S3 shortcuts which are also supported in KQL Database within Fabric.
+
+    ![A screenshot of a computer Description automatically generated](./media/image126.png)
 
 ## Summary
 
-In this task, you connected your KQL Database to dimension tables from an external Azure SQL Database. This allows you to enrich your streaming data with additional context, such as product names, enhancing your ability to analyze and report on the data. You also explored creating a Power BI report from your enriched data.
+In this lab, you created another stream of data but were able to transform the stream using the user interface of the Eventstream in Fabric. Loading the data to two separate tables has allowed you to track all the clicks and impressions within your e-commerce system for marketing, advertising, and analysis purposes. You also created a shortcut to an external Azure SQL Database using the KQL Queryset external table feature. You now have a few dimensions to better understand the context of the sales and clicks within your KQL Database.
 
 ## References
 
-For additional resources and learning, you can explore the following links:
+Fabric Real-Time Intelligence in a Day (RTIIAD) introduces you to some of the key functions available in Microsoft Fabric.
 
-- [Microsoft Fabric GA announcement](https://aka.ms/Fabric-Hero-Blog-Ignite23)
-- [Fabric Guided Tour](https://aka.ms/Fabric-GuidedTour)
-- [Microsoft Fabric free trial](https://aka.ms/try-fabric)
-- [Microsoft Fabric website](https://aka.ms/microsoft-fabric)
-- [Fabric Learning modules](https://aka.ms/learn-fabric)
-- [Fabric technical documentation](https://aka.ms/fabric-docs)
-- [Fabric e-book](https://aka.ms/fabric-get-started-ebook)
-- [Fabric community](https://aka.ms/fabric-community)
+In the menu of the service, the Help (?) section has links to some great resources.
 
-For deeper insights, check out the related blogs:
+![](./media/image63.png) ![](./media/image64.jpg)
 
-- [Data Factory experience in Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
-- [Synapse Data Engineering experience in Fabric](https://aka.ms/Fabric-DE-Blog)
-- [Synapse Data Science experience in Fabric](https://aka.ms/Fabric-DS-Blog)
-- [Synapse Data Warehousing experience in Fabric](https://aka.ms/Fabric-DW-Blog)
-- [Real-Time Intelligence experience in Fabric](https://blog.fabric.microsoft.com/en-us/blog/category/real-time-intelligence)
-- [Power BI announcement blog](https://aka.ms/Fabric-PBI-Blog)
-- [Data Activator experience in Fabric](https://aka.ms/Fabric-DA-Blog)
-- [Administration and governance in Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
-- [OneLake in Fabric blog](https://aka.ms/Fabric-OneLake-Blog)
-- [Dataverse and Microsoft Fabric integration blog](https://aka.ms/Dataverse-Fabric-Blog)
+Here are a few more resources that will help you with your next steps with Microsoft Fabric.
+
+-   See blog post to read the full [Microsoft Fabric GA announcement](https://aka.ms/Fabric-Hero-Blog-Ignite23)
+
+-   Explore Fabric through the [Guided Tour](https://aka.ms/Fabric-GuidedTour)
+
+-   Sign up for the [Microsoft Fabric free trial](https://aka.ms/try-fabric)
+
+-   Visit the [Microsoft Fabric website](https://aka.ms/microsoft-fabric)
+
+-   Learn new skills by exploring the [Fabric Learning modules](https://aka.ms/learn-fabric)
+
+-   Explore the [Fabric technical documentation](https://aka.ms/fabric-docs)
+
+-   Read the [free e-book on getting started with Fabric](https://aka.ms/fabric-get-started-ebook)
+
+-   Join the [Fabric community](https://aka.ms/fabric-community) to post your questions, share your feedback, and learn from others
+
+Read the more in-depth Fabric experience announcement blogs:
+
+-   [Data Factory experience in Fabric blog](https://aka.ms/Fabric-Data-Factory-Blog)
+
+-   [Synapse Data Engineering experience in Fabric blog](https://aka.ms/Fabric-DE-Blog)
+
+-   [Synapse Data Science experience in Fabric blog](https://aka.ms/Fabric-DS-Blog)
+
+-   [Synapse Data Warehousing experience in Fabric blog](https://aka.ms/Fabric-DW-Blog)
+
+-   [Real-Time Intelligence experience in Fabric blog](https://blog.fabric.microsoft.com/en-us/blog/category/real-time-intelligence)
+
+-   [Power BI announcement blog](https://aka.ms/Fabric-PBI-Blog)
+
+-   [Data Activator experience in Fabric blog](https://aka.ms/Fabric-DA-Blog)
+
+-   [Administration and governance in Fabric blog](https://aka.ms/Fabric-Admin-Gov-Blog)
+
+-   [OneLake in Fabric blog](https://aka.ms/Fabric-OneLake-Blog)
+
+-   [Dataverse and Microsoft Fabric integration blog](https://aka.ms/Dataverse-Fabric-Blog)
 
 © 2024 Microsoft Corporation. All rights reserved.
 
@@ -459,8 +484,4 @@ THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTION
 
 **FEEDBACK**. If you give feedback about the technology features, functionality and/or concepts described in this demo/lab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.
 
-MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE DEMO/LAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY, WHETHER EXPRESS, IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. MICROSOFT DOES NOT MAKE ANY ASSURANCES OR REPRESENTATIONS WITH REGARD TO THE ACCURACY OF THE RESULTS, OUTPUT THAT DERIVES FROM USE OF DEMO/ LAB, OR SUITABILITY OF THE INFORMATION CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
-
-**DISCLAIMER**
-
-This demo/lab contains only a portion of new features and enhancements in Microsoft Power BI. Some of the features might change in future releases of the product. In this demo/lab, you will learn about some, but not all, new features.
+MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE DEMO/LAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY, WHETHER EXPRESS, IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR PURPOSE,
