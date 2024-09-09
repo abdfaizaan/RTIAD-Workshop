@@ -480,7 +480,7 @@ Fabric Real-Time Intelligence in a Day (RTIIAD) introduces you to some of the ke
 
 In the menu of the service, the Help (?) section has links to some great resources.
 
-![](./media/image63.png) ![](./media/image64.jpg)
+![](./media/image64.jpg)
 
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
