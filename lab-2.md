@@ -409,7 +409,7 @@ generated](./media/image51.png)
 
 3.  This is a simple SQL query that will retrieve results from the InternetSales table to return two columns, the product key and a count of the number of orders. Because there is an aggregated column and a non-aggregated column, you must use a GROUP BY to return results for each individual product. Run the entire query beginning with the "--" to the end of the T-SQL query.
 
-   ![A screenshot of a chat Description automatically
+    ![A screenshot of a chat Description automatically
 generated](./media/explain_select.png)
 
    ![A screenshot of a chat Description automatically
