@@ -228,7 +228,7 @@ By the end of this lab, you will have learned:
 
 5. Choose the **Save** option to keep your changes.
 
-6. Click on the **Refresh** button again to verify the data has been
+6. Click on the **Refresh button** again to verify the data has been
    filtered to CLICK eventTypes.
 
     ![A screenshot of a computer Description automatically generated](./media/image91.png)
