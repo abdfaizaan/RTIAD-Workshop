@@ -1,4 +1,4 @@
-# Getting Started with Real time analytics in a day
+# Getting Started with Real time Intelligence in a day
 
 Welcome to your Real-Time Analytics workshop! Today, you'll dive into setting up a real-time data pipeline, integrate it with analytics engines, and create live dashboards to gain instant insights from streaming data.
  
