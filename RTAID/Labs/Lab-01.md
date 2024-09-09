@@ -1,4 +1,4 @@
-# Microsoft Fabric - Real-Time Intelligence in a Day: Lab 1
+# Microsoft Fabric - Real-Time Intelligence in a Day
 
 ![](../media/Lab-01/image001.png)
 
