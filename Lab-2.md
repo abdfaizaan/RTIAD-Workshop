@@ -60,19 +60,19 @@ The lab includes steps for the user to follow along with associated screenshots 
 
 6.  From your environment details page, copy and paste all the necessary connection settings into the appropriate fields. For these labs we are connecting to an Event Hub which has streaming data being sent from a python notebook. This notebook is creating fake sales transactions at rate of around 3,100 transactions per hour.
     
-    - Event Hub namespace: **realtimeconsumersiad**
+    - Event Hub namespace: **rtiadhub[SUFFIX]**
     
-    - Event Hub: **rti-iad**
+    - Event Hub: **rt-iad-fabrikam**
     
     - Shared Access Key Name: **rti-reader**
     
-    - Shared Access Key: **H/5gTWuI+lQLT9HYBzuqzPdKaR6YWXCRw+AEhE6k1gE=**
+    - Shared Access Key: Copy the **Primary Key** value from the **event hub** page from Shared Access Policies.
 
 7.  Once all properties have been filled out click on **Connect**.
     
     ![A screenshot of a computer Description automatically generated](./media/image10.png)
 
-8.  In the configuration of the Azure Event Hub data source, you will need to modify the **Consumer group** of the Event Hub to ensure that you gain access to a unique access point to the stream of data. Within your **Environment details** find the property that lists what your consumer group name will be and place that into the field box. It will appear something like "**cg-xx**".
+8.  In the configuration of the Azure Event Hub data source, you will need to modify the **Consumer group** of the Event Hub to ensure that you gain access to a unique access point to the stream of data. Within your **Environment details** find the property that lists what your consumer group name will be and place that into the field box. It will appear something like "**$Default**".
     
     ![A screenshot of a computer](./media/image11.png)
 
