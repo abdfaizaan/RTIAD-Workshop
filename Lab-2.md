@@ -62,7 +62,7 @@ The lab includes steps for the user to follow along with associated screenshots 
     
     - Event Hub namespace: **rtiadhub[SUFFIX]**
     
-    - Event Hub: **rt-iad-fabrikam**
+    - Event Hub: **rti-iad-fabrikam**
     
     - Shared Access Key Name: **rti-reader**
     
