@@ -78,10 +78,10 @@ By the end of this lab, you will have learned:
 7. From your environment details page, copy and paste all the necessary
    connection settings into the appropriate fields.
 
-    - Event Hub namespace: **realtimeconsumersiad**
+    - Event Hub namespace: **rtiadhub[SUFFIX]**
     - Event Hub: **rti-iad-clicks**
     - Shared Access Key Name: **rti-reader**
-    - Shared Access Key: **H/5gTWuI+lQLT9HYBzuqzPdKaR6YWXCRw+AEhE6k1gE=**
+    - Shared Access Key: Copy the **Primary Key** value from the **event hub** page from Shared Access Policies.
 
     ![A screenshot of a computer Description automatically generated](./media/image72.png)
 
@@ -92,7 +92,7 @@ By the end of this lab, you will have learned:
    that you gain access to a unique access point to the stream of data.
    Within your **Environment details** find the property that lists
    what your consumer group name will be and place that into the field
-   box. It will appear something like "**cg-xx**"
+   box. It will appear something like "**$Default**"
 
     ![A screenshot of a computer Description automatically generated](./media/image73.png)
 
