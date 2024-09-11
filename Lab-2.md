@@ -274,11 +274,13 @@ window.
 
 You may be working with the Kusto Query Language for the first time.While this language is intuitive and easy to learn for simple queries, you may want to return the results of a more complex queries than you are currently capable of. Several helpful tools have been included within the KQL Queryset capabilities including converting SQL queries to KQL queries and simply authoring T-SQL queries within the KQL Queryset. Let's explore!
 
-1.  You need to create a query that returns the number of each product that has been sold. This is something you can quickly do with T-SQL.Within the query window, you can translate your SQL queries into KQL to better understand how to author KQL queries in the future. Start with writing the following command.\
+1.  You need to create a query that returns the number of each product that has been sold. This is something you can quickly do with T-SQL.Within the query window, you can translate your SQL queries into KQL to better understand how to author KQL queries in the future. Start with writing the following command.
     
-    >**(Note: Double click the object below in order to be able to copy the text)**
-
-    ![](./media/explain-01.png)
+    ```
+        --
+    explain
+    ```
+    
         
     ![](./media/image49.png)
 
