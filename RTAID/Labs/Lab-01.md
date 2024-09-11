@@ -112,7 +112,7 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
 
 ## Task 2: Real-Time Intelligence Experience Items
 
-1. Click on the Real-Time Intelligence Experience.
+1. Click on the **Real-Time Intelligence** Experience.
 
    ![A screenshot of a computer](../media/Lab-01/image010.png)
 
