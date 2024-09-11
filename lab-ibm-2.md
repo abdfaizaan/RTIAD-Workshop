@@ -42,7 +42,7 @@ The lab includes steps for the user to follow along with associated screenshots 
 
     ![A screenshot of a computer](./media/image5.png)
 
-2.  Navigate to the "Real-Time hub" where currently we do not see any treams of data. That will change shortly.
+2.  Navigate to the "Real-Time hub" where currently we do not see any streams of data. That will change shortly.
 
     ![A screenshot of a computer](./media/image6.png)
 
