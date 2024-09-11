@@ -65,46 +65,46 @@ By the end of this lab, you will have learned:
 
    ![a](../media/Lab-01/image002.png)
 
-2. Enter the **Username** available in the **Environment Variables** tab (next to the Lab Guide) as the **Email** and click **Submit.** 
+1. Enter the **Username** available in the **Environment Variables** tab (next to the Lab Guide) as the **Email** and click **Submit.** 
 
    ![b](../media/Lab-01/image003.png)
 
-3. You will be navigated to the **Password** screen. Enter the **Password** available in the **Environment** tab (next to the Lab Guide) shared with you by the instructor.
+1. You will be navigated to the **Password** screen. Enter the **Password** available in the **Environment** tab (next to the Lab Guide) shared with you by the instructor.
 
-4. Click **Sign in** and follow the prompts to sign into Fabric.
+1. Click **Sign in** and follow the prompts to sign into Fabric.
   >**NOTE:** If there is a pop-up for **Stay Signed in?**, click on **NO**.
 
    ![c](../media/Lab-01/image004.png)
 
-5. Click on **Continue**.
-6. Enter any 10 digit contact number and click on **Get Started**.
-7. Again click on **Get Started** on **Confirmation Details** page.
+1. Click on **Continue**.
+1. Enter any 10 digit contact number and click on **Get Started**.
+1. Again click on **Get Started** on **Confirmation Details** page.
 
-8. You will be navigated to the familiar **Power BI Service Home page**. 
+1. You will be navigated to the familiar **Power BI Service Home page**. 
 
-9. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor. 
+1. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor. 
 
 Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up. 
 
-7. On the top right corner of the screen, select the **user** **icon**. 
+1. On the top right corner of the screen, select the **user** **icon**. 
 
-8. Select **Free trial**. 
+1. Select **Free trial**. 
 
    ![](../media/Lab-01/image005-1.png)
 
-9. Activate your 60-day free Fabric trial capacity dialog opens. Select **Activate**. 
+1. Activate your 60-day free Fabric trial capacity dialog opens. Select **Activate**. 
 
    ![](../media/Lab-01/image006-1.png)
 
-10. Select the “**X**” on the top right corner of **Just one last step** dialog to close the dialog. We will not be providing these details as this is a lab environment. 
+<!-- 10. Select the “**X**” on the top right corner of **Just one last step** dialog to close the dialog. We will not be providing these details as this is a lab environment. 
 
-    ![](../media/Lab-01/image007.png)
+    ![](../media/Lab-01/image007.png) -->
 
-11. Successfully upgraded to Microsoft Fabric dialog opens. Select **Fabric Home Page**.  
+1. Successfully upgraded to Microsoft Fabric dialog opens. Select **Fabric Home Page**.  
 
-    ![](../media/Lab-01/image008.png)
+    ![](../media/Lab-01/image008-1.png)
 
-12. You will be navigated to the **Microsoft** **Fabric Home page**. 
+1. You will be navigated to the **Microsoft** **Fabric Home page**. 
 
     ![](../media/Lab-01/image009.png)
 
