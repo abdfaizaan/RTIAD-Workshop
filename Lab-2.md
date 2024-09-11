@@ -79,11 +79,7 @@ The lab includes steps for the user to follow along with associated screenshots 
 
 7.  Once all properties have been filled out click on **Connect**.
     
-    ![A screenshot of a computer Description automatically generated](./media/image10.png
-
->**Note**: The connection might take some time to establish, so please be patient while it sets up.
-
-  ![A screenshot of a computer](./media/connection_1.png)
+    ![A screenshot of a computer Description automatically generated](./media/image10.png)
 
 8.  In the configuration of the Azure Event Hub data source, you will need to modify the **Consumer group** of the Event Hub to ensure that you gain access to a unique access point to the stream of data. Within your **Environment details** find the property that lists what your consumer group name will be and place that into the field box. It will appear something like "**$Default**".
     
