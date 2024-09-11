@@ -77,7 +77,6 @@ By the end of this lab, you will have learned:
 
     ```kusto
     //adds a hidden field showing ingestion time
-    
     .execute database script <|
     .alter table Address policy ingestiontime true
     .alter table Customer policy ingestiontime true
