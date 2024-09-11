@@ -176,7 +176,7 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
 
 4. In the **Name** field enter **RTI_username**.  Use the username provided to you from the environment details. 
 
-**Note:** The workspace name must be unique. Make sure a green check mark with “**This name is available**” is displayed below the Name field. 
+   >**Note:** The workspace name must be unique. Make sure a green check mark with “**This name is available**” is displayed below the Name field. 
 
 5. If you choose, you can enter a **Description** for the workspace. This is an optional field. 
 
