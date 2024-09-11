@@ -189,6 +189,9 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
 8. Select **Apply** to create a new workspace. 
 
    ![](../media/Lab-01/image019.png)
+   >**Note:** If **Introducing task flows** dialog opens, click on **Got it**.
+
+   ![](../media/Lab-01/image069.png)
 
 ## Task 5: Create an Eventhouse
 
