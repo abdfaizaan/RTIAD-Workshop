@@ -199,9 +199,9 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
 
    ![](../media/Lab-01/image020-1.png)
 
-2. Select the **Eventhouse** option from the drop-down list. As we have talked about this can be looked at similarly to a Lakehouse in that we can store data but focused around real time data.
+2. Select the **Eventhouse** option from the new items list. As we have talked about this can be looked at similarly to a Lakehouse in that we can store data but focused around real time data.
 
-   ![](../media/Lab-01/image021.png)
+   ![](../media/Lab-01/image021-1.png)
 
 3. In the window that appears, give your Eventhouse the name, **eh_Fabrikam** and click on **Create**.
 
