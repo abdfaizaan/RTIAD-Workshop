@@ -106,7 +106,7 @@ By the end of this lab, you will have learned:
    what your consumer group name will be and place that into the field
    box. It will appear something like "**$Default**"
 
-    ![A screenshot of a computer Description automatically generated](./media/image73.png)
+    ![A screenshot of a computer Description automatically generated](./media/choose_1.png)
 
 10. Click on **Next**.
 
