@@ -87,9 +87,9 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
 
    ![](../media/Lab-01/image005.png)
 
-9. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Start trial**. 
+9. Activate to a free Microsoft Fabric trial dialog opens. Select **Activate**. 
 
-   ![](../media/Lab-01/image006.png)
+   ![](../media/Lab-01/activate.png)
 
 10. Select the “**X**” on the top right corner of **Just one last step** dialog to close the dialog. We will not be providing these details as this is a lab environment. 
 
