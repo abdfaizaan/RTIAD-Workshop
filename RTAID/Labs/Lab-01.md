@@ -195,9 +195,9 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
 
 ## Task 5: Create an Eventhouse
 
-1. Click the **+ New** box to find all the items you can create in this Fabric workspace.
+1. Click the **+ New item** box to find all the items you can create in this Fabric workspace.
 
-   ![](../media/Lab-01/image020.png)
+   ![](../media/Lab-01/image020-1.png)
 
 2. Select the **Eventhouse** option from the drop-down list. As we have talked about this can be looked at similarly to a Lakehouse in that we can store data but focused around real time data.
 
