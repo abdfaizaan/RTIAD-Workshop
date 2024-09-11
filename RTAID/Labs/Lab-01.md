@@ -77,9 +77,7 @@ By the end of this lab, you will have learned:
 
 5. You will be navigated to the familiar **Power BI Service Home page**. 
 
-6. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor. 
-
-Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up. 
+6. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor.Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up. 
 
 7. On the top right corner of the screen, select the **user** **icon**. 
 
