@@ -131,7 +131,7 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
 
    6. **Use a sample:** Sample solution.
 
-   ![](../media/Lab-01/image011.png)
+      ![](../media/Lab-01/image011.png)
 
 ## Task 3: Real-Time Hub
 
