@@ -95,7 +95,7 @@ The lab includes steps for the user to follow along with associated screenshots 
     
     ![A screenshot of a computer](./media/image13.png)
 
->**Note**: The Event Source connection stream may fail with a session timeout error, but you should still see the Event Source listed as created once you refresh .
+    >**Note**: The Event Source connection stream may fail with a session timeout error, but you should still see the Event Source listed as created once you refresh .
 
 1. In this overview screen, Verify the contents look correct and click **Create source**.
     
