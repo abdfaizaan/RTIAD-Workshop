@@ -410,7 +410,7 @@ Up to this point you have been working with streaming data, but are still missin
     kind=sql
     table=[SalesLT.Product]
     ( 
-       h@'Server=tcp:adxdemo.database.windows.net,1433;Initial Catalog=aworks;User Id=sqlread;Password=ChangeYourAdminPassword1'
+       h@'Server=tcp:fabrikamadmin.database.windows.net,1433;Initial Catalog=Fabrikam_demo;User Id=fabrikamuser;Password=fabrikam@1234'
     )
     with 
     (
@@ -421,7 +421,7 @@ Up to this point you have been working with streaming data, but are still missin
     kind=sql
     table=[SalesLT.ProductCategory]
     ( 
-       h@'Server=tcp:adxdemo.database.windows.net,1433;Initial Catalog=aworks;User Id=sqlread;Password=ChangeYourAdminPassword1'
+       h@'Server=tcp:fabrikamadmin.database.windows.net,1433;Initial Catalog=Fabrikam_demo;User Id=fabrikamuser;Password=fabrikam@1234'
     )
     with 
     (
