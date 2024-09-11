@@ -76,9 +76,13 @@ By the end of this lab, you will have learned:
 
    ![c](../media/Lab-01/image004.png)
 
-6. You will be navigated to the familiar **Power BI Service Home page**. 
+5. Click on **Continue**.
+6. Enter any 10 digit contact number and click on **Get Started**.
+7. Again click on **Get Started** on **Confirmation Details** page.
 
-7. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor. 
+8. You will be navigated to the familiar **Power BI Service Home page**. 
+
+9. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor. 
 
 Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up. 
 
