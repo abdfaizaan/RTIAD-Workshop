@@ -83,17 +83,19 @@ By the end of this lab, you will have learned:
     - Shared Access Key Name: **rti-reader**
     - Shared Access Key: Copy the **Primary Key** value from the **event hub** page from Shared Access Policies.
 
+    ![A screenshot of a computer Description automatically generated](./media/image72.png)
+   
 >**Note**:
    - To copy the primary key, follow these steps:
-    - Go back to the Azure portal.
-    - In the search bar, type "Event Hub" and select the Event Hub.
-    - Under the "entities" section, choose **event hub (1)**.
-    - Select **rti-iad-clicks (2)**.
-    - under settings , select **shared access policy**
-    - Copy the **Primary Key (3)** from rti-reader.
-     
-   ![A screenshot of a computer Description automatically generated](./media/image72.png)
-
+        - Go back to the Azure portal.
+        - In the search bar, type "Event Hub" and select the Event Hub.
+        - Under the "entities" section, choose **event hub (1)**.
+        - Select **rti-iad-clicks (2)**.
+        - under settings , select **shared access policy**
+        - Copy the **Primary Key (3)** from rti-reader.
+    
+      ![A screenshot of a computer Description automatically generated](./media/shared_1.png)
+ 
 8. Once all the properties have been filled out, click on **Connect**.
 
 9. In the configuration of the Azure Event Hub data source, you will
