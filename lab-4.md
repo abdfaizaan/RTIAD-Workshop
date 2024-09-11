@@ -142,7 +142,13 @@ By the end of this lab, you will have learned:
 
     ![A screenshot of a computer](./media/image142.png)
 
-13. Follow the same steps as Step 11-12 for the tables **SalesLT.Customer**, **SalesLT.SalesOrderDetail**, and **SalesLT.SalesOrderHeader**. No column mappings will need to be performed so simply match up the table names. Once all tables have been appropriately mapped, click on **Next**.
+13. Follow the same steps as Step 11-12, For the tables, select the following mappings from the drop-down menu:
+
+- For **SalesLT.Customer**, choose **customer**.
+- For **SalesLT.SalesOrderDetail**, choose **SalesOrderDetail**.
+- For **SalesLT.SalesOrderHeader**, choose **SalesOrderHeader**.
+
+  No column mappings will need to be performed so simply match up the table names. Once all tables have been appropriately mapped, click on **Next**.
 
 14. The final page using the Copy Data Assistant is an overview page to verify all the settings you've selected. Ensure that your source number of tables and destination number of tables are the same.
 
