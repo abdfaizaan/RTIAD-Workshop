@@ -42,23 +42,23 @@ The lab includes steps for the user to follow along with associated screenshots 
 
     ![A screenshot of a computer](./media/image5.png)
 
-2.  Navigate to the "Real-Time hub" where currently we do not see any streams of data. That will change shortly.
+1.  Navigate to the "Real-Time hub" where currently we do not see any streams of data. That will change shortly.
 
     ![A screenshot of a computer](./media/image6.png)
 
-3.  Select the "Get events" green button which should be in the upper right corner.
+1.  Select the "Get events" green button which should be in the upper right corner.
 
     ![A screenshot of a search box Description automatically generated](./media/image7.png)
 
-4.  A window will open that will allow you to select a source for our stream data. As we discussed before, there are many fantastic options to choose from but for this class we will select the option "Azure Event Hubs".
+1.  A window will open that will allow you to select a source for our stream data. As we discussed before, there are many fantastic options to choose from but for this class we will select the option "Azure Event Hubs".
     
     ![A screenshot of a computer Description automatically generated](./media/image8.png)
 
-5.  You are now required to create a connection to the Azure Event Hub. Click on the **New connection** text since you do not currently have a connection.
+1.  You are now required to create a connection to the Azure Event Hub. Click on the **New connection** text since you do not currently have a connection.
     
     ![A screenshot of a computer](./media/image9.png)
 
-6.  From your environment details page, copy and paste all the necessary connection settings into the appropriate fields. For these labs we are connecting to an Event Hub which has streaming data being sent from a python notebook. This notebook is creating fake sales transactions at rate of around 3,100 transactions per hour.
+1.  From your environment details page, copy and paste all the necessary connection settings into the appropriate fields. For these labs we are connecting to an Event Hub which has streaming data being sent from a python notebook. This notebook is creating fake sales transactions at rate of around 3,100 transactions per hour.
     
     - Event Hub namespace: **rtiadhub[SUFFIX]**
     
@@ -77,45 +77,45 @@ The lab includes steps for the user to follow along with associated screenshots 
         - under settings , select **shared access policy**
         - Copy the **Primary Key (3)** from rti-reader.
 
-7.  Once all properties have been filled out click on **Connect**.
+1.  Once all properties have been filled out click on **Connect**.
     
     ![A screenshot of a computer Description automatically generated](./media/image10.png)
 
-8.  In the configuration of the Azure Event Hub data source, you will need to modify the **Consumer group** of the Event Hub to ensure that you gain access to a unique access point to the stream of data. Within your **Environment details** find the property that lists what your consumer group name will be and place that into the field box. It will appear something like "**$Default**".
+1.  In the configuration of the Azure Event Hub data source, you will need to modify the **Consumer group** of the Event Hub to ensure that you gain access to a unique access point to the stream of data. Within your **Environment details** find the property that lists what your consumer group name will be and place that into the field box. It will appear something like "**$Default**".
     
     ![A screenshot of a computer](./media/image11.png)
 
-  >**Note**: Choose "**$Default**" as Consumer group
+    >**Note**: Choose "**$Default**" as Consumer group
 
-10.  Before we finalize this data source and Eventstream, let's go ahead and rename our Eventstream to something more useful. In the "Stream details\" section on the right select the pencil icon next to the "Eventstream name" and let's call our Eventstream **es_Fabrikam_InternetSales**"
-    
-   ![A screenshot of a computer](./media/image12.png)
+1.  Before we finalize this data source and Eventstream, let's go ahead and rename our Eventstream to something more useful. In the "Stream details\" section on the right select the pencil icon next to the "Eventstream name" and let's call our Eventstream **es_Fabrikam_InternetSales**".
 
-11. Now we can click on **Next**, which will take us to a final overview page.
+    ![A screenshot of a computer](./media/image12.png)
+
+1. Now we can click on **Next**, which will take us to a final overview page.
     
     ![A screenshot of a computer](./media/image13.png)
 
 >**Note**: The Event Source connection stream may fail with a session timeout error, but you should still see the Event Source listed as created once you refresh .
 
-12. In this overview screen, Verify the contents look correct and click **Create source**.
+1. In this overview screen, Verify the contents look correct and click **Create source**.
     
     ![A screenshot of a computer Description automatically generated](./media/image14.png)
 
-13. Once the Eventstream and Eventstream source are created select the option "**Open Eventstream**"
+1. Once the Eventstream and Eventstream source are created select the option "**Open Eventstream**"
     
     ![A screenshot of a computer](./media/image15.png)
 
-15. This will take you to the Eventstream user interface. Here is where you will see able to connect with a source stream of data, bring it
+1. This will take you to the Eventstream user interface. Here is where you will see able to connect with a source stream of data, bring it
     into this Fabric item, and then stream it to a new destination like a Lakehouse or KQL Database.
 
-16. It may take a few moments for your Source to be **Active** but after waiting a few moments, click on the middle icon with the name of
+1. It may take a few moments for your Source to be **Active** but after waiting a few moments, click on the middle icon with the name of
     your Eventstream on it and then click on **Refresh** if you do not see a preview of the data.
    
     >**Note: If you receive a "Warning" status around and audit policy, that is fine. The stream will still function**
 
     ![A screenshot of a computer Description automatically generated](./media/image16.png)
 
-17. You should now see a sample of the data within the bottom window.
+1. You should now see a sample of the data within the bottom window.
     
     ![A screenshot of a computer](./media/image17.png)
 
