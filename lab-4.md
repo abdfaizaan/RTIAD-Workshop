@@ -115,7 +115,7 @@ By the end of this lab, you will have learned:
     - Username: `fabrikamuser`
     - Password: `fabrikam@1234`
 
-    ![A screenshot of a computer](./media/image138.png)
+    ![A screenshot of a computer](./media/new_connection.png)
 
 7. Click **Next** when everything has been filled out.
 
