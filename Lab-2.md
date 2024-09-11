@@ -76,6 +76,8 @@ The lab includes steps for the user to follow along with associated screenshots 
     - under settings , select **shared access policy**
     - Copy the **Primary Key (3)** from rti-reader.
 
+    ![A screenshot of a computer Description automatically generated](./media/rti_reader.png)
+
 7.  Once all properties have been filled out click on **Connect**.
     
     ![A screenshot of a computer Description automatically generated](./media/image10.png)
