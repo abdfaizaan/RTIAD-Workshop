@@ -87,7 +87,7 @@ The lab includes steps for the user to follow along with associated screenshots 
 
     >**Note**: Choose "**$Default**" as Consumer group
 
-1.  Before we finalize this data source and Eventstream, let's go ahead and rename our Eventstream to something more useful. In the "Stream details\" section on the right select the pencil icon next to the "Eventstream name" and let's call our Eventstream **es_Fabrikam_InternetSales**".
+1.  Before we finalize this data source and Eventstream, let's go ahead and rename our Eventstream to something more useful. In the "Stream details\" section on the right select the pencil icon next to the "Eventstream name" and let's call our Eventstream "**es_Fabrikam_InternetSales**".
 
     ![A screenshot of a computer](./media/image12.png)
 
