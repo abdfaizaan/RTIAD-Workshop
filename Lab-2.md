@@ -71,16 +71,19 @@ The lab includes steps for the user to follow along with associated screenshots 
 >**Note**:
 - To copy the primary key, follow these steps:
     - Go back to the Azure portal.
-    - In the search bar, type "Event Hub" and select the appropriate Event Hub.
-    - Under the "Settings" section, choose **Shared Access Policies (1)**.
-    - Select **RootManageSharedAccessKey (2)**.
-    - Copy the **Primary Key (3)** from the provided options.
-
-  ![A screenshot of a computer](./media/sharedaccess_policy.png)
+    - In the search bar, type "Event Hub" and select the Event Hub.
+    - Under the "entities" section, choose **event hub (1)**.
+    - Select **rti-iad-fabrikam (2)**.
+    - under settings , select **shared access policy**
+    - Copy the **Primary Key (3)** from rti-reader.
 
 7.  Once all properties have been filled out click on **Connect**.
     
-    ![A screenshot of a computer Description automatically generated](./media/image10.png)
+    ![A screenshot of a computer Description automatically generated](./media/image10.png
+
+>**Note**: The connection might take some time to establish, so please be patient while it sets up.
+
+  ![A screenshot of a computer](./media/connection_1.png)
 
 8.  In the configuration of the Azure Event Hub data source, you will need to modify the **Consumer group** of the Event Hub to ensure that you gain access to a unique access point to the stream of data. Within your **Environment details** find the property that lists what your consumer group name will be and place that into the field box. It will appear something like "**$Default**".
     
@@ -94,9 +97,7 @@ The lab includes steps for the user to follow along with associated screenshots 
     
     ![A screenshot of a computer](./media/image13.png)
 
->**Note**:The connection might fail initially, but if you navigate back and check again, you should see it listed under the available connections.
-
-   ![A screenshot of a computer](./media/connection_1.png)
+>**Note**: The Event Source connection stream may fail with a session timeout error, but you should still see the Event Source listed as created.
 
 12. In this overview screen, Verify the contents look correct and click **Create source**.
     
