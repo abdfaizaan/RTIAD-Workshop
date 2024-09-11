@@ -139,6 +139,8 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
 
    ![](../media/Lab-01/image012.png)
 
+1. On **Welcome to Real-Time hub** dialog, click on **Get-Started**.
+
 2. The Real-Time hub is the single place for streaming data-in-motion across your entire organization. Every Microsoft Fabric tenant is automatically provisioned with the hub. It enables you to easily discover, ingest, manage, and consume data-in-motion from a wide variety of sources.
 
    ![](../media/Lab-01/image013.png)
