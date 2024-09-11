@@ -429,7 +429,7 @@ Up to this point you have been working with streaming data, but are still missin
     )
     ```
 
-   ![A screenshot of a computer Description automatically generated](./media/image118.png)
+   ![A screenshot of a computer Description automatically generated](./media/data_query.png)
 
 6. Click the **Run** button to execute the script.
 
