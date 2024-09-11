@@ -144,14 +144,11 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
    ![](../media/Lab-01/image013.png)
 
 3. Within the Real-Time hub you have access to three different types of data integration.
+   - **Data streams**: For your running eventstreams and KQL databases, all the stream outputs from eventstreams and tables from KQL databases automatically show up in Real-Time hub.
+   - **Microsoft sources**: Lists all streaming resources from Microsoft services. Whether it’s Azure Event Hubs, Azure IoT Hub, or other services, you can seamlessly ingest data into Real-Time hub.
+   - **Fabric events:** Events that are generated via Fabric artifacts and external sources, are made available in Fabric to support event-driven scenarios like real-time alerting and triggering downstream actions. You can monitor and react to events including Fabric workspace item events and Azure Blob Storage events.
 
-- **Data streams**: For your running eventstreams and KQL databases, all the stream outputs from eventstreams and tables from KQL databases automatically show up in Real-Time hub.
-
-- **Microsoft sources**: Lists all streaming resources from Microsoft services. Whether it’s Azure Event Hubs, Azure IoT Hub, or other services, you can seamlessly ingest data into Real-Time hub.
-
-- **Fabric events:** Events that are generated via Fabric artifacts and external sources, are made available in Fabric to support event-driven scenarios like real-time alerting and triggering downstream actions. You can monitor and react to events including Fabric workspace item events and Azure Blob Storage events.
-
-   ![](../media/Lab-01/image014.png)
+      ![](../media/Lab-01/image014.png)
 
 4. In the top-right corner of the Real-Time hub, click on the **+ Get events** button.
 
