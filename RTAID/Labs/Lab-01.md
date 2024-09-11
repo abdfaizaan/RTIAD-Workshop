@@ -65,11 +65,11 @@ By the end of this lab, you will have learned:
 
    ![a](../media/Lab-01/image002.png)
 
-2. Enter the **Username** available in the **Environment Variables** tab (next to the Lab Guide) as the **Email** and click **Submit.** 
+2. Enter the **Username**:<inject key="AzureAdUserEmail"></inject> and click **Submit.** 
 
    ![b](../media/Lab-01/image003.png)
 
-3. You will be navigated to the **Password** screen. Enter the **Password** available in the **Environment Variables** tab (next to the Lab Guide) shared with you by the instructor.
+3. You will be navigated to the **Password**:<inject key="AzureAdUserPassword"></inject>
 
 4. Click **Sign in** and follow the prompts to sign into Fabric. 
 
