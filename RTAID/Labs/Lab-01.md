@@ -88,9 +88,9 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
 
 7. On the top right corner of the screen, select the **user** **icon**. 
 
-8. Select **Start trial**. 
+8. Select **Free trial**. 
 
-   ![](../media/Lab-01/image005.png)
+   ![](../media/Lab-01/image005-1.png)
 
 9. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Start trial**. 
 
