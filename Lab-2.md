@@ -94,6 +94,10 @@ The lab includes steps for the user to follow along with associated screenshots 
     
     ![A screenshot of a computer](./media/image13.png)
 
+>**Note**:The connection might fail initially, but if you navigate back and check again, you should see it listed under the available connections.
+
+   ![A screenshot of a computer](./media/connection_1.png)
+
 12. In this overview screen, Verify the contents look correct and click **Create source**.
     
     ![A screenshot of a computer Description automatically generated](./media/image14.png)
