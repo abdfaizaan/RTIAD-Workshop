@@ -46,6 +46,7 @@ By the end of this lab, you will have learned:
 
     ```kusto
     //BRONZE LAYER
+    
     .execute database script <|
 
     .create table [Address] (AddressID:int, AddressLine1:string, AddressLine2:string, City:string, StateProvince:string, CountryRegion:string, PostalCode:string, rowguid:guid, ModifiedDate:datetime)
