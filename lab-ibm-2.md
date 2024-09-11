@@ -72,7 +72,7 @@ The lab includes steps for the user to follow along with associated screenshots 
     - To copy the primary key, follow these steps:
         - Go back to the Azure portal.
         - In the search bar, type "Event Hub" and select the Event Hub.
-        - Under the "entities" section, choose **event hub (1)**.
+        - Under the "entities" section, choose **event hubs (1)**.
         - Select **rti-iad-fabrikam (2)**.
         - under settings , select **shared access policy**
         - Copy the **Primary Key (3)** from rti-reader.
