@@ -464,7 +464,7 @@ within this interface include working with Copilot, should that be available to 
 
 13. By default, the visual that you're using to display the results of this KQL query is a table. This may not be the best way for someone to quickly consume and comprehend what is happening with the results of your data. Change the type of visual from a table to an **Area chart**.
 
-    ![A screenshot of a computer Description automatically generated](./media/image200-1.png)
+    ![A screenshot of a computer Description automatically generated](./media/image200.png)
 
 14. With this newly formatted visual, you can better understand the peaks and valleys of Clicks from your e-commerce site using the data stream you created earlier in this class.
 
@@ -474,9 +474,9 @@ within this interface include working with Copilot, should that be available to 
 
     ![A screenshot of a computer Description automatically generated](./media/image202.png)
 
-16. Once this visual has been placed within the Dashboard, notice again that the visual is only showing the last hour of results. Modify the Dashboard to show the **Time Range** of the **Last 24 hours**.
+16. Once this visual has been placed within the Dashboard, notice again that the visual is only showing the last hour of results. Modify the Dashboard to show the **Time Range** of the **Last 1095 days**.
 
-    ![A graph with blue lines Description automatically generated](./media/image203.png)
+    ![A graph with blue lines Description automatically generated](./media/image203-1.png)
 
 17. Refresh the visual and notice that the results will slightly change to reflect the data that has come in since the last execution of the query.
 
