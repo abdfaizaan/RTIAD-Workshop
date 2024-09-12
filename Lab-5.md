@@ -110,49 +110,51 @@ By the end of this lab, you will have learned:
 
    ![A screenshot of a search box Description automatically generated](./media/image193.png)
 
-6. You should now see in your query output the results of clicks over the last 3 hour window.
+>**Note**: If no data is available from the last three hours, select the any of longest available time frame and verify.
+
+7. You should now see in your query output the results of clicks over the last 3 hour window.
 
    ![A screenshot of a computer Description automatically generated](./media/image194.png)
 
-7. While this parameter can be modified, you may wish for it to default to a specific time range instead of forcing users to modify it. Above the time range option, click on the **@ Parameters** option.
+8. While this parameter can be modified, you may wish for it to default to a specific time range instead of forcing users to modify it. Above the time range option, click on the **@ Parameters** option.
 
    ![A screenshot of a computer Description automatically generated](./media/image195.png)
 
-8. Click the **pencil icon** to edit the **Time range** parameter.
+9. Click the **pencil icon** to edit the **Time range** parameter.
 
    ![A screenshot of a computer Description automatically generated](./media/image196.png)
 
-9. Change the **Default value** to **Last 24 hours** to always show the last day by default. Click **Done** when finished.
+10. Change the **Default value** to **Last 24 hours** to always show the last day by default. Click **Done** when finished.
 
    ![A screenshot of a computer Description automatically generated](./media/image197.png)
 
-10. Close the parameter pane.
+11. Close the parameter pane.
 
-11. Now click on the **+ Add visual button** above the query results.
+12. Now click on the **+ Add visual button** above the query results.
 
     ![A screenshot of a computer Description automatically generated](./media/image198.png)
 
-12. A new flyout will appear on the right-hand side of the screen. Click in the text box underneath the **Tile name** option to give this visual the name **Clicks by Hour**.
+13. A new flyout will appear on the right-hand side of the screen. Click in the text box underneath the **Tile name** option to give this visual the name **Clicks by Hour**.
 
     ![A screenshot of a computer screen Description automatically generated](./media/image199.png)
 
-13. By default, the visual that you're using to display the results of this KQL query is a table. This may not be the best way for someone to quickly consume and comprehend what is happening with the results of your data. Change the type of visual from a table to an **Area chart**.
+14. By default, the visual that you're using to display the results of this KQL query is a table. This may not be the best way for someone to quickly consume and comprehend what is happening with the results of your data. Change the type of visual from a table to an **Area chart**.
 
     ![A screenshot of a computer Description automatically generated](./media/image200.png)
 
-14. With this newly formatted visual, you can better understand the peaks and valleys of Clicks from your e-commerce site using the data stream you created earlier in this class.
+15. With this newly formatted visual, you can better understand the peaks and valleys of Clicks from your e-commerce site using the data stream you created earlier in this class.
 
     ![A graph on a screen Description automatically generated](./media/image201.png)
 
-15. To save this visual down to the Dashboard, click on the **Apply changes** button in the top-right corner of the screen.
+16. To save this visual down to the Dashboard, click on the **Apply changes** button in the top-right corner of the screen.
 
     ![A screenshot of a computer Description automatically generated](./media/image202.png)
 
-16. Once this visual has been placed within the Dashboard, notice again that the visual is only showing the last hour of results. Modify the Dashboard to show the **Time Range** of the **Last 24 hours**.
+17. Once this visual has been placed within the Dashboard, notice again that the visual is only showing the last hour of results. Modify the Dashboard to show the **Time Range** of the **Last 24 hours**.
 
     ![A graph with blue lines Description automatically generated](./media/image203.png)
 
-17. Refresh the visual and notice that the results will slightly change to reflect the data that has come in since the last execution of the query.
+18. Refresh the visual and notice that the results will slightly change to reflect the data that has come in since the last execution of the query.
 
     ![A screenshot of a computer Description automatically generated](./media/image204.png)
 
