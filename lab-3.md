@@ -78,24 +78,15 @@ By the end of this lab, you will have learned:
 7. From your environment details page, copy and paste all the necessary
    connection settings into the appropriate fields.
 
-    - Event Hub namespace: **rtiadhub[SUFFIX]**
+    - Event Hub namespace: **rtiadhub<inject key="DeploymentID" enableCopy="false"></inject>**
     - Event Hub: **rti-iad-clicks**
     - Shared Access Key Name: **rti-reader**
-    - Shared Access Key: Copy the **Primary Key** value from the **event hub** page from Shared Access Policies.
+    - Shared Access Key: To copy the primary key navigate to the **environment tab (1)** copy **rt-iad-fabrikam primary key (2)**
 
-    ![A screenshot of a computer Description automatically generated](./media/image72.png)
+       ![A screenshot of a computer Description automatically generated](./media/enviro-1.png)
+  
+       ![A screenshot of a computer Description automatically generated](./media/image72.png)
    
->**Note**:
-   - To copy the primary key, follow these steps:
-        - Go back to the Azure portal.
-        - In the search bar, type "Event Hub" and select the Event Hub.
-        - Scroll down below to entities section , choose **event hub** again
-        - Select **rti-iad-clicks**.
-        - under settings , select **shared access policy (1)**.
-        - Choose **rti-reader (2)**
-        - Copy the **Primary Key (3)**
-       
-      ![A screenshot of a computer Description automatically generated](./media/shared_1.png)
  
 8. Once all the properties have been filled out, click on **Connect**.
 
