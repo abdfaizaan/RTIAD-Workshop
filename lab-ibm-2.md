@@ -420,9 +420,9 @@ within this interface include working with Copilot, should that be available to 
 
    ```
    //Clicks by hour
-   Clicks
-   | where eventDate between (_startTime.._endTime)
-   | summarize date_count = count() by bin(eventDate, 1h) 
+   InternetSales
+   | where OrderDate between (_startTime.._endTime)
+   | summarize date_count = count() by bin(OrderDate, 1h) 
    | render timechart  
    | top 30 by date_count
 
@@ -432,9 +432,9 @@ within this interface include working with Copilot, should that be available to 
 
    ![A screenshot of a computer Description automatically generated](./media/image192.png)
 
-5. Notice that you may only have one result in your output. This is because of the **Time range** that is set by default for this tile. You have a parameter with which you can alter the range of time with which you are returning data from. The eventDate between (\_startTime..\_endTime) is what allows you to take advantage of this parameter. Modify the **Time Range** parameter to **Last 3 hours** and observe how your output changes.
+5. Notice that you may only have one result in your output. This is because of the **Time range** that is set by default for this tile. You have a parameter with which you can alter the range of time with which you are returning data from. The eventDate between (\_startTime..\_endTime) is what allows you to take advantage of this parameter. Modify the **Time Range** parameter to **Last 1095 days** and observe how your output changes.
 
-   ![A screenshot of a search box Description automatically generated](./media/image193.png)
+   ![A screenshot of a search box Description automatically generated](./media/image193-1.png)
 
 6. You should now see in your query output the results of clicks over the last 3 hour window.
 
