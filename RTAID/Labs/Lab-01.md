@@ -72,8 +72,9 @@ By the end of this lab, you will have learned:
 1. You will be navigated to the **Password** screen. Enter the **Password** available in the **Environment** tab (next to the Lab Guide) shared with you by the instructor.
 
 1. Click **Sign in** and follow the prompts to sign into Fabric.
-  >**NOTE:** If there is a pop-up for **Stay Signed in?**, click on **NO**.
 
+   >**NOTE:** If there is a pop-up for **Stay Signed in?**, click on **NO**.
+   
    ![c](../media/Lab-01/image004.png)
 
 1. Click on **Continue**.
@@ -84,7 +85,7 @@ By the end of this lab, you will have learned:
 
 1. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor. 
 
-Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up. 
+   Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up. 
 
 1. On the top right corner of the screen, select the **user** **icon**. 
 
