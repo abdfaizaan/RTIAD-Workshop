@@ -65,19 +65,9 @@ The lab includes steps for the user to follow along with associated screenshots 
     
     - Shared Access Key Name: **rti-reader**
     
-    - Shared Access Key: Copy the **Primary Key** value from the **event hub** page from Shared Access Policies.
+    - Shared Access Key: To copy the primary key navigate to the **environment tab (1)** copy **rt-iad-fabrikam primary key (2)**
   
->**Note**:
-- To copy the primary key, follow these steps:
-    - Go back to the Azure portal.
-    - In the search bar, type "Event Hub" and select the Event Hub.
-    - Scroll down below to entities section , choose **event hub** again.
-    - Select **rti-iad-fabrikam**.
-    - under settings , select **shared access policy (1)**.
-    - Choose **rti-reader (2)**
-    - Copy the **Primary Key (3)**
-
-    ![A screenshot of a computer Description automatically generated](./media/rti_reader.png)
+     ![A screenshot of a computer Description automatically generated](./media/enviro.png)
 
 7.  Once all properties have been filled out click on **Connect**.
     
