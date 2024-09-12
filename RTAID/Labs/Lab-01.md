@@ -71,33 +71,45 @@ By the end of this lab, you will have learned:
 
 3. You will be navigated to the **Password:** <inject key="AzureAdUserPassword"></inject>
 
-4. Click **Sign in** and follow the prompts to sign into Fabric. 
 
+1. Click **Sign in** and follow the prompts to sign into Fabric.
+
+   >**NOTE:** If there is a pop-up for **Stay Signed in?**, click on **NO**.
+   
    ![c](../media/Lab-01/image004.png)
 
-5. You will be navigated to the familiar **Power BI Service Home page**. 
+1. Click on **Continue**.
+1. Enter any 10 digit contact number and click on **Get Started**.
+1. Again click on **Get Started** on **Confirmation Details** page.
 
-6. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor.Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up. 
+1. You will be navigated to the familiar **Power BI Service Home page**. 
 
-7. On the top right corner of the screen, select the **user** **icon**. 
 
-8. Select **Start trial**. 
+1. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor. 
 
-   ![](../media/Lab-01/image005.png)
+   Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up. 
 
-9. Activate to a free Microsoft Fabric trial dialog opens. Select **Activate**. 
 
-   ![](../media/Lab-01/activate.png)
+1. On the top right corner of the screen, select the **user** **icon**. 
 
-10. Select the “**X**” on the top right corner of **Just one last step** dialog to close the dialog. We will not be providing these details as this is a lab environment. 
+1. Select **Free trial**. 
 
-    ![](../media/Lab-01/image007.png)
+   ![](../media/Lab-01/image005-1.png)
 
-11. Successfully upgraded to Microsoft Fabric dialog opens. Select **Fabric Home Page**.  
 
-    ![](../media/Lab-01/image008.png)
+1. Activate your 60-day free Fabric trial capacity dialog opens. Select **Activate**. 
 
-12. You will be navigated to the **Microsoft** **Fabric Home page**. 
+   ![](../media/Lab-01/image006-1.png)
+
+<!-- 10. Select the “**X**” on the top right corner of **Just one last step** dialog to close the dialog. We will not be providing these details as this is a lab environment. 
+
+    ![](../media/Lab-01/image007.png) -->
+
+1. Successfully upgraded to Microsoft Fabric dialog opens. Select **Fabric Home Page**.  
+
+    ![](../media/Lab-01/image008-1.png)
+
+1. You will be navigated to the **Microsoft** **Fabric Home page**. 
 
     ![](../media/Lab-01/image009.png)
 
@@ -105,7 +117,7 @@ By the end of this lab, you will have learned:
 
 ## Task 2: Real-Time Intelligence Experience Items
 
-1. Click on the Real-Time Intelligence Experience.
+1. Click on the **Real-Time Intelligence** Experience.
 
    ![A screenshot of a computer](../media/Lab-01/image010.png)
 
@@ -124,7 +136,7 @@ By the end of this lab, you will have learned:
 
    6. **Use a sample:** Sample solution.
 
-   ![](../media/Lab-01/image011.png)
+      ![](../media/Lab-01/image011.png)
 
 ## Task 3: Real-Time Hub
 
@@ -132,19 +144,18 @@ By the end of this lab, you will have learned:
 
    ![](../media/Lab-01/image012.png)
 
+1. On **Welcome to Real-Time hub** dialog, click on **Get-Started**.
+
 2. The Real-Time hub is the single place for streaming data-in-motion across your entire organization. Every Microsoft Fabric tenant is automatically provisioned with the hub. It enables you to easily discover, ingest, manage, and consume data-in-motion from a wide variety of sources.
 
    ![](../media/Lab-01/image013.png)
 
 3. Within the Real-Time hub you have access to three different types of data integration.
+   - **Data streams**: For your running eventstreams and KQL databases, all the stream outputs from eventstreams and tables from KQL databases automatically show up in Real-Time hub.
+   - **Microsoft sources**: Lists all streaming resources from Microsoft services. Whether it’s Azure Event Hubs, Azure IoT Hub, or other services, you can seamlessly ingest data into Real-Time hub.
+   - **Fabric events:** Events that are generated via Fabric artifacts and external sources, are made available in Fabric to support event-driven scenarios like real-time alerting and triggering downstream actions. You can monitor and react to events including Fabric workspace item events and Azure Blob Storage events.
 
-- **Data streams**: For your running eventstreams and KQL databases, all the stream outputs from eventstreams and tables from KQL databases automatically show up in Real-Time hub.
-
-- **Microsoft sources**: Lists all streaming resources from Microsoft services. Whether it’s Azure Event Hubs, Azure IoT Hub, or other services, you can seamlessly ingest data into Real-Time hub.
-
-- **Fabric events:** Events that are generated via Fabric artifacts and external sources, are made available in Fabric to support event-driven scenarios like real-time alerting and triggering downstream actions. You can monitor and react to events including Fabric workspace item events and Azure Blob Storage events.
-
-   ![](../media/Lab-01/image014.png)
+      ![](../media/Lab-01/image014.png)
 
 4. In the top-right corner of the Real-Time hub, click on the **+ Get events** button.
 
@@ -170,7 +181,7 @@ By the end of this lab, you will have learned:
 
 4. In the **Name** field enter **RTI_username**.  Use the username provided to you from the environment details. 
 
-**Note:** The workspace name must be unique. Make sure a green check mark with “**This name is available**” is displayed below the Name field. 
+   >**Note:** The workspace name must be unique. Make sure a green check mark with “**This name is available**” is displayed below the Name field. 
 
 5. If you choose, you can enter a **Description** for the workspace. This is an optional field. 
 
@@ -183,12 +194,15 @@ By the end of this lab, you will have learned:
 8. Select **Apply** to create a new workspace. 
 
    ![](../media/Lab-01/image019.png)
+   >**Note:** If **Introducing task flows** dialog opens, click on **Got it**.
+
+   ![](../media/Lab-01/image069.png)
 
 ## Task 5: Create an Eventhouse
 
-1. Click the **+ New** box to find all the items you can create in this Fabric workspace.
+1. Click the **+ New item** box to find all the items you can create in this Fabric workspace.
 
-   ![](../media/Lab-01/image020.png)
+   ![](../media/Lab-01/image020-1.png)
 
 2. Select the **Eventhouse** option from the drop-down list. As we have talked about this can be looked at similarly to a Lakehouse in that we can store data but focused around real time data.
 

@@ -42,25 +42,25 @@ The lab includes steps for the user to follow along with associated screenshots 
 
     ![A screenshot of a computer](./media/image5.png)
 
-2.  Navigate to the "Real-Time hub" where currently we do not see any treams of data. That will change shortly.
+1.  Navigate to the "Real-Time hub" where currently we do not see any streams of data. That will change shortly.
 
     ![A screenshot of a computer](./media/image6.png)
 
-3.  Select the "Get events" green button which should be in the upper right corner.
+1.  Select the "Get events" green button which should be in the upper right corner.
 
     ![A screenshot of a search box Description automatically generated](./media/image7.png)
 
-4.  A window will open that will allow you to select a source for our stream data. As we discussed before, there are many fantastic options to choose from but for this class we will select the option "Azure Event Hubs".
+1.  A window will open that will allow you to select a source for our stream data. As we discussed before, there are many fantastic options to choose from but for this class we will select the option "Azure Event Hubs".
     
     ![A screenshot of a computer Description automatically generated](./media/image8.png)
 
-5.  You are now required to create a connection to the Azure Event Hub. Click on the **New connection** text since you do not currently have a connection.
+1.  You are now required to create a connection to the Azure Event Hub. Click on the **New connection** text since you do not currently have a connection.
     
     ![A screenshot of a computer](./media/image9.png)
 
-6.  From your environment details page, copy and paste all the necessary connection settings into the appropriate fields. For these labs we are connecting to an Event Hub which has streaming data being sent from a python notebook. This notebook is creating fake sales transactions at rate of around 3,100 transactions per hour.
+1.  From your environment details page, copy and paste all the necessary connection settings into the appropriate fields. For these labs we are connecting to an Event Hub which has streaming data being sent from a python notebook. This notebook is creating fake sales transactions at rate of around 3,100 transactions per hour.
     
-    - Event Hub namespace: **rtiadhub[SUFFIX]**
+    - Event Hub namespace: **rtiadhub<inject key="DeploymentID" enableCopy="false"></inject>**
     
     - Event Hub: **rti-iad-fabrikam**
     
@@ -68,54 +68,54 @@ The lab includes steps for the user to follow along with associated screenshots 
     
     - Shared Access Key: Copy the **Primary Key** value from the **event hub** page from Shared Access Policies.
   
->**Note**:
-- To copy the primary key, follow these steps:
-    - Go back to the Azure portal.
-    - In the search bar, type "Event Hub" and select the Event Hub.
-    - Under the "entities" section, choose **event hub (1)**.
-    - Select **rti-iad-fabrikam (2)**.
-    - under settings , select **shared access policy**
-    - Copy the **Primary Key (3)** from rti-reader.
+    >**Note**:
+    - To copy the primary key, follow these steps:
+        - Go back to the Azure portal.
+        - In the search bar, type "Event Hub" and select the Event Hub.
+        - Under the "entities" section, choose **event hubs (1)**.
+        - Select **rti-iad-fabrikam (2)**.
+        - under settings , select **shared access policy**
+        - Copy the **Primary Key (3)** from rti-reader.
 
-7.  Once all properties have been filled out click on **Connect**.
+1.  Once all properties have been filled out click on **Connect**.
     
     ![A screenshot of a computer Description automatically generated](./media/image10.png)
 
-8.  In the configuration of the Azure Event Hub data source, you will need to modify the **Consumer group** of the Event Hub to ensure that you gain access to a unique access point to the stream of data. Within your **Environment details** find the property that lists what your consumer group name will be and place that into the field box. It will appear something like "**$Default**".
+1.  In the configuration of the Azure Event Hub data source, you will need to modify the **Consumer group** of the Event Hub to ensure that you gain access to a unique access point to the stream of data. Within your **Environment details** find the property that lists what your consumer group name will be and place that into the field box. It will appear something like "**$Default**".
     
     ![A screenshot of a computer](./media/image11.png)
 
-  >**Note**: Choose "**$Default**" as Consumer group
+    >**Note**: Choose "**$Default**" as Consumer group
 
-10.  Before we finalize this data source and Eventstream, let's go ahead and rename our Eventstream to something more useful. In the "Stream details\" section on the right select the pencil icon next to the "Eventstream name" and let's call our Eventstream **es_Fabrikam_InternetSales**"
-    
-   ![A screenshot of a computer](./media/image12.png)
+1.  Before we finalize this data source and Eventstream, let's go ahead and rename our Eventstream to something more useful. In the "Stream details\" section on the right select the pencil icon next to the "Eventstream name" and let's call our Eventstream "**es_Fabrikam_InternetSales**".
 
-11. Now we can click on **Next**, which will take us to a final overview page.
+    ![A screenshot of a computer](./media/image12.png)
+
+1. Now we can click on **Next**, which will take us to a final overview page.
     
     ![A screenshot of a computer](./media/image13.png)
 
->**Note**: The Event Source connection stream may fail with a session timeout error, but you should still see the Event Source listed as created once you refresh .
+    >**Note**: The Event Source connection stream may fail with a session timeout error, but you should still see the Event Source listed as created once you refresh .
 
-12. In this overview screen, Verify the contents look correct and click **Create source**.
+1. In this overview screen, Verify the contents look correct and click **Create source**.
     
     ![A screenshot of a computer Description automatically generated](./media/image14.png)
 
-13. Once the Eventstream and Eventstream source are created select the option "**Open Eventstream**"
+1. Once the Eventstream and Eventstream source are created select the option "**Open Eventstream**"
     
     ![A screenshot of a computer](./media/image15.png)
 
-15. This will take you to the Eventstream user interface. Here is where you will see able to connect with a source stream of data, bring it
+1. This will take you to the Eventstream user interface. Here is where you will see able to connect with a source stream of data, bring it
     into this Fabric item, and then stream it to a new destination like a Lakehouse or KQL Database.
 
-16. It may take a few moments for your Source to be **Active** but after waiting a few moments, click on the middle icon with the name of
+1. It may take a few moments for your Source to be **Active** but after waiting a few moments, click on the middle icon with the name of
     your Eventstream on it and then click on **Refresh** if you do not see a preview of the data.
    
     >**Note: If you receive a "Warning" status around and audit policy, that is fine. The stream will still function**
 
     ![A screenshot of a computer Description automatically generated](./media/image16.png)
 
-17. You should now see a sample of the data within the bottom window.
+1. You should now see a sample of the data within the bottom window.
     
     ![A screenshot of a computer](./media/image17.png)
 
@@ -147,13 +147,15 @@ The lab includes steps for the user to follow along with associated screenshots 
 
 6.  Modify the remainder of the settings with the following details below.
 
--   Destination name -- **eh-kql-db-Fabrikam**
+    -   Destination name -- **eh-kql-db-Fabrikam**
 
--   Workspace -- **RTI_username**
+    -   Workspace -- **RTI_<inject key="AzureAdUserEmail"></inject>**
 
--   KQL Database -- **eh_Fabrikam**
+    -   Eventhouse -- eh_Fabrikam
 
-    ![A screenshot of a computer](./media/image24.png)
+    -   KQL Database -- **eh_Fabrikam**
+
+        ![A screenshot of a computer](./media/image24-1.png)
 
 7.  Click on Save.
 
@@ -192,7 +194,7 @@ The lab includes steps for the user to follow along with associated screenshots 
 
 ## Task 3: Authoring Kusto Database Queries
 
-1.  Make your way back to your **RTI_username** workspace. You should see two new objects that have been created because of your
+1.  Make your way back to your **RTI_<inject key="AzureAdUserEmail"></inject>** workspace. You should see two new objects that have been created because of your
     Eventstream. The Eventstream itself as well as a Real-Time Intelligence Data stream.
 
     ![A screenshot of a computer](./media/image32.png)
@@ -223,14 +225,14 @@ The lab includes steps for the user to follow along with associated screenshots 
     Again, the size of the table and the number of rows within the table are going to vary from student to student and will not affect your
     end results of this or any lab. A few additional items to call out on this menu include:
 
--   **Schema** -- This includes details about the column name and the data types of the column that can be queried with KQL.
+    -   **Schema** -- This includes details about the column name and the data types of the column that can be queried with KQL.
 
--   **Mappings** -- This will list all the sources of data and in what format the data is being received. You can have various sources in
+    -   **Mappings** -- This will list all the sources of data and in what format the data is being received. You can have various sources in
     various formats all mapping data to the same table on a KQL  Database.
 
--   **OneLake availability** -- This is currently active because of the  property we enabled at the higher level in the Eventhouse.
+    -   **OneLake availability** -- This is currently active because of the  property we enabled at the higher level in the Eventhouse.
 
-    ![A screenshot of a computer](./media/image38.png)
+        ![A screenshot of a computer](./media/image38.png)
 
 8.  Click on **Explore your data** in the top-right corner.
 
@@ -298,8 +300,7 @@ You may be working with the Kusto Query Language for the first time.While this l
     GROUP BY ProductKey
     
     ```
-
-  ![A screenshot of a computer Description automatically generated](./media/image51.png)
+    ![A screenshot of a computer Description automatically generated](./media/image51.png)
 
 
 3. This is a simple SQL query that will retrieve results from the InternetSales table to return two columns, the product key and a count of the number of orders. Because there is an aggregated column and a non-aggregated column, you must use a GROUP BY to return results for each individual product. Run the entire query beginning with the "--" to the end of the T-SQL query.
@@ -353,7 +354,7 @@ within this interface include working with Copilot, should that be available to 
 
     ![A screenshot of a computer](./media/image61.png)
 
-6.  Return to your **RTI_username** workspace. You should have the following objects present
+6.  Return to your **RTI_<inject key="AzureAdUserEmail"></inject>** workspace. You should have the following objects present
 
     ![A screenshot of a computer Description automatically generated](./media/image62.png)
 
@@ -419,9 +420,9 @@ within this interface include working with Copilot, should that be available to 
 
    ```
    //Clicks by hour
-   Clicks
-   | where eventDate between (_startTime.._endTime)
-   | summarize date_count = count() by bin(eventDate, 1h) 
+   InternetSales
+   | where OrderDate between (_startTime.._endTime)
+   | summarize date_count = count() by bin(OrderDate, 1h) 
    | render timechart  
    | top 30 by date_count
 
@@ -431,13 +432,13 @@ within this interface include working with Copilot, should that be available to 
 
    ![A screenshot of a computer Description automatically generated](./media/image192.png)
 
-5. Notice that you may only have one result in your output. This is because of the **Time range** that is set by default for this tile. You have a parameter with which you can alter the range of time with which you are returning data from. The eventDate between (\_startTime..\_endTime) is what allows you to take advantage of this parameter. Modify the **Time Range** parameter to **Last 3 hours** and observe how your output changes.
+5. Notice that you may only have one result in your output. This is because of the **Time range** that is set by default for this tile. You have a parameter with which you can alter the range of time with which you are returning data from. The eventDate between (\_startTime..\_endTime) is what allows you to take advantage of this parameter. Modify the **Time Range** parameter to **Last 1095 days** and observe how your output changes.
 
-   ![A screenshot of a search box Description automatically generated](./media/image193.png)
+   ![A screenshot of a search box Description automatically generated](./media/image193-1.png)
 
-6. You should now see in your query output the results of clicks over the last 3 hour window.
+6. You should now see in your query output the results of clicks over the last 1095 days window.
 
-   ![A screenshot of a computer Description automatically generated](./media/image194.png)
+   ![A screenshot of a computer Description automatically generated](./media/image194-1.png)
 
 7. While this parameter can be modified, you may wish for it to default to a specific time range instead of forcing users to modify it. Above the time range option, click on the **@ Parameters** option.
 
@@ -447,7 +448,7 @@ within this interface include working with Copilot, should that be available to 
 
    ![A screenshot of a computer Description automatically generated](./media/image196.png)
 
-9. Change the **Default value** to **Last 24 hours** to always show the last day by default. Click **Done** when finished.
+9. Change the **Default value** to **Last 1095 days** to always show the last day by default. Click **Done** when finished.
 
    ![A screenshot of a computer Description automatically generated](./media/image197.png)
 
@@ -457,9 +458,9 @@ within this interface include working with Copilot, should that be available to 
 
     ![A screenshot of a computer Description automatically generated](./media/image198.png)
 
-12. A new flyout will appear on the right-hand side of the screen. Click in the text box underneath the **Tile name** option to give this visual the name **Clicks by Hour**.
+12. A new flyout will appear on the right-hand side of the screen. Click in the text box underneath the **Tile name** option to give this visual the name **Orders by date**.
 
-    ![A screenshot of a computer screen Description automatically generated](./media/image199.png)
+    ![A screenshot of a computer screen Description automatically generated](./media/image199-1.png)
 
 13. By default, the visual that you're using to display the results of this KQL query is a table. This may not be the best way for someone to quickly consume and comprehend what is happening with the results of your data. Change the type of visual from a table to an **Area chart**.
 
@@ -473,116 +474,14 @@ within this interface include working with Copilot, should that be available to 
 
     ![A screenshot of a computer Description automatically generated](./media/image202.png)
 
-16. Once this visual has been placed within the Dashboard, notice again that the visual is only showing the last hour of results. Modify the Dashboard to show the **Time Range** of the **Last 24 hours**.
+16. Once this visual has been placed within the Dashboard, notice again that the visual is only showing the last hour of results. Modify the Dashboard to show the **Time Range** of the **Last 1095 days**.
 
-    ![A graph with blue lines Description automatically generated](./media/image203.png)
+    ![A graph with blue lines Description automatically generated](./media/image203-1.png)
 
 17. Refresh the visual and notice that the results will slightly change to reflect the data that has come in since the last execution of the query.
 
     ![A screenshot of a computer Description automatically generated](./media/image204.png)
 
-### Task 6.4: Add More Dashboard Tiles to Real-Time Dashboard
-
-1. From the **Home ribbon** in the Real-Time Dashboard click on the **New tile** button.
-
-   ![A screenshot of a phone Description automatically generated](./media/image205.png)
-
-2. Enter the following KQL query into the query pane.
-
-   ```
-   //Impressions by hour
-   Impressions
-   | where eventDate between (_startTime.._endTime)
-   | summarize date_count = count() by bin(eventDate, 1h) 
-   | render timechart  
-   | top 30 by date_count
-   
-   ```
-3. **Run** the query.
-
-   ![A screenshot of a computer Description automatically generated](./media/image207.png)
-
-4. Click the **+ Add** visual button.
-
-   ![A screenshot of a computer Description automatically generated](./media/image208.png)
-
-5. Edit the visual to change the **Tile name** to **Impressions by Hour** and the **Visual Type** to **Area chart**.
-
-   ![A screenshot of a screenshot of a computer Description automatically generated](./media/image209.png)
-
-6. Apply changes to the visual.
-
-   ![A close up of a sign Description automatically generated](./media/image210.png)
-
-7. Add another **+ New tile**.
-
-   ![A screenshot of a graph Description automatically generated](./media/image211.png)
-
-8. Copy and paste the following query into the query pane. Note, this is a multi-statement query that uses multiple let statements & a query combined by semicolons.
-
-   ```
-   //Clicks, Impressions, CTR
-   
-   let imp =  Impressions
-   | where eventDate  between (_startTime.._endTime)
-   | extend dateOnly = substring(todatetime(eventDate).tostring(), 0, 10) 
-   | summarize imp_count = count() by dateOnly; 
-   
-   let clck = Clicks
-   | where eventDate  between (_startTime.._endTime)
-   | extend dateOnly = substring(todatetime(eventDate).tostring(), 0, 10) 
-   | summarize clck_count = count() by dateOnly;
-   
-   imp  
-   | join clck on $left.dateOnly == $right.dateOnly 
-   | project selected_date = dateOnly , impressions = imp_count , clicks = clck_count, CTR = clck_count * 100 / imp_count
-   
-   ```
-
-9. **Run** the query to view the results.
-
-   ![A screenshot of a computer Description automatically generated](./media/image213.png)
-
-10. Click the **+ Add visual** button.
-
-11. When the visual settings appear modify the following settings to create a count of Impressions.
-
-    - **Tile name** - Impressions
-    - **Visual type** - Stat
-    - **Value column** - impressions (long)
-
-    ![A screenshot of a computer Description automatically generated](./media/image214.png)
-
-12. Choose **Apply changes** when all settings are configured appropriately.
-
-    ![A screenshot of a computer Description automatically generated](./media/image215.png)
-
-13. On the new tile, click on the ellipses (...) and select the option to **Duplicate tile**.
-
-    ![A screenshot of a computer Description automatically generated](./media/image216.png)
-
-14. Click on the **pencil icon** for the duplicated tile to edit the configurations.
-
-    ![A screenshot of a computer game Description automatically generated](./media/image217.png)
-
-15. Rename this **Tile name** to **Clicks** and change the **Value column** to **clicks (long)**.
-
-    ![A screenshot of a computer Description automatically generated](./media/image218.png)
-
-16. Apply the changes to this visual.
-
-17. Duplicate either one of the new tiles one more time to create one final stat visual.
-
-    ![A screenshot of a computer Description automatically generated](./media/image219.png)
-
-18. Edit the new tile to change the **Tile name** to **Click Through Rate** and the **Value column** to **CTR (long)**.
-
-    ![A screenshot of a computer Description automatically generated](./media/image220.png)
-19. Apply the changes.
-
-20. If the tiles are separated or you wish to reorganize them, you can hover over the tile until a hand icon appears and drag and drop the visual where you wish.
-
-    ![A screenshot of a computer Description automatically generated](./media/image221.png)
 
 ## Summary
 
