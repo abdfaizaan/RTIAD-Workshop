@@ -151,9 +151,11 @@ The lab includes steps for the user to follow along with associated screenshots 
 
     -   Workspace -- **RTI_<inject key="AzureAdUserEmail"></inject>**
 
+    -   Eventhouse -- eh_Fabrikam
+
     -   KQL Database -- **eh_Fabrikam**
 
-        ![A screenshot of a computer](./media/image24.png)
+        ![A screenshot of a computer](./media/image24-1.png)
 
 7.  Click on Save.
 
