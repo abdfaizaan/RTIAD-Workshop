@@ -448,7 +448,7 @@ within this interface include working with Copilot, should that be available to 
 
    ![A screenshot of a computer Description automatically generated](./media/image196.png)
 
-9. Change the **Default value** to **Last 24 hours** to always show the last day by default. Click **Done** when finished.
+9. Change the **Default value** to **Last 1095 days** to always show the last day by default. Click **Done** when finished.
 
    ![A screenshot of a computer Description automatically generated](./media/image197.png)
 
