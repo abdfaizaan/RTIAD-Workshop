@@ -436,7 +436,7 @@ within this interface include working with Copilot, should that be available to 
 
    ![A screenshot of a search box Description automatically generated](./media/image193-1.png)
 
-6. You should now see in your query output the results of clicks over the last 3 hour window.
+6. You should now see in your query output the results of clicks over the last 1095 days window.
 
    ![A screenshot of a computer Description automatically generated](./media/image194.png)
 
