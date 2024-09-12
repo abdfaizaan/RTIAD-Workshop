@@ -300,7 +300,6 @@ You may be working with the Kusto Query Language for the first time.While this l
     GROUP BY ProductKey
     
     ```
-
     ![A screenshot of a computer Description automatically generated](./media/image51.png)
 
 
