@@ -147,13 +147,13 @@ The lab includes steps for the user to follow along with associated screenshots 
 
 6.  Modify the remainder of the settings with the following details below.
 
--   Destination name -- **eh-kql-db-Fabrikam**
+    -   Destination name -- **eh-kql-db-Fabrikam**
 
--   Workspace -- **RTI_username**
+    -   Workspace -- **RTI_username**
 
--   KQL Database -- **eh_Fabrikam**
+    -   KQL Database -- **eh_Fabrikam**
 
-    ![A screenshot of a computer](./media/image24.png)
+        ![A screenshot of a computer](./media/image24.png)
 
 7.  Click on Save.
 
@@ -223,14 +223,14 @@ The lab includes steps for the user to follow along with associated screenshots 
     Again, the size of the table and the number of rows within the table are going to vary from student to student and will not affect your
     end results of this or any lab. A few additional items to call out on this menu include:
 
--   **Schema** -- This includes details about the column name and the data types of the column that can be queried with KQL.
+    -   **Schema** -- This includes details about the column name and the data types of the column that can be queried with KQL.
 
--   **Mappings** -- This will list all the sources of data and in what format the data is being received. You can have various sources in
+    -   **Mappings** -- This will list all the sources of data and in what format the data is being received. You can have various sources in
     various formats all mapping data to the same table on a KQL  Database.
 
--   **OneLake availability** -- This is currently active because of the  property we enabled at the higher level in the Eventhouse.
+    -   **OneLake availability** -- This is currently active because of the  property we enabled at the higher level in the Eventhouse.
 
-    ![A screenshot of a computer](./media/image38.png)
+        ![A screenshot of a computer](./media/image38.png)
 
 8.  Click on **Explore your data** in the top-right corner.
 
@@ -299,7 +299,7 @@ You may be working with the Kusto Query Language for the first time.While this l
     
     ```
 
-  ![A screenshot of a computer Description automatically generated](./media/image51.png)
+    ![A screenshot of a computer Description automatically generated](./media/image51.png)
 
 
 3. This is a simple SQL query that will retrieve results from the InternetSales table to return two columns, the product key and a count of the number of orders. Because there is an aggregated column and a non-aggregated column, you must use a GROUP BY to return results for each individual product. Run the entire query beginning with the "--" to the end of the T-SQL query.
