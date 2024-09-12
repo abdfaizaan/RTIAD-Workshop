@@ -438,7 +438,7 @@ within this interface include working with Copilot, should that be available to 
 
 6. You should now see in your query output the results of clicks over the last 1095 days window.
 
-   ![A screenshot of a computer Description automatically generated](./media/image194.png)
+   ![A screenshot of a computer Description automatically generated](./media/image194-1.png)
 
 7. While this parameter can be modified, you may wish for it to default to a specific time range instead of forcing users to modify it. Above the time range option, click on the **@ Parameters** option.
 
