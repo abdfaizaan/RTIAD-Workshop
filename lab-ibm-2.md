@@ -458,9 +458,9 @@ within this interface include working with Copilot, should that be available to 
 
     ![A screenshot of a computer Description automatically generated](./media/image198.png)
 
-12. A new flyout will appear on the right-hand side of the screen. Click in the text box underneath the **Tile name** option to give this visual the name **Clicks by Hour**.
+12. A new flyout will appear on the right-hand side of the screen. Click in the text box underneath the **Tile name** option to give this visual the name **Orders by date**.
 
-    ![A screenshot of a computer screen Description automatically generated](./media/image199.png)
+    ![A screenshot of a computer screen Description automatically generated](./media/image199-1.png)
 
 13. By default, the visual that you're using to display the results of this KQL query is a table. This may not be the best way for someone to quickly consume and comprehend what is happening with the results of your data. Change the type of visual from a table to an **Area chart**.
 
