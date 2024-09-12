@@ -65,11 +65,12 @@ By the end of this lab, you will have learned:
 
    ![a](../media/Lab-01/image002.png)
 
-1. Enter the **Username** available in the **Environment Variables** tab (next to the Lab Guide) as the **Email** and click **Submit.** 
+2. Enter the **Username:** <inject key="AzureAdUserEmail"></inject> and click **Submit.** 
 
    ![b](../media/Lab-01/image003.png)
 
-1. You will be navigated to the **Password** screen. Enter the **Password** available in the **Environment** tab (next to the Lab Guide) shared with you by the instructor.
+3. You will be navigated to the **Password:** <inject key="AzureAdUserPassword"></inject>
+
 
 1. Click **Sign in** and follow the prompts to sign into Fabric.
 
@@ -83,15 +84,18 @@ By the end of this lab, you will have learned:
 
 1. You will be navigated to the familiar **Power BI Service Home page**. 
 
+
 1. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor. 
 
    Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up. 
+
 
 1. On the top right corner of the screen, select the **user** **icon**. 
 
 1. Select **Free trial**. 
 
    ![](../media/Lab-01/image005-1.png)
+
 
 1. Activate your 60-day free Fabric trial capacity dialog opens. Select **Activate**. 
 

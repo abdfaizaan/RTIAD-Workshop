@@ -59,7 +59,7 @@ The lab includes steps for the user to follow along with associated screenshots 
 
 6.  From your environment details page, copy and paste all the necessary connection settings into the appropriate fields. For these labs we are connecting to an Event Hub which has streaming data being sent from a python notebook. This notebook is creating fake sales transactions at rate of around 3,100 transactions per hour.
     
-    - Event Hub namespace: **rtiadhub[SUFFIX]**
+    - Event Hub namespace: **rtiadhub<inject key="DeploymentID" enableCopy="false"></inject>**
     
     - Event Hub: **rti-iad-fabrikam**
     
@@ -71,10 +71,13 @@ The lab includes steps for the user to follow along with associated screenshots 
 - To copy the primary key, follow these steps:
     - Go back to the Azure portal.
     - In the search bar, type "Event Hub" and select the Event Hub.
-    - Under the "entities" section, choose **event hub (1)**.
-    - Select **rti-iad-fabrikam (2)**.
-    - under settings , select **shared access policy**
-    - Copy the **Primary Key (3)** from rti-reader.
+    - Scroll down below to entities section , choose **event hub** again.
+    - Select **rti-iad-fabrikam**.
+    - under settings , select **shared access policy (1)**.
+    - Choose **rti-reader (2)**
+    - Copy the **Primary Key (3)**
+
+    ![A screenshot of a computer Description automatically generated](./media/rti_reader.png)
 
 7.  Once all properties have been filled out click on **Connect**.
     
@@ -82,13 +85,13 @@ The lab includes steps for the user to follow along with associated screenshots 
 
 8.  In the configuration of the Azure Event Hub data source, you will need to modify the **Consumer group** of the Event Hub to ensure that you gain access to a unique access point to the stream of data. Within your **Environment details** find the property that lists what your consumer group name will be and place that into the field box. It will appear something like "**$Default**".
     
-    ![A screenshot of a computer](./media/image11.png)
+    ![A screenshot of a computer](./media/choose_1.png)
 
   >**Note**: Choose "**$Default**" as Consumer group
 
 10.  Before we finalize this data source and Eventstream, let's go ahead and rename our Eventstream to something more useful. In the "Stream details\" section on the right select the pencil icon next to the "Eventstream name" and let's call our Eventstream **es_Fabrikam_InternetSales**"
     
-   ![A screenshot of a computer](./media/image12.png)
+     ![A screenshot of a computer](./media/image12.png)
 
 11. Now we can click on **Next**, which will take us to a final overview page.
     

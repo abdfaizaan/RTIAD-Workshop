@@ -84,7 +84,19 @@ By the end of this lab, you will have learned:
     - Shared Access Key: Copy the **Primary Key** value from the **event hub** page from Shared Access Policies.
 
     ![A screenshot of a computer Description automatically generated](./media/image72.png)
-
+   
+>**Note**:
+   - To copy the primary key, follow these steps:
+        - Go back to the Azure portal.
+        - In the search bar, type "Event Hub" and select the Event Hub.
+        - Scroll down below to entities section , choose **event hub** again
+        - Select **rti-iad-clicks**.
+        - under settings , select **shared access policy (1)**.
+        - Choose **rti-reader (2)**
+        - Copy the **Primary Key (3)**
+       
+      ![A screenshot of a computer Description automatically generated](./media/shared_1.png)
+ 
 8. Once all the properties have been filled out, click on **Connect**.
 
 9. In the configuration of the Azure Event Hub data source, you will
@@ -94,7 +106,7 @@ By the end of this lab, you will have learned:
    what your consumer group name will be and place that into the field
    box. It will appear something like "**$Default**"
 
-    ![A screenshot of a computer Description automatically generated](./media/image73.png)
+    ![A screenshot of a computer Description automatically generated](./media/choose_1.png)
 
 10. Click on **Next**.
 
@@ -410,7 +422,7 @@ Up to this point you have been working with streaming data, but are still missin
     kind=sql
     table=[SalesLT.Product]
     ( 
-       h@'Server=tcp:adxdemo.database.windows.net,1433;Initial Catalog=aworks;User Id=sqlread;Password=ChangeYourAdminPassword1'
+       h@'Server=tcp:fabrikamadmin.database.windows.net,1433;Initial Catalog=Fabrikam_demo;User Id=fabrikamuser;Password=fabrikam@1234'
     )
     with 
     (
@@ -421,7 +433,7 @@ Up to this point you have been working with streaming data, but are still missin
     kind=sql
     table=[SalesLT.ProductCategory]
     ( 
-       h@'Server=tcp:adxdemo.database.windows.net,1433;Initial Catalog=aworks;User Id=sqlread;Password=ChangeYourAdminPassword1'
+       h@'Server=tcp:fabrikamadmin.database.windows.net,1433;Initial Catalog=Fabrikam_demo;User Id=fabrikamuser;Password=fabrikam@1234'
     )
     with 
     (
@@ -429,7 +441,7 @@ Up to this point you have been working with streaming data, but are still missin
     )
     ```
 
-   ![A screenshot of a computer Description automatically generated](./media/image118.png)
+   ![A screenshot of a computer Description automatically generated](./media/data_query.png)
 
 6. Click the **Run** button to execute the script.
 
