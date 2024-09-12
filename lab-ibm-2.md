@@ -149,7 +149,7 @@ The lab includes steps for the user to follow along with associated screenshots 
 
     -   Destination name -- **eh-kql-db-Fabrikam**
 
-    -   Workspace -- **RTI_username**
+    -   Workspace -- **RTI_<inject key="AzureAdUserEmail"></inject>**
 
     -   KQL Database -- **eh_Fabrikam**
 
@@ -192,7 +192,7 @@ The lab includes steps for the user to follow along with associated screenshots 
 
 ## Task 3: Authoring Kusto Database Queries
 
-1.  Make your way back to your **RTI_username** workspace. You should see two new objects that have been created because of your
+1.  Make your way back to your **RTI_<inject key="AzureAdUserEmail"></inject>** workspace. You should see two new objects that have been created because of your
     Eventstream. The Eventstream itself as well as a Real-Time Intelligence Data stream.
 
     ![A screenshot of a computer](./media/image32.png)
@@ -353,7 +353,7 @@ within this interface include working with Copilot, should that be available to 
 
     ![A screenshot of a computer](./media/image61.png)
 
-6.  Return to your **RTI_username** workspace. You should have the following objects present
+6.  Return to your **RTI_<inject key="AzureAdUserEmail"></inject>** workspace. You should have the following objects present
 
     ![A screenshot of a computer Description automatically generated](./media/image62.png)
 
