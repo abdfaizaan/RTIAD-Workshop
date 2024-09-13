@@ -86,7 +86,7 @@ By the end of this lab, you will have learned:
     - Search for **eventhub** from the search bar
     - Choose the **eventhub**
     - Under **entities** , choose the **eventhub** , select **rt-iad-clicks**.
-    - select **rt-iad reader** , choose the **primary key** 
+    -  Under settings select **shared access key**,select **rti reader** , choose the **primary key** 
   
        ![A screenshot of a computer Description automatically generated](./media/image72.png)
    
