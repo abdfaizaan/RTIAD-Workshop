@@ -70,7 +70,7 @@ The lab includes steps for the user to follow along with associated screenshots 
     - Search for **eventhub** from the search bar
     - Choose the **eventhub**
     - Under **entities** , choose the **eventhub** , select **rt-iad-fabrikam**.
-    - Under settings select **shared access key** ,select **rti-reader** , choose the **primary key**  
+    - Under settings select **shared access key (1)** ,select **rti-reader (2)** , choose the **primary key (3)**  
 
      ![A screenshot of a computer Description automatically generated](./media/rti_reader.png)
 
