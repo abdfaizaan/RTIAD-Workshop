@@ -71,7 +71,8 @@ The lab includes steps for the user to follow along with associated screenshots 
     - Choose the **eventhub**
     - Under **entities** , choose the **eventhub** , select **rt-iad-fabrikam**.
     - Under settings select **shared access key** ,select **rti-reader** , choose the **primary key**  
-  
+
+     ![A screenshot of a computer Description automatically generated](./media/rti_reader.png)
 
 7.  Once all properties have been filled out click on **Connect**.
     
