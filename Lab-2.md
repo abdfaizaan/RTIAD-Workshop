@@ -70,7 +70,7 @@ The lab includes steps for the user to follow along with associated screenshots 
     - Search for **eventhub** from the search bar
     - Choose the **eventhub**
     - Under **entities** , choose the **eventhub** , select **rt-iad-fabrikam**.
-    - select **rt-iad reader** , choose the **primary key**  
+    - Under settings select **shared access key** ,select **rt-iad reader** , choose the **primary key**  
   
 
 7.  Once all properties have been filled out click on **Connect**.
