@@ -86,14 +86,17 @@ By the end of this lab, you will have learned:
     - Search for **eventhub** from the search bar
     - Choose the **eventhub**
     - Under **entities** , choose the **eventhub** , select **rt-iad-clicks**.
-    -  Under settings select **shared access key**,select **rti reader** , choose the **primary key** 
+    -  Under settings select **shared access key**,select **rti reader** , choose the **primary key**
   
-       ![A screenshot of a computer Description automatically generated](./media/image72.png)
+      
+      ![A screenshot of a computer Description automatically generated](./media/shared_1.png)
+   
+      ![A screenshot of a computer Description automatically generated](./media/image72.png)
    
  
-8. Once all the properties have been filled out, click on **Connect**.
+9. Once all the properties have been filled out, click on **Connect**.
 
-9. In the configuration of the Azure Event Hub data source, you will
+10. In the configuration of the Azure Event Hub data source, you will
    need to modify the **Consumer group** of the Event Hub to ensure
    that you gain access to a unique access point to the stream of data.
    Within your **Environment details** find the property that lists
@@ -102,18 +105,18 @@ By the end of this lab, you will have learned:
 
     ![A screenshot of a computer Description automatically generated](./media/choose_1.png)
 
-10. Click on **Next**.
+11. Click on **Next**.
 
-11. On the review and create window, verify that everything is configured correctly and click **Add**.
+12. On the review and create window, verify that everything is configured correctly and click **Add**.
 
     ![A screenshot of a computer Description automatically generated](./media/image74.png)
 
-12. Once the stream is configured, you will be able to see a preview of
+13. Once the stream is configured, you will be able to see a preview of
     the data coming from the Event Hub.
 
     ![A table of numbers and numbers Description automatically generated](./media/image75.png)
 
-13. Examine the data being received. There are two types of events that
+14. Examine the data being received. There are two types of events that
     are logged from the e-commerce website: clicks and impressions.
 
     - **IMPRESSION** - An impression event is recorded each time an
