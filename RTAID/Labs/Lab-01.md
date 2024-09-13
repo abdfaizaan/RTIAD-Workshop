@@ -1,4 +1,5 @@
 # Microsoft Fabric - Real-Time Intelligence in a Day
+### Estimated Duration: 20 minutes
 
 ![](../media/Lab-01/image001.png)
 
