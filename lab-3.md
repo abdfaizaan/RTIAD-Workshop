@@ -81,15 +81,8 @@ By the end of this lab, you will have learned:
     - Event Hub namespace: **rtiadhub<inject key="DeploymentID" enableCopy="false"></inject>**
     - Event Hub: **rti-iad-clicks**
     - Shared Access Key Name: **rti-reader**
-    - Shared Access Key: - Shared Access Key:
-    - Navigate back to the azure portal
-    - Search for **eventhub** from the search bar
-    - Choose the **eventhub**
-    - Under **entities** , choose the **eventhub** , select **rt-iad-clicks**.
-    -  Under settings select **shared access key (1)**,select **rti-reader (2)** , choose the **primary key (3)**
+    - Shared Access Key: <inject key="rti-iad-clicks Primary Key"></inject>
   
-      
-      ![A screenshot of a computer Description automatically generated](./media/shared_1.png)
    
       ![A screenshot of a computer Description automatically generated](./media/image72.png)
    
