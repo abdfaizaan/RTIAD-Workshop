@@ -65,14 +65,9 @@ The lab includes steps for the user to follow along with associated screenshots 
     
     - Shared Access Key Name: **rti-reader**
     
-    - Shared Access Key:
-    - Navigate back to the azure portal
-    - Search for **eventhub** from the search bar
-    - Choose the **eventhub**
-    - Under **entities** , choose the **eventhub** , select **rt-iad-fabrikam**.
-    - Under settings select **shared access key (1)** ,select **rti-reader (2)** , choose the **primary key (3)**  
+    - Shared Access Key: <inject key="rti-iad-fabrikam Primary Key"></inject>
 
-     ![A screenshot of a computer Description automatically generated](./media/rti_reader.png)
+    >**Note**: You can also copy the shared access key from environment tab 
 
 7.  Once all properties have been filled out click on **Connect**.
     
