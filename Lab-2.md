@@ -67,7 +67,7 @@ The lab includes steps for the user to follow along with associated screenshots 
     
     - Shared Access Key: <inject key="rti-iad-fabrikam Primary Key"></inject>
 
-    >**Note**: You can also copy the shared access key from environment tab 
+    >**Note**: You can also copy the shared access primary key from environment tab 
 
 7.  Once all properties have been filled out click on **Connect**.
     
