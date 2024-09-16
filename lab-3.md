@@ -83,8 +83,9 @@ By the end of this lab, you will have learned:
     - Shared Access Key Name: **rti-reader**
     - Shared Access Key: <inject key="rti-iad-clicks Primary Key"></inject>
   
-   
-      ![A screenshot of a computer Description automatically generated](./media/image72.png)
+  >**Note**: You can also copy the shared access primary key from environment tab
+
+  ![A screenshot of a computer Description automatically generated](./media/image72.png)
    
  
 9. Once all the properties have been filled out, click on **Connect**.
