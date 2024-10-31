@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/f70b0a86-f545-4f77-96d8-803f2b989848)# Microsoft Fabric - Real-Time Intelligence in a Day
+# Microsoft Fabric - Real-Time Intelligence in a Day
 ### Estimated Duration: 20 minutes
 
 ![](../media/Lab-01/image001.png)
