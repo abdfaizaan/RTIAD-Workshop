@@ -225,7 +225,7 @@ In this lab, we explored the Real-Time Intelligence interface, examined the Real
 Fabric Real-time Intelligence in a Day (RTIIAD) introduces you to some of the key functions available in Microsoft Fabric. 
 In the menu of the service, the Help (?) section has links to some great resources. 
 
-![](../media/Lab-01/imag028.png)
+![](../media/Lab-01/imag030.png)
  
 Here are a few more resources that will help you with your next steps with Microsoft Fabric. 
 - See blog post to read the full Microsoft Fabric GA announcement 
