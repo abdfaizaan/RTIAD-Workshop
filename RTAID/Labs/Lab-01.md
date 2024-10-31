@@ -74,7 +74,7 @@ By the end of this lab, you will have learned:
 
 1. Click **Sign in** and follow the prompts to sign into Fabric. 
    
-   ![c](../media/Lab-01/imag004.png)
+   ![c](../media/Lab-01/image004.png)
 
 1. You will be navigated to the **Fabric Home page**.
 
@@ -109,13 +109,17 @@ By the end of this lab, you will have learned:
 
 2. You will be navigated to **Real-Time Intelligence Home page**. You will see **Task flow templates**, Recommended items to create, and **Learn more about Real-Time Intelligence** categories.  With the **Recommended** category notice the items:
    
-   - a.	**Eventhouse**: Used to create a workspace of one or multiple KQL database(s), which can be shared across projects. Also creates a KQL Database within the Eventhouse.
-   - b.	**KQL Queryset**: Used to run queries on the data to produce shareable tables and visuals. 
-   - c.	**Real-Time Dashboard**: A collection of tiles, optionally organized in pages, where each tile has an underlying query and a visual representation.
-   - d.	**Eventstream**: Used to capture, transform, and route real-time event stream. 
-   - e.	**Reflex**: For automatically taking actions when patterns or conditions are detected in changing data.
+     a.	**Eventhouse**: Used to create a workspace of one or multiple KQL database(s), which can be shared across projects. Also creates a KQL Database within the Eventhouse.
+   
+     b.	**KQL Queryset**: Used to run queries on the data to produce shareable tables and visuals.
+    
+     c.	**Real-Time Dashboard**: A collection of tiles, optionally organized in pages, where each tile has an underlying query and a visual representation.
+   
+     d.	**Eventstream**: Used to capture, transform, and route real-time event stream.
+   
+     e.	**Reflex**: For automatically taking actions when patterns or conditions are detected in changing data.
 
-     ![c](../media/Lab-01/imag09.png)
+      ![c](../media/Lab-01/imag09.png)
 
 ## Task 3: Real-Time Hub
 
@@ -145,23 +149,23 @@ By the end of this lab, you will have learned:
 
    ![](../media/Lab-01/imag014.png)
 
-6. **Close** the Get events window by clicking the “X” in the upper right corner.
+1. **Close** the Get events window by clicking the “X” in the upper right corner.
 
 # Create Workspace and Eventhouse
 
 ## Task 4: Create a Fabric Workspace 
 1.	Now let’s create a workspace with Fabric license. Select **Workspaces** from the navigation bar on the left.
-1.	Select **New workspace**.
+1. Select **New workspace**.
 
    ![](../media/Lab-01/imag015.png)
  
-1.	**Create a workspace** dialog opens on the right side of the browser. 
-1.	In the **Name** field enter **RTI_username**.  Use the username provided to you from the environment details.
-   
-**Note**: The workspace name must be unique. Make sure a green check mark with **“This name is available”** is displayed below the Name field. 
+1. **Create a workspace** dialog opens on the right side of the browser. 
+1. In the **Name** field enter **RTI_username**.  Use the username provided to you from the environment details.
 
-1.	If you would like, you can enter a **Description** for the workspace. This is an optional field. 
-1.	Click on **Advanced** to expand the section.
+   **Note**: The workspace name must be unique. Make sure a green check mark with **“This name is available”** is displayed below the Name field. 
+
+1. If you would like, you can enter a **Description** for the workspace. This is an optional field. 
+1. Click on **Advanced** to expand the section.
 
    ![](../media/Lab-01/imag016.png)
  
@@ -172,78 +176,79 @@ By the end of this lab, you will have learned:
  
 ## Task 5: Create an Eventhouse
 
-1.	Click the **+ New** box to find all the items you can create in this Fabric workspace.
+1. Click the **+ New** box to find all the items you can create in this Fabric workspace.
 
-    ![](../media/Lab-01/imag018.png)
+   ![](../media/Lab-01/imag029.png)
    
 1. Select the **Eventhouse** option from the drop-down list. As we have talked about this can be viewed  similarly to a Lakehouse in that we can store data but this Eventhouse is focused around real time data.
 
+   ![](../media/Lab-01/imag018.png)
+ 
+1. In the window that appears, give your Eventhouse the name, **eh_Fabrikam** and click on **Create**.
+
    ![](../media/Lab-01/imag019.png)
  
-1.	In the window that appears, give your Eventhouse the name, **eh_Fabrikam** and click on **Create**.
+1. This is where you will ultimately stream data from various sources through the rest of the training today. When the item is created, a window will appear giving you some details about the Eventhouse.  Click on the **Get started** button.
 
    ![](../media/Lab-01/imag020.png)
  
-1.	This is where you will ultimately stream data from various sources through the rest of the training today. When the item is created, a window will appear giving you some details about the Eventhouse.  Click on the **Get started** button.
+1. Take a quick tour of the Eventhouse by following the green tooltips on your screen.  This first one shows that an empty Kusto Query Language (KQL) Database was created with the Eventhouse.
 
    ![](../media/Lab-01/imag021.png)
- 
-1.	Take a quick tour of the Eventhouse by following the green tooltips on your screen.  This first one shows that an empty Kusto Query Language (KQL) Database was created with the Eventhouse.
-
-   ![](../media/Lab-01/imag022.png)
 
 1. Follow the remainder of the tooltips around the screen to show you where to create additional databases, check the storage in OneLake of the Eventhouse, check the usage of Fabric resources in compute minutes, and finally see what actions have occurred in the Eventhouse.
    
-1.	Within the navigational pane on the left of the Eventhouse, find your KQL Database that was created alongside the Eventhouse and simply click on it to view the database details
+1. Within the navigational pane on the left of the Eventhouse, find your KQL Database that was created alongside the Eventhouse and simply click on it to view the database details
 
-   ![](../media/Lab-01/imag023.png)
+   ![](../media/Lab-01/imag022.png)
 
-1.	This will allow us to still have one tab in the left browser pane to see the overview of our entire Eventhouse and a new tab to focus on the KQL Database properties. One goal that we wish to accomplish in our scenario is to ensure that the data streamed to the KQL database is accessible via OneLake. By enabling this feature, we make the data in this KQL Database easily discoverable through shortcuts to be used in any Lakehouse we may want. Locate the **Database details** section on the right and toggle **On** the “Availability” option.
+1. This will allow us to still have one tab in the left browser pane to see the overview of our entire Eventhouse and a new tab to focus on the KQL Database properties. One goal that we wish to accomplish in our scenario is to ensure that the data streamed to the KQL database is accessible via OneLake. By enabling this feature, we make the data in this KQL Database easily discoverable through shortcuts to be used in any Lakehouse we may want. Locate the **Database details** section on the right and toggle **On** the “Availability” option.
    
-    ![](../media/Lab-01/imag024.png)
+    ![](../media/Lab-01/imag023.png)
  
-1.	Return to your **RTI_username** workspace by selecting it from the left side of the browser
+1. Return to your **RTI_username** workspace by selecting it from the left side of the browser
+
+   ![](../media/Lab-01/imag024.png)
+ 
+1. If you see the **Task Flows** option taking up most of the space, select the double up arrow on the right-hand side to minimize it
 
     ![](../media/Lab-01/imag025.png)
- 
-1.	If you see the **Task Flows** option taking up most of the space, select the double up arrow on the right-hand side to minimize it
 
-    ![](../media/Lab-01/imag026.png)
+1. You now have the basis for how you will begin to ingest the streaming data into your OneLake.  The next step is to create a stream of data that can receive the data in motion.
 
-1.	 You now have the basis for how you will begin to ingest the streaming data into your OneLake.  The next step is to create a stream of data that can receive the data in motion.
-
-   ![](../media/Lab-01/imag027.png)
+   ![](../media/Lab-01/imag026.png)
  
 
 In this lab, we explored the Real-Time Intelligence interface, examined the Real-Time hub, created a Fabric workspace, and an Eventhouse that came with a KQL Database.  In the next lab, you will begin to explore techniques that ingest data from various sources across your data estate to OneLake and do some basic analysis with the Kusto Query Language (KQL).
- 
 
-References 
+## References 
 Fabric Real-time Intelligence in a Day (RTIIAD) introduces you to some of the key functions available in Microsoft Fabric. 
 In the menu of the service, the Help (?) section has links to some great resources. 
 
 ![](../media/Lab-01/imag028.png)
  
 Here are a few more resources that will help you with your next steps with Microsoft Fabric. 
-•	See blog post to read the full Microsoft Fabric GA announcement 
-•	Explore Fabric through the Guided Tour 
-•	Sign up for the Microsoft Fabric free trial 
-•	Visit the Microsoft Fabric website 
-•	Learn new skills by exploring the Fabric Learning modules 
-•	Explore the Fabric technical documentation 
-•	Read the free e-book on getting started with Fabric 
-•	Join the Fabric community to post your questions, share your feedback, and learn from others 
+- See blog post to read the full Microsoft Fabric GA announcement 
+- Explore Fabric through the Guided Tour 
+- Sign up for the Microsoft Fabric free trial 
+- Visit the Microsoft Fabric website 
+- Learn new skills by exploring the Fabric Learning modules 
+- Explore the Fabric technical documentation 
+- Read the free e-book on getting started with Fabric 
+- Join the Fabric community to post your questions, share your feedback, and learn from others
+   
 Read the more in-depth Fabric experience announcement blogs: 
-•	Data Factory experience in Fabric blog  
-•	Synapse Data Engineering experience in Fabric blog  
-•	Synapse Data Science experience in Fabric blog  
-•	Synapse Data Warehousing experience in Fabric blog  
-•	Real-Time Intelligence experience in Fabric blog 
-•	Power BI announcement blog 
-•	Data Activator experience in Fabric blog  
-•	Administration and governance in Fabric blog 
-•	OneLake in Fabric blog 
-•	Dataverse and Microsoft Fabric integration blog 
+
+- Data Factory experience in Fabric blog  
+- Synapse Data Engineering experience in Fabric blog  
+- Synapse Data Science experience in Fabric blog  
+- Synapse Data Warehousing experience in Fabric blog  
+- Real-Time Intelligence experience in Fabric blog 
+- Power BI announcement blog 
+- Data Activator experience in Fabric blog  
+- Administration and governance in Fabric blog 
+- OneLake in Fabric blog 
+- Dataverse and Microsoft Fabric integration blog 
  
 © 2024 Microsoft Corporation. All rights reserved. 
 
@@ -260,11 +265,13 @@ ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS DEMO/LAB MAY NOT REPRESENT FU
 FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO 
 MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT. 
 
-FEEDBACK. If you give feedback about the technology features, functionality and/or concepts described in this demo/lab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement. 
+**FEEDBACK**. If you give feedback about the technology features, functionality and/or concepts described in this demo/lab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement. 
+
 MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD 
 TO THE DEMO/LAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY, 
 WHETHER EXPRESS, IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-
-INFRINGEMENT. MICROSOFT DOES NOT MAKE ANY ASSURANCES OR REPRESENTATIONS WITH REGARD TO THE ACCURACY OF THE RESULTS, OUTPUT THAT DERIVES FROM USE OF DEMO/ LAB, OR SUITABILITY OF THE INFORMATION CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE. 
-DISCLAIMER 
+INFRINGEMENT. MICROSOFT DOES NOT MAKE ANY ASSURANCES OR REPRESENTATIONS WITH REGARD TO THE ACCURACY OF THE RESULTS, OUTPUT THAT DERIVES FROM USE OF DEMO/ LAB, OR SUITABILITY OF THE INFORMATION CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
+
+**DISCLAIMER** 
 This demo/lab contains only a portion of new features and enhancements in Microsoft Power BI. Some of the features might change in future releases of the product. In this demo/lab, you will learn about some, but not all, new features. 
 
