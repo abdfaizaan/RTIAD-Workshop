@@ -19,18 +19,12 @@
 
 # Document Structure 
 
-> The lab includes steps for the user to follow along with associated
-> screenshots that provide visual aid. In each screenshot, sections are
-> highlighted with orange boxes to indicate the area(s) user should
-> focus on.
+The lab includes steps for the user to follow along with associated screenshots that provide visual aid. In each screenshot, sections are highlighted with orange boxes to indicate the area(s) user should focus on.
 
 # Introduction 
 
-> In this lab, you will create another Eventstream to ingest additional
-> data into our existing Eventhouse. We will see how to include
-> transformations within the Eventstream to control what data we want to
-> be adding to the KQL database
-> By the end of this lab, you will have learned:
+In this lab, you will create another Eventstream to ingest additional data into our existing Eventhouse. We will see how to include transformations within the Eventstream to control what data we want to
+be adding to the KQL database By the end of this lab, you will have learned:
 
 -   Eventstream Processing and Transformation
 
@@ -52,7 +46,7 @@
 
 3.  Give the new Eventstream the name, **es_Fabrikam_ClickEvents**, Check the **"Enhanced Capabilities"** option, and then click on **Create**.
 
-    ![A screenshot of a computer](../media/Lab-03/image7)
+    ![A screenshot of a computer](../media/Lab-03/image7.png)
 
 4.  Under the Home ribbon, click on the **Add source** dropdown and then select **External sources**.
 
@@ -75,14 +69,14 @@
    - Shared Access Key Name: **rti-reader**
 
    - Shared Access Key: **Provided by Environment Details**
-
-   ![A screenshot of a computer Description automatically generated](../media/Lab-03/image11.png)
+     
+     ![A screenshot of a computer Description automatically generated](../media/Lab-03/image11.png)
 
 8.  Once all the properties have been filled out click on **Connect**.
 
 9.  In the configuration of the Azure Event Hub data source, you may need to modify the **Consumer group** of the Event Hub to ensure that you gain access to a unique access point to the stream of data. For this workshop you can leave the "\$Default" value as shown below
 
-   ![A screenshot of a computer](../media/Lab-03/image12.png)
+    ![A screenshot of a computer](../media/Lab-03/image12.png)
 
 10. Click on **Next**.
 
@@ -110,7 +104,7 @@ device and browser the webpage was loaded from, and what IP address accessed the
     analysts looking to derive insights from this data. Within the Eventstream canvas, click on the dropdown for the **Transform events** o 
     object.
 
-    ![A screenshot of a chat](../media/Lab-03/image15.png)
+     ![A screenshot of a chat](../media/Lab-03/image15.png)
 
 2.  From the list of available operations, select the **Manage fields** option.
 
@@ -128,12 +122,12 @@ device and browser the webpage was loaded from, and what IP address accessed the
 5.  From the list of fields, select the one called **PartitionId** and click on the ellipses (...) that appears when you hover over the
     field
 
-   ![A screenshot of a computer Description automatically generated](../media/Lab-03/image19.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image19.png)
 
 6.  Choose the option to **Remove** that field. For this stream of data coming from the Event Hub, partitioning is not being used so this
     column is not helpful to us, thus we are removing it.
 
-   ![A screenshot of a computer Description automatically generated](../media/Lab-03/image20.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image20.png)
 
 7.  Remove all the following fields that will not be needed for this stream.
 
@@ -147,7 +141,7 @@ device and browser the webpage was loaded from, and what IP address accessed the
 
 You should be left with the following fields in the image below.
 
-  ![A screenshot of a computer](../media/Lab-03/image21.png)
+![A screenshot of a computer](../media/Lab-03/image21.png)
 
 8. Hover over the eventDate field and when an ellipses (...) appears on the right-hand side of the window, click it.
 
@@ -160,7 +154,7 @@ You should be left with the following fields in the image below.
 10. Click on the **Change type toggle** to modify the data type of this field. The original type is a String, you need to modify the
     **Converted Type** to **DateTime**. After you have finished click on **Save**.
 
-  ![A screenshot of a computer Description automatically generated](../media/Lab-03/image24.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image24.png)
 
 ## Task 3: Split Eventstream and Load Two Destinations
 
@@ -168,7 +162,7 @@ You should be left with the following fields in the image below.
     differentiate CLICK events and IMPRESSION events. Add another transformation activity to the user interface by hovering over the
     end of the **Manage_Fields1** transform
 
-   ![A screen shot of a computer screen Description automatically generated](../media/Lab-03/image25.png)
+    ![A screen shot of a computer screen Description automatically generated](../media/Lab-03/image25.png)
 
 2.  Choose the **Filter** transform from the available list of operations.
 
@@ -178,8 +172,7 @@ You should be left with the following fields in the image below.
 
     ![A screen shot of a computer Description automatically generated](../media/Lab-03/image27.png)
 
-4.  In the flyout that appears on the right-hand side of the screen, customize the filter conditions to reflect a way to only return
-    CLICK values by using the settings below. It is important to note that the Filter transform is case sensitive
+4.  In the flyout that appears on the right-hand side of the screen, customize the filter conditions to reflect a way to only return CLICK values by using the settings below. It is important to note that the Filter transform is case sensitive
 
     -   **Operation name** - Clicks
     
@@ -187,7 +180,7 @@ You should be left with the following fields in the image below.
     
     -   **Keep events when the value** - equals -- CLICK **(Important! This is a case sensitive field, ensure to input in all capitals for this example)**
 
-     ![](../media/Lab-03/image28.png)
+        ![](../media/Lab-03/image28.png)
 
 5.  Choose the **Save** option to keep your changes.
 
@@ -199,16 +192,16 @@ You should be left with the following fields in the image below.
     to route different information to two or more tables. From the **Home** ribbon of the Eventstream click on the **Transform events**
     dropdown and then select **Filter**.
 
-   ![](../media/Lab-03/image30.png)
+    ![](../media/Lab-03/image30.png)
 
 8.  A new object called **Filter1 (Name may differ)** will appear on your canvas. You will need to connect the **Manage_fields1 stream**
     to the new filter transformation. Drag a line from the green dot on one transform to another to make that connection.
 
-   ![A screenshot of a computer](../media/Lab-03/image31.png)
+    ![A screenshot of a computer](../media/Lab-03/image31.png)
    
 9.  Click on the **pencil icon** for **Filter2** to edit its settings.
 
-  ![A screenshot of a computer Description automatically generated](../media/Lab-03/image32.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image32.png)
 
 10. In the flyout that appears on the right-hand side of the screen, customize the filter conditions to reflect a way to only return
     IMPRESSION values by using the values below. Remember that the Filter transform is case sensitive
@@ -221,7 +214,7 @@ You should be left with the following fields in the image below.
         This is a case sensitive field, ensure to input in all capitals for
         this example)**
 
-   ![](../media/Lab-03/image33.png)
+    ![](../media/Lab-03/image33.png)
 
 11. Choose the **Save** option to keep your changes.
 
@@ -232,50 +225,47 @@ You should be left with the following fields in the image below.
 
 13. Click on the **+ icon** after the **Clicks** filter operation.
 
-   ![A white board with writing on it Description automatically generated](../media/Lab-03/image34.png)
+    ![A white board with writing on it Description automatically generated](../media/Lab-03/image34.png)
 
-14. In the dropdown menu select "Manage fields"\
-    \
+14. In the dropdown menu select "Manage fields"
+
     ![](../media/Lab-03/image35.png)
 
-15. Click on the **pencil icon** to select what fields you wish to
-    add/remove to your stream\
-    \
+15. Click on the **pencil icon** to select what fields you wish to add/remove to your stream
+    
     ![A white rectangular sign with black text Description automatically generated](../media/Lab-03/image36.png)
 
 16. Rename the operation to "Manage_Clicks". As well select "Add all
-    fields" then remove "eventType". Once done click **Save**.\
-    \
+    fields" then remove "eventType". Once done click **Save**.
+
     ![A screenshot of a computer](../media/Lab-03/image37.png)
 
 17. Next, let's add another "Manage fields" transform connected to the
-    "Impressions" filter as seen below\
-    \
-    ![A diagram of a rectangle with a rectangle and a rectangle with a rectangle with a rectangle with a rectangle with a rectangle with a
-    rectangle with a rectangle with](../media/Lab-03/image38.png)
+    "Impressions" filter as seen below 
 
-18. Click on the **pencil icon** to select what fields you wish to
-    add/remove to your stream\
-    \
+    ![A rectangle with a rectangle with](../media/Lab-03/image38.png)
+
+18. Click on the **pencil icon** to select what fields you wish to add/remove to your stream
+    
     ![A white card with a pen and a red box Description automatically generated](../media/Lab-03/image39.png)
 
 19. Rename the operation to "Manage_Impressions". Then select "Add all fields" then remove "eventType" and "referrer". Your "Manage fields"
-    transform should look like the following:\
-    \
+    transform should look like the following:
+
     ![A screenshot of a computer](../media/Lab-03/image40.png)
 
 20. Now that you have cleaned up the data for the streams for each of the types of events, you need to load each stream into a new table
     on the KQL Database. Click on the **+ icon** after the **Manage_Clicks** manage fields operation.
 
-   ![A screen shot of a computer Description automatically generated](../media/Lab-03/image41.png)
+    ![A screen shot of a computer Description automatically generated](../media/Lab-03/image41.png)
 
 21. In the dropdown list that appears, go to the Destinations and select **Eventhouse**.
 
-   ![A screenshot of a computer Description automatically generated](../media/Lab-03/image42.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image42.png)
 
 22. Click on the **pencil icon** for the Eventhouse destination.
 
-![A white sign with black text Description automatically generated](../media/Lab-03/image43.png)
+    ![A white sign with black text Description automatically generated](../media/Lab-03/image43.png)
 
 23. For this destination, configure the following properties.
 
@@ -289,13 +279,13 @@ You should be left with the following fields in the image below.
     
     -   **Destination Table** - Create a new table called **Clicks**
 
-![A screenshot of a computer Description automatically generated](../media/Lab-03/image44.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image44.png)
 
 24. Click on **Save** at the bottom of the flyout.
 
 25. Do the same thing for the Impressions table with the following information configured as below.
 
-![A screenshot of a computer](../media/Lab-03/image45.png)
+    ![A screenshot of a computer](../media/Lab-03/image45.png)
 
 26. Save your changes.
 
@@ -303,10 +293,9 @@ You should be left with the following fields in the image below.
 
 ![A screenshot of a computer Description automatically generated](../media/Lab-03/image46.png)
 
-28. With the Eventstream now running, you should see the Eventstream user interface slightly change to signify that you are streaming the
-    data from Event Hub transforming and splitting that data stream and loading it into two separate KQL Database tables.
+28. With the Eventstream now running, you should see the Eventstream user interface slightly change to signify that you are streaming the data from Event Hub transforming and splitting that data stream and loading it into two separate KQL Database tables.
 
-![A screenshot of a computer](../media/Lab-03/image47.png)
+    ![A screenshot of a computer](../media/Lab-03/image47.png)
 
 # Adding More Data to KQL Database
 
@@ -316,18 +305,16 @@ You should be left with the following fields in the image below.
 
 2.  Open the **eh_Fabrikam** KQL Database.
 
-![A screenshot of a computer Description automatically generated](../media/Lab-03/image48.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image48.png)
 
-3.  With the Eventstream running you should now see two new tables on the KQL Database Overview page. After letting the Eventstream run
-    for several hours you will see that the **Top tables** within the  KQL Database will be displayed on the Overview page and show how
-    much data is stored within the table.
+3.  With the Eventstream running you should now see two new tables on the KQL Database Overview page. After letting the Eventstream run for several hours you will see that the **Top tables** within the  KQL Database will be displayed on the Overview page and show how much data is stored within the table.
 
     ![](../media/Lab-03/image49.png)
 
-4.  Click on the **Impressions** table. This table receives about 1.5 million records every 24 hours. There are many more impressions than
-    Clicks so this will be your largest table for the purposes of this class.
+4.  Click on the **Impressions** table. This table receives about 1.5 million records every 24 hours. There are many more impressions than Clicks so this will be your largest table for the purposes of this class.
 
 ![A screenshot of a computer Description automatically generated](../media/Lab-03/image50.png)
+
 ## Task 5: Create KQL Database Shortcuts for Dimension tables
 
 Up to this point you have been working with streaming data, but are  still missing some critical elements to be able to derive intelligence
@@ -357,13 +344,13 @@ support this is currently in an external Azure SQL Database, let's see how easy 
     and make it available within our KQL database as a **Shortcut**. A **Shortcut** is attached in a read-only mode, making it possible to
     view and run queries alongside the streaming data that was ingested into the KQL database.
 
-   ![](../media/Lab-03/image55.emf)
+    ![](../media/Lab-03/image55.emf)
 
-   ![A screenshot of a computer Description automatically generated](../media/Lab-03/image56.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image56.png)
 
 6.  Click the **Run** button to execute the script.
 
-![A screenshot of a computer Description automatically generated](../media/Lab-03/image57.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image57.png)
 
 7.  In your Database Explorer window, you will now see a new folder called **Shortcuts** and within the folder you should see two
     additional tables that are linked to this KQL Database. These tables exist within an Azure SQL Database, but through the script you
@@ -382,25 +369,21 @@ support this is currently in an external Azure SQL Database, let's see how easy 
 
 10. With your query highlighted click on the button in your toolbar, **Build Power BI report**.
 
-![A screenshot of a computer Description automatically generated](../media/Lab-03/image61.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image61.png)
 
 11. This gives you the opportunity to create a Power BI report using the data within your KQL Database. Feel free to explore this for a few
     moments, but you will not need to create a report from this data just yet. Click the **X button** in the top-right corner when you
     are ready to move forward.
 
-![A screenshot of a computer Description automatically generated](../media/Lab-03/image62.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image62.png)
 
 12. Navigate back to the **eh_Fabrikam** KQL Database.
 
-![A screenshot of a computer](../media/Lab-03/image63.png){width="4.0972615923009625in"
-height="3.025304024496938in"}
+    ![A screenshot of a computer](../media/Lab-03/image63.png)
 
-13. Click on the **Shortcuts** option within the **eh_Fabrikam** navigation pane. This will show you all the shortcuts you have
-    created to this KQL Database. It should be noted that these Shortcuts are considered classical Azure Data Explorer external
-    tables using Azure SQL external table syntax and are constructed differently than OneLake, ADLS, or S3 shortcuts which are also
-    supported in KQL Database within Fabric.
+13. Click on the **Shortcuts** option within the **eh_Fabrikam** navigation pane. This will show you all the shortcuts you havecreated to this KQL Database. It should be noted that these Shortcuts are considered classical Azure Data Explorer externaltables using Azure SQL external table syntax and are constructed differently than OneLake, ADLS, or S3 shortcuts which are also supported in KQL Database within Fabric.
 
-![A screenshot of a computer Description automatically generated](../media/Lab-03/image64.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image64.png)
 
 # Summary
 
@@ -451,62 +434,15 @@ In the menu of the service, the Help (?) section has links to some great resourc
 By using this demo/lab, you agree to the following terms:
 
 The technology/functionality described in this demo/lab is provided by Microsoft Corporation for purposes of obtaining your feedback and to
-provide you with a learning experience. You may only use the demo/lab to evaluate such technology features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not modify, copy, distribute, transmit, display, perform,
-> reproduce, publish, license, create derivative works from, transfer,
-> or sell this demo/lab or any portion thereof.
->
-> COPYING OR REPRODUCTION OF THE DEMO/LAB (OR ANY PORTION OF IT) TO ANY
-> OTHER SERVER OR LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS
-> EXPRESSLY PROHIBITED.
->
-> THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES
-> AND
->
-> FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A
-> SIMULATED
->
-> ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE
-> DESCRIBED
->
-> ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS DEMO/LAB MAY NOT
-> REPRESENT FULL
->
-> FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY
-> WORK. WE ALSO
->
-> MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR
-> EXPERIENCE WITH USING SUCH FEATURES AND FUNCITONALITY IN A PHYSICAL
-> ENVIRONMENT MAY ALSO BE DIFFERENT.
->
-> **FEEDBACK**. If you give feedback about the technology features,
-> functionality and/or concepts described in this demo/lab to Microsoft,
-> you give to Microsoft, without charge, the right to use, share and
-> commercialize your feedback in any way and for any purpose. You also
-> give to third parties, without charge, any patent rights needed for
-> their products, technologies and services to use or interface with any
-> specific parts of a Microsoft software or service that includes the
-> feedback. You will not give feedback that is subject to a license that
-> requires Microsoft to license its software or documentation to third
-> parties because we include your feedback in them. These rights survive
-> this agreement.
->
-> MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS
-> WITH REGARD
->
-> TO THE DEMO/LAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF
-> MERCHANTABILITY,
->
-> WHETHER EXPRESS, IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR
-> PURPOSE, TITLE AND NON-
->
-> INFRINGEMENT. MICROSOFT DOES NOT MAKE ANY ASSURANCES OR
-> REPRESENTATIONS WITH REGARD TO THE ACCURACY OF THE RESULTS, OUTPUT
-> THAT DERIVES FROM USE OF DEMO/ LAB, OR SUITABILITY OF THE INFORMATION
-> CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
->
-> **DISCLAIMER**
->
-> This demo/lab contains only a portion of new features and enhancements
-> in Microsoft Power BI. Some of the features might change in future
-> releases of the product. In this demo/lab, you will learn about some,
-> but not all, new features.
+provide you with a learning experience. You may only use the demo/lab to evaluate such technology features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not modify, copy, distribute, transmit, display, perform,reproduce, publish, license, create derivative works from, transfer,or sell this demo/lab or any portion thereof.
+
+COPYING OR REPRODUCTION OF THE DEMO/LAB (OR ANY PORTION OF IT) TO ANY OTHER SERVER OR LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS EXPRESSLY PROHIBITED.THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS EPRESENTED IN THIS DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCITONALITY IN A PHYSICALENVIRONMENT MAY ALSO BE DIFFERENT.
+
+**FEEDBACK**. If you give feedback about the technology features,functionality and/or concepts described in this demo/lab to Microsoft,you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.
+
+MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE DEMO/LAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY,WHETHER EXPRESS, IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. MICROSOFT DOES NOT MAKE ANY ASSURANCES OR REPRESENTATIONS WITH REGARD TO THE ACCURACY OF THE RESULTS, OUTPUT THAT DERIVES FROM USE OF DEMO/ LAB, OR SUITABILITY OF THE INFORMATION
+CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
+
+**DISCLAIMER**
+
+This demo/lab contains only a portion of new features and enhancements in Microsoft Power BI. Some of the features might change in future releases of the product. In this demo/lab, you will learn about some,but not all, new features.
