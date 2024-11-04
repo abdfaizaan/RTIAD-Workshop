@@ -397,7 +397,7 @@ external table feature. You now have a few dimensions to better understand the c
  Fabric Real-Time Intelligence in a Day (RTIIAD) introduces you to some of the key functions available in Microsoft Fabric.
 In the menu of the service, the Help (?) section has links to some great resources.
 
-> Here are a few more resources that will help you with your next steps with Microsoft Fabric.
+Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 -   See blog post to read the full [[Microsoft Fabric GA][announcement]](https://aka.ms/Fabric-Hero-Blog-Ignite23)
 -   Explore Fabric through the [[Guided  ur]](https://aka.ms/Fabric-GuidedTour)
 -   Sign up for the [[Microsoft Fabric free trial]](https://aka.ms/try-fabric)
@@ -407,25 +407,17 @@ In the menu of the service, the Help (?) section has links to some great resourc
 -   Read the [[free e-book on getting started with fabric]](https://aka.ms/fabric-get-started-ebook)
 -   Join the [[Fabric  community]](https://aka.ms/fabric-community) to post  your questions, share your feedback, and learn from others
 
-> Read the more in-depth Fabric experience announcement blogs:
+Read the more in-depth Fabric experience announcement blogs:
 
 -   [[Data Factory experience in Fabric blog]](https://aka.ms/Fabric-Data-Factory-Blog)
 -   [[Synapse Data Engineering experience in Fabric  blog]](https://aka.ms/Fabric-DE-Blog)
-
 -   [[Synapse Data Science experience in Fabric  blog]](https://aka.ms/Fabric-DS-Blog)
-
 -   [[Synapse Data Warehousing experience in Fabric  blog]](https://aka.ms/Fabric-DW-Blog)
-
 -   [[Real-](https://aka.ms/Fabric-RTA-Blog)[Time Intelligence  experience in Fabric blog](https://blog.fabric.microsoft.com/en-us/blog/category/real-time-intelligence)]
-
 -   [[Power BI announcement blog]](https://aka.ms/Fabric-PBI-Blog)
-
 -   [[Data Activator experience in Fabric  blog]](https://aka.ms/Fabric-DA-Blog)
-
 -   [[Administration and governance in Fabric  blog]](https://aka.ms/Fabric-Admin-Gov-Blog)
-
 -   [[OneLake]{.underline} [in Fabric  blog]](https://aka.ms/Fabric-OneLake-Blog)
-
 -   [[Dataverse and Microsoft Fabric integration  blog]](https://aka.ms/Dataverse-Fabric-Blog)
 
 © 2024 Microsoft Corporation. All rights reserved.
@@ -442,6 +434,4 @@ COPYING OR REPRODUCTION OF THE DEMO/LAB (OR ANY PORTION OF IT) TO ANY OTHER SERV
 MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE DEMO/LAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY,WHETHER EXPRESS, IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. MICROSOFT DOES NOT MAKE ANY ASSURANCES OR REPRESENTATIONS WITH REGARD TO THE ACCURACY OF THE RESULTS, OUTPUT THAT DERIVES FROM USE OF DEMO/ LAB, OR SUITABILITY OF THE INFORMATION
 CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
 
-**DISCLAIMER**
-
-This demo/lab contains only a portion of new features and enhancements in Microsoft Power BI. Some of the features might change in future releases of the product. In this demo/lab, you will learn about some,but not all, new features.
+**DISCLAIMER**This demo/lab contains only a portion of new features and enhancements in Microsoft Power BI. Some of the features might change in future releases of the product. In this demo/lab, you will learn about some,but not all, new features.
