@@ -1,5 +1,5 @@
 # Microsoft Fabric - Real-Time Intelligence in a Day 
-### Lab 2
+ ![](../media/Lab-02/IMG01.png)
 
 # Contents
 
@@ -273,7 +273,7 @@ Let's explore!
 
 2.  The comment line "\--" followed by the keyword "explain" will allow you to now create a SQL query and return a result with the KQL query that could be used to achieve a similar query and result. Below input the following query to explain what the KQL query would look like:
 
-    ![](../media/Lab-02/image50.emf)
+    ![](../media/Lab-02/image50.png)
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-02/image51.png)
 
@@ -334,14 +334,11 @@ In this lab, you began by setting up a connection to an Event Hub that has a run
 
 # References 
 
-> Fabric Real-time Intelligence in a Day (RTIIAD) introduces you to some
-> of the key functions available in Microsoft Fabric.
->
-> In the menu of the service, the Help (?) section has links to some
-> great resources.
->
-> Here are a few more resources that will help you with your next steps
-> with Microsoft Fabric.
+Fabric Real-time Intelligence in a Day (RTIIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
+
+![](../media/Lab-02/IMG02.png)
+
+Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
 -   See blog post to read the full [[Microsoft Fabric GA]{.underline}
     [announcement]{.underline}](https://aka.ms/Fabric-Hero-Blog-Ignite23)
