@@ -68,7 +68,7 @@ October 2024
     today.
 
 > ![A screenshot of a
-> computer]((../media/Lab-03/image5.png){width="3.3010225284339456in"
+> computer](../media/Lab-03/image5.png){width="3.3010225284339456in"
 > height="1.8547834645669292in"}
 
 2.  There is additional streaming data for us to Ingest related to our
@@ -87,7 +87,7 @@ height="2.1573195538057743in"}
     **Create**.
 
 ![A screenshot of a
-computer]((../media/Lab-03/image7.png){width="3.001849300087489in"
+computer](../media/Lab-03/{width="3.001849300087489in"
 height="2.495621172353456in"}
 
 4.  Under the Home ribbon, click on the **Add source** dropdown and then
