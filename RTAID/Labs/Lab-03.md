@@ -291,7 +291,7 @@ You should be left with the following fields in the image below.
 
 27. This Eventstream is now ready to begin streaming. Click on **Publish** to begin that stream.
 
-![A screenshot of a computer Description automatically generated](../media/Lab-03/image46.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image46.png)
 
 28. With the Eventstream now running, you should see the Eventstream user interface slightly change to signify that you are streaming the data from Event Hub transforming and splitting that data stream and loading it into two separate KQL Database tables.
 
@@ -313,7 +313,7 @@ You should be left with the following fields in the image below.
 
 4.  Click on the **Impressions** table. This table receives about 1.5 million records every 24 hours. There are many more impressions than Clicks so this will be your largest table for the purposes of this class.
 
-![A screenshot of a computer Description automatically generated](../media/Lab-03/image50.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image50.png)
 
 ## Task 5: Create KQL Database Shortcuts for Dimension tables
 
