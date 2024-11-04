@@ -1,5 +1,7 @@
 # Microsoft Fabric - Real-Time Intelligence in a Day
 
+![A screenshot of a computer](../media/Lab-03/lab-03.png)
+
 ## Contents
 
 - Document Structure
@@ -394,9 +396,11 @@ external table feature. You now have a few dimensions to better understand the c
 
 # References 
 
- Fabric Real-Time Intelligence in a Day (RTIIAD) introduces you to some of the key functions available in Microsoft Fabric.
+Fabric Real-Time Intelligence in a Day (RTIIAD) introduces you to some of the key functions available in Microsoft Fabric.
 In the menu of the service, the Help (?) section has links to some great resources.
 
+ ![A screenshot of a computer](../media/Lab-03/refrence-1.png)
+ 
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 -   See blog post to read the full [[Microsoft Fabric GA][announcement]](https://aka.ms/Fabric-Hero-Blog-Ignite23)
 -   Explore Fabric through the [[Guided  ur]](https://aka.ms/Fabric-GuidedTour)
