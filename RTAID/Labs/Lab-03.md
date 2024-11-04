@@ -79,7 +79,7 @@ October 2024
     **Eventstream**.
 
 ![A screenshot of a
-computer]((../media/Lab-03/image6.png){width="5.066186570428696in"
+computer](../media/Lab-03/image6.png){width="5.066186570428696in"
 height="2.1573195538057743in"}
 
 3.  Give the new Eventstream the name, **es_Fabrikam_ClickEvents**,
@@ -94,7 +94,7 @@ height="2.495621172353456in"}
     select **External sources**.
 
 ![A screenshot of a computer Description automatically
-generated]((../media/Lab-03/image8.png){width="2.6993711723534557in"
+generated](../media/Lab-03/image8.png){width="2.6993711723534557in"
 height="2.2794685039370077in"}
 
 5.  Similarly to the previous lab we will be connecting to an Azure
@@ -102,13 +102,13 @@ height="2.2794685039370077in"}
     Click on the **"Azure Event Hubs"** tile.
 
 ![A screenshot of a web page Description automatically
-generated]((../media/Lab-03/image9.png){width="4.597533902012248in"
+generated](../media/Lab-03/image9.png){width="4.597533902012248in"
 height="3.184319772528434in"}
 
 6.  Create a **New connection**.
 
 ![A screenshot of a
-computer]((../media/Lab-03/image10.png){width="4.6168372703412075in"
+computer](../media/Lab-03/image10.png){width="4.6168372703412075in"
 height="2.6196139545056867in"}
 
 7.  From your environment details page, copy and paste all the necessary
@@ -123,7 +123,7 @@ Shared Access Key Name: **rti-reader**
 Shared Access Key: **Provided by Environment Details**
 
 ![A screenshot of a computer Description automatically
-generated]((../media/Lab-03/image11.png){width="3.3817366579177603in"
+generated](../media/Lab-03/image11.png){width="3.3817366579177603in"
 height="2.7407108486439196in"}
 
 8.  Once all the properties have been filled out click on **Connect**.
@@ -134,7 +134,7 @@ height="2.7407108486439196in"}
     For this workshop you can leave the "\$Default" value as shown below
 
 ![A screenshot of a
-computer]((../media/Lab-03/image12.png){width="4.238122265966754in"
+computer](../media/Lab-03/image12.png){width="4.238122265966754in"
 height="3.66669072615923in"}
 
 10. Click on **Next**.
@@ -143,14 +143,14 @@ height="3.66669072615923in"}
     configured correctly and click **Add**.
 
 ![A screenshot of a computer Description automatically
-generated]((../media/Lab-03/image13.png){width="4.15376968503937in"
+generated](../media/Lab-03/image13.png){width="4.15376968503937in"
 height="4.329507874015748in"}
 
 12. Once the stream is configured, you will be able to see a preview of
     the data coming from the Event Hub.
 
 ![A table of numbers and numbers Description automatically
-generated]((../media/Lab-03/image14.png){width="6.380145450568679in"
+generated](../media/Lab-03/image14.png){width="6.380145450568679in"
 height="4.010571959755031in"}
 
 13. Examine the data being received. There are two types of events that
@@ -179,14 +179,14 @@ accessed the page and how long the page took to load.
     events** object.
 
 ![A screenshot of a
-chat]((../media/Lab-03/image15.png){width="5.503135389326334in"
+chat](../media/Lab-03/image15.png){width="5.503135389326334in"
 height="1.58163823272091in"}
 
 2.  From the list of available operations, select the **Manage fields**
     option.
 
 ![A screenshot of a search box Description automatically
-generated]((../media/Lab-03/image16.png){width="1.5584678477690288in"
+generated](../media/Lab-03/image16.png){width="1.5584678477690288in"
 height="3.733657042869641in"}
 
 3.  On the new icon that appears called **Manage_fields1** click on the
@@ -194,14 +194,14 @@ height="3.733657042869641in"}
     from the source.
 
 ![A screen shot of a computer Description automatically
-generated]((../media/Lab-03/image17.png){width="2.6655675853018375in"
+generated](../media/Lab-03/image17.png){width="2.6655675853018375in"
 height="1.5046062992125984in"}
 
 4.  In the flyout pane that appears, click on the button the option to
     **Add all fields**.
 
 ![A screenshot of a computer Description automatically
-generated]((../media/Lab-03/image18.png){width="2.958255686789151in"
+generated](../media/Lab-03/image18.png){width="2.958255686789151in"
 height="1.7497003499562556in"}
 
 5.  From the list of fields, select the one called **PartitionId** and
@@ -209,7 +209,7 @@ height="1.7497003499562556in"}
     field
 
 ![A screenshot of a computer Description automatically
-generated]((../media/Lab-03/image19.png){width="2.2522233158355207in"
+generated](../media/Lab-03/image19.png){width="2.2522233158355207in"
 height="3.4724671916010497in"}
 
 6.  Choose the option to **Remove** that field. For this stream of data
@@ -217,7 +217,7 @@ height="3.4724671916010497in"}
     column is not helpful to us, thus we are removing it.
 
 ![A screenshot of a computer Description automatically
-generated]((../media/Lab-03/image20.png){width="2.7085684601924758in"
+generated](../media/Lab-03/image20.png){width="2.7085684601924758in"
 height="0.7834011373578302in"}
 
 7.  Remove all the following fields that will not be needed for this
@@ -234,20 +234,20 @@ height="0.7834011373578302in"}
 You should be left with the following fields in the image below.
 
 ![A screenshot of a
-computer]((../media/Lab-03/image21.png){width="1.8885028433945756in"
+computer](../media/Lab-03/image21.png){width="1.8885028433945756in"
 height="2.621767279090114in"}
 
 8.  Hover over the eventDate field and when an ellipses (...) appears on
     the right-hand side of the window, click it.
 
 ![A screenshot of a computer Description automatically
-generated]((../media/Lab-03/image22.png){width="3.475300743657043in"
+generated](../media/Lab-03/image22.png){width="3.475300743657043in"
 height="1.5501345144356955in"}
 
 9.  Choose the option, **Edit**.
 
 ![A screen shot of a computer Description automatically
-generated]((../media/Lab-03/image23.png){width="2.875249343832021in"
+generated](../media/Lab-03/image23.png){width="2.875249343832021in"
 height="1.3334492563429572in"}
 
 10. Click on the **Change type toggle** to modify the data type of this
@@ -256,7 +256,7 @@ height="1.3334492563429572in"}
     **Save**.
 
 ![A screenshot of a computer Description automatically
-generated]((../media/Lab-03/image24.png){width="2.7085684601924758in"
+generated](../media/Lab-03/image24.png){width="2.7085684601924758in"
 height="3.6336482939632546in"}
 
 ## Task 3: Split Eventstream and Load Two Destinations
@@ -268,20 +268,20 @@ height="3.6336482939632546in"}
     end of the **Manage_Fields1** transform
 
 ![A screen shot of a computer screen Description automatically
-generated]((../media/Lab-03/image25.png){width="2.5688713910761156in"
+generated](../media/Lab-03/image25.png){width="2.5688713910761156in"
 height="1.4077099737532808in"}
 
 2.  Choose the **Filter** transform from the available list of
     operations.
 
 ![A screenshot of a computer Description automatically
-generated]((../media/Lab-03/image26.png){width="3.01834208223972in"
+generated](../media/Lab-03/image26.png){width="3.01834208223972in"
 height="1.733160542432196in"}
 
 3.  Click on the **pencil icon** on the new transformation, **Filter1**.
 
 ![A screen shot of a computer Description automatically
-generated]((../media/Lab-03/image27.png){width="2.0395592738407697in"
+generated](../media/Lab-03/image27.png){width="2.0395592738407697in"
 height="1.233221784776903in"}
 
 4.  In the flyout that appears on the right-hand side of the screen,
@@ -297,7 +297,7 @@ height="1.233221784776903in"}
     is a case sensitive field, ensure to input in all capitals for this
     example)**
 
-![]((../media/Lab-03/image28.png){width="2.3124715660542434in"
+![](../media/Lab-03/image28.png){width="2.3124715660542434in"
 height="2.460075459317585in"}
 
 5.  Choose the **Save** option to keep your changes.
@@ -305,7 +305,7 @@ height="2.460075459317585in"}
 6.  Click on the **Refresh button** again to verify the data has been
     filtered to CLICK eventTypes.
 
-![]((../media/Lab-03/image29.png){width="5.63859908136483in"
+![](../media/Lab-03/image29.png){width="5.63859908136483in"
 height="3.1472648731408572in"}
 
 7.  These may be the only rows that you're interested in sending to a
@@ -314,7 +314,7 @@ height="3.1472648731408572in"}
     **Home** ribbon of the Eventstream click on the **Transform events**
     dropdown and then select **Filter**.
 
-![]((../media/Lab-03/image30.png){width="5.034874234470691in"
+![](../media/Lab-03/image30.png){width="5.034874234470691in"
 height="1.7445395888014in"}
 
 8.  A new object called **Filter1 (Name may differ)** will appear on
@@ -323,13 +323,13 @@ height="1.7445395888014in"}
     one transform to another to make that connection.
 
 ![A screenshot of a
-computer]((../media/Lab-03/image31.png){width="5.385294181977253in"
+computer](../media/Lab-03/image31.png){width="5.385294181977253in"
 height="2.7311548556430445in"}
 
 9.  Click on the **pencil icon** for **Filter2** to edit its settings.
 
 ![A screenshot of a computer Description automatically
-generated]((../media/Lab-03/image32.png){width="2.792055993000875in"
+generated](../media/Lab-03/image32.png){width="2.792055993000875in"
 height="1.5210454943132108in"}
 
 10. In the flyout that appears on the right-hand side of the screen,
@@ -345,7 +345,7 @@ height="1.5210454943132108in"}
     This is a case sensitive field, ensure to input in all capitals for
     this example)**
 
-![]((../media/Lab-03/image33.png){width="2.2936964129483814in"
+![](../media/Lab-03/image33.png){width="2.2936964129483814in"
 height="2.476629483814523in"}
 
 11. Choose the **Save** option to keep your changes.
@@ -362,26 +362,26 @@ height="2.476629483814523in"}
 13. Click on the **+ icon** after the **Clicks** filter operation.
 
 ![A white board with writing on it Description automatically
-generated]((../media/Lab-03/image34.png){width="2.550220909886264in"
+generated](../media/Lab-03/image34.png){width="2.550220909886264in"
 height="1.1584339457567805in"}
 
 14. In the dropdown menu select "Manage fields"\
     \
-    ![]((../media/Lab-03/image35.png){width="3.4225634295713037in"
+    ![](../media/Lab-03/image35.png){width="3.4225634295713037in"
     height="2.7144477252843395in"}
 
 15. Click on the **pencil icon** to select what fields you wish to
     add/remove to your stream\
     \
     ![A white rectangular sign with black text Description automatically
-    generated]((../media/Lab-03/image36.png){width="2.333659230096238in"
+    generated](../media/Lab-03/image36.png){width="2.333659230096238in"
     height="1.271010498687664in"}
 
 16. Rename the operation to "Manage_Clicks". As well select "Add all
     fields" then remove "eventType". Once done click **Save**.\
     \
     ![A screenshot of a
-    computer]((../media/Lab-03/image37.png){width="2.5445461504811897in"
+    computer](../media/Lab-03/image37.png){width="2.5445461504811897in"
     height="2.987740594925634in"}
 
 17. Next, let's add another "Manage fields" transform connected to the
@@ -390,14 +390,14 @@ height="1.1584339457567805in"}
     ![A diagram of a rectangle with a rectangle and a rectangle with a
     rectangle with a rectangle with a rectangle with a rectangle with a
     rectangle with a rectangle
-    with]((../media/Lab-03/image38.png){width="4.4863746719160105in"
+    with](../media/Lab-03/image38.png){width="4.4863746719160105in"
     height="1.1875688976377954in"}
 
 18. Click on the **pencil icon** to select what fields you wish to
     add/remove to your stream\
     \
     ![A white card with a pen and a red box Description automatically
-    generated]((../media/Lab-03/image39.png){width="2.4170034995625547in"
+    generated](../media/Lab-03/image39.png){width="2.4170034995625547in"
     height="1.3960279965004374in"}
 
 19. Rename the operation to "Manage_Impressions". Then select "Add all
@@ -405,7 +405,7 @@ height="1.1584339457567805in"}
     transform should look like the following:\
     \
     ![A screenshot of a
-    computer]((../media/Lab-03/image40.png){width="2.5134601924759403in"
+    computer](../media/Lab-03/image40.png){width="2.5134601924759403in"
     height="2.8497101924759405in"}
 
 20. Now that you have cleaned up the data for the streams for each of
@@ -414,20 +414,20 @@ height="1.1584339457567805in"}
     **Manage_Clicks** manage fields operation.
 
 ![A screen shot of a computer Description automatically
-generated]((../media/Lab-03/image41.png){width="2.5610608048993875in"
+generated](../media/Lab-03/image41.png){width="2.5610608048993875in"
 height="1.3052515310586177in"}
 
 21. In the dropdown list that appears, go to the Destinations and select
     **Eventhouse**.
 
 ![A screenshot of a computer Description automatically
-generated]((../media/Lab-03/image42.png){width="1.7814982502187227in"
+generated](../media/Lab-03/image42.png){width="1.7814982502187227in"
 height="1.4064457567804025in"}
 
 22. Click on the **pencil icon** for the Eventhouse destination.
 
 ![A white sign with black text Description automatically
-generated]((../media/Lab-03/image43.png){width="2.4816119860017496in"
+generated](../media/Lab-03/image43.png){width="2.4816119860017496in"
 height="1.350288713910761in"}
 
 23. For this destination, configure the following properties.
@@ -443,7 +443,7 @@ height="1.350288713910761in"}
 -   **Destination Table** - Create a new table called **Clicks**
 
 ![A screenshot of a computer Description automatically
-generated]((../media/Lab-03/image44.png){width="2.2913549868766405in"
+generated](../media/Lab-03/image44.png){width="2.2913549868766405in"
 height="3.879422572178478in"}
 
 24. Click on **Save** at the bottom of the flyout.
@@ -452,7 +452,7 @@ height="3.879422572178478in"}
     information configured as below.
 
 ![A screenshot of a
-computer]((../media/Lab-03/image45.png){width="2.1287193788276464in"
+computer](../media/Lab-03/image45.png){width="2.1287193788276464in"
 height="3.193079615048119in"}
 
 26. Save your changes.
@@ -461,7 +461,7 @@ height="3.193079615048119in"}
     **Publish** to begin that stream.
 
 ![A screenshot of a computer Description automatically
-generated]((../media/Lab-03/image46.png){width="6.924679571303587in"
+generated](../media/Lab-03/image46.png){width="6.924679571303587in"
 height="2.127658573928259in"}
 
 28. With the Eventstream now running, you should see the Eventstream
@@ -470,7 +470,7 @@ height="2.127658573928259in"}
     loading it into two separate KQL Database tables.
 
 ![A screenshot of a
-computer]((../media/Lab-03/image47.png){width="7.00680883639545in"
+computer](../media/Lab-03/image47.png){width="7.00680883639545in"
 height="1.972674978127734in"}
 
 # Adding More Data to KQL Database
@@ -482,7 +482,7 @@ height="1.972674978127734in"}
 2.  Open the **eh_Fabrikam** KQL Database.
 
 ![A screenshot of a computer Description automatically
-generated]((../media/Lab-03/image48.png){width="3.9149081364829397in"
+generated](../media/Lab-03/image48.png){width="3.9149081364829397in"
 height="2.8017530621172355in"}
 
 3.  With the Eventstream running you should now see two new tables on
@@ -491,7 +491,7 @@ height="2.8017530621172355in"}
     KQL Database will be displayed on the Overview page and show how
     much data is stored within the table.
 
-![]((../media/Lab-03/image49.png){width="5.616951006124235in"
+![](../media/Lab-03/image49.png){width="5.616951006124235in"
 height="2.9841174540682416in"}
 
 4.  Click on the **Impressions** table. This table receives about 1.5
@@ -500,7 +500,7 @@ height="2.9841174540682416in"}
     class.
 
 ![A screenshot of a computer Description automatically
-generated]((../media/Lab-03/image50.png){width="6.506944444444445in"
+generated](../media/Lab-03/image50.png){width="6.506944444444445in"
 height="2.4902777777777776in"}
 
 ## Task 5: Create KQL Database Shortcuts for Dimension tables
@@ -520,21 +520,21 @@ how easy it is to make connections to some of these dimension tables.
     **New related item**. Then choose the option that says KQL Queryset.
 
 ![A screenshot of a
-computer]((../media/Lab-03/image51.png){width="3.7755643044619425in"
+computer](../media/Lab-03/image51.png){width="3.7755643044619425in"
 height="2.916745406824147in"}
 
 2.  Give the KQL Queryset the name **Create Tables** and then click the
     **Create** button.
 
 ![A screenshot of a computer Description automatically
-generated]((../media/Lab-03/image52.png){width="2.850247156605424in"
+generated](../media/Lab-03/image52.png){width="2.850247156605424in"
 height="1.7001476377952756in"}
 
 3.  The OneLake data hub will open and the only option to select with be
     the **"eh_Fabrikam"** kql database. Select this database and click
     **"Connect"**.\
     ![A screenshot of a
-    chat]((../media/Lab-03/image53.png){width="4.3503521434820644in"
+    chat](../media/Lab-03/image53.png){width="4.3503521434820644in"
     height="2.303558617672791in"}
 
 4.  In the new interface click once within the query window and
@@ -542,7 +542,7 @@ height="1.7001476377952756in"}
     Once everything has been highlighted, delete everything.
 
 ![A screenshot of a computer Description automatically
-generated]((../media/Lab-03/image54.png){width="5.978597987751531in"
+generated](../media/Lab-03/image54.png){width="5.978597987751531in"
 height="2.6702701224846894in"}
 
 5.  In the blank query window enter the following KQL script. This
@@ -552,16 +552,16 @@ height="2.6702701224846894in"}
     view and run queries alongside the streaming data that was ingested
     into the KQL database.
 
-![]((../media/Lab-03/image55.emf)
+![](../media/Lab-03/image55.emf)
 
 ![A screenshot of a computer Description automatically
-generated]((../media/Lab-03/image56.png){width="5.647333770778653in"
+generated](../media/Lab-03/image56.png){width="5.647333770778653in"
 height="2.6301990376202973in"}
 
 6.  Click the **Run** button to execute the script.
 
 ![A screenshot of a computer Description automatically
-generated]((../media/Lab-03/image57.png){width="2.1114654418197727in"
+generated](../media/Lab-03/image57.png){width="2.1114654418197727in"
 height="0.6148775153105862in"}
 
 7.  In your Database Explorer window, you will now see a new folder
@@ -572,7 +572,7 @@ height="0.6148775153105862in"}
     with your InternetSales and event tables.
 
 ![A screenshot of a search
-box]((../media/Lab-03/image58.png){width="1.7411679790026247in"
+box](../media/Lab-03/image58.png){width="1.7411679790026247in"
 height="3.886537620297463in"}
 
 8.  Now that you have dimensional qualities to your database, you can
@@ -580,20 +580,20 @@ height="3.886537620297463in"}
     and queries these tables off insights on across your business. Run
     the following KQL query to see one of them.
 
-![]((../media/Lab-03/image59.emf)
+![](../media/Lab-03/image59.emf)
 
 9.  You will now see in your query results values for each individual
     product that your company has sold.
 
 ![A screenshot of a
-computer]((../media/Lab-03/image60.png){width="5.326820866141732in"
+computer](../media/Lab-03/image60.png){width="5.326820866141732in"
 height="3.130754593175853in"}
 
 10. With your query highlighted click on the button in your toolbar,
     **Build Power BI report**.
 
 ![A screenshot of a computer Description automatically
-generated]((../media/Lab-03/image61.png){width="6.506944444444445in"
+generated](../media/Lab-03/image61.png){width="6.506944444444445in"
 height="1.3340277777777778in"}
 
 11. This gives you the opportunity to create a Power BI report using the
@@ -603,13 +603,13 @@ height="1.3340277777777778in"}
     are ready to move forward.
 
 ![A screenshot of a computer Description automatically
-generated]((../media/Lab-03/image62.png){width="5.879461942257218in"
+generated](../media/Lab-03/image62.png){width="5.879461942257218in"
 height="2.319783464566929in"}
 
 12. Navigate back to the **eh_Fabrikam** KQL Database.
 
 ![A screenshot of a
-computer]((../media/Lab-03/image63.png){width="4.0972615923009625in"
+computer](../media/Lab-03/image63.png){width="4.0972615923009625in"
 height="3.025304024496938in"}
 
 13. Click on the **Shortcuts** option within the **eh_Fabrikam**
@@ -621,7 +621,7 @@ height="3.025304024496938in"}
     supported in KQL Database within Fabric.
 
 ![A screenshot of a computer Description automatically
-generated]((../media/Lab-03/image64.png){width="5.758452537182852in"
+generated](../media/Lab-03/image64.png){width="5.758452537182852in"
 height="4.797123797025372in"}
 
 # Summary
