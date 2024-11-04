@@ -194,7 +194,7 @@ In this lab, you will experience a way to handle a continuous stream of real-tim
 
 2.  Open the **eh_Fabrikam** KQL Database item.
 
-    ![A screenshot of a computer](../media/Lab-02/media/IMG33.png)
+       ![A screenshot of a computer](../media/Lab-02/IMG33.png)
 
 3.  Within this experience, you can get an overview of the current structure, size, and use of the KQL Database. Because the Eventstream is sending data to this KQL Database consistently you will notice the amount of storage will increase over time.
 
@@ -297,7 +297,7 @@ Let's explore!
 
 8.  Feel free to explore a complete list of SQL to KQL cheat sheet operations at the top of your queryset for additional capabilities and conversions.
 
-    ![A close-up of a message Description automatically generated](.\media\Lab-02/media/image56.png)
+    ![A close-up of a message Description automatically generated](../media/Lab-02/image56.png)
 
 9.  Instead of using KQL, another alternative to querying the results of the KQL Database within Fabric is to write and run a T-SQL query.Highlight the original SQL statement that was used to translate the KQL query and run only that.
 
@@ -305,7 +305,7 @@ Let's explore!
 
 10.  This will also yield perfectly valid results without having to onvert to KQL beforehand.
 
-     [A screenshot of a computer Description automatically generated](../media/Lab-02/image58.png)
+     ![A screenshot of a computer Description automatically generated](../media/Lab-02/image58.png)
 
 # KQL Queryset
 
@@ -343,59 +343,42 @@ Here are a few more resources that will help you with your next steps with Micro
 
 -   See blog post to read the full [Microsoft Fabric GA](https://aka.ms/Fabric-Hero-Blog-Ignite23)
 
--   Explore Fabric through the [Guided
-    Tour](https://aka.ms/Fabric-GuidedTour)
+-   Explore Fabric through the [Guided tour](https://aka.ms/Fabric-GuidedTour)
 
--   Sign up for the [Microsoft Fabric free
-    trial](https://aka.ms/try-fabric)
+-   Sign up for the [Microsoft Fabric free tial](https://aka.ms/try-fabric)
 
--   Visit the [Microsoft Fabric
-    website](https://aka.ms/microsoft-fabric)
+-   Visit the [Microsoft Fabric website](https://aka.ms/microsoft-fabric)
+    
+-   Learn new skills by exploring the [Fabric Learning modules](https://aka.ms/learn-fabric)
 
--   Learn new skills by exploring the [Fabric Learning
-    modules](https://aka.ms/learn-fabric)
-
--   Explore the [Fabric technical
-    documentation](https://aka.ms/fabric-docs)
-
--   Read the [free e-book on getting started with
-    Fabric](https://aka.ms/fabric-get-started-ebook)
-
--   Join the [Fabric
-    community](https://aka.ms/fabric-community) to post
-    your questions, share your feedback, and learn from others
-
+-   Explore the [Fabric technical documentation](https://aka.ms/fabric-docs)
+    
+-   Read the [free e-book on getting started with Fabric](https://aka.ms/fabric-get-started-ebook)
+    
+-   Join the [Fabric community](https://aka.ms/fabric-community) to post your questions, share your feedback, and learn from others
+    
 > Read the more in-depth Fabric experience announcement blogs:
 
--   [Data Factory experience in Fabric
-    blog](https://aka.ms/Fabric-Data-Factory-Blog)
+-   [Data Factory experience in Fabric blog](https://aka.ms/Fabric-Data-Factory-Blog)
 
--   [Synapse Data Engineering experience in Fabric
-    blog](https://aka.ms/Fabric-DE-Blog)
+-   [Synapse Data Engineering experience in Fabric  blog](https://aka.ms/Fabric-DE-Blog)
+   
+-   [Synapse Data Science experience in Fabric blog](https://aka.ms/Fabric-DS-Blog)
 
--   [Synapse Data Science experience in Fabric
-    blog](https://aka.ms/Fabric-DS-Blog)
+-   [Synapse Data Warehousing experience in Fabric blog](https://aka.ms/Fabric-DW-Blog)
+    
+-   [Real-](https://aka.ms/Fabric-RTA-Blog)[Time Intelligence experience in Fabric blog](https://blog.fabric.microsoft.com/en-us/blog/category/real-time-intelligence)
+ 
+-   [Power BI announcement blog](https://aka.ms/Fabric-PBI-Blog)
 
--   [Synapse Data Warehousing experience in Fabric
-    blog](https://aka.ms/Fabric-DW-Blog)
+-   [Data Activator experience in Fabric blog](https://aka.ms/Fabric-DA-Blog)
 
--   [Real-](https://aka.ms/Fabric-RTA-Blog)[Time Intelligence
-    experience in Fabric
-    blog](https://blog.fabric.microsoft.com/en-us/blog/category/real-time-intelligence)
--   [Power BI announcement
-    blog](https://aka.ms/Fabric-PBI-Blog)
+-   [Administration and governance in Fabric blog](https://aka.ms/Fabric-Admin-Gov-Blog)
 
--   [Data Activator experience in Fabric
-    blog](https://aka.ms/Fabric-DA-Blog)
+-   [OneLake in Fabric blog](https://aka.ms/Fabric-OneLake-Blog)
 
--   [Administration and governance in Fabric
-    blog](https://aka.ms/Fabric-Admin-Gov-Blog)
-
--   [OneLake in Fabric
-    blog](https://aka.ms/Fabric-OneLake-Blog)
-
--   [Dataverse and Microsoft Fabric integration
-    blog](https://aka.ms/Dataverse-Fabric-Blog)
+-   [Dataverse and Microsoft Fabric integration blog](https://aka.ms/Dataverse-Fabric-Blog)
+    
 
 © 2024 Microsoft Corporation. All rights reserved.
 
