@@ -4,7 +4,7 @@
 
 # Contents  
 
-- Document Structure  
+- Document Structure  .
 - Introduction  
 - Fabric Eventstreams  
   - Task 1: Create an Eventstream
