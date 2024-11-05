@@ -8,7 +8,7 @@
 - Introduction
 - Medallion Framework within KQL Databases
     - Task 1: Create Bronze Tables
-    - Task 2: Load Broze Tables using a Data Pipline
+    - Task 2: Load Broze Tables using a Data Pipeline
     - Task 3: Transform Tables in Silver Layer
     - Task 4: Create Gold Layer with Materialized Views
 - Fabric Lakehouse and OneLake Availability
@@ -67,35 +67,35 @@ By the end of this lab, you will have learned:
 
     ![A screenshot of a computer](../media/Lab-04/image11.png)
 
-7.  This shows you the schema (column names and data types) for the table. One thing that will be helpful to add to this table on the KQL Database would be a hidden column for the ingestion time that will be used later in the Medallion architecture. Let's add that now. Copy and paste the script below to alter the tables you just created by adding an ingestion time column.
+7. This shows you the schema (column names and data types) for the table. One thing that will be helpful to add to this table on the KQL Database would be a hidden column for the ingestion time that will be used later in the Medallion architecture. Let's add that now. Copy and paste the script below to alter the tables you just created by adding an ingestion time column.
 
     ![](../media/Lab-04/image61.png)
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-04/image13.png)
 
-8.  The four new tables are blank tables with their schema defined. Now you need a way to properly load these tables. Navigate back to your workspace **RTI_username**.
+8. The four new tables are blank tables with their schema defined. Now you need a way to properly load these tables. Navigate back to your workspace **RTI_username**.
 
 ## Task 2: Load Broze Tables using a Data Pipeline
 
-1.  From the workspace select the "+ New Item" option to bring up the selection pane. Then find and select the option called **Data pipeline**.
+1. From the workspace select the "+ New Item" option to bring up the selection pane. Then find and select the option called **Data pipeline**.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-04/image14.png)
 
-2.  Give the new pipeline the name, **Load KQL Database Bronze Layer**.
+2. Give the new pipeline the name, **Load KQL Database Bronze Layer**.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-04/image15.png)
 
-3.  Click on **Create**.
+3. Click on **Create**.
 
-4.  When the pipeline menu appears, click on the **Copy data assistant** option.
+4. When the pipeline menu appears, click on the **Copy data assistant** option.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-04/image16.png)
 
-5.  To begin, you will need to create a connection to the source database from where you wish to extract the data. Click on the **Azure SQL database** option under "New sources". If you do not see it immediately you can use the search bar at the top to filter sources. We will be connecting to the same external Azure SQL database from the prior lab but connecting to different tables.
+5. To begin, you will need to create a connection to the source database from where you wish to extract the data. Click on the **Azure SQL database** option under "New sources". If you do not see it immediately you can use the search bar at the top to filter sources. We will be connecting to the same external Azure SQL database from the prior lab but connecting to different tables.
 
     ![A screenshot of a computer](../media/Lab-04/image17.png)
 
-6.  You will need to input the connection details of the database. Follow using the information in your environment or as below.
+6. You will need to input the connection details of the database. Follow using the information in your environment or as below.
 
     -  fabrikamadmin.database.windows.net
     -  Fabrikam_demo
@@ -104,9 +104,9 @@ By the end of this lab, you will have learned:
 
         ![A screenshot of a computer](../media/Lab-04/image18.png)
 
-7.  Click **Next** when everything has been filled out.
+7. Click **Next** when everything has been filled out.
 
-8.  From the list of available tables, select the following:
+8. From the list of available tables, select the following:
 
     -  SalesLT.Address
     -  SalesLT.Customer
@@ -115,7 +115,7 @@ By the end of this lab, you will have learned:
 
         ![A screenshot of a computer Description automatically generated](../media/Lab-04/image19.png)
 
-9.  Click on **Next**.
+9. Click on **Next**.
 
 10. You will now be required to set up your destination to determine where you want the pipeline to send the data to. Find the **OneLake data hub** and then select your KQL database, **eh_Fabrikam**.
 
@@ -159,38 +159,38 @@ By the end of this lab, you will have learned:
 
 ## Task 3: Transform Tables in Silver Layer
 
-1.  Now that the Bronze tables are loaded we will create a new tab within our KQL Queryset called "Silver Layer".
+1. Now that the Bronze tables are loaded we will create a new tab within our KQL Queryset called "Silver Layer".
     ![A screenshot of a computer](../media/Lab-04/image29.png)
 
-2.  Run the following KQL script within the "Silver Layer" tab to create four new tables that will serve as the Silver Layer of the Medallion Framework.
+2. Run the following KQL script within the "Silver Layer" tab to create four new tables that will serve as the Silver Layer of the Medallion Framework.
 
     ![](../media/Lab-04/image63.png)
 
-3.  Run that script by highlighting the new script and clicking **Run**.
+3. Run that script by highlighting the new script and clicking **Run**.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-04/image31.png)
 
-4.  Once that script is executed, you will see four new tables added into the KQL Database tables menu.
+4. Once that script is executed, you will see four new tables added into the KQL Database tables menu.
 
     ![A group of black text Description automatically generated](../media/Lab-04/image32.png)
 
-5.  Now that the tables have been created, you need to load data into them. You will create an update policy to transform the data and move it when it is ingested into the bronze layer. Copy and paste the following script and then **Run** the code.
+5. Now that the tables have been created, you need to load data into them. You will create an update policy to transform the data and move it when it is ingested into the bronze layer. Copy and paste the following script and then **Run** the code.
 
     ![](../media/Lab-04/image64.png)
 
-6.  While you will see results of the query execution, the best evidence that your query completed is that you will see a new expandable folder in your Database objects pane. Click on the **\> icon** next to the **Functions folder**. These functions will allow the data loaded into the Bronze layer of the KQL Database to then be mirrored, transformed and loaded into the Silver layer.
+6. While you will see results of the query execution, the best evidence that your query completed is that you will see a new expandable folder in your Database objects pane. Click on the **\> icon** next to the **Functions folder**. These functions will allow the data loaded into the Bronze layer of the KQL Database to then be mirrored, transformed and loaded into the Silver layer.
 
     ![A screenshot of a computer](../media/Lab-04/image34.png)
 
-7.  Now let's simulate this process, you will run the pipeline you created earlier in this lab again. Navigate back to the **Load KQL Database** pipeline now.
+7. Now let's simulate this process, you will run the pipeline you created earlier in this lab again. Navigate back to the **Load KQL Database** pipeline now.
 
     ![A screenshot of a phone Description automatically generated](../media/Lab-04/image35.png)
 
-8.  Simply click the **Run** button within the **Home ribbon** to execute the pipeline again and load the data to the Bronze layer where it will then be transformed by the functions you created and loaded into the Silver tables.
+8. Simply click the **Run** button within the **Home ribbon** to execute the pipeline again and load the data to the Bronze layer where it will then be transformed by the functions you created and loaded into the Silver tables.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-04/image36.png)
 
-9.  Click **OK** on this flyout to run the pipeline with the same parameters as previously.
+9. Click **OK** on this flyout to run the pipeline with the same parameters as previously.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-04/image37.png)
 
@@ -352,15 +352,15 @@ Read the more in-depth Fabric experience announcement blogs:
 By using this demo/lab, you agree to the following terms:
 
 The technology/functionality described in this demo/lab is provided by Microsoft Corporation for purposes of obtaining your feedback and to
-provide you with a learning experience. You may only use the demo/lab to evaluate such technology features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not modify, copy, distribute, transmit, display, perform,reproduce, publish, license, create derivative works from, transfer,or sell this demo/lab or any portion thereof.
+provide you with a learning experience. You may only use the demo/lab to evaluate such technology features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell this demo/lab or any portion thereof.
 
 COPYING OR REPRODUCTION OF THE DEMO/LAB (OR ANY PORTION OF IT) TO ANY OTHER SERVER OR LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS EXPRESSLY PROHIBITED.THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS EPRESENTED IN THIS DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCITONALITY IN A PHYSICALENVIRONMENT MAY ALSO BE DIFFERENT.
 
 **FEEDBACK**
-If you give feedback about the technology features,functionality and/or concepts described in this demo/lab to Microsoft,you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.
+If you give feedback about the technology features, functionality and/or concepts described in this demo/lab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.
 
-MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE DEMO/LAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY,WHETHER EXPRESS, IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. MICROSOFT DOES NOT MAKE ANY ASSURANCES OR REPRESENTATIONS WITH REGARD TO THE ACCURACY OF THE RESULTS, OUTPUT THAT DERIVES FROM USE OF DEMO/ LAB, OR SUITABILITY OF THE INFORMATION CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
+MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE DEMO/LAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY, WHETHER EXPRESS, IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. MICROSOFT DOES NOT MAKE ANY ASSURANCES OR REPRESENTATIONS WITH REGARD TO THE ACCURACY OF THE RESULTS, OUTPUT THAT DERIVES FROM USE OF DEMO/ LAB, OR SUITABILITY OF THE INFORMATION CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
 
 **DISCLAIMER**
 
-This demo/lab contains only a portion of new features and enhancements in Microsoft Power BI. Some of the features might change in future releases of the product. In this demo/lab, you will learn about some,but not all, new features.
+This demo/lab contains only a portion of new features and enhancements in Microsoft Power BI. Some of the features might change in future releases of the product. In this demo/lab, you will learn about some, but not all, new features.
