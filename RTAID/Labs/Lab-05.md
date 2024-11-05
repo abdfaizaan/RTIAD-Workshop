@@ -98,7 +98,14 @@ to create a Real-Time Dashboard for visualizing and sharing your insights from t
     populate this visual with data. Delete all previous markdown KQL that is there by default. Copy and paste the following query into
     the query window.
 
-   ![](../media/Lab-05/image17-1.png)
+    ```
+    //Clicks by hour
+    Clicks
+    | where eventDate between (_startTime.._endTime)
+    | summarize date_count = count() by bin(eventDate, 1h) 
+    | render timechart  
+    | top 30 by date_count
+    ```
 
 3.  Run the query once you have it configured correctly to see the results.
 
@@ -165,8 +172,15 @@ to create a Real-Time Dashboard for visualizing and sharing your insights from t
 
 2.  Enter the following KQL query into the query pane.
 
-     ![](../media/Lab-05/impression-01.png)
-
+     ```
+      //Impressions by hour
+      Impressions
+      | where eventDate between (_startTime.._endTime)
+      | summarize date_count = count() by bin(eventDate, 1h) 
+      | render timechart  
+      | top 30 by date_count
+      ```
+     
 3.  **Run** the query.
 
     ![A screenshot of a computer](../media/Lab-05/image33.png)
@@ -190,7 +204,23 @@ to create a Real-Time Dashboard for visualizing and sharing your insights from t
 8.  Copy and paste the following query into the query pane. Note, this is a multi-statement query that uses multiple let statements & a
     query combined by semicolons.
 
-     ![](../media/Lab-05/image-38-1.png)
+      ```
+      //Clicks, Impressions, CTR
+      
+      let imp =  Impressions
+      | where eventDate  between (_startTime.._endTime)
+      | extend dateOnly = substring(todatetime(eventDate).tostring(), 0, 10) 
+      | summarize imp_count = count() by dateOnly; 
+      
+      let clck = Clicks
+      | where eventDate  between (_startTime.._endTime)
+      | extend dateOnly = substring(todatetime(eventDate).tostring(), 0, 10) 
+      | summarize clck_count = count() by dateOnly;
+      
+      imp  
+      | join clck on $left.dateOnly == $right.dateOnly 
+      | project selected_date = dateOnly , impressions = imp_count , clicks = clck_count, CTR = clck_count * 100 / imp_count
+       ```
 
 9.  **Run** the query to view the results.
 
