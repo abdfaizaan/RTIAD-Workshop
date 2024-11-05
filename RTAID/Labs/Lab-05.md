@@ -281,7 +281,15 @@ to create a Real-Time Dashboard for visualizing and sharing your insights from t
 2.  Copy and paste the following query into the query pane. This query extracts the latitude and longitude from the Ip address column from
     this data stream to generate a location that you can plot on a map.This query can take a little bit more time than the previous ones.
 
-   ![](../media/Lab-05/image49-1.png)
+     ```
+    //Impressions by location
+    
+    Impressions
+    | where eventDate  between (_startTime.._endTime)
+    | join external_table('products') on $left.productId == $right.ProductID 
+    | project lon = toreal(geo_info_from_ip_address(ip_address).longitude), lat = toreal(geo_info_from_ip_address(ip_address).latitude), Name 
+    | render scatterchart with (kind = map) //, xcolumn=lon, ycolumns=lat)
+     ```
 
 3.  Execute the query to validate that it is configured correctly. Click
     the **+ Add visual** button.
