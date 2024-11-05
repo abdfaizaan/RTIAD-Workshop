@@ -1,5 +1,7 @@
 # Microsoft Fabric - Real-Time Intelligence in a Day
 
+![](./media/lab5ms.png)
+
 ## Contents
 
 - Document Structure 
