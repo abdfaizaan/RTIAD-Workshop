@@ -2,11 +2,6 @@
 
 Real-Time Intelligence in a Day
 
-Lab 6
-
-Version:
-
-October 2024
 
 > Contents
 
