@@ -69,7 +69,7 @@ By the end of this lab, you will have learned:
 
 7.  This shows you the schema (column names and data types) for the table. One thing that will be helpful to add to this table on the KQL Database would be a hidden column for the ingestion time that will be used later in the Medallion architecture. Let's add that now. Copy and paste the script below to alter the tables you just created by adding an ingestion time column.
 
-    ![](../media/Lab-04/image12.emf)
+    ![](../media/Lab-04/image61.png)
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-04/image13.png)
 
@@ -149,7 +149,7 @@ By the end of this lab, you will have learned:
 
 19. Let's go and check one of our tables and verify the data. Navigate back to the KQL Queryset we have been using called **Create Tables** and ensure you are in the **Bronze Layer** tab and run the following script.
 
-    ![](../media/Lab-04/image26.emf)
+    ![](../media/Lab-04/image62.png)
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-04/image27.png)
 
@@ -164,7 +164,7 @@ By the end of this lab, you will have learned:
 
 2.  Run the following KQL script within the "Silver Layer" tab to create four new tables that will serve as the Silver Layer of the Medallion Framework.
 
-    ![](../media/Lab-04/image30.emf)
+    ![](../media/Lab-04/image63.png)
 
 3.  Run that script by highlighting the new script and clicking **Run**.
 
@@ -176,7 +176,7 @@ By the end of this lab, you will have learned:
 
 5.  Now that the tables have been created, you need to load data into them. You will create an update policy to transform the data and move it when it is ingested into the bronze layer. Copy and paste the following script and then **Run** the code.
 
-    ![](../media/Lab-04/image33.emf)
+    ![](../media/Lab-04/image64.png)
 
 6.  While you will see results of the query execution, the best evidence that your query completed is that you will see a new expandable folder in your Database objects pane. Click on the **\> icon** next to the **Functions folder**. These functions will allow the data loaded into the Bronze layer of the KQL Database to then be mirrored, transformed and loaded into the Silver layer.
 
@@ -202,7 +202,7 @@ By the end of this lab, you will have learned:
 
 12. On a new line, query the SilverAddress table by writing out the following query and executing the code.
 
-    ![](../media/Lab-04/image39.emf)
+    ![](../media/Lab-04/image65.png)
 
     ![A blue rectangle with red and black text Description automatically enerated](../media/Lab-04/image40.png)
 
@@ -220,7 +220,7 @@ Now that you have your transformed layer of data within the Silver Layer you can
 
 2. Paste in the queryset the following code for creating a materialized view.
 
-    ![](../media/Lab-04/image43.emf)
+    ![](../media/Lab-04/image66.png)
 
 3. Once the code has been pasted, highlight the code and execute it by clicking on the **Run** button.
 
@@ -236,7 +236,7 @@ Now that you have your transformed layer of data within the Silver Layer you can
 
 6. In your query window, run the following code to query the new materialized view.
 
-    ![](../media/Lab-04/image47.emf)
+    ![](../media/Lab-04/image67.png)
 
     ![A close-up of a computer code Description automatically generated](../media/Lab-04/image48.png)
 
@@ -244,7 +244,7 @@ Now that you have your transformed layer of data within the Silver Layer you can
 
 8. Now paste and run the following queries to build more Gold layer materialized views for the other tables.
 
-    ![](../media/Lab-04/image49.emf)
+    ![](../media/Lab-04/image68.png)
 
 9.  You should now have six materialized views within your KQL Database.
 
@@ -322,17 +322,17 @@ After building the medallion framework, users employed Microsoft Fabric shortcut
 Fabric Real-Time Intelligence in a Day (RTIIAD) introduces you to some of the key functions available in Microsoft Fabric.
 In the menu of the service, the Help (?) section has links to some great resources.
 
- ![A screenshot of a computer](../media/Lab-03/refrence-1.png)
+ ![A screenshot of a computer](../media/Lab-04/image69.png)
  
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
--   See blog post to read the full [[Microsoft Fabric GA][announcement]](https://aka.ms/Fabric-Hero-Blog-Ignite23)
--   Explore Fabric through the [[Guided  ur]](https://aka.ms/Fabric-GuidedTour)
--   Sign up for the [[Microsoft Fabric free trial]](https://aka.ms/try-fabric)
--   Visit the [[Microsoft Fabric website]](https://aka.ms/microsoft-fabric)
--   Learn new skills by exploring the [[Fabric Learning  modules]](https://aka.ms/learn-fabric)
--   Explore the [[Fabric technical documentation]](https://aka.ms/fabric-docs)
--   Read the [[free e-book on getting started with fabric]](https://aka.ms/fabric-get-started-ebook)
--   Join the [[Fabric  community]](https://aka.ms/fabric-community) to post  your questions, share your feedback, and learn from others
+-   See blog post to read the full [Microsoft Fabric GA[announcement]](https://aka.ms/Fabric-Hero-Blog-Ignite23)
+-   Explore Fabric through the [Guided  ur](https://aka.ms/Fabric-GuidedTour)
+-   Sign up for the [Microsoft Fabric free trial](https://aka.ms/try-fabric)
+-   Visit the [Microsoft Fabric website](https://aka.ms/microsoft-fabric)
+-   Learn new skills by exploring the [Fabric Learning  modules](https://aka.ms/learn-fabric)
+-   Explore the [Fabric technical documentation](https://aka.ms/fabric-docs)
+-   Read the [free e-book on getting started with fabric](https://aka.ms/fabric-get-started-ebook)
+-   Join the [Fabric  community](https://aka.ms/fabric-community) to post  your questions, share your feedback, and learn from others
 
 Read the more in-depth Fabric experience announcement blogs:
 
@@ -344,7 +344,7 @@ Read the more in-depth Fabric experience announcement blogs:
 - [Power BI announcement blog](https://aka.ms/Fabric-PBI-Blog)
 - [Data Activator experience in Fabric  blog](https://aka.ms/Fabric-DA-Blog)
 - [Administration and governance in Fabric  blog](https://aka.ms/Fabric-Admin-Gov-Blog)
-- [OneLake]{.underline} [in Fabric  blog](https://aka.ms/Fabric-OneLake-Blog)
+- [OneLake in Fabric blog](https://aka.ms/Fabric-OneLake-Blog)
 - [Dataverse and Microsoft Fabric integration  blog](https://aka.ms/Dataverse-Fabric-Blog)
 
 © 2024 Microsoft Corporation. All rights reserved.
