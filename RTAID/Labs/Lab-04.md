@@ -365,7 +365,7 @@ Now that you have your transformed layer of data within the Silver Layer you can
 
 10.  You should now have six materialized views within your KQL Database.
 
-     [A screenshot of a computer Description automatically generated](../media/Lab-04/image50.png)
+     ![A screenshot of a computer Description automatically generated](../media/Lab-04/image50.png)
 
 11. You have now successfully built a Medallion Framework within a KQL Database. While this data is easily consumable, you will have users that have never worked with Kusto and would prefer to access the data from these tables through another means. In the next task you will be creating a Lakehouse. Then, using the Onelake Availability feature, which we enabled in Lab 01, make some of the tables in our KQL Database accessible through the Lakehouse using shortcuts
 
