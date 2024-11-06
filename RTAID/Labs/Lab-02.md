@@ -117,7 +117,7 @@ By the end of this lab, you will have learned:
 
 17. This will show you a preview of the data that is being received from the Azure Event Hub. If you slide your bottom horizontal scroll bar all the way to the right-side of your preview, you will be able to see the time that the data has been received in the Event Hub in two columns called, **EventProcessedUtcTime** and **EventEnqueuedUtcTime**. This should reflect the current date/time in UTC format.
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-02/image18.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-02/image18-1.png)
 
 ## Task 2: Setup Eventstream Destination
 
@@ -270,16 +270,22 @@ Let's explore!
 1.  You need to create a query that returns the number of each product that has been sold. This is something you can quickly do with T-SQL.Within the query window, you can translate your SQL queries into KQL to better understand how to author KQL queries in the future. Start with writing the following command.
 
     **Note:** Double click the object below in order to be able to copy the text
-    
-    ![](../media/Lab-02/image48.png)
 
-    ![](../media/Lab-02/image49.png)
+    ```
+    --
+    explain
+    ```
 
 3.  The comment line "\--" followed by the keyword "explain" will allow you to now create a SQL query and return a result with the KQL query that could be used to achieve a similar query and result. Below input the following query to explain what the KQL query would look like:
 
-    ![](../media/Lab-02/image50.png)
-
-    ![A screenshot of a computer Description automatically generated](../media/Lab-02/image51.png)
+    ```
+     --
+     explain
+     SELECT COUNT(OrderQuantity) AS CountOfProducts
+             , ProductKey
+     FROM InternetSales
+     GROUP BY ProductKey
+    ```
 
 4. This is a simple SQL query that will retrieve results from the InternetSales table to return two columns, the product key and a count of the number of orders. Because there is an aggregated column and a non-aggregated column, you must use a GROUP BY to return results for each individual product. Run the entire query beginning with the "\--" to the end of the T-SQL query.
 
