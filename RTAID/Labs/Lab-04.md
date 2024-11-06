@@ -207,30 +207,40 @@ By the end of this lab, you will have learned:
 5. Now that the tables have been created, you need to load data into them. You will create an update policy to transform the data and move it when it is ingested into the bronze layer. Copy and paste the following script and then **Run** the code.
 
     ```
-    // use update policies to transform data during Ingestion .execute database script <|
-    .create function ifnotexists with (docstring = 'Add ingestion time to raw data') ParseAddress (){ Address
-    | extend IngestionDate = ingestion_time()
+    // use update policies to transform data during Ingestion
+    
+    .execute database script <|
+    
+    .create function ifnotexists with (docstring = 'Add ingestion time to raw data') ParseAddress (){
+    Address
+    | extend IngestionDate = ingestion_time() 
     }
-    .alter table SilverAddress policy update §'[{"Source": "Address"., "IsTransactional": true }]'
-    "Query":
-    "ParseAddress"j "IsEnabled"
-    true.
-    .create function ifnotexists with (docstring = 'Add ingestion time to raw data') ParseCustomer (){ Customer
-    | extend IngestionDate = ingestion_time()
+    
+    .alter table SilverAddress policy update @'[{"Source": "Address", "Query": "ParseAddress", "IsEnabled" : true, "IsTransactional": true }]'
+    
+    .create function ifnotexists with (docstring = 'Add ingestion time to raw data') ParseCustomer (){
+    Customer
+    | extend IngestionDate = ingestion_time() 
     }
-    .alter table SilverCustomer policy update @'[{"Source": "Customer"., "Query": "IsTransactional": true }]'
-    "ParseCustomer"j "IsEnabled"
-    true.
-    .create function ifnotexists with (docstring = 'Add ingestion time to raw data') ParseSalesOrderHeader (){ SalesOrderHeader
+    
+    .alter table SilverCustomer policy update @'[{"Source": "Customer", "Query": "ParseCustomer", "IsEnabled" : true, "IsTransactional": true }]'
+    
+    .create function ifnotexists with (docstring = 'Add ingestion time to raw data') ParseSalesOrderHeader (){
+    SalesOrderHeader
     | extend DaysShipped = datetime_diff('day', ShipDate, OrderDate)
-    | extend IngestionDate = ingestion_time()
-    .alter table SilverSalesOrderHeader policy update @'[{"Source": "SalesOrderHeader", "Query": "ParseSalesOrderHeader"j "IsEnabled" : true, "IsTransactional": true }]'
-    .create function ifnotexists with (docstring = 'Add ingestion time to raw data') ParseSalesOrderDetail () { SalesOrderDetail
-    | extend IngestionDate = ingestion_time()
+    | extend IngestionDate = ingestion_time() 
     }
-    .alter table SilverSalesOrderDetail policy update @'[{"Source": "SalesOrderDetail", "Query": ParseSalesOrderDetail, "IsEnabled" : true, "IsTransactional": true }]'
+    
+    .alter table SilverSalesOrderHeader policy update @'[{"Source": "SalesOrderHeader", "Query": "ParseSalesOrderHeader", "IsEnabled" : true, "IsTransactional": true }]'
+    
+    .create function ifnotexists with (docstring = 'Add ingestion time to raw data') ParseSalesOrderDetail () {
+    SalesOrderDetail
+    | extend IngestionDate = ingestion_time() 
+    }
+    
+    .alter table SilverSalesOrderDetail policy update @'[{"Source": "SalesOrderDetail", "Query": "ParseSalesOrderDetail", "IsEnabled" : true, "IsTransactional": true }]'
+
     ```
-    ![](../media/Lab-04/image64.png)
 
 6. While you will see results of the query execution, the best evidence that your query completed is that you will see a new expandable folder in your Database objects pane. Click on the **\> icon** next to the **Functions folder**. These functions will allow the data loaded into the Bronze layer of the KQL Database to then be mirrored, transformed and loaded into the Silver layer.
 
