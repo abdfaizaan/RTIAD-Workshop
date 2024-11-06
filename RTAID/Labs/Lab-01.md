@@ -165,15 +165,17 @@ By the end of this lab, you will have learned:
 
    **Note**: The workspace name must be unique. Make sure a green check mark with **“This name is available”** is displayed below the Name field. 
 
-1. If you would like, you can enter a **Description** for the workspace. This is an optional field. 
+1. If you would like, you can enter a **Description** for the workspace. This is an optional field.
+   
 1. Click on **Advanced** to expand the section.
 
    ![](../media/Lab-01/imag016.png)
  
-1.	Under **License mode**, make sure **Trial** is selected. (It should be selected by default.) 
+1.	Under **License mode**, make sure **Trial** is selected. (It should be selected by default.)
+	
 1.	Select **Apply** to create a new workspace.
 
-    ![](../media/Lab-01/imag017-1.png)
+   ![](../media/Lab-01/imag017-1.png)
  
 ## Task 5: Create an Eventhouse
 
