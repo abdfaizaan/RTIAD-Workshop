@@ -220,7 +220,8 @@ to create a Real-Time Dashboard for visualizing and sharing your insights from t
       imp  
       | join clck on $left.dateOnly == $right.dateOnly 
       | project selected_date = dateOnly , impressions = imp_count , clicks = clck_count, CTR = clck_count * 100 / imp_count
-       ```
+
+      ```
 
 9.  **Run** the query to view the results.
 
