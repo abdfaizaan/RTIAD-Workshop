@@ -181,16 +181,21 @@ By the end of this lab, you will have learned:
 
 2. Run the following KQL script within the "Silver Layer" tab to create four new tables that will serve as the Silver Layer of the Medallion Framework.
 
-     ```
-    //SILVER LAYER
-    .execute database script <
-    .create table [SilverAddress]
-    (AddressID:int,AddressLinel:string,AddressLine2:string,City : string, StateProvince: string, CountryRegion: string, PostalCode: string, rowguid: guid, ModifiedDate:datetime, IngestionDate: datetime)
-    .create table [SilverCustomer](CustomerlD:int, NameStyle: string, Title: string, FirstName: string, MiddleName: string, LastName: string,Suffix:string, CompanyName: string, Salesperson: string, EmailAddress: string, Phone: string, ModifiedDate: datetime, IngestionDate: datetime)
-    .create table [SilverSalesOrderHeader](SalesOrderlD: int, OrderDate: datetime, DueDate: datetime, ShipDate: datetime, ShipToAddressID: int, BillToAddressID: int, SubTotal: decimal, TaxAmt: decimal, Freight: decimal, TotalDue: decimal, ModifiedDate: datetime, DaysShipped: long, IngestionDate: datetime)
-    .create table [SilverSalesOrderDetail](SalesOrderlD: int, SalesOrderDetaillD: int, OrderQty: int, ProductID: int, UnitPrice: decimal, UnitPriceDiscount: decimal,LineTotal: decimal, ModifiedDate: datetime, IngestionDate: datetime)
-     ```
-    ![](../media/Lab-04/image63.png)
+```
+//SILVER LAYER
+
+.execute database script <|
+
+.create table [SilverAddress] (AddressID:int,AddressLine1:string,AddressLine2:string,City: string, StateProvince:string, CountryRegion:string, PostalCode: string, rowguid: guid, ModifiedDate:datetime, IngestionDate: datetime)
+
+.create table [SilverCustomer](CustomerID:int, NameStyle: string, Title: string, FirstName: string, MiddleName: string, LastName: string,Suffix:string, CompanyName: string, SalesPerson: string, EmailAddress: string, Phone: string, ModifiedDate: datetime, IngestionDate: datetime)
+
+.create table [SilverSalesOrderHeader](SalesOrderID: int, OrderDate: datetime, DueDate: datetime, ShipDate: datetime, ShipToAddressID: int, BillToAddressID: int, SubTotal: decimal, TaxAmt: decimal, Freight: decimal, TotalDue: decimal, ModifiedDate: datetime, DaysShipped: long, IngestionDate: datetime)
+
+.create table [SilverSalesOrderDetail](SalesOrderID: int, SalesOrderDetailID: int, OrderQty: int, ProductID: int, UnitPrice: decimal, UnitPriceDiscount: decimal,LineTotal: decimal, ModifiedDate: datetime, IngestionDate: datetime)
+
+```
+![](../media/Lab-04/image63.png)
 
 3. Run that script by highlighting the new script and clicking **Run**.
 
