@@ -58,8 +58,6 @@ By the end of this lab, you will have learned:
     .create table [SalesOrderHeader](SalesOrderlD: int, OrderDate: datetime, DueDate: datetime, ShipDate: datetime, ShiploAddressID: int, BillToAddressID: int, Sublotal: decimal, TaxAmt: decimal, Freight: decimal, TbtalDue: decimal, ModifiedDate: datetime)
     .create table [SalesOrderDetail](SalesOrderlD: int, SalesOrderDetaillD: int, OrderQty: int, ProductID: int, UnitPrice: decimal, UnitPriceDiscount: decimal,Linelbtal: decimal, ModifiedDate: datetime)
     ```
-    ![](../media/Lab-04/image60.png)
-
     ![A blue screen with black text Description automatically generated](../media/Lab-04/image9.png)
 
 5. Once that executes you should immediately see four new tables created within your Database Object Explorer.
