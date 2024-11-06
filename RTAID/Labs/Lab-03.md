@@ -141,9 +141,9 @@ device and browser the webpage was loaded from, and what IP address accessed the
 
 -   EventEnqueredUtcTime
 
-You should be left with the following fields in the image below.
+  You should be left with the following fields in the image below.
 
-![A screenshot of a computer](../media/Lab-03/image21.png)
+  ![A screenshot of a computer](../media/Lab-03/image21.png)
 
 8. Hover over the eventDate field and when an ellipses (...) appears on the right-hand side of the window, click it.
 
