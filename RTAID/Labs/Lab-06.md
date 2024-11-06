@@ -164,41 +164,25 @@ Fabric Real-Time Intelligence in a Day (RTIIAD) introduces you to some of the ke
    ![](../media/Lab-06/reference-1.png)
 
 -   See blog post to read the full [Microsoft Fabric GA announcement](https://aka.ms/Fabric-Hero-Blog-Ignite23)
-
 -   Explore Fabric through the [Guided tour](https://aka.ms/Fabric-GuidedTour)
-
 -   Sign up for the [Microsoft Fabric free trial](https://aka.ms/try-fabric)
-
 -   Visit the [Microsoft Fabric website](https://aka.ms/microsoft-fabric)
-
 -   Learn new skills by exploring the [Fabric Learning modules](https://aka.ms/learn-fabric)
-
 -   Explore the [Fabric technical documentation](https://aka.ms/fabric-docs)
-
 -   Read the [free e-book on getting started with fabric](https://aka.ms/fabric-get-started-ebook)
-
 -   Join the [Fabric community](https://aka.ms/fabric-community) to post your questions, share your feedback, and learn from others
 
 Read the more in-depth Fabric experience announcement blogs:
 
 -   [Data Factory experience in Fabric blog](https://aka.ms/Fabric-Data-Factory-Blog)
-
 -   [Synapse Data Engineering experience in Fabric  blog](https://aka.ms/Fabric-DE-Blog)
-
 -   [Synapse Data Science experience in Fabric blog](https://aka.ms/Fabric-DS-Blog)
-
 -   [Synapse Data Warehousing experience in Fabric blog](https://aka.ms/Fabric-DW-Blog)
-
 -   [Real-](https://aka.ms/Fabric-RTA-Blog)[Time Intelligence  experience in Fabric blog](https://blog.fabric.microsoft.com/en-us/blog/category/real-time-intelligence)
-
 -   [Power BI announcement blog](https://aka.ms/Fabric-PBI-Blog)
-
 -   [Data Activator experience in Fabric blog](https://aka.ms/Fabric-DA-Blog)
-
 -   [Administration and governance in Fabric blog](https://aka.ms/Fabric-Admin-Gov-Blog)
-
 -   [OneLakein Fabric blog](https://aka.ms/Fabric-OneLake-Blog)
-
 -   [Dataverse and Microsoft Fabric integration blog](https://aka.ms/Dataverse-Fabric-Blog)
 
 © 2024 Microsoft Corporation. All rights reserved.
