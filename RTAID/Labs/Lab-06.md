@@ -1,5 +1,6 @@
 # Microsoft Fabric: Real-Time Intelligence in a Day
 
+![](/media/lab6ms.png)
 
 ## Contents
 
