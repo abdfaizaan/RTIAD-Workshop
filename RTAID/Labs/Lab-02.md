@@ -388,7 +388,7 @@ Here are a few more resources that will help you with your next steps with Micro
     
 -   Join the [Fabric community](https://aka.ms/fabric-community) to post your questions, share your feedback, and learn from others
     
-> Read the more in-depth Fabric experience announcement blogs:
+ Read the more in-depth Fabric experience announcement blogs:
 
 -   [Data Factory experience in Fabric blog](https://aka.ms/Fabric-Data-Factory-Blog)
 
