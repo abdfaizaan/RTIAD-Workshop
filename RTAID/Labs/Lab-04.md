@@ -50,6 +50,14 @@ By the end of this lab, you will have learned:
 
 4. Within this new tab, paste and highlight the following code and select "Run" to create four new tables that will serve as your Bronze Layer of the Medallion Framework.
 
+    ```
+    //BRONZE LAYER
+    .execute database script <
+    .create table [Address] (AddresslD:int,AddressLine1 :string,AddressLine2:string,City: string, StateProvince:string, CountryRegion:string, FbstalCode: string, rowguid: guid,Modified Date:datetime)
+    .create table [Customer](CustomerlD:int, NameStyle: string, Title: string, FirstName: string, MiddleName: string, LastName: string,Suffix:string, CompanyName: string, Salesperson: string, EmailAddress: string, Phone: string, ModifiedDate: datetime)
+    .create table [SalesOrderHeader](SalesOrderlD: int, OrderDate: datetime, DueDate: datetime, ShipDate: datetime, ShiploAddressID: int, BillToAddressID: int, Sublotal: decimal, TaxAmt: decimal, Freight: decimal, TbtalDue: decimal, ModifiedDate: datetime)
+    .create table [SalesOrderDetail](SalesOrderlD: int, SalesOrderDetaillD: int, OrderQty: int, ProductID: int, UnitPrice: decimal, UnitPriceDiscount: decimal,Linelbtal: decimal, ModifiedDate: datetime)
+    ```
     ![](../media/Lab-04/image60.png)
 
     ![A blue screen with black text Description automatically generated](../media/Lab-04/image9.png)
@@ -68,6 +76,11 @@ By the end of this lab, you will have learned:
     ![A screenshot of a computer](../media/Lab-04/image11.png)
 
 7. This shows you the schema (column names and data types) for the table. One thing that will be helpful to add to this table on the KQL Database would be a hidden column for the ingestion time that will be used later in the Medallion architecture. Let's add that now. Copy and paste the script below to alter the tables you just created by adding an ingestion time column.
+
+    ```
+    //adds a hidden field showing ingestion time .execute database script <|
+    .alter table Address policy ingestiontime true .alter table Customer policy ingestiontime true .alter table SalesOrderHeader policy ingestiontime true .alter table SalesOrderDetail policy ingestiontime true
+    ```
 
     ![](../media/Lab-04/image61.png)
 
@@ -149,6 +162,11 @@ By the end of this lab, you will have learned:
 
 19. Let's go and check one of our tables and verify the data. Navigate back to the KQL Queryset we have been using called **Create Tables** and ensure you are in the **Bronze Layer** tab and run the following script.
 
+     ```
+    //Query the Bronze layer Customer table
+    Customer
+    | take 100
+    ```
     ![](../media/Lab-04/image62.png)
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-04/image27.png)
@@ -164,6 +182,15 @@ By the end of this lab, you will have learned:
 
 2. Run the following KQL script within the "Silver Layer" tab to create four new tables that will serve as the Silver Layer of the Medallion Framework.
 
+     ```
+    //SILVER LAYER
+    .execute database script <
+    .create table [SilverAddress]
+    (AddressID:int,AddressLinel:string,AddressLine2:string,City : string, StateProvince: string, CountryRegion: string, PostalCode: string, rowguid: guid, ModifiedDate:datetime, IngestionDate: datetime)
+    .create table [SilverCustomer](CustomerlD:int, NameStyle: string, Title: string, FirstName: string, MiddleName: string, LastName: string,Suffix:string, CompanyName: string, Salesperson: string, EmailAddress: string, Phone: string, ModifiedDate: datetime, IngestionDate: datetime)
+    .create table [SilverSalesOrderHeader](SalesOrderlD: int, OrderDate: datetime, DueDate: datetime, ShipDate: datetime, ShipToAddressID: int, BillToAddressID: int, SubTotal: decimal, TaxAmt: decimal, Freight: decimal, TotalDue: decimal, ModifiedDate: datetime, DaysShipped: long, IngestionDate: datetime)
+    .create table [SilverSalesOrderDetail](SalesOrderlD: int, SalesOrderDetaillD: int, OrderQty: int, ProductID: int, UnitPrice: decimal, UnitPriceDiscount: decimal,LineTotal: decimal, ModifiedDate: datetime, IngestionDate: datetime)
+     ```
     ![](../media/Lab-04/image63.png)
 
 3. Run that script by highlighting the new script and clicking **Run**.
@@ -176,6 +203,30 @@ By the end of this lab, you will have learned:
 
 5. Now that the tables have been created, you need to load data into them. You will create an update policy to transform the data and move it when it is ingested into the bronze layer. Copy and paste the following script and then **Run** the code.
 
+    ```
+    // use update policies to transform data during Ingestion .execute database script <|
+    .create function ifnotexists with (docstring = 'Add ingestion time to raw data') ParseAddress (){ Address
+    | extend IngestionDate = ingestion_time()
+    }
+    .alter table SilverAddress policy update §'[{"Source": "Address"., "IsTransactional": true }]'
+    "Query":
+    "ParseAddress"j "IsEnabled"
+    true.
+    .create function ifnotexists with (docstring = 'Add ingestion time to raw data') ParseCustomer (){ Customer
+    | extend IngestionDate = ingestion_time()
+    }
+    .alter table SilverCustomer policy update @'[{"Source": "Customer"., "Query": "IsTransactional": true }]'
+    "ParseCustomer"j "IsEnabled"
+    true.
+    .create function ifnotexists with (docstring = 'Add ingestion time to raw data') ParseSalesOrderHeader (){ SalesOrderHeader
+    | extend DaysShipped = datetime_diff('day', ShipDate, OrderDate)
+    | extend IngestionDate = ingestion_time()
+    .alter table SilverSalesOrderHeader policy update @'[{"Source": "SalesOrderHeader", "Query": "ParseSalesOrderHeader"j "IsEnabled" : true, "IsTransactional": true }]'
+    .create function ifnotexists with (docstring = 'Add ingestion time to raw data') ParseSalesOrderDetail () { SalesOrderDetail
+    | extend IngestionDate = ingestion_time()
+    }
+    .alter table SilverSalesOrderDetail policy update @'[{"Source": "SalesOrderDetail", "Query": ParseSalesOrderDetail, "IsEnabled" : true, "IsTransactional": true }]'
+    ```
     ![](../media/Lab-04/image64.png)
 
 6. While you will see results of the query execution, the best evidence that your query completed is that you will see a new expandable folder in your Database objects pane. Click on the **\> icon** next to the **Functions folder**. These functions will allow the data loaded into the Bronze layer of the KQL Database to then be mirrored, transformed and loaded into the Silver layer.
@@ -202,6 +253,11 @@ By the end of this lab, you will have learned:
 
 12. On a new line, query the SilverAddress table by writing out the following query and executing the code.
 
+    ```
+    SilverAddress
+    | take 100
+    ```
+
     ![](../media/Lab-04/image65.png)
 
     ![A blue rectangle with red and black text Description automatically enerated](../media/Lab-04/image40.png)
@@ -220,6 +276,15 @@ Now that you have your transformed layer of data within the Silver Layer you can
 
 2. Paste in the queryset the following code for creating a materialized view.
 
+    ```
+    //GOLD LAYER
+    // use materialized views to view the latest changes in the SilverAddress table .create materialized-view with (backfill=true) GoldAddress on table SilverAddress
+    {
+    SilverAddress
+    | summarize arg_max(IngestionDate., *) by AddressID
+    }
+    ```
+
     ![](../media/Lab-04/image66.png)
 
 3. Once the code has been pasted, highlight the code and execute it by clicking on the **Run** button.
@@ -236,6 +301,11 @@ Now that you have your transformed layer of data within the Silver Layer you can
 
 6. In your query window, run the following code to query the new materialized view.
 
+    ```
+    GoldAddress
+    | take 1000
+    ```
+
     ![](../media/Lab-04/image67.png)
 
     ![A close-up of a computer code Description automatically generated](../media/Lab-04/image48.png)
@@ -243,6 +313,36 @@ Now that you have your transformed layer of data within the Silver Layer you can
 7. This query will return the row with the latest **IngestionDate** for each unique **AddressID** in the **SilverAddress** table.
 
 8. Now paste and run the following queries to build more Gold layer materialized views for the other tables.
+
+    ```
+    //Create additional Gold Materialized Views .execute database script <
+    .create materialized-view with (backfill=true) GoldCustomer on table SilverCustomer
+    {
+    SilverCustomer
+    | summarize arg_max(IngestionDate^ *) by CustomerlD
+    }
+    .create materialized-view with (backfill=true) GoldSalesOrderHeader on table SilverSalesOrderHeader
+    {
+    SilverSalesOrderHeader
+    | summarize arg_max(IngestionDate^ *) by SalesOrderlD
+    }
+    .create materialized-view with (backfill=true) GoldSalesOrderDetail on table SilverSalesOrderDetail
+    {
+    SilverSalesOrderDetail
+    | summarize arg_max(IngestionDate^ *) by SalesOrderDetaillD
+    }
+    .create async materialized-view with (backfill=true) GoldDailyClicks on table Clicks
+    {
+    Clicks
+    | extend dateOnly = substring(todatetime(eventDate).tostringQ, 0^ 10)
+    | summarize countQ by dateOnly
+    .create async materialized-view with (backfill=true) GoldDailylmpressions on table Impressions
+    {
+    Impressions
+    | extend dateOnly = substring(todatetime(eventDate).tostringQ, 0^ 10)
+    | summarize countQ by dateOnly
+    }
+    ```
 
     ![](../media/Lab-04/image68.png)
 
