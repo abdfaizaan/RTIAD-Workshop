@@ -55,7 +55,7 @@ In this lab, you will learn how to leverage Data Activator to create a Reflex to
 
 6.  Finally, you need to decide the location where you will store the  **Reflex item** that you are creating with this alert. This by default should select your current workspace, but you need to specifically call out a **New item** under the Item drop-down menu.
 
-![A screenshot of a computer Description automatically generated](../media/Lab-06/image10.png)
+![A screenshot of a computer Description automatically generated](../media/Lab-06/image10-1.png)
 
 7.  Rename the item to **CTR Reflex** and then click on **Create**. This will take a few moments to create.
 
@@ -67,7 +67,7 @@ In this lab, you will learn how to leverage Data Activator to create a Reflex to
 
 9.  This will take you to the formal **Reflex experience**. From here you can monitor the stream of data in real-time, view the Data that is used to support the Reflex, and create additional Triggers from the same stream.
 
-![A screenshot of a computer Description automatically generated](../media/Lab-06/image13.png)
+![A screenshot of a computer Description automatically generated](../media/Lab-06/image13-1.png)
 
 ## Task 2: Test Email Alert from Reflex Experience
 
@@ -89,11 +89,11 @@ In this lab, you will learn how to leverage Data Activator to create a Reflex to
 
 1.  On the bottom left corner of the screen next to the Fabric Persona Switcher click on the tab that says **Data**.
 
-    ![](../media/Lab-06/image16.png)
+    ![](../media/Lab-06/image16-1.png)
     
 2.  The **Data view** shows your stream of data and what is possible to monitor based on the source of data and the query that is returning that data. With this you are currently using that stream to push data to an **Object** this is where you have set a condition and a trigger to alert you based on the incoming stream. Let's create a new object and make another trigger with the same stream. Go back to the **Design** view.
 
-![A close up of a logo Description automatically generated](../media/Lab-06/image17.png)
+![A close up of a logo Description automatically generated](../media/Lab-06/image17-1.png)
 
 3.  Create a **New Trigger** from this data stream.
 
@@ -110,7 +110,7 @@ height="3.026451224846894in"}
 
 6.  Now that you are monitoring a column from the stream, you need to set up the conditions to **Detect** when you alert the user. Click in the Detect drop-down box that reads **Choose a type of detection**.
 
-![A close up of a sign Description automatically generated](../media/Lab-06/image21.png)
+![A close up of a sign Description automatically generated](../media/Lab-06/image21-1.png)
 
 7.  Using the **Numeric** type of detection, find the **Is greater than** option towards the bottom of the list.
 
@@ -142,15 +142,15 @@ height="3.026451224846894in"}
 
 1.  This is the last lab and last part of Real-Time Analytics in a Day. If you have completed the lab and have no further questions or needs from the instructor on the content, please help us by deallocating the workspace. Navigate to the **RTI_username** workspace.
 
-![A screenshot of a computer Description automatically generated](../media/Lab-06/image28.png)
+![A screenshot of a computer Description automatically generated](../media/Lab-06/image28-1.png)
 
 2.  Click on the **Workspace Settings** in the top-right corner.
 
-![](../media/Lab-06/image29.png)
+![](../media/Lab-06/image29-1.png)
 
 3.  From the **General** workspace settings, scroll down and click on the **Remove this workspace** button.
 
-![A screenshot of a computer Description automatically generated](../media/Lab-06/image30.png)
+![A screenshot of a computer Description automatically generated](../media/Lab-06/image30-1.png)
 
 4.  Lab and Class Complete!
 
