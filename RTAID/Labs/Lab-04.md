@@ -168,7 +168,6 @@ By the end of this lab, you will have learned:
     | take 100
     ```
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-04/image27.png)
 
 20. You should see some data like the image below, but it may not be exact.
 
@@ -271,8 +270,6 @@ By the end of this lab, you will have learned:
     SilverAddress
     | take 100
     ```
-    
-    ![A blue rectangle with red and black text Description automatically enerated](../media/Lab-04/image40.png)
 
 13. Notice in your results, your **SilverAddress** table has an additional column, **IngestionDate**, that is not physically present on the **Address** table.
 
@@ -316,9 +313,6 @@ Now that you have your transformed layer of data within the Silver Layer you can
     GoldAddress
     | take 1000
     ```
-
-   ![A close-up of a computer code Description automatically generated](../media/Lab-04/image48.png)
-   
 
 8. This query will return the row with the latest **IngestionDate** for each unique **AddressID** in the **SilverAddress** table.
 
