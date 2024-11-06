@@ -398,7 +398,7 @@ support this is currently in an external Azure SQL Database, let's see how easy 
 
 10.  You will now see in your query results values for each individual product that your company has sold.
 
-    ![A screenshot of a computer](../media/Lab-03/image60.png)
+     ![A screenshot of a computer](../media/Lab-03/image60.png)
 
 11. With your query highlighted click on the button in your toolbar, **Build Power BI report**.
 
