@@ -195,7 +195,6 @@ By the end of this lab, you will have learned:
 .create table [SilverSalesOrderDetail](SalesOrderID: int, SalesOrderDetailID: int, OrderQty: int, ProductID: int, UnitPrice: decimal, UnitPriceDiscount: decimal,LineTotal: decimal, ModifiedDate: datetime, IngestionDate: datetime)
 
 ```
-![](../media/Lab-04/image63.png)
 
 3. Run that script by highlighting the new script and clicking **Run**.
 
