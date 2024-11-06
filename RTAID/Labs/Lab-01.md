@@ -164,9 +164,9 @@ By the end of this lab, you will have learned:
 1. **Create a workspace** dialog opens on the right side of the browser. 
 1. In the **Name** field enter **RTI_username**.  Use the username provided to you from the environment details.
 
->**Note**: The workspace name must be unique. Make sure a green check mark with **“This name is available”** is displayed below the Name field. 
+**Note**: The workspace name must be unique. Make sure a green check mark with **“This name is available”** is displayed below the Name field. 
 
-1. If you would like, you can enter a **Description** for the workspace. This is an optional field. 
+5. If you would like, you can enter a **Description** for the workspace. This is an optional field. 
 1. Click on **Advanced** to expand the section.
 
    ![](../media/Lab-01/imag016.png)
