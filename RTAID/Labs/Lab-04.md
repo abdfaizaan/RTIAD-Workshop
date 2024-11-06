@@ -177,9 +177,10 @@ By the end of this lab, you will have learned:
 ## Task 3: Transform Tables in Silver Layer
 
 1. Now that the Bronze tables are loaded we will create a new tab within our KQL Queryset called "Silver Layer".
-    ![A screenshot of a computer](../media/Lab-04/image29.png)
 
-2. Run the following KQL script within the "Silver Layer" tab to create four new tables that will serve as the Silver Layer of the Medallion Framework.
+   ![A screenshot of a computer](../media/Lab-04/image29.png)
+
+3. Run the following KQL script within the "Silver Layer" tab to create four new tables that will serve as the Silver Layer of the Medallion Framework.
 
 ```
 //SILVER LAYER
@@ -316,12 +317,12 @@ Now that you have your transformed layer of data within the Silver Layer you can
     | take 1000
     ```
 
+   ![A close-up of a computer code Description automatically generated](../media/Lab-04/image48.png)
+   
 
-    ![A close-up of a computer code Description automatically generated](../media/Lab-04/image48.png)
+8. This query will return the row with the latest **IngestionDate** for each unique **AddressID** in the **SilverAddress** table.
 
-7. This query will return the row with the latest **IngestionDate** for each unique **AddressID** in the **SilverAddress** table.
-
-8. Now paste and run the following queries to build more Gold layer materialized views for the other tables.
+9. Now paste and run the following queries to build more Gold layer materialized views for the other tables.
 
     ```
     //Create additional Gold Materialized Views
@@ -362,11 +363,11 @@ Now that you have your transformed layer of data within the Silver Layer you can
     }
     ```
 
-9.  You should now have six materialized views within your KQL Database.
+10.  You should now have six materialized views within your KQL Database.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-04/image50.png)
 
-10. You have now successfully built a Medallion Framework within a KQL Database. While this data is easily consumable, you will have users that have never worked with Kusto and would prefer to access the data from these tables through another means. In the next task you will be creating a Lakehouse. Then, using the Onelake Availability feature, which we enabled in Lab 01, make some of the tables in our KQL Database accessible through the Lakehouse using shortcuts
+11. You have now successfully built a Medallion Framework within a KQL Database. While this data is easily consumable, you will have users that have never worked with Kusto and would prefer to access the data from these tables through another means. In the next task you will be creating a Lakehouse. Then, using the Onelake Availability feature, which we enabled in Lab 01, make some of the tables in our KQL Database accessible through the Lakehouse using shortcuts
 
 # Fabric Lakehouse and OneLake Availability
 
