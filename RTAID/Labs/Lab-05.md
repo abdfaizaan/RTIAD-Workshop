@@ -418,12 +418,19 @@ service, the Help (?) section has links to some great resources.
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
 -   See blog post to read the full [Microsoft Fabric GA announcement](https://aka.ms/Fabric-Hero-Blog-Ignite23)
+  
 -   Explore Fabric through the [Guided Tour](https://aka.ms/Fabric-GuidedTour)
+  
 -   Sign up for the [Microsoft Fabric free trial](https://aka.ms/try-fabric)
+  
 -   Visit the [Microsoft Fabric website](https://aka.ms/microsoft-fabric)
+
 -   Learn new skills by exploring the [Fabric Learning modules](https://aka.ms/learn-fabric)
+  
 -   Explore the [Fabric technical documentation](https://aka.ms/fabric-docs)
+  
 -   Read the [free e-book on getting started with fabric](https://aka.ms/fabric-get-started-ebook)
+  
 -   Join the [Fabric community](https://aka.ms/fabric-community) to post  your questions, share your feedback, and learn from others
 
 Read the more in-depth Fabric experience announcement blogs:
