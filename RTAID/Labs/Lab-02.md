@@ -172,7 +172,7 @@ By the end of this lab, you will have learned:
 
     ![A screenshot of a computer](../media/Lab-02/image28.png)
     
-13. You may need to update your **"Data connection name"** to meet requirements. Let us rename it to **"eh_Fabrikam_es_InternetSales".** Then we can click on **Next.
+13. You may need to update your **"Data connection name"** to meet requirements. Let us rename it to **"eh_Fabrikam_es_InternetSales".** Then we can click on **Next**.
 
     ![A screenshot of a computer](../media/Lab-02/image29.png)
 
