@@ -167,7 +167,6 @@ By the end of this lab, you will have learned:
     Customer
     | take 100
     ```
-    ![](../media/Lab-04/image62.png)
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-04/image27.png)
 
