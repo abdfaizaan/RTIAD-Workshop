@@ -193,7 +193,7 @@ Read the more in-depth Fabric experience announcement blogs:
 
 -   [Power BI announcement blog](https://aka.ms/Fabric-PBI-Blog)
 
--   [Data Activator experience in Fabric blogog](https://aka.ms/Fabric-DA-Blog)
+-   [Data Activator experience in Fabric blog](https://aka.ms/Fabric-DA-Blog)
 
 -   [Administration and governance in Fabric blog](https://aka.ms/Fabric-Admin-Gov-Blog)
 
