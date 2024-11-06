@@ -196,7 +196,7 @@ By the end of this lab, you will have learned:
 
 2.  Open the **eh_Fabrikam** KQL Database item.
 
-       ![A screenshot of a computer](../media/Lab-02/IMG33.png)
+    ![A screenshot of a computer](../media/Lab-02/IMG33.png)
 
 3.  Within this experience, you can get an overview of the current structure, size, and use of the KQL Database. Because the Eventstream is sending data to this KQL Database consistently you will notice the amount of storage will increase over time.
 
