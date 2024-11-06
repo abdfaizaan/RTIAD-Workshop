@@ -171,9 +171,9 @@ By the end of this lab, you will have learned:
 
    ![](../media/Lab-01/imag016.png)
  
-1.	Under **License mode**, make sure **Trial** is selected. (It should be selected by default.)
+1. Under **License mode**, make sure **Trial** is selected. (It should be selected by default.)
 	
-1.	Select **Apply** to create a new workspace.
+1. Select **Apply** to create a new workspace.
 
    ![](../media/Lab-01/imag017-1.png)
  
