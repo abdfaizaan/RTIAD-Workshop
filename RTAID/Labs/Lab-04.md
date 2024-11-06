@@ -443,7 +443,7 @@ In the menu of the service, the Help (?) section has links to some great resourc
  
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 -   See blog post to read the full [Microsoft Fabric GA announcement](https://aka.ms/Fabric-Hero-Blog-Ignite23)
--   Explore Fabric through the [Guided  ur](https://aka.ms/Fabric-GuidedTour)
+-   Explore Fabric through the [Guided tour](https://aka.ms/Fabric-GuidedTour)
 -   Sign up for the [Microsoft Fabric free trial](https://aka.ms/try-fabric)
 -   Visit the [Microsoft Fabric website](https://aka.ms/microsoft-fabric)
 -   Learn new skills by exploring the [Fabric Learning  modules](https://aka.ms/learn-fabric)
