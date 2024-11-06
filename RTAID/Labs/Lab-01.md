@@ -93,7 +93,7 @@ By the end of this lab, you will have learned:
 
 1. Successfully upgraded to Microsoft Fabric dialog opens. Select **Fabric Home Page**.  
 
-   ![c](../media/Lab-01/imag06.png)
+   ![c](../media/Lab-01/imag06-1.png)
 
 1. You will be navigated back to the **Microsoft Fabric Home page**.
 
@@ -157,7 +157,7 @@ By the end of this lab, you will have learned:
 1.	Now let’s create a workspace with Fabric license. Select **Workspaces** from the navigation bar on the left.
 1. Select **New workspace**.
 
-   ![](../media/Lab-01/imag015.png)
+   ![](../media/Lab-01/imag015-1.png)
  
 1. **Create a workspace** dialog opens on the right side of the browser. 
 1. In the **Name** field enter **RTI_username**.  Use the username provided to you from the environment details.
@@ -172,7 +172,7 @@ By the end of this lab, you will have learned:
 1.	Under **License mode**, make sure **Trial** is selected. (It should be selected by default.) 
 1.	Select **Apply** to create a new workspace.
 
-    ![](../media/Lab-01/imag017.png)
+    ![](../media/Lab-01/imag017-1.png)
  
 ## Task 5: Create an Eventhouse
 
@@ -225,7 +225,7 @@ In this lab, we explored the Real-Time Intelligence interface, examined the Real
 Fabric Real-time Intelligence in a Day (RTIIAD) introduces you to some of the key functions available in Microsoft Fabric. 
 In the menu of the service, the Help (?) section has links to some great resources. 
 
-![](../media/Lab-01/imag030.png)
+![](../media/Lab-01/imag030-1.png)
  
 Here are a few more resources that will help you with your next steps with Microsoft Fabric. 
 - See blog post to read the full Microsoft Fabric GA announcement 
