@@ -108,7 +108,7 @@ By the end of this lab, you will have learned:
 
     **Note:** If you receive a "Warning" status around and audit policy,that is fine. The stream will still function
     
-   ![](../media/Lab-02/image16.png)
+    ![](../media/Lab-02/image16.png)
 
 15. You should now see a sample of the data within the bottom window.
 
