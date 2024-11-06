@@ -182,6 +182,30 @@ The lab includes steps for the user to follow along with associated screenshots 
 
     ![A screenshot of a chat](./media/image31.png)
 
+16. Incase if you do not see any data in the Data preview of your KQL Database destination, follow the below steps -
+
+    i. Go to your destination KQL database
+    
+    ![A screenshot of a chat](./media/KQL-database-workaround1.png)
+
+    ii. Click on **Get data (1)** and go to **Eventstream (2)** and select **Existing Eventstream (3)**.
+
+    ![A screenshot of a chat](./media/KQL-database-workaround2.png)
+
+    iii. Select the InternetSales table and give the give the following configurations -
+
+       Workspace - **RTI_username**
+    
+       Eventstream Name - **es_Fabrikam_InternetSales**
+    
+       Data connectioin name - **give any name**
+
+      Then click on **Next**, **Finish** and **Close** in the next tabs.
+    
+    ![A screenshot of a chat](./media/KQL-database-workaround3.png)
+
+    iv. Now you should be able to see a new destination is created with the Data preview visible in it.
+    
 # Kusto Query Language (KQL)
 
 ## Task 3: Authoring Kusto Database Queries
