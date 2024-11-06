@@ -270,9 +270,7 @@ By the end of this lab, you will have learned:
     SilverAddress
     | take 100
     ```
-
-    ![](../media/Lab-04/image65.png)
-
+    
     ![A blue rectangle with red and black text Description automatically enerated](../media/Lab-04/image40.png)
 
 13. Notice in your results, your **SilverAddress** table has an additional column, **IngestionDate**, that is not physically present on the **Address** table.
@@ -291,14 +289,13 @@ Now that you have your transformed layer of data within the Silver Layer you can
 
     ```
     //GOLD LAYER
-    // use materialized views to view the latest changes in the SilverAddress table .create materialized-view with (backfill=true) GoldAddress on table SilverAddress
+    // use materialized views to view the latest changes in the SilverAddress table
+    .create materialized-view with (backfill=true) GoldAddress on table SilverAddress
     {
-    SilverAddress
-    | summarize arg_max(IngestionDate., *) by AddressID
+        SilverAddress
+        | summarize arg_max(IngestionDate, *) by AddressID
     }
     ```
-
-    ![](../media/Lab-04/image66.png)
 
 3. Once the code has been pasted, highlight the code and execute it by clicking on the **Run** button.
 
@@ -319,7 +316,6 @@ Now that you have your transformed layer of data within the Silver Layer you can
     | take 1000
     ```
 
-    ![](../media/Lab-04/image67.png)
 
     ![A close-up of a computer code Description automatically generated](../media/Lab-04/image48.png)
 
@@ -328,36 +324,43 @@ Now that you have your transformed layer of data within the Silver Layer you can
 8. Now paste and run the following queries to build more Gold layer materialized views for the other tables.
 
     ```
-    //Create additional Gold Materialized Views .execute database script <
+    //Create additional Gold Materialized Views
+    .execute database script <|
+    
     .create materialized-view with (backfill=true) GoldCustomer on table SilverCustomer
     {
-    SilverCustomer
-    | summarize arg_max(IngestionDate^ *) by CustomerlD
+        SilverCustomer
+        | summarize arg_max(IngestionDate, *) by CustomerID
     }
-    .create materialized-view with (backfill=true) GoldSalesOrderHeader on table SilverSalesOrderHeader
-    {
+    
+    .create  materialized-view with (backfill=true) GoldSalesOrderHeader on table 
     SilverSalesOrderHeader
-    | summarize arg_max(IngestionDate^ *) by SalesOrderlD
-    }
-    .create materialized-view with (backfill=true) GoldSalesOrderDetail on table SilverSalesOrderDetail
     {
-    SilverSalesOrderDetail
-    | summarize arg_max(IngestionDate^ *) by SalesOrderDetaillD
+        SilverSalesOrderHeader
+        | summarize arg_max(IngestionDate, *) by SalesOrderID
     }
+    
+    .create  materialized-view with (backfill=true) GoldSalesOrderDetail on table 
+    SilverSalesOrderDetail
+    {
+        SilverSalesOrderDetail
+        | summarize arg_max(IngestionDate, *) by SalesOrderDetailID
+    }
+    
     .create async materialized-view with (backfill=true) GoldDailyClicks on table Clicks
     {
-    Clicks
-    | extend dateOnly = substring(todatetime(eventDate).tostringQ, 0^ 10)
-    | summarize countQ by dateOnly
-    .create async materialized-view with (backfill=true) GoldDailylmpressions on table Impressions
-    {
+      Clicks
+        | extend dateOnly = substring(todatetime(eventDate).tostring(), 0, 10) 
+        | summarize count() by dateOnly
+    
+    .create async materialized-view with (backfill=true) GoldDailyImpressions on table 
     Impressions
-    | extend dateOnly = substring(todatetime(eventDate).tostringQ, 0^ 10)
-    | summarize countQ by dateOnly
+    {
+     Impressions
+        | extend dateOnly = substring(todatetime(eventDate).tostring(), 0, 10) 
+        | summarize count() by dateOnly
     }
     ```
-
-    ![](../media/Lab-04/image68.png)
 
 9.  You should now have six materialized views within your KQL Database.
 
@@ -438,7 +441,7 @@ In the menu of the service, the Help (?) section has links to some great resourc
  ![A screenshot of a computer](../media/Lab-04/image69.png)
  
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
--   See blog post to read the full [Microsoft Fabric GA[announcement]](https://aka.ms/Fabric-Hero-Blog-Ignite23)
+-   See blog post to read the full [Microsoft Fabric GA announcement](https://aka.ms/Fabric-Hero-Blog-Ignite23)
 -   Explore Fabric through the [Guided  ur](https://aka.ms/Fabric-GuidedTour)
 -   Sign up for the [Microsoft Fabric free trial](https://aka.ms/try-fabric)
 -   Visit the [Microsoft Fabric website](https://aka.ms/microsoft-fabric)
@@ -467,13 +470,13 @@ By using this demo/lab, you agree to the following terms:
 The technology/functionality described in this demo/lab is provided by Microsoft Corporation for purposes of obtaining your feedback and to
 provide you with a learning experience. You may only use the demo/lab to evaluate such technology features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell this demo/lab or any portion thereof.
 
-COPYING OR REPRODUCTION OF THE DEMO/LAB (OR ANY PORTION OF IT) TO ANY OTHER SERVER OR LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS EXPRESSLY PROHIBITED.THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS EPRESENTED IN THIS DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCITONALITY IN A PHYSICALENVIRONMENT MAY ALSO BE DIFFERENT.
+COPYING OR REPRODUCTION OF THE DEMO/LAB (OR ANY PORTION OF IT) TO ANY OTHER SERVER OR LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS EXPRESSLY PROHIBITED.
 
-**FEEDBACK**
-If you give feedback about the technology features, functionality and/or concepts described in this demo/lab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.
+THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS EPRESENTED IN THIS DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCITONALITY IN A PHYSICALENVIRONMENT MAY ALSO BE DIFFERENT.
+
+**FEEDBACK** If you give feedback about the technology features, functionality and/or concepts described in this demo/lab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.
 
 MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE DEMO/LAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY, WHETHER EXPRESS, IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. MICROSOFT DOES NOT MAKE ANY ASSURANCES OR REPRESENTATIONS WITH REGARD TO THE ACCURACY OF THE RESULTS, OUTPUT THAT DERIVES FROM USE OF DEMO/ LAB, OR SUITABILITY OF THE INFORMATION CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
 
 **DISCLAIMER**
-
 This demo/lab contains only a portion of new features and enhancements in Microsoft Power BI. Some of the features might change in future releases of the product. In this demo/lab, you will learn about some, but not all, new features.
