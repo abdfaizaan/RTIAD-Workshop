@@ -64,7 +64,7 @@ By the end of this lab, you will have learned:
 
 1. Open the **Microsoft Edge browser** on the desktop and navigate to https://app.fabric.microsoft.com/. You will be navigated to the login page.
 
->**Note**: If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private / incognito mode. 
+   **Note**: If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private / incognito mode. 
 
    ![a](../media/Lab-01/imag01.png)
 
@@ -164,9 +164,9 @@ By the end of this lab, you will have learned:
 1. **Create a workspace** dialog opens on the right side of the browser. 
 1. In the **Name** field enter **RTI_username**.  Use the username provided to you from the environment details.
 
-**Note**: The workspace name must be unique. Make sure a green check mark with **“This name is available”** is displayed below the Name field. 
+   **Note**: The workspace name must be unique. Make sure a green check mark with **“This name is available”** is displayed below the Name field. 
 
-5. If you would like, you can enter a **Description** for the workspace. This is an optional field. 
+1. If you would like, you can enter a **Description** for the workspace. This is an optional field. 
 1. Click on **Advanced** to expand the section.
 
    ![](../media/Lab-01/imag016.png)
