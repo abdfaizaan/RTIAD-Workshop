@@ -107,7 +107,7 @@ By the end of this lab, you will have learned:
 
 14. It may take a few moments for your Source to be **Active** but after waiting a few moments, click on the middle icon with the name of your Eventstream on it and then click on **Refresh** if you do not see a preview of the data.
 
-**Note:** If you receive a "Warning" status around and audit policy,that is fine. The stream will still function
+    **Note:** If you receive a "Warning" status around and audit policy,that is fine. The stream will still function
     
    ![](../media/Lab-02/image16.png)
 
