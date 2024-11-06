@@ -27,7 +27,9 @@ The lab includes steps for the user to follow along with associated screenshots 
 
 # Introduction 
 
-In this lab, you will experience a way to handle a continuous stream of real-time data. You will use a Fabric Real-Time Intelligence object called an Eventstream to ingest this data to the Eventhouse you created in the last lab and write some basic KQL queries.By the end of this lab, you will have learned:
+In this lab, you will experience a way to handle a continuous stream of real-time data. You will use a Fabric Real-Time Intelligence object called an Eventstream to ingest this data to the Eventhouse you created in the last lab and write some basic KQL queries.
+
+By the end of this lab, you will have learned:
 
 - How to create an Eventstream
 
