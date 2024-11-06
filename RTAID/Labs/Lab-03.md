@@ -70,7 +70,7 @@ be adding to the KQL database By the end of this lab, you will have learned:
 
    - Shared Access Key Name: **rti-reader**
 
-   - Shared Access Key: **Provided by Environment Details**
+   - Shared Access Key: <inject key="rti-iad-clicks Primary Key"></inject>
      
      ![A screenshot of a computer Description automatically generated](../media/Lab-03/image11-1.png)
 
