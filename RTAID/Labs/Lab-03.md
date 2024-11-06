@@ -54,11 +54,11 @@ be adding to the KQL database By the end of this lab, you will have learned:
 
 4.  Under the Home ribbon, click on the **Add source** dropdown and then select **External sources**.
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image8.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image8-1.png)
 
 5. Similarly to the previous lab we will be connecting to an Azure event Hub which has data being streamed to from a python notebook. Click on the **"Azure Event Hubs"** tile.
 
-   ![A screenshot of a web page Description automatically generated](../media/Lab-03/image9.png)
+   ![A screenshot of a web page Description automatically generated](../media/Lab-03/image9-1.png)
 
 6.  Create a **New connection**.
 
@@ -74,7 +74,7 @@ be adding to the KQL database By the end of this lab, you will have learned:
 
    - Shared Access Key: **Provided by Environment Details**
      
-     ![A screenshot of a computer Description automatically generated](../media/Lab-03/image11.png)
+     ![A screenshot of a computer Description automatically generated](../media/Lab-03/image11-1.png)
 
 8.  Once all the properties have been filled out click on **Connect**.
 
@@ -90,7 +90,7 @@ be adding to the KQL database By the end of this lab, you will have learned:
 
 12. Once the stream is configured, you will be able to see a preview of the data coming from the Event Hub.
 
-    ![A table of numbers and numbers Description automatically generated](../media/Lab-03/image14.png)
+    ![A table of numbers and numbers Description automatically generated](../media/Lab-03/image14-1.png)
 
 13. Examine the data being received. There are two types of events that are logged from the e-commerce website, click and impressions.
 
@@ -112,26 +112,26 @@ device and browser the webpage was loaded from, and what IP address accessed the
 
 2.  From the list of available operations, select the **Manage fields** option.
 
-    ![A screenshot of a search box Description automatically generated](../media/Lab-03/image16.png)
+    ![A screenshot of a search box Description automatically generated](../media/Lab-03/image16-1.png)
 
 3.  On the new icon that appears called **Manage_fields1** click on the **pencil icon** to select what fields you wish to add to your stream
     from the source.
 
-    ![A screen shot of a computer Description automatically generated](../media/Lab-03/image17.png)
+    ![A screen shot of a computer Description automatically generated](../media/Lab-03/image17-1.png)
 
 4.  In the flyout pane that appears, click on the button the option to **Add all fields**.
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image18.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image18-1.png)
 
 5.  From the list of fields, select the one called **PartitionId** and click on the ellipses (...) that appears when you hover over the
     field
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image19.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image19-1.png)
 
 6.  Choose the option to **Remove** that field. For this stream of data coming from the Event Hub, partitioning is not being used so this
     column is not helpful to us, thus we are removing it.
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image20.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image20-1.png)
 
 7.  Remove all the following fields that will not be needed for this stream.
 
@@ -149,16 +149,16 @@ You should be left with the following fields in the image below.
 
 8. Hover over the eventDate field and when an ellipses (...) appears on the right-hand side of the window, click it.
 
-   ![A screenshot of a computer Description automatically generated](../media/Lab-03/image22.png)
+   ![A screenshot of a computer Description automatically generated](../media/Lab-03/image22-1.png)
 
 9. Choose the option, **Edit**.
 
-   ![A screen shot of a computer Description automatically generated](../media/Lab-03/image23.png)
+   ![A screen shot of a computer Description automatically generated](../media/Lab-03/image23-1.png)
 
 10. Click on the **Change type toggle** to modify the data type of this field. The original type is a String, you need to modify the
     **Converted Type** to **DateTime**. After you have finished click on **Save**.
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image24.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image24-1.png)
 
 ## Task 3: Split Eventstream and Load Two Destinations
 
@@ -166,15 +166,15 @@ You should be left with the following fields in the image below.
     differentiate CLICK events and IMPRESSION events. Add another transformation activity to the user interface by hovering over the
     end of the **Manage_Fields1** transform
 
-    ![A screen shot of a computer screen Description automatically generated](../media/Lab-03/image25.png)
+    ![A screen shot of a computer screen Description automatically generated](../media/Lab-03/image25-1.png)
 
 2.  Choose the **Filter** transform from the available list of operations.
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image26.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image26-1.png)
 
 3.  Click on the **pencil icon** on the new transformation, **Filter1**.
 
-    ![A screen shot of a computer Description automatically generated](../media/Lab-03/image27.png)
+    ![A screen shot of a computer Description automatically generated](../media/Lab-03/image27-1.png)
 
 4.  In the flyout that appears on the right-hand side of the screen, customize the filter conditions to reflect a way to only return CLICK values by using the settings below. It is important to note that the Filter transform is case sensitive
 
@@ -184,19 +184,19 @@ You should be left with the following fields in the image below.
     
     -   **Keep events when the value** - equals -- CLICK **(Important! This is a case sensitive field, ensure to input in all capitals for this example)**
 
-        ![](../media/Lab-03/image28.png)
+        ![](../media/Lab-03/image28-1.png)
 
 5.  Choose the **Save** option to keep your changes.
 
 6.  Click on the **Refresh button** again to verify the data has been filtered to CLICK eventTypes.
 
-    ![](../media/Lab-03/image29.png)
+    ![](../media/Lab-03/image29-1.png)
 
 7.  These may be the only rows that you're interested in sending to a table but another option is to instead create two separate streams
     to route different information to two or more tables. From the **Home** ribbon of the Eventstream click on the **Transform events**
     dropdown and then select **Filter**.
 
-    ![](../media/Lab-03/image30.png)
+    ![](../media/Lab-03/image30-1.png)
 
 8.  A new object called **Filter1 (Name may differ)** will appear on your canvas. You will need to connect the **Manage_fields1 stream**
     to the new filter transformation. Drag a line from the green dot on one transform to another to make that connection.
@@ -218,7 +218,7 @@ You should be left with the following fields in the image below.
         This is a case sensitive field, ensure to input in all capitals for
         this example)**
 
-    ![](../media/Lab-03/image33.png)
+    ![](../media/Lab-03/image33-1.png)
 
 11. Choose the **Save** option to keep your changes.
 
@@ -229,7 +229,7 @@ You should be left with the following fields in the image below.
 
 13. Click on the **+ icon** after the **Clicks** filter operation.
 
-    ![A white board with writing on it Description automatically generated](../media/Lab-03/image34.png)
+    ![A white board with writing on it Description automatically generated](../media/Lab-03/image34-1.png)
 
 14. In the dropdown menu select "Manage fields"
 
@@ -333,7 +333,7 @@ support this is currently in an external Azure SQL Database, let's see how easy 
 
 2.  Give the KQL Queryset the name **Create Tables** and then click the **Create** button.
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image52.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image52-1.png)
 
 3.  The OneLake data hub will open and the only option to select with be the **"eh_Fabrikam"** kql database. Select this database and click
     **"Connect"**.\
@@ -342,7 +342,7 @@ support this is currently in an external Azure SQL Database, let's see how easy 
 4.  In the new interface click once within the query window and highlight all the text by using the keyboard shortcut **Ctrl + A**.
     Once everything has been highlighted, delete everything.
 
-     ![A screenshot of a computer Description automatically generated](../media/Lab-03/image54.png)
+     ![A screenshot of a computer Description automatically generated](../media/Lab-03/image54-1.png)
 
 5.  In the blank query window enter the following KQL script. This script will create a connection to an external Azure SQL Database
     and make it available within our KQL database as a **Shortcut**. A **Shortcut** is attached in a read-only mode, making it possible to
@@ -350,11 +350,11 @@ support this is currently in an external Azure SQL Database, let's see how easy 
 
     ![](../media/Lab-03/image55.emf)
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image56.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image56-1.png)
 
 6.  Click the **Run** button to execute the script.
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image57.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image57-1.png)
 
 7.  In your Database Explorer window, you will now see a new folder called **Shortcuts** and within the folder you should see two
     additional tables that are linked to this KQL Database. These tables exist within an Azure SQL Database, but through the script you
@@ -379,7 +379,7 @@ support this is currently in an external Azure SQL Database, let's see how easy 
     moments, but you will not need to create a report from this data just yet. Click the **X button** in the top-right corner when you
     are ready to move forward.
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image62.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image62-1.png)
 
 12. Navigate back to the **eh_Fabrikam** KQL Database.
 
