@@ -433,7 +433,7 @@ In the menu of the service, the Help (?) section has links to some great resourc
  ![A screenshot of a computer](../media/Lab-03/refrence-1.png)
  
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
--   See blog post to read the full [[Microsoft Fabric GA announcement](https://aka.ms/Fabric-Hero-Blog-Ignite23)
+-   See blog post to read the full [Microsoft Fabric GA announcement](https://aka.ms/Fabric-Hero-Blog-Ignite23)
 -   Explore Fabric through the [Guided tour](https://aka.ms/Fabric-GuidedTour)
 -   Sign up for the [Microsoft Fabric free trial](https://aka.ms/try-fabric)
 -   Visit the [Microsoft Fabric website](https://aka.ms/microsoft-fabric)
@@ -448,7 +448,7 @@ Read the more in-depth Fabric experience announcement blogs:
 -   [Synapse Data Engineering experience in Fabric  blog](https://aka.ms/Fabric-DE-Blog)
 -   [Synapse Data Science experience in Fabric  blog](https://aka.ms/Fabric-DS-Blog)
 -   [Synapse Data Warehousing experience in Fabric  blog](https://aka.ms/Fabric-DW-Blog)
--   [Real-](https://aka.ms/Fabric-RTA-Blog)[Time Intelligence  experience in Fabric blog](https://blog.fabric.microsoft.com/en-us/blog/category/real-time-intelligence)]
+-   [Real-](https://aka.ms/Fabric-RTA-Blog)[Time Intelligence  experience in Fabric blog](https://blog.fabric.microsoft.com/en-us/blog/category/real-time-intelligence)
 -   [Power BI announcement blog](https://aka.ms/Fabric-PBI-Blog)
 -   [Data Activator experience in Fabric  blog](https://aka.ms/Fabric-DA-Blog)
 -   [Administration and governance in Fabric  blog](https://aka.ms/Fabric-Admin-Gov-Blog)
