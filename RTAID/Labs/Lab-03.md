@@ -333,16 +333,16 @@ support this is currently in an external Azure SQL Database, let's see how easy 
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-03/image52-1.png)
 
-3.  The OneLake data hub will open and the only option to select with be the **"eh_Fabrikam"** kql database. Select this database and click
-    **"Connect"**.\
+3.  The OneLake data hub will open and the only option to select with be the **"eh_Fabrikam"** kql database. Select this database and click **"Connect"**.\
+
     ![A screenshot of a chat](../media/Lab-03/image53.png)
 
-4.  In the new interface click once within the query window and highlight all the text by using the keyboard shortcut **Ctrl + A**.
+5.  In the new interface click once within the query window and highlight all the text by using the keyboard shortcut **Ctrl + A**.
     Once everything has been highlighted, delete everything.
 
      ![A screenshot of a computer Description automatically generated](../media/Lab-03/image54-1.png)
 
-5.  In the blank query window enter the following KQL script. This script will create a connection to an external Azure SQL Database
+6.  In the blank query window enter the following KQL script. This script will create a connection to an external Azure SQL Database
     and make it available within our KQL database as a **Shortcut**. A **Shortcut** is attached in a read-only mode, making it possible to
     view and run queries alongside the streaming data that was ingested into the KQL database.
 
@@ -375,17 +375,17 @@ support this is currently in an external Azure SQL Database, let's see how easy 
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-03/image56-1.png)
 
-6.  Click the **Run** button to execute the script.
+7.  Click the **Run** button to execute the script.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-03/image57-1.png)
 
-7.  In your Database Explorer window, you will now see a new folder called **Shortcuts** and within the folder you should see two
+8.  In your Database Explorer window, you will now see a new folder called **Shortcuts** and within the folder you should see two
     additional tables that are linked to this KQL Database. These tables exist within an Azure SQL Database, but through the script you
     executed, you now have them linked to this KQL Database to be joined with your InternetSales and event tables.
 
     ![A screenshot of a search box](../media/Lab-03/image58.png)
 
-8.  Now that you have dimensional qualities to your database, you can answer questions and give more context to consumers of the reports
+9.  Now that you have dimensional qualities to your database, you can answer questions and give more context to consumers of the reports
     and queries these tables off insights on across your business. Run the following KQL query to see one of them.
 
     ```
@@ -396,25 +396,25 @@ support this is currently in an external Azure SQL Database, let's see how easy 
     | project Name, SalesPerProduct
     ```
 
-9.  You will now see in your query results values for each individual product that your company has sold.
+10.  You will now see in your query results values for each individual product that your company has sold.
 
     ![A screenshot of a computer](../media/Lab-03/image60.png)
 
-10. With your query highlighted click on the button in your toolbar, **Build Power BI report**.
+11. With your query highlighted click on the button in your toolbar, **Build Power BI report**.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-03/image61.png)
 
-11. This gives you the opportunity to create a Power BI report using the data within your KQL Database. Feel free to explore this for a few
+12. This gives you the opportunity to create a Power BI report using the data within your KQL Database. Feel free to explore this for a few
     moments, but you will not need to create a report from this data just yet. Click the **X button** in the top-right corner when you
     are ready to move forward.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-03/image62-1.png)
 
-12. Navigate back to the **eh_Fabrikam** KQL Database.
+13. Navigate back to the **eh_Fabrikam** KQL Database.
 
     ![A screenshot of a computer](../media/Lab-03/image63.png)
 
-13. Click on the **Shortcuts** option within the **eh_Fabrikam** navigation pane. This will show you all the shortcuts you havecreated to this KQL Database. It should be noted that these Shortcuts are considered classical Azure Data Explorer externaltables using Azure SQL external table syntax and are constructed differently than OneLake, ADLS, or S3 shortcuts which are also supported in KQL Database within Fabric.
+14. Click on the **Shortcuts** option within the **eh_Fabrikam** navigation pane. This will show you all the shortcuts you havecreated to this KQL Database. It should be noted that these Shortcuts are considered classical Azure Data Explorer externaltables using Azure SQL external table syntax and are constructed differently than OneLake, ADLS, or S3 shortcuts which are also supported in KQL Database within Fabric.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-03/image64.png)
 
