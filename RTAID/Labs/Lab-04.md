@@ -76,12 +76,14 @@ By the end of this lab, you will have learned:
 7. This shows you the schema (column names and data types) for the table. One thing that will be helpful to add to this table on the KQL Database would be a hidden column for the ingestion time that will be used later in the Medallion architecture. Let's add that now. Copy and paste the script below to alter the tables you just created by adding an ingestion time column.
 
     ```
-    //adds a hidden field showing ingestion time .execute database script <|
-    .alter table Address policy ingestiontime true .alter table Customer policy ingestiontime true .alter table SalesOrderHeader policy ingestiontime true .alter table SalesOrderDetail policy ingestiontime true
+    //adds a hidden field showing ingestion time
+    .execute database script <|
+    .alter table Address policy ingestiontime true
+    .alter table Customer policy ingestiontime true
+    .alter table SalesOrderHeader policy ingestiontime true
+    .alter table SalesOrderDetail policy ingestiontime true
     ```
-
-    ![](../media/Lab-04/image61.png)
-
+    
     ![A screenshot of a computer Description automatically generated](../media/Lab-04/image13.png)
 
 8. The four new tables are blank tables with their schema defined. Now you need a way to properly load these tables. Navigate back to your workspace **RTI_username**.
