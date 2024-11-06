@@ -54,7 +54,7 @@ Today you will learn about various key features of Microsoft Fabric. This is an 
 
 By the end of this lab, you will have learned:  
 
-- Explore Fabric Personas
+- How to explore Fabric Personas
 - How to create a Fabric workspace
 - How to create an Eventhouse
 
