@@ -47,7 +47,7 @@ By the end of this lab, you will have learned:
 
 2.  Navigate to the "Real-Time hub" where currently we do not see any streams of data. That will change shortly.
 
-    ![](../media/Lab-02/image5.png)
+    ![](../media/Lab-02/Picture1.png)
 
 3.  Select the **+ Add Source** green button which should be in the upper right corner.
 
