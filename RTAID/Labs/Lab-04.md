@@ -186,13 +186,14 @@ By the end of this lab, you will have learned:
 
 .execute database script <|
 
-.create table [SilverAddress] (AddressID:int,AddressLine1:string,AddressLine2:string,City: string, StateProvince:string, CountryRegion:string, PostalCode: string, rowguid: guid, ModifiedDate:datetime, IngestionDate: datetime)
+.create table [SilverAddress](AddressID:int, AddressLine1:string, AddressLine2:string, City:string, StateProvince:string, CountryRegion:string, PostalCode:string, rowguid:guid, ModifiedDate:datetime, IngestionDate:datetime)
 
-.create table [SilverCustomer](CustomerID:int, NameStyle: string, Title: string, FirstName: string, MiddleName: string, LastName: string,Suffix:string, CompanyName: string, SalesPerson: string, EmailAddress: string, Phone: string, ModifiedDate: datetime, IngestionDate: datetime)
+.create table [SilverCustomer](CustomerID:int, NameStyle:string, Title:string, FirstName:string, MiddleName:string, LastName:string, Suffix:string, CompanyName:string, SalesPerson:string, EmailAddress:string, Phone:string, ModifiedDate:datetime, IngestionDate:datetime)
 
-.create table [SilverSalesOrderHeader](SalesOrderID: int, OrderDate: datetime, DueDate: datetime, ShipDate: datetime, ShipToAddressID: int, BillToAddressID: int, SubTotal: decimal, TaxAmt: decimal, Freight: decimal, TotalDue: decimal, ModifiedDate: datetime, DaysShipped: long, IngestionDate: datetime)
+.create table [SilverSalesOrderHeader](SalesOrderID:int, OrderDate:datetime, DueDate:datetime, ShipDate:datetime, ShipToAddressID:int, BillToAddressID:int, SubTotal:decimal, TaxAmt:decimal, Freight:decimal, TotalDue:decimal, ModifiedDate:datetime, DaysShipped:long, IngestionDate:datetime)
 
-.create table [SilverSalesOrderDetail](SalesOrderID: int, SalesOrderDetailID: int, OrderQty: int, ProductID: int, UnitPrice: decimal, UnitPriceDiscount: decimal,LineTotal: decimal, ModifiedDate: datetime, IngestionDate: datetime)
+.create table [SilverSalesOrderDetail](SalesOrderID:int, SalesOrderDetailID:int, OrderQty:int, ProductID:int, UnitPrice:decimal, UnitPriceDiscount:decimal, LineTotal:decimal, ModifiedDate:datetime, IngestionDate:datetime)
+
 
 ```
 
@@ -361,7 +362,7 @@ Now that you have your transformed layer of data within the Silver Layer you can
 
      ![A screenshot of a computer Description automatically generated](../media/Lab-04/image50.png)
 
-11. You have now successfully built a Medallion Framework within a KQL Database. While this data is easily consumable, you will have users that have never worked with Kusto and would prefer to access the data from these tables through another means. In the next task you will be creating a Lakehouse. Then, using the Onelake Availability feature, which we enabled in Lab 01, make some of the tables in our KQL Database accessible through the Lakehouse using shortcuts
+11. You have now successfully built a Medallion Framework within a KQL Database. While this data is easily consumable, you will have users that have never worked with Kusto and would prefer to access the data from these tables through another means. In the next task you will be creating a Lakehouse. Then, using the Onelake Availability feature, which we enabled in Lab 01, make some of the tables in our KQL Database accessible through the Lakehouse using shortcuts.
 
 # Fabric Lakehouse and OneLake Availability
 
