@@ -204,7 +204,9 @@ The lab includes steps for the user to follow along with associated screenshots 
     
     ![A screenshot of a chat](./media/KQL-database-workaround3.png)
 
-    iv. Now you should be able to see a new destination is created with the Data preview visible in it.
+    iv. Now you should be able to see a new destination is created with the Data preview visible in it. The user interface showing the source and the destination with the data preview should look like as shown below,
+
+     ![A screenshot of a chat](./media/KQL-database-workaround4.png)
     
 # Kusto Query Language (KQL)
 
