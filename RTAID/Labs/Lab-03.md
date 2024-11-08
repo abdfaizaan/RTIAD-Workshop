@@ -347,45 +347,46 @@ support this is currently in an external Azure SQL Database, let's see how easy 
     view and run queries alongside the streaming data that was ingested into the KQL database.
 
       ```
-      .execute database script <|
-      //External tables - shortcuts
-      // connect to operational Database with external table Product
-      .create external table products (ProductID: int, ProductNumber: string,  Name: string) 
-      kind=sql
-      table=[SalesLT.Product]
-      ( 
-         h@'Server=tcp:adxdemo.database.windows.net,1433;Initial Catalog=aworks;User Id=sqlread;Password=ChangeYourAdminPassword1'
-      )
-      with 
-      (
-         createifnotexists = true
-      )  
-      // connect to operational Database with external table ProductCategory
-      .create external table productCategories (ProductCategoryID: int, Name: string) 
-      kind=sql
-      table=[SalesLT.ProductCategory]
-      ( 
-         h@'Server=tcp:adxdemo.database.windows.net,1433;Initial Catalog=aworks;User Id=sqlread;Password=ChangeYourAdminPassword1'
-      )
-      with 
-      (
-         createifnotexists = true
-      )
+    .execute database script <|
+    //External tables - shortcuts
+    // connect to operational Database with external table Product
+    .create external table products (ProductID: int, ProductNumber: string,  Name: string) 
+    kind=sql
+    table=[SalesLT.Product]
+    ( 
+    h@'Server=fabrikamuser.database.windows.net,1433;Initial Catalog=fabrikamdemo;User Id=adminuser;Password=fabrikam@12345'
+    )
+    with 
+    (
+    createifnotexists = true
+    )  
+    // connect to operational Database with external table ProductCategory
+    .create external table productCategories (ProductCategoryID: int, Name: string) 
+    kind=sql
+    table=[SalesLT.ProductCategory]
+    ( 
+    h@'Server=fabrikamuser.database.windows.net,1433;Initial Catalog=fabrikamdemo;User Id=adminuser;Password=fabrikam@12345'
+    )
+    with 
+    (
+    createifnotexists = true
+    )
+    
       ```
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-03/image56-1.png)
 
-7.  Click the **Run** button to execute the script.
+8.  Click the **Run** button to execute the script.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-03/image57-1.png)
 
-8.  In your Database Explorer window, you will now see a new folder called **Shortcuts** and within the folder you should see two
+9.  In your Database Explorer window, you will now see a new folder called **Shortcuts** and within the folder you should see two
     additional tables that are linked to this KQL Database. These tables exist within an Azure SQL Database, but through the script you
     executed, you now have them linked to this KQL Database to be joined with your InternetSales and event tables.
 
     ![A screenshot of a search box](../media/Lab-03/image58.png)
 
-9.  Now that you have dimensional qualities to your database, you can answer questions and give more context to consumers of the reports
+10.  Now that you have dimensional qualities to your database, you can answer questions and give more context to consumers of the reports
     and queries these tables off insights on across your business. Run the following KQL query to see one of them.
 
     ```
@@ -396,25 +397,25 @@ support this is currently in an external Azure SQL Database, let's see how easy 
     | project Name, SalesPerProduct
     ```
 
-10.  You will now see in your query results values for each individual product that your company has sold.
+11.  You will now see in your query results values for each individual product that your company has sold.
 
      ![A screenshot of a computer](../media/Lab-03/image60.png)
 
-11. With your query highlighted click on the button in your toolbar, **Build Power BI report**.
+12. With your query highlighted click on the button in your toolbar, **Build Power BI report**.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-03/image61.png)
 
-12. This gives you the opportunity to create a Power BI report using the data within your KQL Database. Feel free to explore this for a few
+13. This gives you the opportunity to create a Power BI report using the data within your KQL Database. Feel free to explore this for a few
     moments, but you will not need to create a report from this data just yet. Click the **X button** in the top-right corner when you
     are ready to move forward.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-03/image62-1.png)
 
-13. Navigate back to the **eh_Fabrikam** KQL Database.
+14. Navigate back to the **eh_Fabrikam** KQL Database.
 
     ![A screenshot of a computer](../media/Lab-03/image63.png)
 
-14. Click on the **Shortcuts** option within the **eh_Fabrikam** navigation pane. This will show you all the shortcuts you havecreated to this KQL Database. It should be noted that these Shortcuts are considered classical Azure Data Explorer externaltables using Azure SQL external table syntax and are constructed differently than OneLake, ADLS, or S3 shortcuts which are also supported in KQL Database within Fabric.
+15. Click on the **Shortcuts** option within the **eh_Fabrikam** navigation pane. This will show you all the shortcuts you havecreated to this KQL Database. It should be noted that these Shortcuts are considered classical Azure Data Explorer externaltables using Azure SQL external table syntax and are constructed differently than OneLake, ADLS, or S3 shortcuts which are also supported in KQL Database within Fabric.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-03/image64.png)
 
