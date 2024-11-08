@@ -50,15 +50,17 @@ By the end of this lab, you will have learned:
 
 4. Within this new tab, paste and highlight the following code and select "Run" to create four new tables that will serve as your Bronze Layer of the Medallion Framework.
 
-    ```
-    //BRONZE LAYER
-    .execute database script <
-    .create table [Address] (AddresslD:int,AddressLine1 :string,AddressLine2:string,City: string, StateProvince:string, CountryRegion:string, FbstalCode: string, rowguid: guid,Modified Date:datetime)
-    .create table [Customer](CustomerlD:int, NameStyle: string, Title: string, FirstName: string, MiddleName: string, LastName: string,Suffix:string, CompanyName: string, Salesperson: string, EmailAddress: string, Phone: string, ModifiedDate: datetime)
-    .create table [SalesOrderHeader](SalesOrderlD: int, OrderDate: datetime, DueDate: datetime, ShipDate: datetime, ShiploAddressID: int, BillToAddressID: int, Sublotal: decimal, TaxAmt: decimal, Freight: decimal, TbtalDue: decimal, ModifiedDate: datetime)
-    .create table [SalesOrderDetail](SalesOrderlD: int, SalesOrderDetaillD: int, OrderQty: int, ProductID: int, UnitPrice: decimal, UnitPriceDiscount: decimal,Linelbtal: decimal, ModifiedDate: datetime)
-    ```
-    ![A blue screen with black text Description automatically generated](../media/Lab-04/image9.png)
+```
+//BRONZE LAYER
+.execute database script <|
+
+.create table [Address] (AddressID:int,AddressLine1:string,AddressLine2:string,City: string, StateProvince:string, CountryRegion:string, PostalCode: string, rowguid: guid, ModifiedDate:datetime)
+.create table [Customer](CustomerID:int, NameStyle: string, Title: string, FirstName: string, MiddleName: string, LastName: string,Suffix:string, CompanyName: string, SalesPerson: string, EmailAddress: string, Phone: string, ModifiedDate: datetime)
+.create table [SalesOrderHeader](SalesOrderID: int, OrderDate: datetime, DueDate: datetime, ShipDate: datetime, ShipToAddressID: int, BillToAddressID: int, SubTotal: decimal, TaxAmt: decimal, Freight: decimal, TotalDue: decimal, ModifiedDate: datetime)
+.create table [SalesOrderDetail](SalesOrderID: int, SalesOrderDetailID: int, OrderQty: int, ProductID: int, UnitPrice: decimal , UnitPriceDiscount: decimal,LineTotal: decimal, ModifiedDate: datetime)
+
+```
+![A blue screen with black text Description automatically generated](../media/Lab-04/image9.png)
 
 5. Once that executes you should immediately see four new tables created within your Database Object Explorer.
 
