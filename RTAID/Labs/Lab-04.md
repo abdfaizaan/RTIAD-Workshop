@@ -110,10 +110,10 @@ By the end of this lab, you will have learned:
 
 6. You will need to input the connection details of the database. Follow using the information in your environment or as below.
 
-    - Server: `fabrikamadmin.database.windows.net`
-    -  Database : `Fabrikam_demo`
-    -  Username : `Fabrikamuser`
-    -  Passowrd : `fabrikam@1234`
+    - Server: `fabrikamuser.database.windows.net`
+    -  Database : `fabrikamdemo`
+    -  Username : `adminuser`
+    -  Passowrd : `fabrikam@12345`
 
         ![A screenshot of a computer](../media/Lab-04/image18.png)
 
