@@ -64,7 +64,7 @@ be adding to the KQL database By the end of this lab, you will have learned:
 
 7.  From your environment details page, copy and paste all the necessary connection settings into the appropriate fields.
 
-   - Event Hub namespace: **rtiadhub{username}**
+   - Event Hub namespace: **rtiadhub<inject key="DeploymentID" enableCopy="false"/>**
 
    - Event Hub: **rta-iad-clicks**
 
