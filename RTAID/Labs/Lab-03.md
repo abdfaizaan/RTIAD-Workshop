@@ -395,6 +395,7 @@ support this is currently in an external Azure SQL Database, let's see how easy 
     (external_table("products")) on ($left.ProductKey == $right.ProductID)
     | summarize SalesPerProduct=sum(SalesAmount) by Name
     | project Name, SalesPerProduct
+    
     ```
 
 11.  You will now see in your query results values for each individual product that your company has sold.
