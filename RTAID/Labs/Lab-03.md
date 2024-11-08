@@ -66,7 +66,7 @@ be adding to the KQL database By the end of this lab, you will have learned:
 
    - Event Hub namespace: **rtiadhub<inject key="DeploymentID" enableCopy="false"/>**
 
-   - Event Hub: **rta-iad-clicks**
+   - Event Hub: **rti-iad-clicks**
 
    - Shared Access Key Name: **rti-reader**
 
