@@ -327,37 +327,38 @@ Now that you have your transformed layer of data within the Silver Layer you can
     
     .create materialized-view with (backfill=true) GoldCustomer on table SilverCustomer
     {
-        SilverCustomer
-        | summarize arg_max(IngestionDate, *) by CustomerID
+    SilverCustomer
+    | summarize arg_max(IngestionDate, *) by CustomerID
     }
     
     .create  materialized-view with (backfill=true) GoldSalesOrderHeader on table 
     SilverSalesOrderHeader
     {
-        SilverSalesOrderHeader
-        | summarize arg_max(IngestionDate, *) by SalesOrderID
+    SilverSalesOrderHeader
+    | summarize arg_max(IngestionDate, *) by SalesOrderID
     }
     
     .create  materialized-view with (backfill=true) GoldSalesOrderDetail on table 
     SilverSalesOrderDetail
     {
-        SilverSalesOrderDetail
-        | summarize arg_max(IngestionDate, *) by SalesOrderDetailID
+    SilverSalesOrderDetail
+    | summarize arg_max(IngestionDate, *) by SalesOrderDetailID
     }
     
     .create async materialized-view with (backfill=true) GoldDailyClicks on table Clicks
     {
-      Clicks
-        | extend dateOnly = substring(todatetime(eventDate).tostring(), 0, 10) 
-        | summarize count() by dateOnly
+    Clicks
+    | extend dateOnly = substring(todatetime(eventDate).tostring(), 0, 10) 
+    | summarize count() by dateOnly
     
     .create async materialized-view with (backfill=true) GoldDailyImpressions on table 
     Impressions
     {
-     Impressions
-        | extend dateOnly = substring(todatetime(eventDate).tostring(), 0, 10) 
-        | summarize count() by dateOnly
+    Impressions
+    | extend dateOnly = substring(todatetime(eventDate).tostring(), 0, 10) 
+    | summarize count() by dateOnly
     }
+
     ```
 
 10.  You should now have six materialized views within your KQL Database.
