@@ -141,7 +141,7 @@ By the end of this lab, you will have learned:
 
     ![A screenshot of a search box Description automatically generated](./media/image77.png)
 
-3. On the new icon that appears called **Manage_fields1**, click on the
+3. On the new icon that appears, give the Operation name as **Manage_fields1**, click on the
    **pencil icon** to select what fields you wish to add to your stream
    from the source.
 
@@ -211,9 +211,9 @@ By the end of this lab, you will have learned:
 
     ![A screenshot of a computer Description automatically generated](./media/image88.png)
 
-3. Click on the **pencil icon** on the new transformation, **Filter1**.
+3. Click on the **pencil icon** on the new transformation, **Filter**.
 
-    ![A screen shot of a computer Description automatically generated](./media/image89.png)
+    ![A screen shot of a computer Description automatically generated](./media/L3T3S3-0811.png)
 
 4. In the flyout that appears on the right-hand side of the screen,
    customize the filter conditions to reflect a way to only return
@@ -311,6 +311,7 @@ By the end of this lab, you will have learned:
 
     ![A screenshot of a computer Description automatically generated](./media/image102.png)
 
+    Click on **Save**.
 20. Now that you have cleaned up the data for the streams for each of
     the types of events, you need to load each stream into a new table
     on the KQL Database. Click on the **+ icon** after the
@@ -351,12 +352,12 @@ By the end of this lab, you will have learned:
 
     ![A screenshot of a computer Description automatically generated](./media/image108.png)
 
-28. With the Eventstream now running, you should see the Eventstream
+28. With the Eventstream now running, make sure the **Azure Event Hub** source is **Active**. You should see the Eventstream
     user interface slightly change to signify that you are streaming the
     data from Event Hub, transforming and splitting that data stream, and
     loading it into two separate KQL Database tables.
 
-    ![A screenshot of a computer Description automatically generated](./media/image109.png)
+    ![A screenshot of a computer Description automatically generated](./media/L3T3S28-0811.png)
 
 ## Adding More Data to KQL Database
 
