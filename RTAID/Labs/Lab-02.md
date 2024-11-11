@@ -171,20 +171,44 @@ By the end of this lab, you will have learned:
 
     ![A screenshot of a computer](../media/Lab-02/image28.png)
     
-13. You may need to update your **"Data connection name"** to meet requirements. Let us rename it to **"eh_Fabrikam_es_InternetSales".** Then we can click on **Next**.
+12. You may need to update your **"Data connection name"** to meet requirements. Let us rename it to **"eh_Fabrikam_es_InternetSales".** Then we can click on **Next**.
 
     ![A screenshot of a computer](../media/Lab-02/image29.png)
 
-14. After a few moments of searching for events, the user interface should allow you to see that sample data was found. Click on **Finish** at the bottom of the screen.
+13. After a few moments of searching for events, the user interface should allow you to see that sample data was found. Click on **Finish** at the bottom of the screen.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-02/image30.png)
 
-15. After this you will be shown a summary. Once you have all green checkmarks, click **close** to move forward.
+14. After this you will be shown a summary. Once you have all green checkmarks, click **close** to move forward.
 
-16. Once you see the user interface showing the mappings from the source to the Eventstream to the destination, you have correctly configured and started a stream of data into your KQL Database.
+15. Once you see the user interface showing the mappings from the source to the Eventstream to the destination, you have correctly configured and started a stream of data into your KQL Database.
 
     ![A screen shot of a computer](../media/Lab-02/image31.png)
 
+16. Incase if you do not see any data in the Data preview of your KQL Database destination, follow the below steps -
+
+    i. Go to your destination KQL database
+
+    ![A screenshot of a chat](../media/Lab-02/KQL-database-workaround1.png)
+
+    ii. Click on **Get data (1)** and go to **Eventstream (2)** and select **Existing Eventstream (3)**.
+
+    ![A screenshot of a chat](../media/Lab-02/KQL-database-workaround2.png)
+
+    iii. Select the InternetSales table and give the give the following configurations -
+
+       Workspace - **RTI_username**
+
+       Eventstream Name - **es_Fabrikam_InternetSales**
+
+       Data connectioin name - **give any name**
+
+      Then click on **Next**, **Finish** and **Close** in the next tabs.
+
+    ![A screenshot of a chat](../media/Lab-02/KQL-database-workaround3.png)
+
+    iv. Now you should be able to see a new destination is created with the Data preview visible in it.
+    
 # Kusto Query Language (KQL)
 
 ## Task 3: Authoring Kusto Database Queries
