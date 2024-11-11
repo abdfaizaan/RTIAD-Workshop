@@ -354,7 +354,7 @@ support this is currently in an external Azure SQL Database, let's see how easy 
     kind=sql
     table=[SalesLT.Product]
     ( 
-    h@'Server=fabrikamuser.database.windows.net,1433;Initial Catalog=fabrikamdemo;User Id=adminuser;Password=fabrikam@12345'
+    h@'Server= fabrikamdemo.database.windows.net,1433;Initial Catalog=fabrikamdb;User Id=demouser;Password=fabrikam@123456'
     )
     with 
     (
@@ -365,13 +365,12 @@ support this is currently in an external Azure SQL Database, let's see how easy 
     kind=sql
     table=[SalesLT.ProductCategory]
     ( 
-    h@'Server=fabrikamuser.database.windows.net,1433;Initial Catalog=fabrikamdemo;User Id=adminuser;Password=fabrikam@12345'
-    )
+     h@'Server= fabrikamdemo.database.windows.net,1433;Initial Catalog=fabrikamdb;User Id=demouser;Password=fabrikam@123456'    )
     with 
     (
     createifnotexists = true
     )
-    
+
       ```
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-03/image56-1.png)
