@@ -385,7 +385,7 @@ support this is currently in an external Azure SQL Database, let's see how easy 
 
     ![A screenshot of a search box](../media/Lab-03/image58.png)
 
-10.  Now that you have dimensional qualities to your database, you can answer questions and give more context to consumers of the reports
+10. Now that you have dimensional qualities to your database, you can answer questions and give more context to consumers of the reports
     and queries these tables off insights on across your business. Run the following KQL query to see one of them.
 
     ```
