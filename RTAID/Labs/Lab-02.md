@@ -135,17 +135,18 @@ By the end of this lab, you will have learned:
 
     ![A screenshot of a computer](../media/Lab-02/image23.png)
 
-6.  Modify the remainder of the settings with the following details below.
+6. Modify the remainder of the settings with the following details below.
 
--   Destination name -- **eh-kql-db-fabrikam**
 
--   Workspace -- **RTI_username**
+    -   Destination name -- **eh-kql-db-fabrikam**
 
--   Eventhouse -- **eh_Fabrikam**
+    -   Workspace -- **RTI_username**
 
--   KQL Database -- **eh_Fabrikam**
+    -   Eventhouse -- **eh_Fabrikam**
 
-    ![A screenshot of a computer](../media/Lab-02/image24.png)
+    -   KQL Database -- **eh_Fabrikam**
+
+     ![A screenshot of a computer](../media/Lab-02/image24.png)
 
 7.  Click on Save.
 
@@ -180,27 +181,28 @@ By the end of this lab, you will have learned:
 
     ![A screen shot of a computer](../media/Lab-02/image31.png)
 
-16. Incase if you do not see any data in the Data preview of your KQL Database destination, follow the below steps -
 
-    i. Go to your destination KQL database
+     **Note:** Incase if you do not see any data in the Data preview of your KQL Database destination, follow the below steps -
 
-    ![A screenshot of a chat](../media/Lab-02/KQL-database-workaround1.png)
+       i. Go to your destination KQL database
 
-    ii. Click on **Get data (1)** and go to **Eventstream (2)** and select **Existing Eventstream (3)**.
+       ![A screenshot of a chat](../media/Lab-02/KQL-database-workaround1.png)
 
-    ![A screenshot of a chat](../media/Lab-02/KQL-database-workaround2.png)
+      ii. Click on **Get data (1)** and go to **Eventstream (2)** and select **Existing Eventstream (3)**.
 
-    iii. Select the InternetSales table and give the give the following configurations -
+       ![A screenshot of a chat](../media/Lab-02/KQL-database-workaround2.png)
 
-       Workspace - **RTI_username**
+     iii. Select the InternetSales table and give the give the following configurations -
 
-       Eventstream Name - **es_Fabrikam_InternetSales**
+       - Workspace - **RTI_username**
 
-       Data connectioin name - **give any name**
+       - Eventstream Name - **es_Fabrikam_InternetSales**
+
+       - Data connectioin name - **give any name**
 
       Then click on **Next**, **Finish** and **Close** in the next tabs.
 
-    ![A screenshot of a chat](../media/Lab-02/KQL-database-workaround3.png)
+      ![A screenshot of a chat](../media/Lab-02/KQL-database-workaround3.png)
 
     iv. Now you should be able to see a new destination is created with the Data preview visible in it.
     
