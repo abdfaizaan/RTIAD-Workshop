@@ -40,7 +40,7 @@ By the end of this lab, you will have learned:
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-04/image5.png)
 
-2. Within this KQL Queryset lets rename the original tab that we have here from "eh_Fabrikam" to "Create External Tables" making it easier to organize and understand what we have in this Queryset.
+2. Within this KQL Queryset lets rename the original tab that we have here from "**eh_Fabrikam**" to "**Create External Tables**" making it easier to organize and understand what we have in this Queryset.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-04/image6.png)
 
@@ -50,17 +50,16 @@ By the end of this lab, you will have learned:
 
 4. Within this new tab, paste and highlight the following code and select "Run" to create four new tables that will serve as your Bronze Layer of the Medallion Framework.
 
-```
-//BRONZE LAYER
-.execute database script <|
-
-.create table [Address] (AddressID:int,AddressLine1:string,AddressLine2:string,City: string, StateProvince:string, CountryRegion:string, PostalCode: string, rowguid: guid, ModifiedDate:datetime)
-.create table [Customer](CustomerID:int, NameStyle: string, Title: string, FirstName: string, MiddleName: string, LastName: string,Suffix:string, CompanyName: string, SalesPerson: string, EmailAddress: string, Phone: string, ModifiedDate: datetime)
-.create table [SalesOrderHeader](SalesOrderID: int, OrderDate: datetime, DueDate: datetime, ShipDate: datetime, ShipToAddressID: int, BillToAddressID: int, SubTotal: decimal, TaxAmt: decimal, Freight: decimal, TotalDue: decimal, ModifiedDate: datetime)
-.create table [SalesOrderDetail](SalesOrderID: int, SalesOrderDetailID: int, OrderQty: int, ProductID: int, UnitPrice: decimal , UnitPriceDiscount: decimal,LineTotal: decimal, ModifiedDate: datetime)
-
-```
-![A blue screen with black text Description automatically generated](../media/Lab-04/image9.png)
+    ```
+    //BRONZE LAYER
+    .execute database script <|
+    .create table [Address] (AddressID:int,AddressLine1:string,AddressLine2:string,City: string, StateProvince:string, CountryRegion:string, PostalCode: string, rowguid: guid, ModifiedDate:datetime)
+    .create table [Customer](CustomerID:int, NameStyle: string, Title: string, FirstName: string, MiddleName: string, LastName: string,Suffix:string, CompanyName: string, SalesPerson: string, EmailAddress: string, Phone: string, ModifiedDate: datetime)
+    .create table [SalesOrderHeader](SalesOrderID: int, OrderDate: datetime, DueDate: datetime, ShipDate: datetime, ShipToAddressID: int, BillToAddressID: int, SubTotal: decimal, TaxAmt: decimal, Freight: decimal, TotalDue: decimal, ModifiedDate: datetime)
+    .create table [SalesOrderDetail](SalesOrderID: int, SalesOrderDetailID: int, OrderQty: int, ProductID: int, UnitPrice: decimal , UnitPriceDiscount: decimal,LineTotal: decimal, ModifiedDate: datetime)
+    
+    ```
+    ![A blue screen with black text Description automatically generated](../media/Lab-04/image9.png)
 
 5. Once that executes you should immediately see four new tables created within your Database Object Explorer.
 
@@ -92,7 +91,7 @@ By the end of this lab, you will have learned:
 
 ## Task 2: Load Broze Tables using a Data Pipeline
 
-1. From the workspace select the "+ New Item" option to bring up the selection pane. Then find and select the option called **Data pipeline**.
+1. From the workspace select the "**+ New Item**" option to bring up the selection pane. Then find and select the option called **Data pipeline**.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-04/image14.png)
 
@@ -177,27 +176,22 @@ By the end of this lab, you will have learned:
 
 ## Task 3: Transform Tables in Silver Layer
 
-1. Now that the Bronze tables are loaded we will create a new tab within our KQL Queryset called "Silver Layer".
+1. Now that the Bronze tables are loaded we will create a new tab within our KQL Queryset called "**Silver Layer**".
 
    ![A screenshot of a computer](../media/Lab-04/image29.png)
 
-3. Run the following KQL script within the "Silver Layer" tab to create four new tables that will serve as the Silver Layer of the Medallion Framework.
+3. Run the following KQL script within the "**Silver Layer**" tab to create four new tables that will serve as the Silver Layer of the Medallion Framework.
 
-```
-//SILVER LAYER
-
-.execute database script <|
-
-.create table [SilverAddress](AddressID:int, AddressLine1:string, AddressLine2:string, City:string, StateProvince:string, CountryRegion:string, PostalCode:string, rowguid:guid, ModifiedDate:datetime, IngestionDate:datetime)
-
-.create table [SilverCustomer](CustomerID:int, NameStyle:string, Title:string, FirstName:string, MiddleName:string, LastName:string, Suffix:string, CompanyName:string, SalesPerson:string, EmailAddress:string, Phone:string, ModifiedDate:datetime, IngestionDate:datetime)
-
-.create table [SilverSalesOrderHeader](SalesOrderID:int, OrderDate:datetime, DueDate:datetime, ShipDate:datetime, ShipToAddressID:int, BillToAddressID:int, SubTotal:decimal, TaxAmt:decimal, Freight:decimal, TotalDue:decimal, ModifiedDate:datetime, DaysShipped:long, IngestionDate:datetime)
-
-.create table [SilverSalesOrderDetail](SalesOrderID:int, SalesOrderDetailID:int, OrderQty:int, ProductID:int, UnitPrice:decimal, UnitPriceDiscount:decimal, LineTotal:decimal, ModifiedDate:datetime, IngestionDate:datetime)
-
-
-```
+        ```
+        //SILVER LAYER
+        
+        .execute database script <|
+        .create table [SilverAddress](AddressID:int, AddressLine1:string, AddressLine2:string, City:string, StateProvince:string, CountryRegion:string, PostalCode:string, rowguid:guid, ModifiedDate:datetime, IngestionDate:datetime)
+        .create table [SilverCustomer](CustomerID:int, NameStyle:string, Title:string, FirstName:string, MiddleName:string, LastName:string, Suffix:string, CompanyName:string, SalesPerson:string, EmailAddress:string, Phone:string, ModifiedDate:datetime, IngestionDate:datetime)
+        .create table [SilverSalesOrderHeader](SalesOrderID:int, OrderDate:datetime, DueDate:datetime, ShipDate:datetime, ShipToAddressID:int, BillToAddressID:int, SubTotal:decimal, TaxAmt:decimal, Freight:decimal, TotalDue:decimal, ModifiedDate:datetime, DaysShipped:long, IngestionDate:datetime)
+        .create table [SilverSalesOrderDetail](SalesOrderID:int, SalesOrderDetailID:int, OrderQty:int, ProductID:int, UnitPrice:decimal, UnitPriceDiscount:decimal, LineTotal:decimal, ModifiedDate:datetime, IngestionDate:datetime)
+        
+        ```
 
 3. Run that script by highlighting the new script and clicking **Run**.
 
@@ -213,34 +207,29 @@ By the end of this lab, you will have learned:
     // use update policies to transform data during Ingestion
     
     .execute database script <|
-    
     .create function ifnotexists with (docstring = 'Add ingestion time to raw data') ParseAddress (){
     Address
     | extend IngestionDate = ingestion_time() 
     }
-    
     .alter table SilverAddress policy update @'[{"Source": "Address", "Query": "ParseAddress", "IsEnabled" : true, "IsTransactional": true }]'
     
     .create function ifnotexists with (docstring = 'Add ingestion time to raw data') ParseCustomer (){
     Customer
     | extend IngestionDate = ingestion_time() 
     }
-    
     .alter table SilverCustomer policy update @'[{"Source": "Customer", "Query": "ParseCustomer", "IsEnabled" : true, "IsTransactional": true }]'
     
     .create function ifnotexists with (docstring = 'Add ingestion time to raw data') ParseSalesOrderHeader (){
     SalesOrderHeader
     | extend DaysShipped = datetime_diff('day', ShipDate, OrderDate)
     | extend IngestionDate = ingestion_time() 
-    }
-    
+    }    
     .alter table SilverSalesOrderHeader policy update @'[{"Source": "SalesOrderHeader", "Query": "ParseSalesOrderHeader", "IsEnabled" : true, "IsTransactional": true }]'
     
     .create function ifnotexists with (docstring = 'Add ingestion time to raw data') ParseSalesOrderDetail () {
     SalesOrderDetail
     | extend IngestionDate = ingestion_time() 
     }
-    
     .alter table SilverSalesOrderDetail policy update @'[{"Source": "SalesOrderDetail", "Query": "ParseSalesOrderDetail", "IsEnabled" : true, "IsTransactional": true }]'
 
     ```
@@ -282,7 +271,7 @@ By the end of this lab, you will have learned:
 
 Now that you have your transformed layer of data within the Silver Layer you can start to perform analytics with trusted, validated, and enriched data within a Power BI report, RTI Dataset, or just by simply authoring some KQL queries. However, there may be times when you think it necessary to aggregate your data to make it more consumable by end users. Let's see how this is accomplished within a KQL database.
 
-1. If it is not already, open your **Create Tables** KQL Queryset and create a new tab calle "Gold Layer".
+1. If it is not already, open your **Create Tables** KQL Queryset and create a new tab calle "**Gold Layer**".
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-04/image42.png)
 

@@ -373,7 +373,7 @@ support this is currently in an external Azure SQL Database, let's see how easy 
 
       ```
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image56-1.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/P4T5S5.png)
 
 6.  Click the **Run** button to execute the script.
 
