@@ -81,7 +81,7 @@ to create a Real-Time Dashboard for visualizing and sharing your insights from t
 
 5.  You will now be able to create the data source. Click on the **Add** button at the bottom of the flyout pane.
 
-    ![A screenshot of a computer](../media/Lab-05/image14.png)
+    ![A screenshot of a computer](../media/Lab-05/P6L5T1S5.png)
 
 6.  You will now see that one data source has been added to the Real-Time Dashboard. From here you could add additional KQL
     Databases should the need arise. For now, click on **Close** at the bottom of the window.
@@ -232,13 +232,13 @@ to create a Real-Time Dashboard for visualizing and sharing your insights from t
 11. When the visual settings appear modify the following settings to
     create a count of Impressions.
 
--   **Tile name** - Impressions
+    -   **Tile name** - Impressions
 
--   **Visual type** - Stat
+    -   **Visual type** - Stat
 
--   **Value column** - impressions (long)
+    -   **Value column** - impressions (long)
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-05/image40-1.png)
+      ![A screenshot of a computer Description automatically generated](../media/Lab-05/image40-1.png)
 
 12. Choose **Apply changes** when all settings are configured appropriately.
 
@@ -271,7 +271,7 @@ to create a Real-Time Dashboard for visualizing and sharing your insights from t
 20. If the tiles are separated or you wish to reorganize them, you can hover over the tile until a hand icon appears and drag and drop the
     visual where you wish.
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-05/image47-1.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-05/P6L5T4S20.png)
 
 ## Task 5: Add Map Visual for Impressions by Location
 
@@ -374,7 +374,7 @@ to create a Real-Time Dashboard for visualizing and sharing your insights from t
 
 1.  Click on the **pencil icon** on the **Click Through Rate** visual.
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-05/image66-1.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-05/P6L5T8S1.png)
 
 2.  At the bottom of the visual formatting pane, click on the **+ Add rule** button underneath **Conditional formatting**.
 
@@ -394,7 +394,7 @@ to create a Real-Time Dashboard for visualizing and sharing your insights from t
 
 6.  Click the **Save** button within the Conditional formatting pane.
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-05/image71-1.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-05/P6L5T8S6.png)
 
 7.  Apply the changes.
 
