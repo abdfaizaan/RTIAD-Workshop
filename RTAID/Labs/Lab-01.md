@@ -184,9 +184,9 @@ By the end of this lab, you will have learned:
  
 ## Task 5: Create an Eventhouse
 
-1. Click the **+ New** box to find all the items you can create in this Fabric workspace.
+1. Click the **+ New item** box to find all the items you can create in this Fabric workspace.
 
-   ![](../media/Lab-01/imag029.png)
+   ![](../media/Lab-01/new_item.png)
    
 1. Select the **Eventhouse** option from store data . As we have talked about this can be viewed  similarly to a Lakehouse in that we can store data but this Eventhouse is focused around real time data.
 
