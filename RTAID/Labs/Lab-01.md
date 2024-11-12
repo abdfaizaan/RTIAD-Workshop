@@ -80,11 +80,12 @@ By the end of this lab, you will have learned:
 
 1. You will be navigated to the **Fabric Home page**.
 
-   ![c](../media/Lab-01/imag03.png)
+   ![c](../media/Lab-01/home_page.png)
 
    >**Note**: To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up. 
    
-1. On the top right corner of the screen, select the **user icon**. 
+1. On the top right corner of the screen, select the **user icon**.
+   
 1. Select **Free Trial**.
 
    ![c](../media/Lab-01/imag04.png)
@@ -95,11 +96,11 @@ By the end of this lab, you will have learned:
 
 1. Successfully upgraded to Microsoft Fabric dialog opens. Select **Fabric Home Page**.  
 
-   ![c](../media/Lab-01/imag06-1.png)
+   ![c](../media/Lab-01/home_page.png)
 
 1. You will be navigated back to the **Microsoft Fabric Home page**.
 
-   ![c](../media/Lab-01/imag07.png)
+   ![c](../media/Lab-01/home_page.png)
 
 # Real-Time Intelligence and Real-Time Hub
 
@@ -107,7 +108,7 @@ By the end of this lab, you will have learned:
 
 1. Click on the **Real-Time Intelligence** Experience.
 
-   ![A screenshot of a computer](../media/Lab-01/imag08.png)
+   ![A screenshot of a computer](../media/Lab-01/home_page-1.png)
 
 2. You will be navigated to **Real-Time Intelligence Home page**. You will see **Task flow templates**, Recommended items to create, and **Learn more about Real-Time Intelligence** categories.  With the **Recommended** category notice the items:
    
@@ -125,9 +126,9 @@ By the end of this lab, you will have learned:
 
 ## Task 3: Real-Time Hub
 
-1. Click on the **Real-Time hub** within the Fabric navigation pane on the left side of the screen.
+1. Click on the **Real-Time** within the Fabric navigation pane on the left side of the screen.
 
-   ![](../media/Lab-01/imag010.png)
+   ![](../media/Lab-01/real-time-1.png)
 
 1. The **Welcome to Real-Time hub** dialogue will open and feel from to select **Take a tour** or select **Get Started**.
 
@@ -141,30 +142,33 @@ By the end of this lab, you will have learned:
     - **Streaming sources**: Lists all streaming resources from Microsoft services. Whether it’s Azure Event Hubs, Azure IoT Hub, or other services, you can seamlessly ingest data into Real-Time hub.
     - **Fabric events**: Events that are generated via Fabric artifacts and external sources, are made available in Fabric to support event-driven scenarios like real-time alerting and triggering downstream actions. You can monitor and react to events including Fabric workspace item events and Azure Blob Storage events.
 
-      ![](../media/Lab-01/imag012.png)
+      ![](../media/Lab-01/real-time-hub.png)
 
-1. In the top-right corner of the Real-Time hub, click on the **+ Add Source** button.
+1. In the top-right corner of the Real-Time hub, click on the **+ Connect data source** button.
 
-   ![](../media/Lab-01/imag013.png)
+   ![](../media/Lab-01/connect_datasource.png)
 
 1. A window will appear and will detail the currently available streams of data that are available to integrate into the Real-Time hub.  This includes a mixture of Azure sources as well as external cloud streaming sources like Amazon Kinesis, Confluent Cloud Kafka, and Google Cloud Pub/Sub. There is even some sample data available to explore.
 
-   ![](../media/Lab-01/imag014.png)
+   ![](../media/Lab-01/data_source.png)
 
 1. **Close** the Get events window by clicking the “X” in the upper right corner.
 
 # Create Workspace and Eventhouse
 
 ## Task 4: Create a Fabric Workspace 
-1.	Now let’s create a workspace with Fabric license. Select **Workspaces** from the navigation bar on the left.
+
+1. Now let’s create a workspace with Fabric license. Select **Workspaces** from the navigation bar on the left.
+   
 1. Select **New workspace**.
 
    ![](../media/Lab-01/imag015-1.png)
  
-1. **Create a workspace** dialog opens on the right side of the browser. 
+1. **Create a workspace** dialog opens on the right side of the browser.
+   
 1. In the **Name** field enter **RTI_username**.  Use the username provided to you from the environment details.
 
-   **Note**: The workspace name must be unique. Make sure a green check mark with **“This name is available”** is displayed below the Name field. 
+>**Note**: The workspace name must be unique. Make sure a green check mark with **“This name is available”** is displayed below the Name field. 
 
 1. If you would like, you can enter a **Description** for the workspace. This is an optional field.
    
