@@ -70,21 +70,19 @@ By the end of this lab, you will have learned:
 
  1. Enter the following email/username, and then click on **Submit**.  
 
-   * **Username/Email**:  <inject key="AzureAdUserEmail"></inject>
+   - **Username/Email**:<inject key="AzureAdUserEmail"></inject>
 
-   ![b](../media/Lab-01/imag02.png)
+     ![b](../media/Lab-01/imag02.png)
 
-1. You will be navigated to the **Password** screen. Enter the **Password** : <inject key="AzureAdUserPassword"></inject>. 
+   - **Password**:<inject key="AzureAdUserPassword"></inject> , then Click **Sign in**.
 
-1. Click **Sign in** and follow the prompts to sign into Fabric. 
-   
-   ![c](../media/Lab-01/image004.png)
+     ![c](../media/Lab-01/image004.png)
 
 1. You will be navigated to the **Fabric Home page**.
 
    ![c](../media/Lab-01/imag03.png)
 
-   To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up. 
+   >**Note**: To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up. 
    
 1. On the top right corner of the screen, select the **user icon**. 
 1. Select **Free Trial**.
