@@ -33,9 +33,10 @@ In this lab, you will learn how to leverage Data Activator to create a Reflex to
 
 ## Task 1: Use the Real-Time Dashboard to Set Alerts
 
-1.  Open the **Fabric workspace** for the course and select the Real-Time Dashboard you created in the last lab.
+1.  Use the link [Fabric workspace homepage](https://app.fabric.microsoft.com/?experience=kusto&rtpPupr=1) to open the **Fabric workspace** home page for the course and select the Real-Time Dashboard you created in the last lab.
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-06/image5.png){
+    ![A screenshot of a computer Description automatically generated](../media/Lab-06/L6T1S1-12-11.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-06/L6T1S1.1-1211.png)
 
 2.  On the **Click Through Rate** visual click on the ellipses (...) and select the option to **Set alert**.
 
@@ -67,13 +68,13 @@ In this lab, you will learn how to leverage Data Activator to create a Reflex to
 
 9.  This will take you to the formal **Reflex experience**. From here you can monitor the stream of data in real-time, view the Data that is used to support the Reflex, and create additional Triggers from the same stream.
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-06/image13-1.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-06/L1T1S9-12-11.png)
 
 ## Task 2: Test Email Alert from Reflex Experience
 
-1.  From the **CTR is less than 20** trigger click on the **Send me a test alert** button to get a sample message in teams from the Reflex.
+1.  From the **CTR is less than 20** trigger click on the **Send me a test action** button to get a sample message in teams from the Reflex.
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-06/image14.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-06/L6T2S1-12-11.png)
   
 2.  Open a New tab within your Environment Edge Browser and go to **Teams.Microsoft.com**.
 

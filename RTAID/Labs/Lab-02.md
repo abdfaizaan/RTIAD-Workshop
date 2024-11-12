@@ -44,13 +44,13 @@ By the end of this lab, you will have learned:
 
     ![](../media/Lab-02/image5.png)
 
-2.  Navigate to the "Real-Time hub" where currently we do not see any streams of data. That will change shortly.
+2.  Navigate to the "Real-Time" where currently we do not see any streams of data. That will change shortly.
 
-    ![](../media/Lab-02/Picture1.png)
+    ![](../media/Lab-02/real-time-1.png)
 
-3.  Select the **+ Add Source** green button which should be in the upper right corner.
+3.  Select the **+ Connect data source** green button which should be in the upper right corner.
 
-    ![A green and white sign Description automatically generated](../media/Lab-02/image7.png)
+    ![A green and white sign Description automatically generated](../media/Lab-02/connect_datasource.png)
 
 4.  A window will open that will allow you to select a source for our stream data. As we discussed before, there are many fantastic options to choose from but for this class we will select the option "Azure Event Hubs".
     
@@ -72,7 +72,6 @@ By the end of this lab, you will have learned:
 
 7. Once all properties have been filled out click on **Connect**.
     
-
     ![A screenshot of a computer Description automaticallygenerated](../media/Lab-02/image10.png)
 
 8.  In the configuration of the Azure Event Hub data source, you may need to modify the **Consumer group** of the Event Hub to ensure that you gain access to a unique access point to the stream of data.For this workshop you can leave the "\$Default" value as shownbelow\
@@ -87,20 +86,16 @@ By the end of this lab, you will have learned:
     
     ![A screenshot of a computer](../media/Lab-02/image13.png)
 
-11. In this overview screen, verify the contents look correct and click
-    **Create source**.
+11. In this overview screen, verify the contents look correct and click **Create source**.
     
-    **Note:** Your details will differ from what you see in the
-    screenshot
+    **Note:** Your details will differ from what you see in the screenshot
     
-    ![A screenshot of a computer Description automatically
-    generated](../media/Lab-02/image14.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-02/image14.png)
 
 12. Once the Eventstream and Eventstream source are created select the
     option "**Open Eventstream**"
     
-    ![A screenshot of a
-    computer](../media/Lab-02/image15.png)
+    ![A screenshot of a computer](../media/Lab-02/image15.png)
 
 13. This will take you to the Eventstream user interface. Here is where you will see your source stream of data flowing into our eventstream and we have the ability to add transform events as well.
 
@@ -108,7 +103,7 @@ By the end of this lab, you will have learned:
 
     **Note:** If you receive a "Warning" status around and audit policy,that is fine. The stream will still function
     
-    ![](../media/Lab-02/image16.png)
+    ![](../media/Lab-02/active-event.png)
 
 15. You should now see a sample of the data within the bottom window.
 
