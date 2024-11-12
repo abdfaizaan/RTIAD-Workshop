@@ -62,7 +62,7 @@ By the end of this lab, you will have learned:
 
 6.  From your environment details page, copy and paste all the necessary connection settings into the appropriate fields. For these labs we are connecting to an Event Hub which has streaming data being sent from a python notebook. This notebook is creating fake sales transactions at rate of around 3,100 transactions per hour.
     
-    Event Hub namespace: **rtiadhub1507031**
+    Event Hub namespace: **rtiadhub<inject key="DeploymentID" enableCopy="false"/>**
     
     Event Hub: **rti-iad-fabrikam**
     
@@ -171,21 +171,21 @@ By the end of this lab, you will have learned:
 
     ![A screenshot of a computer](../media/Lab-02/image28.png)
     
-13. You may need to update your **"Data connection name"** to meet requirements. Let us rename it to **"eh_Fabrikam_es_InternetSales".** Then we can click on **Next**.
+12. You may need to update your **"Data connection name"** to meet requirements. Let us rename it to **"eh_Fabrikam_es_InternetSales".** Then we can click on **Next**.
 
     ![A screenshot of a computer](../media/Lab-02/image29.png)
 
-14. After a few moments of searching for events, the user interface should allow you to see that sample data was found. Click on **Finish** at the bottom of the screen.
+13. After a few moments of searching for events, the user interface should allow you to see that sample data was found. Click on **Finish** at the bottom of the screen.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-02/image30.png)
 
-15. After this you will be shown a summary. Once you have all green checkmarks, click **close** to move forward.
+14. After this you will be shown a summary. Once you have all green checkmarks, click **close** to move forward.
 
-16. Once you see the user interface showing the mappings from the source to the Eventstream to the destination, you have correctly configured and started a stream of data into your KQL Database.
+15. Once you see the user interface showing the mappings from the source to the Eventstream to the destination, you have correctly configured and started a stream of data into your KQL Database.
 
     ![A screen shot of a computer](../media/Lab-02/image31.png)
 
-17. Incase if you do not see any data in the Data preview of your KQL Database destination, follow the below steps -
+16. Incase if you do not see any data in the Data preview of your KQL Database destination, follow the below steps -
 
     i. Go to your destination KQL database
 
@@ -208,7 +208,7 @@ By the end of this lab, you will have learned:
     ![A screenshot of a chat](../media/Lab-02/KQL-database-workaround3.png)
 
     iv. Now you should be able to see a new destination is created with the Data preview visible in it.
-
+    
 # Kusto Query Language (KQL)
 
 ## Task 3: Authoring Kusto Database Queries
