@@ -61,17 +61,20 @@ By the end of this lab, you will have learned:
 
 ## Task 1: Enable a Microsoft Fabric trial license 
 
-1. Open the **Microsoft Edge browser** on the desktop and navigate to https://app.fabric.microsoft.com/. You will be navigated to the login page.
+1. Open the **Microsoft Edge browser** on the desktop and navigate to `https://app.fabric.microsoft.com/`. You will be navigated to the login page.
 
    **Note**: If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private / incognito mode. 
 
    ![a](../media/Lab-01/imag01.png)
 
-1. Enter the **Username** available in the **Environment Variables** tab (next to the Lab Guide) as the **Email** and click **Submit**. 
+
+ 1. Enter the following email/username, and then click on **Submit**.  
+
+   * **Username/Email**:  <inject key="AzureAdUserEmail"></inject>
 
    ![b](../media/Lab-01/imag02.png)
 
-1. You will be navigated to the **Password** screen. Enter the **Password** available in the **Environment Variables** tab (next to the Lab Guide) shared with you by the instructor.  
+1. You will be navigated to the **Password** screen. Enter the **Password** : <inject key="AzureAdUserPassword"></inject>. 
 
 1. Click **Sign in** and follow the prompts to sign into Fabric. 
    
