@@ -183,9 +183,9 @@ By the end of this lab, you will have learned:
 
    ![](../media/Lab-01/new_item.png)
    
-1.Search for **Eventhouse(1)** and Select the **Eventhouse(2)** option from store data . As we have talked about this can be viewed  similarly to a Lakehouse in that we can store data but this Eventhouse is focused around real time data.
+1. Search for **Eventhouse(1)** and Select the **Eventhouse(2)** option from store data . As we have talked about this can be viewed  similarly to a Lakehouse in that we can store data but this Eventhouse is focused around real time data.
 
-   ![](../media/Lab-01/eventhouse-1.png)
+    ![](../media/Lab-01/eventhouse-1.png)
  
 1. In the window that appears, give your Eventhouse the name, **eh_Fabrikam** and click on **Create**.
 
