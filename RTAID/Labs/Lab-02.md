@@ -212,10 +212,12 @@ ii. Click on **Get data (1)** and go to **Eventstream (2)** and select **Existin
 iii. Select the InternetSales table and Select the following configurations from the drop-down :
 
    - Workspace :
+
      ```
      RTI_<inject key="DeploymentID" enableCopy="false"/>
      ```
    - Eventstream Name :
+
      ```
      es_Fabrikam_InternetSales
      ```
