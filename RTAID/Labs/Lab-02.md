@@ -229,7 +229,7 @@ iv. Now you should be able to see a new destination is created with the Data pre
 
 ## Task 3: Authoring Kusto Database Queries
 
-1.  Make your way back to your **RTI_username** workspace. You should see the new Eventstream you just created along side all the Evenhouse items.
+1.  Make your way back to your **RTI_<inject key="DeploymentID" enableCopy="false"/>** workspace. You should see the new Eventstream you just created along side all the Evenhouse items.
 
     ![A screenshot of a computer](../media/Lab-02/image32.png)
 
