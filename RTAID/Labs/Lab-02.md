@@ -373,9 +373,9 @@ Let's explore!
     
     ![A screenshot of a computer Description automatically generated](../media/Lab-02/image61.png)
 
-5.  Return to your **RTI_username** workspace. You should have the following objects present
+5.  Return to your **RTI_<inject key="DeploymentID" enableCopy="false"/>** workspace. You should have the following objects present
 
-    ![A screenshot of a computer](../media/Lab-02/image62.png)
+    ![A screenshot of a computer](../media/Lab-02/es-is.png)
 
 # Summary
 
