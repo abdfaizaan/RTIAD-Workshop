@@ -80,7 +80,7 @@ be adding to the KQL database By the end of this lab, you will have learned:
        ```
        <inject key="rti-iad-clicks Primary Key"></inject>
        ```
-    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image11-1.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/clicks.png)
 
 9. Once all the properties have been filled out click on **Connect**.
 
