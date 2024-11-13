@@ -65,7 +65,7 @@ By the end of this lab, you will have learned:
 
    ![a](../media/Lab-01/imag01.png)
 
- 2. Enter the following email/username, and then click on **Submit**.  
+ 3. Enter the following email/username, and then click on **Submit**.  
 
      - **Username/Email**:<inject key="AzureAdUserEmail"></inject>
 
@@ -75,7 +75,7 @@ By the end of this lab, you will have learned:
 
           ![c](../media/Lab-01/sc900-image-2.png)
 
-3. You will be navigated to the **Fabric Home page**.
+4. You will be navigated to the **Fabric Home page**.
 
    ![c](../media/Lab-01/home_page.png)
 
