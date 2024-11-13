@@ -87,7 +87,7 @@ By the end of this lab, you will have learned:
     
     ![A screenshot of a computer Description automatically generated](../media/Lab-04/image13.png)
 
-8. The four new tables are blank tables with their schema defined. Now you need a way to properly load these tables. Navigate back to your workspace **RTI_username**.
+8. The four new tables are blank tables with their schema defined. Now you need a way to properly load these tables. Navigate back to your workspace **RTI_<inject key="DeploymentID" enableCopy="false"/>**.
 
 ## Task 2: Load Broze Tables using a Data Pipeline
 
