@@ -76,9 +76,9 @@ In this lab, you will learn how to leverage Data Activator to create a Reflex to
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-06/L6T2S1-12-11.png)
   
-2.  Open a New tab within your Environment Edge Browser and go to **Teams.Microsoft.com**.
+2.  Open a New tab within your Environment Edge Browser and go to **[teams.Microsoft.com](https://teams.microsoft.com/)**.
 
-3.  Sign in with your environment credentials if you are asked. A message to start a trial may appear and you will want to accept this.
+3.  Sign in with your environment credentials if you are asked. A message to start a trial may appear and click on **Explore Tiral**.
 
 4.  You should have a message within teams letting you know that the CTR is less than 20.
 

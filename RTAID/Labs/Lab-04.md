@@ -59,7 +59,7 @@ By the end of this lab, you will have learned:
     .create table [SalesOrderDetail](SalesOrderID: int, SalesOrderDetailID: int, OrderQty: int, ProductID: int, UnitPrice: decimal , UnitPriceDiscount: decimal,LineTotal: decimal, ModifiedDate: datetime)
     
     ```
-    ![A blue screen with black text Description automatically generated](../media/Lab-04/image9.png)
+    ![A blue screen with black text Description automatically generated](../media/Lab-04/P5L4T1S2.png)
 
 5. Once that executes you should immediately see four new tables created within your Database Object Explorer.
 
@@ -127,7 +127,7 @@ By the end of this lab, you will have learned:
     -  SalesLT.SalesOrderDetail
     -  SalesLT.SalesOrderHeader
 
-        ![A screenshot of a computer Description automatically generated](../media/Lab-04/image19.png)
+      ![A screenshot of a computer Description automatically generated](../media/Lab-04/image19.png)
 
 9. Click on **Next**.
 
@@ -164,11 +164,10 @@ By the end of this lab, you will have learned:
 19. Let's go and check one of our tables and verify the data. Navigate back to the KQL Queryset we have been using called **Create Tables** and ensure you are in the **Bronze Layer** tab and run the following script.
 
      ```
-    //Query the Bronze layer Customer table
-    Customer
-    | take 100
-    ```
-
+     //Query the Bronze layer Customer table
+     Customer
+     | take 100
+     ````
 
 20. You should see some data like the image below, but it may not be exact.
 
@@ -180,18 +179,18 @@ By the end of this lab, you will have learned:
 
    ![A screenshot of a computer](../media/Lab-04/image29.png)
 
-3. Run the following KQL script within the "**Silver Layer**" tab to create four new tables that will serve as the Silver Layer of the Medallion Framework.
+2. Run the following KQL script within the "**Silver Layer**" tab to create four new tables that will serve as the Silver Layer of the Medallion Framework.
 
-        ```
-        //SILVER LAYER
+    ```
+    //SILVER LAYER
         
-        .execute database script <|
-        .create table [SilverAddress](AddressID:int, AddressLine1:string, AddressLine2:string, City:string, StateProvince:string, CountryRegion:string, PostalCode:string, rowguid:guid, ModifiedDate:datetime, IngestionDate:datetime)
-        .create table [SilverCustomer](CustomerID:int, NameStyle:string, Title:string, FirstName:string, MiddleName:string, LastName:string, Suffix:string, CompanyName:string, SalesPerson:string, EmailAddress:string, Phone:string, ModifiedDate:datetime, IngestionDate:datetime)
-        .create table [SilverSalesOrderHeader](SalesOrderID:int, OrderDate:datetime, DueDate:datetime, ShipDate:datetime, ShipToAddressID:int, BillToAddressID:int, SubTotal:decimal, TaxAmt:decimal, Freight:decimal, TotalDue:decimal, ModifiedDate:datetime, DaysShipped:long, IngestionDate:datetime)
-        .create table [SilverSalesOrderDetail](SalesOrderID:int, SalesOrderDetailID:int, OrderQty:int, ProductID:int, UnitPrice:decimal, UnitPriceDiscount:decimal, LineTotal:decimal, ModifiedDate:datetime, IngestionDate:datetime)
+    .execute database script <|
+    .create table [SilverAddress](AddressID:int, AddressLine1:string, AddressLine2:string, City:string, StateProvince:string, CountryRegion:string, PostalCode:string, rowguid:guid, ModifiedDate:datetime, IngestionDate:datetime)
+    .create table [SilverCustomer](CustomerID:int, NameStyle:string, Title:string, FirstName:string, MiddleName:string, LastName:string, Suffix:string, CompanyName:string, SalesPerson:string, EmailAddress:string, Phone:string, ModifiedDate:datetime, IngestionDate:datetime)
+    .create table [SilverSalesOrderHeader](SalesOrderID:int, OrderDate:datetime, DueDate:datetime, ShipDate:datetime, ShipToAddressID:int, BillToAddressID:int, SubTotal:decimal, TaxAmt:decimal, Freight:decimal, TotalDue:decimal, ModifiedDate:datetime, DaysShipped:long, IngestionDate:datetime)
+    .create table [SilverSalesOrderDetail](SalesOrderID:int, SalesOrderDetailID:int, OrderQty:int, ProductID:int, UnitPrice:decimal, UnitPriceDiscount:decimal, LineTotal:decimal, ModifiedDate:datetime, IngestionDate:datetime)
         
-        ```
+    ```
 
 3. Run that script by highlighting the new script and clicking **Run**.
 
@@ -259,6 +258,7 @@ By the end of this lab, you will have learned:
 12. On a new line, query the SilverAddress table by writing out the following query and executing the code.
 
     ```
+    //Query the Bronze layer Customer table
     SilverAddress
     | take 100
     ```
@@ -380,7 +380,7 @@ Within the Lakehouse user interface, you have a couple options for how you could
 
 2. Select the option **Microsoft OneLake** under the **Internal sources**.
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-04/image54.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-04/P5L4T6S2.png)
 
 3. Within the menu, select the **eh_Fabrikam** KQL Database to bring tables from that storage into the Lakehouse without duplicating or copying the data.
 
