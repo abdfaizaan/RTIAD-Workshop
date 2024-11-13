@@ -91,7 +91,7 @@ By the end of this lab, you will have learned:
 
 10.  Before we finalize this data source and Eventstream, let's go ahead and rename our Eventstream to something more useful. In the "Stream details\" section on the right select the pencil icon next to the "Eventstream name" and let's call our Eventstream "**es_Fabrikam_InternetSales**".
 
-    ![A screenshot of a computer](../media/Lab-02/image12.png)
+     ![A screenshot of a computer](../media/Lab-02/image12.png)
 
 11. Now we can click on **Next**, which will take us to a final overview page.
     
