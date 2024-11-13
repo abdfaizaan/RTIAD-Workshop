@@ -38,11 +38,11 @@ be adding to the KQL database By the end of this lab, you will have learned:
 
 ## Task 1: Create an Eventstream 
 
-1.  Open the **Fabric workspace** you have been using for the course today.
+1. Open the **Fabric workspace** you have been using for the course today.
 
     ![A screenshot of a computer](../media/Lab-03/image5.png)
 
-2.  There is additional streaming data for us to Ingest related to our e-commerce store. For this Eventstream though we will want to transform the data prior to loading it into the Eventhouse. Instead of going to the **"Real-Time"** we can create a new Eventstream directly from the workspace. Click on **+ New Item** from the workspace page menu, search for 'Eventstream,' and create a new **Eventstream**.
+2. There is additional streaming data for us to Ingest related to our e-commerce store. For this Eventstream though we will want to transform the data prior to loading it into the Eventhouse. Instead of going to the **"Real-Time"** we can create a new Eventstream directly from the workspace. Click on **+ New Item** from the workspace page menu, search for 'Eventstream,' and create a new **Eventstream**.
 
     ![A screenshot of a computer](../media/Lab-03/image6.png)
 
@@ -54,9 +54,9 @@ be adding to the KQL database By the end of this lab, you will have learned:
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-03/image8-1.png)
 
-5. Similarly to the previous lab we will be connecting to an Azure event Hub which has data being streamed to from a python notebook. Click on the **"Azure Event Hubs"** tile.
+5. Similarly to the previous lab we will be connecting to an Azure event Hub which has data being streamed to from a python notebook. Select the **"Azure Event Hubs"** tile and click on **connect**.
 
-   ![A screenshot of a web page Description automatically generated](../media/Lab-03/image9-1.png)
+   ![A screenshot of a web page Description automatically generated](../media/Lab-03/eventhubs.png)
 
 6.  Create a **New connection**.
 
@@ -64,33 +64,41 @@ be adding to the KQL database By the end of this lab, you will have learned:
 
 7.  From your environment details page, copy and paste all the necessary connection settings into the appropriate fields.
 
-     - Event Hub namespace: **rtiadhub<inject key="DeploymentID" enableCopy="false"/>**
+     - Event Hub namespace:
+       ```
+       rtiadhub<inject key="DeploymentID" enableCopy="false"/>
+       ```
+     - Event Hub:
+       ```
+       rti-iad-clicks
+       ```
+     - Shared Access Key Name:
+       ```
+       rti-reader
+       ```
+     - Shared Access Key:
+       ```
+       <inject key="rti-iad-clicks Primary Key"></inject>
+       ```
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image11-1.png)
 
-     - Event Hub: **rti-iad-clicks**
+9. Once all the properties have been filled out click on **Connect**.
 
-     - Shared Access Key Name: **rti-reader**
-
-     - Shared Access Key: <inject key="rti-iad-clicks Primary Key"></inject>
-     
-       ![A screenshot of a computer Description automatically generated](../media/Lab-03/image11-1.png)
-
-8.  Once all the properties have been filled out click on **Connect**.
-
-9.  In the configuration of the Azure Event Hub data source, you may need to modify the **Consumer group** of the Event Hub to ensure that you gain access to a unique access point to the stream of data. For this workshop you can leave the "\$Default" value as shown below
+10. In the configuration of the Azure Event Hub data source, you may need to modify the **Consumer group** of the Event Hub to ensure that you gain access to a unique access point to the stream of data. For this workshop you can leave the "\$Default" value as shown below
 
     ![A screenshot of a computer](../media/Lab-03/image12.png)
 
-10. Click on **Next**.
+11. Click on **Next**.
 
-11. On the review and create window, verify that everything is configured correctly and click **Add**.
+12. On the review and create window, verify that everything is configured correctly and click **Add**.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-03/image13.png)
 
-12. Once the stream is configured, you will be able to see a preview of the data coming from the Event Hub.
+13. Once the stream is configured, you will be able to see a preview of the data coming from the Event Hub.
 
     ![A table of numbers and numbers Description automatically generated](../media/Lab-03/image14-1.png)
 
-13. Examine the data being received. There are two types of events that are logged from the e-commerce website, click and impressions.
+14. Examine the data being received. There are two types of events that are logged from the e-commerce website, click and impressions.
 
 -   **IMPRESSION** - An impression event is recorded each time an advertisement or a product listing is displayed to a user.Impressions are a measure of how many times an item (ad or product) is viewed, regardless of whether it is interacted with.
 
