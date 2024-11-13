@@ -265,7 +265,7 @@ name and the data types of the column that can be queried with KQL.Also shows th
 
 8.  Click on **Explore your data** in the top-right corner.
 
-    ![A white background with black text Description automatically generated](../media/Lab-02/image39.png)
+    ![A white background with black text Description automatically generated](../media/Lab-02/explore_data.png)
 
 9.  This will open the default KQL Queryset that was created alongside the Eventhouse. There are a few pre-scripted queries that are already authored but need some slight customization. There are also two links to Microsoft documentation that can be helpful when learning KQL or also looking at SQL to KQL conversions which will be discussed later throughout this class.
 
@@ -308,7 +308,6 @@ Let's explore!
 
 1.  You need to create a query that returns the number of each product that has been sold. This is something you can quickly do with T-SQL.Within the query window, you can translate your SQL queries into KQL to better understand how to author KQL queries in the future. Start with writing the following command.
 
-    **Note:** Double click the object below in order to be able to copy the text
 
     ```
     --
@@ -333,6 +332,8 @@ Let's explore!
 5.  The output of the explain query should be a single record with the translated KQL query as the result. Click on the **caret icon (\>)** to expand the results and allow for easier translation.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-02/image53.png)
+
+>**Note**: If you can't see the output code, maximize the screen by dragging the white section down.
 
 6.  Click on the query pane highlighted below in orange. This will allow you to select translated KQL query and copy it. Paste this query in the KQL Queryset we have been using
 
