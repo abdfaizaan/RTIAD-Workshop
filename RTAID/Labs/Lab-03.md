@@ -277,33 +277,34 @@ device and browser the webpage was loaded from, and what IP address accessed the
 
     ![A white sign with black text Description automatically generated](../media/Lab-03/image43.png)
 
-23. For this destination, configure the following properties.
-
+23. Configure the following properties for this destination and select the details from the dropdown.
       -   **Destination name** -- dbo-Clicks
-    
-      -   **Workspace** - RTI_username
-    
+      -   **Workspace** - RTI_<inject key="DeploymentID" enableCopy="false"/>
       -   **Eventhouse** -- eh_Fabrikam
-    
       -   **KQL Database** - eh_Fabrikam
-    
       -   **Destination Table** - Create a new table called **Clicks**
 
        ![A screenshot of a computer Description automatically generated](../media/Lab-03/image44.png)
 
 24. Click on **Save** at the bottom of the flyout.
 
-25. Do the same thing for the Impressions table with the following information configured as below.
+25. Configure the following properties for this destination and select the details from the dropdown.
+
+      - **Destination name** -- dbo-Impressions
+      - **Workspace** - RTI_<inject key="DeploymentID" enableCopy="false"/>
+      - **Eventhouse** -- eh_Fabrikam
+      - **KQL Database** - eh_Fabrikam
+      - **Destination Table** - Create a new table called **Impressions**
 
     ![A screenshot of a computer](../media/Lab-03/image45.png)
 
-26. Save your changes.
+27. Save your changes.
 
-27. This Eventstream is now ready to begin streaming. Click on **Publish** to begin that stream.
+28. This Eventstream is now ready to begin streaming. Click on **Publish** to begin that stream.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-03/image46.png)
 
-28. With the Eventstream now running, you should see the Eventstream user interface slightly change to signify that you are streaming the data from Event Hub transforming and splitting that data stream and loading it into two separate KQL Database tables.
+29. With the Eventstream now running, you should see the Eventstream user interface slightly change to signify that you are streaming the data from Event Hub transforming and splitting that data stream and loading it into two separate KQL Database tables.
 
     ![A screenshot of a computer](../media/Lab-03/image47.png)
 
@@ -311,7 +312,7 @@ device and browser the webpage was loaded from, and what IP address accessed the
 
 ## Task 4: Validate Event Data Tables
 
-1.  Return to your **RTI_username** workspace.
+1.  Return to your **RTI_<inject key="DeploymentID" enableCopy="false"/>** workspace.
 
 2.  Open the **eh_Fabrikam** KQL Database.
 
