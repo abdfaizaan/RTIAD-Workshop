@@ -42,7 +42,7 @@ be adding to the KQL database By the end of this lab, you will have learned:
 
     ![A screenshot of a computer](../media/Lab-03/image5.png)
 
-2.  There is additional streaming data for us to Ingest related to our e-commerce store. For this Eventstream though we will want to transform the data prior to loading it into the Eventhouse. Instead of going to the **"Real-Time"** we can create a new Eventstream directly from the workspace. From the **+ New** menu, create a new **Eventstream**.
+2.  There is additional streaming data for us to Ingest related to our e-commerce store. For this Eventstream though we will want to transform the data prior to loading it into the Eventhouse. Instead of going to the **"Real-Time"** we can create a new Eventstream directly from the workspace. Click on **+ New Item** from the workspace page menu, search for 'Eventstream,' and create a new **Eventstream**.
 
     ![A screenshot of a computer](../media/Lab-03/image6.png)
 
