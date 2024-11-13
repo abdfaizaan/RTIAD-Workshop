@@ -10,8 +10,8 @@
 - Creating an Alert with Reflex
   
   - Task 1: Use the Real-Time Dashboard to Set Alerts
-  - Task 2: Test Email Alert from Reflex Experience
-  - Task 3: Create A New Reflex Object from Data Stream
+  - Task 2: Test Alert from Reflex Experience
+  - Task 3: Create A New Alert Rule from Data Stream
   - Task 4: Clean Up Workspace
 
 - Summary 
@@ -40,7 +40,7 @@ In this lab, you will learn how to leverage Data Activator to create a Reflex to
 
 2.  On the **Click Through Rate** visual click on the ellipses (...) and select the option to **Set alert**.
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-06/image6.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-06/L6T1S2-13-11.png)
 
 3.  A new flyout will open on the right-side of the screen. You can see what you are monitoring from the dashboard including the specific visual that the alert will be affiliated with. The condition is something you have full control over. Modify the **Condition** to **Is less than**.
 
@@ -70,71 +70,55 @@ In this lab, you will learn how to leverage Data Activator to create a Reflex to
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-06/L1T1S9-12-11.png)
 
-## Task 2: Test Email Alert from Reflex Experience
+## Task 2: Test Alert from Reflex Experience
 
-1.  From the **CTR is less than 20** trigger click on the **Send me a test action** button to get a sample message in teams from the Reflex.
+1. In the Reflex experience, click on the pencil icon next to the event name and rename it as **CTR is less than 20**. 
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-06/L6T2S1-12-11.png)
+    ![](../media/Lab-06/L6T2S1-13-11.png)
+
+2.  From the **CTR is less than 20** trigger select the **Definition** and click on **Send me a test action** button to get a sample message in teams from the Reflex.
+
+    ![A screenshot of a computer Description automatically generated](../media/Lab-06/L6T2S2-13-11.png)
   
-2.  Open a New tab within your Environment Edge Browser and go to **Teams.Microsoft.com**.
+3.  Open a New tab within your Environment Edge Browser and go to **[Teams](https://teams.microsoft.com/v2/)**.
 
-3.  Sign in with your environment credentials if you are asked. A message to start a trial may appear and you will want to accept this.
+4.  Sign in with your environment credentials if you are asked. A message to start a trial may appear and you will want to accept this.
 
-4.  You should have a message within teams letting you know that the CTR is less than 20.
+5.  You should have a message within teams letting you know that the CTR is less than 20.
 
     ![A screenshot of a computer error message](../media/Lab-06/image15.png)
 
-5.  Navigate back to the Reflex experience and let's create another trigger.
+6.  Navigate back to the Reflex experience and let's create another trigger.
 
-## Task 3: Create A New Reflex Object from Data Stream
+## Task 3: Create A New Alert Rule from Data Stream
 
-1.  On the bottom left corner of the screen next to the Fabric Persona Switcher click on the tab that says **Data**.
+1.  Select the **KQL Source Event (1)** and click on **New rule (2)** from this data stream.
 
-    ![](../media/Lab-06/image16-1.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-06/L6T3S1-13-11.png)
     
-2.  The **Data view** shows your stream of data and what is possible to monitor based on the source of data and the query that is returning that data. With this you are currently using that stream to push data to an **Object** this is where you have set a condition and a trigger to alert you based on the incoming stream. Let's create a new object and make another trigger with the same stream. Go back to the **Design** view.
+2.  Click on the **pencil** icon and give this Rule the name, **Clicks Greater Than 30,000** (you can choose a value here that falls more in line with however much data you have streamed in).
 
-    ![A close up of a logo Description automatically generated](../media/Lab-06/image17-1.png)
+    ![A screenshot of a computer](../media/Lab-06/L6T3S2-13-11.png)
 
-3.  Create a **New Trigger** from this data stream.
+3.  To begin, you need to monitor one of the columns from the data stream. Now we will need to add the Condition and Action to this rule. Click on the Definition tab of the rule to set the conditions and action.
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-06/image18.png)
-    
-5.  Click on the **pencil** icon and give this Trigger the name, **Clicks Greater Than 30,000** (you can choose a value here that falls more in line with however much data you have streamed in).
+4.  In the Definition page that opens, in **Condition** select the following properties,
+    - **Operation** - Is greater than (1)
+    - **Column** - clicks (2)
+    - **Value** - 30000 (3)
 
-    ![A screenshot of a computer](../media/Lab-06/image19.png)
+    In the **Action**, select the below properties,
+    - **Type** - Teams message (4)
+    - **Recipient** - ODL_User_<inject key="DeploymentID" enableCopy="false"/> (5)
+    - **Headline** - Clicks Greater than 30,000 (6)
 
-5.  To begin, you need to monitor one of the columns from the data stream. Click on **Select a property or event column**. Work through the cascading levels until you eventually see a list of all the columns and select **Clicks**.
+ Finally, click on **Start (7)** to run the rule.
 
-    ![A screenshot of a computer](../media/Lab-06/image20.png)
+   ![A screenshot of a computer](../media/Lab-06/create-new-trigger1-13-11.png)
 
-6.  Now that you are monitoring a column from the stream, you need to set up the conditions to **Detect** when you alert the user. Click in the Detect drop-down box that reads **Choose a type of detection**.
+5. You now have two alert rules that are monitoring the same data stream.
 
-    ![A close up of a sign Description automatically generated](../media/Lab-06/image21-1.png)
-
-7.  Using the **Numeric** type of detection, find the **Is greater than** option towards the bottom of the list.
-
-    ![A screenshot of a computer](../media/Lab-06/image22.png)
-
-8.  Modify the logical expression to read **Is greater than 30000 Each time** using the various drop-downs.
-
-    ![A screenshot of a computer Description automatically generated](../media/Lab-06/image23.png)
-
-9.  For the last step, you need to set up how this Reflex will **Act**. Choose the option that says **Teams message**.
-
-    ![A screenshot of a message box Description automatically generated](../media/Lab-06/image24.png)
-
-10. The default settings for the email will be sufficient for this example.
-
-    ![A screenshot of a phone](../media/Lab-06/image25.png)
-
-11. Finally, **Save** and **Start** this Trigger.
-
-    ![A screenshot of a computer Description automatically generated](../media/Lab-06/image26.png)
-
-12. You now have two triggers that are monitoring the same data stream.
-
-    ![](../media/Lab-06/image27.png)
+    ![](../media/Lab-06/L6T3S4-13-11.png)
 
 # Clean Up Resources
 
