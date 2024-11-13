@@ -209,7 +209,7 @@ ii. Click on **Get data (1)** and go to **Eventstream (2)** and select **Existin
 
    ![A screenshot of a chat](../media/Lab-02/KQL-database-workaround2.png)
 
-iii. Select the InternetSales table and give the give the following configurations -
+iii. Select the InternetSales table and Select the following configurations from the drop-down :
 
    - Workspace :
      ```
