@@ -207,7 +207,7 @@ By the end of this lab, you will have learned:
 
 1. This will allow us to still have one tab in the left browser pane to see the overview of our entire Eventhouse and a new tab to focus on the KQL Database properties. One goal that we wish to accomplish in our scenario is to ensure that the data streamed to the KQL database is accessible via OneLake. By enabling this feature, we make the data in this KQL Database easily discoverable through shortcuts to be used in any Lakehouse we may want. Locate the **Database details** section on the right and toggle **On** the “Availability” option.
    
-    
+
 >**Note**: You will be popped up with a dialogue box, leave all the settings as default and click on **Turn on**.
 
    ![](../media/Lab-01/turn-on-1.png)
