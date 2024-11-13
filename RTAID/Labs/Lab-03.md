@@ -76,7 +76,7 @@ be adding to the KQL database By the end of this lab, you will have learned:
        ```
      - Shared Access Key Name:
 
-        ```
+       ```
        rti-reader
        ```
      - Shared Access Key:
