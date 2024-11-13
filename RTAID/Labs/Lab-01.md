@@ -221,11 +221,11 @@ By the end of this lab, you will have learned:
  
 1. If you see the **Task Flows** option taking up most of the space, select the double up arrow on the right-hand side to minimize it
 
-    ![](../media/Lab-01/imag025.png)
+    ![](../media/Lab-01/rti_1.png)
 
 1. You now have the basis for how you will begin to ingest the streaming data into your OneLake.  The next step is to create a stream of data that can receive the data in motion.
 
-   ![](../media/Lab-01/imag026.png)
+   ![](../media/Lab-01/lab-final.png)
  
 
 In this lab, we explored the Real-Time Intelligence interface, examined the Real-Time hub, created a Fabric workspace, and an Eventhouse that came with a KQL Database.  In the next lab, you will begin to explore techniques that ingest data from various sources across your data estate to OneLake and do some basic analysis with the Kusto Query Language (KQL).
