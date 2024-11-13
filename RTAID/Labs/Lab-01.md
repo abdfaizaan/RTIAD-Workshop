@@ -161,7 +161,7 @@ By the end of this lab, you will have learned:
  
 1. **Create a workspace** dialog opens on the right side of the browser.
    
-1. In the **Name** field enter **RTI_username**.  Use the username provided to you from the environment details.
+1. In the **Name** field enter **RTI_<inject key="DeploymentID" enableCopy="false"></inject>**.  Use the username provided to you from the environment details.
 
    >**Note**: The workspace name must be unique. Make sure a green check mark with **“This name is available”** is displayed below the Name field. 
 
@@ -217,7 +217,7 @@ By the end of this lab, you will have learned:
  
 1. Return to your **RTI_username** workspace by selecting it from the left side of the browser
 
-   ![](../media/Lab-01/imag024.png)
+   ![](../media/Lab-01/rti-2.png)
  
 1. If you see the **Task Flows** option taking up most of the space, select the double up arrow on the right-hand side to minimize it
 
