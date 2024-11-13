@@ -81,17 +81,15 @@ By the end of this lab, you will have learned:
 
 >**Note**: To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up. 
    
-1. On the top right corner of the screen, select the **User icon**.
-   
-1. Select **Free Trial**.
+1. In the top-right corner of the screen, click on the **User icon(1)** and then select **Free Trial(2)**.
 
-   ![c](../media/Lab-01/imag04.png)
+   ![c](../media/Lab-01/free-trail.png)
 
 1. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Activate**.
 
    ![c](../media/Lab-01/imag05.png)
 
-1. Successfully upgraded to Microsoft Fabric dialog opens. Select **Fabric Home Page**.  
+1. The "Successfully Upgraded to Microsoft Fabric" dialog will appear. Click on **Fabric Home Page**..  
 
    ![c](../media/Lab-01/fabrichome_1.png)
 
