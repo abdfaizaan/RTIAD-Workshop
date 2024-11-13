@@ -422,7 +422,7 @@ support this is currently in an external Azure SQL Database, let's see how easy 
 
 12. Navigate back to the **eh_Fabrikam** KQL Database.
 
-    ![A screenshot of a computer](../media/Lab-03/image63.png)
+    ![A screenshot of a computer](../media/Lab-03/blur.png)
 
 13. Click on the **Shortcuts** option within the **eh_Fabrikam** navigation pane. This will show you all the shortcuts you havecreated to this KQL Database. It should be noted that these Shortcuts are considered classical Azure Data Explorer externaltables using Azure SQL external table syntax and are constructed differently than OneLake, ADLS, or S3 shortcuts which are also supported in KQL Database within Fabric.
 
