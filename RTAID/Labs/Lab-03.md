@@ -64,15 +64,15 @@ be adding to the KQL database By the end of this lab, you will have learned:
 
 7.  From your environment details page, copy and paste all the necessary connection settings into the appropriate fields.
 
-   - Event Hub namespace: **rtiadhub<inject key="DeploymentID" enableCopy="false"/>**
+     - Event Hub namespace: **rtiadhub<inject key="DeploymentID" enableCopy="false"/>**
 
-   - Event Hub: **rti-iad-clicks**
+     - Event Hub: **rti-iad-clicks**
 
-   - Shared Access Key Name: **rti-reader**
+     - Shared Access Key Name: **rti-reader**
 
-   - Shared Access Key: <inject key="rti-iad-clicks Primary Key"></inject>
+     - Shared Access Key: <inject key="rti-iad-clicks Primary Key"></inject>
      
-     ![A screenshot of a computer Description automatically generated](../media/Lab-03/image11-1.png)
+       ![A screenshot of a computer Description automatically generated](../media/Lab-03/image11-1.png)
 
 8.  Once all the properties have been filled out click on **Connect**.
 
@@ -133,17 +133,17 @@ device and browser the webpage was loaded from, and what IP address accessed the
 
 7.  Remove all the following fields that will not be needed for this stream.
 
--   userAgent
+      -   userAgent
 
--   page_loading_seconds
+      -   page_loading_seconds
 
--   EventProcessedUtcTime
+      -   EventProcessedUtcTime
 
--   EventEnqueredUtcTime
+      -   EventEnqueredUtcTime
 
-  You should be left with the following fields in the image below.
+    You should be left with the following fields in the image below.
 
-  ![A screenshot of a computer](../media/Lab-03/image21.png)
+     ![A screenshot of a computer](../media/Lab-03/image21.png)
 
 8. Hover over the eventDate field and when an ellipses (...) appears on the right-hand side of the window, click it.
 
@@ -176,13 +176,13 @@ device and browser the webpage was loaded from, and what IP address accessed the
 
 4.  In the flyout that appears on the right-hand side of the screen, customize the filter conditions to reflect a way to only return CLICK values by using the settings below. It is important to note that the Filter transform is case sensitive
 
-    -   **Operation name** - Clicks
+      -   **Operation name** - Clicks
     
-    -   **Select a field to filter on** - eventType
+      -   **Select a field to filter on** - eventType
     
-    -   **Keep events when the value** - equals -- CLICK **(Important! This is a case sensitive field, ensure to input in all capitals for this example)**
+      -   **Keep events when the value** - equals -- CLICK **(Important! This is a case sensitive field, ensure to input in all capitals for this example)**
 
-        ![](../media/Lab-03/image28-1.png)
+          ![](../media/Lab-03/image28-1.png)
 
 5.  Choose the **Save** option to keep your changes.
 
@@ -208,20 +208,20 @@ device and browser the webpage was loaded from, and what IP address accessed the
 10. In the flyout that appears on the right-hand side of the screen, customize the filter conditions to reflect a way to only return
     IMPRESSION values by using the values below. Remember that the Filter transform is case sensitive
 
-    -   **Operation name** - Impressions
+      -   **Operation name** - Impressions
     
-    -   **Select a field to filter on** - eventType
+      -   **Select a field to filter on** - eventType
     
-    -   **Keep events when the value** - equals -- IMPRESSION **(Important!
+      -   **Keep events when the value** - equals -- IMPRESSION **(Important!
         This is a case sensitive field, ensure to input in all capitals for
         this example)**
 
-    ![](../media/Lab-03/image33-1.png)
+      ![](../media/Lab-03/image33-1.png)
 
 11. Choose the **Save** option to keep your changes.
 
 12. Before we load the data into new tables within our KQL Database we can remove additional columns which are not needed. In this case for
-    the stream of data which is filtered for our "CLICK" records we no longer need the "eventType" column since every row holds the same
+    the stream of data which is filtered for our **CLICK** records we no longer need the "eventType" column since every row holds the same
     value. For our "IMPRESSION" stream of data we can remove the "eventType" column for the same reasons mentioned above and we can
     also remove the "referrer" column as it is empty for every row in this table.
 
@@ -229,7 +229,7 @@ device and browser the webpage was loaded from, and what IP address accessed the
 
     ![A white board with writing on it Description automatically generated](../media/Lab-03/image34-1.png)
 
-14. In the dropdown menu select "Manage fields"
+14. In the dropdown menu select **Manage fields**.
 
     ![](../media/Lab-03/image35.png)
 
@@ -237,21 +237,21 @@ device and browser the webpage was loaded from, and what IP address accessed the
     
     ![A white rectangular sign with black text Description automatically generated](../media/Lab-03/image36.png)
 
-16. Rename the operation to "Manage_Clicks". As well select "Add all
-    fields" then remove "eventType". Once done click **Save**.
+16. Rename the operation to **Manage_Clicks**. As well select **Add all
+    fields** then remove **eventType**. Once done click **Save**.
 
     ![A screenshot of a computer](../media/Lab-03/image37.png)
 
-17. Next, let's add another "Manage fields" transform connected to the
-    "Impressions" filter as seen below 
+17. Next, let's add another **Manage fields** transform connected to the
+    **Impressions** filter. 
 
     ![A rectangle with a rectangle with](../media/Lab-03/image38.png)
 
-18. Click on the **pencil icon** to select what fields you wish to add/remove to your stream
+18. Click on the **pencil icon** to select what fields you wish to add/remove to your stream.
     
     ![A white card with a pen and a red box Description automatically generated](../media/Lab-03/image39.png)
 
-19. Rename the operation to "Manage_Impressions". Then select "Add all fields" then remove "eventType" and "referrer". Your "Manage fields"
+19. Rename the operation to **Manage_Impressions**. Then select **Add all fields** then remove **eventType** and **referrer**. Your **Manage fields**
     transform should look like the following:
 
     ![A screenshot of a computer](../media/Lab-03/image40.png)
@@ -271,17 +271,17 @@ device and browser the webpage was loaded from, and what IP address accessed the
 
 23. For this destination, configure the following properties.
 
-    -   **Destination name** -- dbo-Clicks
+      -   **Destination name** -- dbo-Clicks
     
-    -   **Workspace** - RTI_username
+      -   **Workspace** - RTI_username
     
-    -   **Eventhouse** -- eh_Fabrikam
+      -   **Eventhouse** -- eh_Fabrikam
     
-    -   **KQL Database** - eh_Fabrikam
+      -   **KQL Database** - eh_Fabrikam
     
-    -   **Destination Table** - Create a new table called **Clicks**
+      -   **Destination Table** - Create a new table called **Clicks**
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image44.png)
+       ![A screenshot of a computer Description automatically generated](../media/Lab-03/image44.png)
 
 24. Click on **Save** at the bottom of the flyout.
 
@@ -385,7 +385,7 @@ support this is currently in an external Azure SQL Database, let's see how easy 
 
     ![A screenshot of a search box](../media/Lab-03/image58.png)
 
-10. Now that you have dimensional qualities to your database, you can answer questions and give more context to consumers of the reports
+8. Now that you have dimensional qualities to your database, you can answer questions and give more context to consumers of the reports
     and queries these tables off insights on across your business. Run the following KQL query to see one of them.
 
       ```
