@@ -62,50 +62,61 @@ By the end of this lab, you will have learned:
 
 6.  From your environment details page, copy and paste all the necessary connection settings into the appropriate fields. For these labs we are connecting to an Event Hub which has streaming data being sent from a python notebook. This notebook is creating fake sales transactions at rate of around 3,100 transactions per hour.
     
-    Event Hub namespace: **rtiadhub<inject key="DeploymentID" enableCopy="false"/>**
-    
-    Event Hub: **rti-iad-fabrikam**
-    
-    Shared Access Key Name: **rti-reader**
-    
-    Shared Access Key: <inject key="rti-iad-fabrikam Primary Key"></inject>
+  - Event Hub namespace:
+  
+    ```
+    rtiadhub<inject key="DeploymentID" enableCopy="false"/>
+    ```
+  - Event Hub:
+    ```
+    rti-iad-fabrikam
+    ```
+  - Shared Access Key Name:
 
-7. Once all properties have been filled out click on **Connect**.
+    ```
+    rti-reader
+    ```
+  - Shared Access Key:
+
+    ```
+    <inject key="rti-iad-fabrikam Primary Key"></inject>
+    ```
+8. Once all properties have been filled out click on **Connect**.
     
     ![A screenshot of a computer Description automaticallygenerated](../media/Lab-02/image10.png)
 
-8.  In the configuration of the Azure Event Hub data source, you may need to modify the **Consumer group** of the Event Hub to ensure that you gain access to a unique access point to the stream of data.For this workshop you can leave the "\$Default" value as shownbelow\
+9.  In the configuration of the Azure Event Hub data source, you may need to modify the **Consumer group** of the Event Hub to ensure that you gain access to a unique access point to the stream of data.For this workshop you can leave the "\$Default" value as shownbelow\
     
     ![A screenshot of a computer](../media/Lab-02/image11.png)
 
-9.  Before we finalize this data source and Eventstream, let's go ahead and rename our Eventstream to something more useful. In the "Stream details\" section on the right select the pencil icon next to the "Eventstream name" and let's call our Eventstream "**es_Fabrikam_InternetSales**".
+10.  Before we finalize this data source and Eventstream, let's go ahead and rename our Eventstream to something more useful. In the "Stream details\" section on the right select the pencil icon next to the "Eventstream name" and let's call our Eventstream "**es_Fabrikam_InternetSales**".
 
     ![A screenshot of a computer](../media/Lab-02/image12.png)
 
-10. Now we can click on **Next**, which will take us to a final overview page.
+11. Now we can click on **Next**, which will take us to a final overview page.
     
     ![A screenshot of a computer](../media/Lab-02/image13.png)
 
-11. In this overview screen, verify the contents look correct and click **Create source**.
+12. In this overview screen, verify the contents look correct and click **Create source**.
     
     **Note:** Your details will differ from what you see in the screenshot
     
     ![A screenshot of a computer Description automatically generated](../media/Lab-02/image14.png)
 
-12. Once the Eventstream and Eventstream source are created select the
+13. Once the Eventstream and Eventstream source are created select the
     option "**Open Eventstream**"
     
     ![A screenshot of a computer](../media/Lab-02/image15.png)
 
-13. This will take you to the Eventstream user interface. Here is where you will see your source stream of data flowing into our eventstream and we have the ability to add transform events as well.
+14. This will take you to the Eventstream user interface. Here is where you will see your source stream of data flowing into our eventstream and we have the ability to add transform events as well.
 
-14. It may take a few moments for your Source to be **Active** but after waiting a few moments, click on the middle icon with the name of your Eventstream on it and then click on **Refresh** if you do not see a preview of the data.
+15. It may take a few moments for your Source to be **Active** but after waiting a few moments, click on the middle icon with the name of your Eventstream on it and then click on **Refresh** if you do not see a preview of the data.
 
     **Note:** If you receive a "Warning" status around and audit policy,that is fine. The stream will still function
     
     ![](../media/Lab-02/active-event.png)
 
-15. You should now see a sample of the data within the bottom window.
+16. You should now see a sample of the data within the bottom window.
 
     ![A screenshot of a computer](../media/Lab-02/image17.png)
 
