@@ -42,7 +42,7 @@ By the end of this lab, you will have learned:
 
 1.  Open the **Fabric workspace** you created in the last lab. From here we can see the Eventhouse we created.
 
-    ![](../media/Lab-02/image5.png)
+    ![](../media/Lab-02/lab-final.png)
 
 2.  Navigate to the "Real-Time" where currently we do not see any streams of data. That will change shortly.
 
