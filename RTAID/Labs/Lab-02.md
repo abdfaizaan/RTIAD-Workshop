@@ -211,17 +211,15 @@ ii. Click on **Get data (1)** and go to **Eventstream (2)** and select **Existin
 
 iii. Select the InternetSales table and give the give the following configurations -
 
-      - Workspace :
-        ```
-        RTI_<inject key="DeploymentID" enableCopy="false"/>
-        ```
-     - Eventstream Name :
-       ```
-       es_Fabrikam_InternetSales
-       ```
-     - Data connectioin name - **give any name**
-
-    Then click on **Next**, **Finish** and **Close** in the next tabs.
+   - Workspace :
+     ```
+     RTI_<inject key="DeploymentID" enableCopy="false"/>
+     ```
+   - Eventstream Name :
+     ```
+     es_Fabrikam_InternetSales
+     ```
+   - Data connectioin name - **give any name** , Then click on **Next**, **Finish** and **Close** in the next tabs.
 
    ![A screenshot of a chat](../media/Lab-02/KQL-database-workaround3.png)
 
