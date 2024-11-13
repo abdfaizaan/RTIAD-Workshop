@@ -72,11 +72,11 @@ By the end of this lab, you will have learned:
 
      - **Username/Email**:<inject key="AzureAdUserEmail"></inject>
 
-  	 ![b](../media/Lab-01/P2L1T1S2.png)
+  	  ![b](../media/Lab-01/P2L1T1S2.png)
 
      - **Password**:<inject key="AzureAdUserPassword"></inject> , then Click **Sign in**.
 
-         ![c](../media/Lab-01/sc900-image-2.png)
+          ![c](../media/Lab-01/sc900-image-2.png)
 
 1. You will be navigated to the **Fabric Home page**.
 
@@ -96,7 +96,7 @@ By the end of this lab, you will have learned:
 
 1. Successfully upgraded to Microsoft Fabric dialog opens. Select **Fabric Home Page**.  
 
-   ![c](../media/Lab-01/home_page.png)
+   ![c](../media/Lab-01/fabrichome_1.png)
 
 1. You will be navigated back to the **Microsoft Fabric Home page**.
 
