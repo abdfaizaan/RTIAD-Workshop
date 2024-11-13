@@ -65,7 +65,7 @@ By the end of this lab, you will have learned:
 
    ![a](../media/Lab-01/imag01.png)
 
- 1. Enter the following email/username, and then click on **Submit**.  
+ 2. Enter the following email/username, and then click on **Submit**.  
 
      - **Username/Email**:<inject key="AzureAdUserEmail"></inject>
 
@@ -75,25 +75,25 @@ By the end of this lab, you will have learned:
 
           ![c](../media/Lab-01/sc900-image-2.png)
 
-1. You will be navigated to the **Fabric Home page**.
+3. You will be navigated to the **Fabric Home page**.
 
    ![c](../media/Lab-01/home_page.png)
 
 >**Note**: To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up. 
    
-1. In the top-right corner of the screen, click on the **User icon(1)** and then select **Free Trial(2)**.
+4. In the top-right corner of the screen, click on the **User icon(1)** and then select **Free Trial(2)**.
 
-   ![c](../media/Lab-01/free-trail.png)
+   ![c](../media/Lab-01/user-trail-01.png)
 
-1. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Activate**.
+5. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Activate**.
 
    ![c](../media/Lab-01/imag05.png)
 
-1. The "Successfully Upgraded to Microsoft Fabric" dialog will appear. Click on **Fabric Home Page**..  
+6. The "Successfully Upgraded to Microsoft Fabric" dialog will appear. Click on **Fabric Home Page**..  
 
    ![c](../media/Lab-01/fabrichome_1.png)
 
-1. You will be navigated back to the **Microsoft Fabric Home page**.
+7. You will be navigated back to the **Microsoft Fabric Home page**.
 
    ![c](../media/Lab-01/home_page.png)
 
