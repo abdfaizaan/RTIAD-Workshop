@@ -70,13 +70,13 @@ By the end of this lab, you will have learned:
 
  1. Enter the following email/username, and then click on **Submit**.  
 
-  	 - **Username/Email**:<inject key="AzureAdUserEmail"></inject>
+     - **Username/Email**:<inject key="AzureAdUserEmail"></inject>
 
-  	   ![b](../media/Lab-01/P2L1T1S2.png)
+  	![b](../media/Lab-01/P2L1T1S2.png)
 
-   	 - **Password**:<inject key="AzureAdUserPassword"></inject> , then Click **Sign in**.
+     - **Password**:<inject key="AzureAdUserPassword"></inject> , then Click **Sign in**.
 
-     	 ![c](../media/Lab-01/sc900-image-2.png)
+        ![c](../media/Lab-01/sc900-image-2.png)
 
 1. You will be navigated to the **Fabric Home page**.
 
