@@ -85,7 +85,7 @@ be adding to the KQL database By the end of this lab, you will have learned:
        <inject key="rti-iad-clicks Primary Key"></inject>
        ```
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-03/clicks.png)
+        ![A screenshot of a computer Description automatically generated](../media/Lab-03/clicks.png)
 
 9. Once all the properties have been filled out click on **Connect**.
 
@@ -156,7 +156,7 @@ device and browser the webpage was loaded from, and what IP address accessed the
 
     You should be left with the following fields in the image below.
 
-     ![A screenshot of a computer](../media/Lab-03/image21.png)
+    ![A screenshot of a computer](../media/Lab-03/image21.png)
 
 8. Hover over the eventDate field and when an ellipses (...) appears on the right-hand side of the window, click it.
 
@@ -229,7 +229,7 @@ device and browser the webpage was loaded from, and what IP address accessed the
         This is a case sensitive field, ensure to input in all capitals for
         this example)**
 
-      ![](../media/Lab-03/image33-1.png)
+    ![](../media/Lab-03/image33-1.png)
 
 11. Choose the **Save** option to keep your changes.
 
@@ -289,7 +289,7 @@ device and browser the webpage was loaded from, and what IP address accessed the
       -   **KQL Database** - eh_Fabrikam
       -   **Destination Table** - Create a new table called **Clicks**
 
-       ![A screenshot of a computer Description automatically generated](../media/Lab-03/image44.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image44.png)
 
 24. Click on **Save** at the bottom of the flyout.
 
