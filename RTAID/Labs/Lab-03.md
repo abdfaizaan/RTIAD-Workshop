@@ -349,7 +349,7 @@ support this is currently in an external Azure SQL Database, let's see how easy 
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-03/image52-1.png)
 
-3.  The OneLake data hub will open and the only option to select with be the **"eh_Fabrikam"** kql database. Select this database and click **"Connect"**.\
+3.  The OneLake data hub will open and the only option to select with be the **"eh_Fabrikam"** kql database. Select this database and click **"Connect"**.
 
     ![A screenshot of a chat](../media/Lab-03/image53.png)
 
