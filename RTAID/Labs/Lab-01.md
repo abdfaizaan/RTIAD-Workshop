@@ -176,6 +176,10 @@ By the end of this lab, you will have learned:
 8. Select **Apply** to create a new workspace.
 
    ![](../media/Lab-01/imag017-1.png)
+
+>**Note**: If the Introducing task flows dialog opens, click on Got it.
+
+   ![](../media/Lab-01/intro.png)
  
 ## Task 5: Create an Eventhouse
 
