@@ -58,6 +58,8 @@ be adding to the KQL database By the end of this lab, you will have learned:
 
    ![A screenshot of a web page Description automatically generated](../media/Lab-03/eventhubs.png)
 
+ >**Note**:If you do not see “Azure Event Hubs” in the recommended section, then select “View all source” to discover it.
+
 6.  Create a **New connection**.
 
     ![A screenshot of a computer](../media/Lab-03/image10.png)
