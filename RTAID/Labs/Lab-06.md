@@ -36,6 +36,7 @@ In this lab, you will learn how to leverage Data Activator to create a Reflex to
 1.  Use the link [Fabric workspace homepage](https://app.fabric.microsoft.com/?experience=kusto&rtpPupr=1) to open the **Fabric workspace** home page for the course and select the Real-Time Dashboard you created in the last lab.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-06/L6T1S1-12-11.png)
+    
     ![A screenshot of a computer Description automatically generated](../media/Lab-06/L6T1S1.1-1211.png)
 
 2.  On the **Click Through Rate** visual click on the ellipses (...) and select the option to **Set alert**.
@@ -102,7 +103,7 @@ In this lab, you will learn how to leverage Data Activator to create a Reflex to
 
 3.  To begin, you need to monitor one of the columns from the data stream. Now we will need to add the Condition and Action to this rule. Click on the Definition tab of the rule to set the conditions and action.
 
-4.  In the Definition page that opens, in **Condition** select the following properties,
+4. In the Definition page that opens, in **Condition** select the following properties,
     - **Operation** - Is greater than (1)
     - **Column** - clicks (2)
     - **Value** - 30000 (3)
@@ -112,9 +113,9 @@ In this lab, you will learn how to leverage Data Activator to create a Reflex to
     - **Recipient** - ODL_User_<inject key="DeploymentID" enableCopy="false"/> (5)
     - **Headline** - Clicks Greater than 30,000 (6)
 
- Finally, click on **Start (7)** to run the rule.
+    - Finally, click on **Start (7)** to run the rule.
 
-   ![A screenshot of a computer](../media/Lab-06/create-new-trigger1-13-11.png)
+        ![A screenshot of a computer](../media/Lab-06/create-new-trigger1-13-11.png)
 
 5. You now have two alert rules that are monitoring the same data stream.
 
