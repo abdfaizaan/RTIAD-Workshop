@@ -69,7 +69,7 @@ By the end of this lab, you will have learned:
 
      - **Username/Email**:<inject key="AzureAdUserEmail"></inject>
 
-  	  ![b](../media/Lab-01/P2L1T1S2.png)
+  	  ![b](../media/Lab-01/fabric1.png)
 
      - **Password**:<inject key="AzureAdUserPassword"></inject> , then Click **Sign in**.
 
