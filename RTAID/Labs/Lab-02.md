@@ -99,9 +99,9 @@ By the end of this lab, you will have learned:
 
 12. In this overview screen, verify the contents look correct and click **Create source**.
     
->**Note:** Your details will differ from what you see in the screenshot
+    >**Note:** Your details will differ from what you see in the screenshot
     
-   ![A screenshot of a computer Description automatically generated](../media/Lab-02/image14.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-02/image14.png)
 
 13. Once the Eventstream and Eventstream source are created select the
     option "**Open Eventstream**"
@@ -112,9 +112,9 @@ By the end of this lab, you will have learned:
 
 15. It may take a few moments for your Source to be **Active** but after waiting a few moments, click on the middle icon with the name of your Eventstream on it and then click on **Refresh** if you do not see a preview of the data.
 
->**Note:** If you receive a "Warning" status around and audit policy,that is fine. The stream will still function
+    >**Note:** If you receive a "Warning" status around and audit policy,that is fine. The stream will still function
     
-   ![](../media/Lab-02/active-event.png)
+    ![](../media/Lab-02/active-event.png)
 
 16. You should now see a sample of the data within the bottom window.
 
@@ -165,7 +165,7 @@ By the end of this lab, you will have learned:
          ```
          eh_Fabrikam
          ```
-      ![A screenshot of a computer](../media/Lab-02/image24.png)
+    ![A screenshot of a computer](../media/Lab-02/image24.png)
 
 8.  Click on Save.
 
@@ -199,17 +199,17 @@ By the end of this lab, you will have learned:
 
     ![A screen shot of a computer](../media/Lab-02/image31.png)
 
->**Note:** Incase if you do not see any data in the Data preview of your KQL Database destination, follow the below steps -
+    >**Note:** Incase if you do not see any data in the Data preview of your KQL Database destination, follow the below steps -
 
-i. Go to your destination KQL database
+    i. Go to your destination KQL database
 
-   ![A screenshot of a chat](../media/Lab-02/blur.png)
+    ![A screenshot of a chat](../media/Lab-02/blur.png)
 
-ii. Click on **Get data (1)** and go to **Eventstream (2)** and select **Existing Eventstream (3)**.
+    ii. Click on **Get data (1)** and go to **Eventstream (2)** and select **Existing Eventstream (3)**.
 
-   ![A screenshot of a chat](../media/Lab-02/KQL-database-workaround2.png)
+    ![A screenshot of a chat](../media/Lab-02/KQL-database-workaround2.png)
 
-iii. Select the InternetSales table and Select the following configurations from the drop-down :
+    iii. Select the InternetSales table and Select the following configurations from the drop-down :
 
    - Workspace :
 
@@ -223,7 +223,7 @@ iii. Select the InternetSales table and Select the following configurations from
      ```
    - Data connectioin name - **give any name** , Then click on **Next**, **Finish** and **Close** in the next tabs.
 
-   ![A screenshot of a chat](../media/Lab-02/KQL-database-workaround3.png)
+![A screenshot of a chat](../media/Lab-02/KQL-database-workaround3.png)
 
 iv. Now you should be able to see a new destination is created with the Data preview visible in it.
     
@@ -332,7 +332,7 @@ Let's explore!
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-02/image53.png)
 
->**Note**: If you can't see the output code, maximize the screen by dragging the white section down.
+    >**Note**: If you can't see the output code, maximize the screen by dragging the white section down.
 
 6.  Click on the query pane highlighted below in orange. This will allow you to select translated KQL query and copy it. Paste this query in the KQL Queryset we have been using
 
