@@ -372,7 +372,7 @@ Now that you have your transformed layer of data within the Silver Layer you can
 
 ## Task 5: Create Lakehouse
 
-1. Return to the **RTI_username** workspace.
+1. Return to the **RTI_<inject key="DeploymentID" enableCopy="false"/>**. workspace.
 
 2. Click the **+ New Item** option and then select **Lakehouse** from the list of available options.
 
