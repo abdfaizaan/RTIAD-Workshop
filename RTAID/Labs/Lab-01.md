@@ -63,13 +63,13 @@ By the end of this lab, you will have learned:
 
 1. Open the **Microsoft Edge browser** on your desktop and visit `https://app.fabric.microsoft.com/` in Incognito mode.. You will be navigated to the login page.
 
-   ![a](../media/Lab-01/imag01.png)
+      ![a](../media/Lab-01/imag01.png)
 
  2. Enter the following email/username, and then click on **Submit**.  
 
      - **Username/Email**:<inject key="AzureAdUserEmail"></inject>
 
-  	  ![b](../media/Lab-01/fabric1.png)
+  	   ![b](../media/Lab-01/fabric1.png)
 
      - **Password**:<inject key="AzureAdUserPassword"></inject> , then Click **Sign in**.
 
@@ -79,7 +79,7 @@ By the end of this lab, you will have learned:
 
    ![c](../media/Lab-01/home_page.png)
 
->**Note**: To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up. 
+   >**Note**: To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up. 
    
 4. In the top-right corner of the screen, click on the **User icon(1)** and then select **Free Trial(2)**.
 
@@ -163,7 +163,7 @@ By the end of this lab, you will have learned:
    
 4. In the **Name** field enter **RTI_<inject key="DeploymentID" enableCopy="false"></inject>**. 
 
->**Note**: The DID will be unique for each user, and the workspace name must also be unique. Ensure that a green check mark with **"This name is available"** appears below the Name field.
+   >**Note**: The DID will be unique for each user, and the workspace name must also be unique. Ensure that a green check mark with **"This name is available"** appears below the Name field.
 
 5. If you would like, you can enter a **Description** for the workspace. This is an optional field.
    
@@ -208,7 +208,7 @@ By the end of this lab, you will have learned:
 8. This will allow us to still have one tab in the left browser pane to see the overview of our entire Eventhouse and a new tab to focus on the KQL Database properties. One goal that we wish to accomplish in our scenario is to ensure that the data streamed to the KQL database is accessible via OneLake. By enabling this feature, we make the data in this KQL Database easily discoverable through shortcuts to be used in any Lakehouse we may want. Locate the **Database details** section on the right and toggle **On** the “Availability” option.
    
 
->**Note**: You will be popped up with a dialogue box, leave all the settings as default and click on **Turn on**.
+   >**Note**: You will be popped up with a dialogue box, leave all the settings as default and click on **Turn on**.
 
    ![](../media/Lab-01/turn-on-1.png)
 
@@ -225,7 +225,7 @@ By the end of this lab, you will have learned:
 
 11. You now have the basis for how you will begin to ingest the streaming data into your OneLake.  The next step is to create a stream of data that can receive the data in motion.
 
-   ![](../media/Lab-01/lab-final.png)
+      ![](../media/Lab-01/lab-final.png)
  
 
 In this lab, we explored the Real-Time Intelligence interface, examined the Real-Time hub, created a Fabric workspace, and an Eventhouse that came with a KQL Database.  In the next lab, you will begin to explore techniques that ingest data from various sources across your data estate to OneLake and do some basic analysis with the Kusto Query Language (KQL).
@@ -234,7 +234,7 @@ In this lab, we explored the Real-Time Intelligence interface, examined the Real
 Fabric Real-time Intelligence in a Day (RTIIAD) introduces you to some of the key functions available in Microsoft Fabric. 
 In the menu of the service, the Help (?) section has links to some great resources. 
 
-![](../media/Lab-01/imag030-1.png)
+   ![](../media/Lab-01/imag030-1.png)
  
 Here are a few more resources that will help you with your next steps with Microsoft Fabric. 
 
