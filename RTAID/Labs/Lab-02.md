@@ -99,9 +99,9 @@ By the end of this lab, you will have learned:
 
 12. In this overview screen, verify the contents look correct and click **Create source**.
     
-    **Note:** Your details will differ from what you see in the screenshot
+>**Note:** Your details will differ from what you see in the screenshot
     
-    ![A screenshot of a computer Description automatically generated](../media/Lab-02/image14.png)
+   ![A screenshot of a computer Description automatically generated](../media/Lab-02/image14.png)
 
 13. Once the Eventstream and Eventstream source are created select the
     option "**Open Eventstream**"
@@ -112,9 +112,9 @@ By the end of this lab, you will have learned:
 
 15. It may take a few moments for your Source to be **Active** but after waiting a few moments, click on the middle icon with the name of your Eventstream on it and then click on **Refresh** if you do not see a preview of the data.
 
-    **Note:** If you receive a "Warning" status around and audit policy,that is fine. The stream will still function
+>**Note:** If you receive a "Warning" status around and audit policy,that is fine. The stream will still function
     
-    ![](../media/Lab-02/active-event.png)
+   ![](../media/Lab-02/active-event.png)
 
 16. You should now see a sample of the data within the bottom window.
 
