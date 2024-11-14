@@ -139,7 +139,7 @@ By the end of this lab, you will have learned:
     -  SalesLT.SalesOrderDetail
     -  SalesLT.SalesOrderHeader
 
-      ![A screenshot of a computer Description automatically generated](../media/Lab-04/image19.png)
+        ![A screenshot of a computer Description automatically generated](../media/Lab-04/image19.png)
 
 9. Click on **Next**.
 
@@ -438,7 +438,7 @@ After building the medallion framework, users employed Microsoft Fabric shortcut
 Fabric Real-Time Intelligence in a Day (RTIIAD) introduces you to some of the key functions available in Microsoft Fabric.
 In the menu of the service, the Help (?) section has links to some great resources.
 
- ![A screenshot of a computer](../media/Lab-04/image69.png)
+![A screenshot of a computer](../media/Lab-04/image69.png)
  
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 -   See blog post to read the full [Microsoft Fabric GA announcement](https://aka.ms/Fabric-Hero-Blog-Ignite23)
