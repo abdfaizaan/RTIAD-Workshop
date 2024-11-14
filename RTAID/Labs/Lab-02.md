@@ -203,7 +203,7 @@ By the end of this lab, you will have learned:
 
 i. Go to your destination KQL database
 
-   ![A screenshot of a chat](../media/Lab-02/KQL-database-workaround1.png)
+   ![A screenshot of a chat](../media/Lab-02/blur.png)
 
 ii. Click on **Get data (1)** and go to **Eventstream (2)** and select **Existing Eventstream (3)**.
 
