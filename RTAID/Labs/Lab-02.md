@@ -173,29 +173,35 @@ By the end of this lab, you will have learned:
 
     ![A screenshot of a chat](../media/Lab-02/image25.png)
 
-10.  Choose the **Configure** option within the **Destination** to correctly map the stream to a table in the KQL Database.
+10.  If you notice the AzureEventHub source has become inactive, switch the toggle to the **Active** state and choose the option **Now** when the dialog opens
+
+      ![A screenshot of a chat](../media/Lab-02/inactive-1-1.png)
+
+      ![A screenshot of a chat](../media/Lab-02/active-1.png)
+
+12.  Choose the **Configure** option within the **Destination** to correctly map the stream to a table in the KQL Database.
 
      ![A screenshot of a computer Description automatically generated](../media/Lab-02/image26.png)
 
-11. Click on the **+ New table** option underneath the **eh_Fabrikam** database.
+13. Click on the **+ New table** option underneath the **eh_Fabrikam** database.
 
     ![A screenshot of a computer](../media/Lab-02/image27.png)
 
-12. Give the new table the name, **InternetSales** and then click on the checkmark.
+14. Give the new table the name, **InternetSales** and then click on the checkmark.
 
     ![A screenshot of a computer](../media/Lab-02/image28.png)
     
-13. You may need to update your **"Data connection name"** to meet requirements. Let us rename it to **"eh_Fabrikam_es_InternetSales".** Then we can click on **Next**.
+15. You may need to update your **"Data connection name"** to meet requirements. Let us rename it to **"eh_Fabrikam_es_InternetSales".** Then we can click on **Next**.
 
     ![A screenshot of a computer](../media/Lab-02/image29.png)
 
-14. After a few moments of searching for events, the user interface should allow you to see that sample data was found. Click on **Finish** at the bottom of the screen.
+16. After a few moments of searching for events, the user interface should allow you to see that sample data was found. Click on **Finish** at the bottom of the screen.
 
     ![A screenshot of a computer Description automatically generated](../media/Lab-02/image30.png)
 
-15. After this you will be shown a summary. Once you have all green checkmarks, click **close** to move forward.
+17. After this you will be shown a summary. Once you have all green checkmarks, click **close** to move forward.
 
-16. Once you see the user interface showing the mappings from the source to the Eventstream to the destination, you have correctly configured and started a stream of data into your KQL Database.
+18. Once you see the user interface showing the mappings from the source to the Eventstream to the destination, you have correctly configured and started a stream of data into your KQL Database.
 
     ![A screen shot of a computer](../media/Lab-02/image31.png)
 
