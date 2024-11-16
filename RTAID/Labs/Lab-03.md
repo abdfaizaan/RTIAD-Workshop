@@ -177,7 +177,7 @@ device and browser the webpage was loaded from, and what IP address accessed the
 
 1.  While you could load this stream of data to a KQL Database for analysis, you may want to have another way to consume this data to
     differentiate CLICK events and IMPRESSION events. Add another transformation activity to the user interface by hovering over the
-    end of the **Manage_Fields** transform
+    end of the **ManageFields** transform
 
     ![A screen shot of a computer screen Description automatically generated](../media/Lab-03/manage-add.png)
 
