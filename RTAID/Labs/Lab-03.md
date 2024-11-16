@@ -309,11 +309,11 @@ device and browser the webpage was loaded from, and what IP address accessed the
 
 28. This Eventstream is now ready to begin streaming. Click on **Publish** to begin that stream.
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image46.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/publish-1.png)
 
 29. With the Eventstream now running, you should see the Eventstream user interface slightly change to signify that you are streaming the data from Event Hub transforming and splitting that data stream and loading it into two separate KQL Database tables.
 
-    ![A screenshot of a computer](../media/Lab-03/image47.png)
+    ![A screenshot of a computer](../media/Lab-03/image47-1.png)
 
 # Adding More Data to KQL Database
 
