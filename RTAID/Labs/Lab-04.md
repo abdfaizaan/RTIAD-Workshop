@@ -404,8 +404,9 @@ Within the Lakehouse user interface, you have a couple options for how you could
 
     -  Clicks
     -  Impressions
+    -  InternetSales 
 
-        ![A screenshot of a computer Description automatically generated](../media/Lab-04/image56.png)
+        ![A screenshot of a computer Description automatically generated](../media/Lab-04/impression.png)
 
 6. These tables could be very useful to any users who may be leveraging notebooks within Fabric. This data could be used in data science to train a model that predicts what link users might likely be interested in.
 
@@ -413,15 +414,15 @@ Within the Lakehouse user interface, you have a couple options for how you could
 
 8. One last validation screen will appear. Once you are satisfied with your selection, click on the **Create** button at the bottom of thescreen.
 
-    ![A screenshot of a computer](../media/Lab-04/image57.png)
+    ![A screenshot of a computer](../media/Lab-04/shortcut.png)
 
 9. You will now see all the tables you selected from the KQL Database have appeared within the Lakehouse.
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-04/image58.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-04/explorer.png)
 
 10. Click on the table called **Clicks**.
 
-    ![A screenshot of a computer](../media/Lab-04/image59.png)
+    ![A screenshot of a computer](../media/Lab-04/clicks-final.png)
 
 11. You can see a sample of the records from that table have appeared within your user interface.
 
