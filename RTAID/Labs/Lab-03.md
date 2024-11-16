@@ -211,10 +211,10 @@ device and browser the webpage was loaded from, and what IP address accessed the
 
     ![](../media/Lab-03/image30-1.png)
 
-8.  A new object called **Filter1 (Name may differ)** will appear on your canvas. You will need to connect the **Manage_fields1 stream**
+8.  A new object called **Filter1 (Name may differ)** will appear on your canvas. You will need to connect the **Managefields stream**
     to the new filter transformation. Drag a line from the green dot on one transform to another to make that connection.
 
-    ![A screenshot of a computer](../media/Lab-03/image31.png)
+    ![A screenshot of a computer](../media/Lab-03/manage-final.png)
    
 9.  Click on the **pencil icon** for **Filter2** to edit its settings.
 
