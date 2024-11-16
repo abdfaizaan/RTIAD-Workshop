@@ -351,7 +351,7 @@ Now that you have your transformed layer of data within the Silver Layer you can
     Clicks
     | extend dateOnly = substring(todatetime(eventDate).tostring(), 0, 10) 
     | summarize count() by dateOnly
-    
+    }
     .create async materialized-view with (backfill=true) GoldDailyImpressions on table 
     Impressions
     {
