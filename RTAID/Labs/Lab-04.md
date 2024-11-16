@@ -123,12 +123,12 @@ By the end of this lab, you will have learned:
       ```
       demouser
       ```
-  -  Passowrd :
+  -  Password :
        ```
        fabrikam@123456
        ```
 
-        ![A screenshot of a computer](../media/Lab-04/image18.png)
+     ![A screenshot of a computer](../media/Lab-04/image18.png)
 
 7. Click **Next** when everything has been filled out.
 
