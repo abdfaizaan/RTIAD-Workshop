@@ -127,19 +127,19 @@ device and browser the webpage was loaded from, and what IP address accessed the
 
     ![A screenshot of a search box Description automatically generated](../media/Lab-03/image16-1.png)
 
-3.  On the new icon that appears called **Manage_fields1** click on the **pencil icon** to select what fields you wish to add to your stream
+3.  On the new icon that appears called **Managefields** click on the **pencil icon** to select what fields you wish to add to your stream
     from the source.
 
-    ![A screen shot of a computer Description automatically generated](../media/Lab-03/image17-1.png)
+    ![A screen shot of a computer Description automatically generated](../media/Lab-03/manage-1.png)
 
 4.  In the flyout pane that appears, click on the button the option to **Add all fields**.
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image18-1.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/manage-2.png)
 
 5.  From the list of fields, select the one called **PartitionId** and click on the ellipses (...) that appears when you hover over the
     field
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image19-1.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/manage-3.png)
 
 6.  Choose the option to **Remove** that field. For this stream of data coming from the Event Hub, partitioning is not being used so this
     column is not helpful to us, thus we are removing it.
@@ -158,7 +158,7 @@ device and browser the webpage was loaded from, and what IP address accessed the
 
     You should be left with the following fields in the image below.
 
-    ![A screenshot of a computer](../media/Lab-03/image21.png)
+    ![A screenshot of a computer](../media/Lab-03/manage-4.png)
 
 8. Hover over the eventDate field and when an ellipses (...) appears on the right-hand side of the window, click it.
 
@@ -177,13 +177,13 @@ device and browser the webpage was loaded from, and what IP address accessed the
 
 1.  While you could load this stream of data to a KQL Database for analysis, you may want to have another way to consume this data to
     differentiate CLICK events and IMPRESSION events. Add another transformation activity to the user interface by hovering over the
-    end of the **Manage_Fields1** transform
+    end of the **Manage_Fields** transform
 
-    ![A screen shot of a computer screen Description automatically generated](../media/Lab-03/image25-1.png)
+    ![A screen shot of a computer screen Description automatically generated](../media/Lab-03/manage-add.png)
 
 2.  Choose the **Filter** transform from the available list of operations.
 
-    ![A screenshot of a computer Description automatically generated](../media/Lab-03/image26-1.png)
+    ![A screenshot of a computer Description automatically generated](../media/Lab-03/manage-add-1.png)
 
 3.  Click on the **pencil icon** on the new transformation, **Filter1**.
 
