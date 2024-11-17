@@ -44,7 +44,7 @@ By the end of this lab, you will have learned:
 
     ![](../media/Lab-02/lab-final.png)
 
-2.  Navigate to the "Real-Time" where currently we do not see any streams of data. That will change shortly.
+2. Navigate to the Real-Time Hub by selecting the **Real-Time** button on the left-hand side. Even though we do not see any streams of data that will change shortly.
 
     ![](../media/Lab-02/real-time-1.png)
 
